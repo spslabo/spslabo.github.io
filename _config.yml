@@ -115,7 +115,7 @@ analytics:
 author:
   name             : "Simon Perez"
   avatar           : "/assets/images/300x300-avatar.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Engineer focused on infrastructure, observability, and reliability. I write about infrastructure, observability, and my homelab."
+  bio              : "Engineer focused on infrastructure, observability, and reliability."
   location         : "Canada"
   email            :
   links:
