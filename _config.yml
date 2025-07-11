@@ -20,7 +20,7 @@ rtl                      : # true, false (default) # turns direction of the page
 title                    : "spslabo"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "spslabo"
+name                     : "Simon Perez"
 description              : "Welcome. I write about infrastructure, observability, and my homelab."
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
@@ -114,8 +114,8 @@ analytics:
 # Site Author
 author:
   name             : "Simon Perez"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Engineer focused on infrastructure, observability, and reliability. "
+  avatar           : "/assets/images/300x300-avatar.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  bio              : "Engineer focused on infrastructure, observability, and reliability. I write about infrastructure, observability, and my homelab."
   location         : "Canada"
   email            :
   links:
@@ -136,7 +136,7 @@ author:
       url: "https://github.com/spslabo"
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
-      url: "https://linkedin.com/"
+      url: "https://www.linkedin.com/in/simon-perez-198907359"
 
 # Site Footer
 footer:
@@ -325,4 +325,10 @@ defaults:
       comments: # true
       share: true
       related: true
-
+  # _pages
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
