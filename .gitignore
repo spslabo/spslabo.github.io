@@ -1,0 +1,20 @@
+# Jekyll build output
+_site/
+.sass-cache/
+
+# Ruby-related
+*.gem
+.bundle/
+vendor/
+tmp/
+log/
+
+# Jekyll config artifacts
+.jekyll-cache/
+.jekyll-metadata
+
+# System files
+.DS_Store
+
+#Drafts
+_drafts/
