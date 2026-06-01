@@ -1,0 +1,8 @@
+# Masthead (top) navigation links — rendered by the Minimal Mistakes theme.
+main:
+  - title: "Home"
+    url: /
+  - title: "Grafana Feature Tracker"
+    url: /grafana-feature-tracker/
+  - title: "Tags"
+    url: /tags/

@@ -1,0 +1,47 @@
+/* Styles for the Grafana Feature Tracker page (/grafana-feature-tracker/). */
+
+.ff-meta { color: #6b7280; font-size: 0.85em; margin-bottom: 1em; }
+
+.ff-badges { display: flex; flex-wrap: wrap; gap: 0.5em; margin: 1em 0; }
+
+.ff-badge {
+  display: inline-block;
+  padding: 0.15em 0.6em;
+  border-radius: 1em;
+  font-size: 0.8em;
+  font-weight: 600;
+  white-space: nowrap;
+  color: #fff;
+}
+
+.ff-stat { font-size: 0.95em; }
+.ff-stat .ff-badge { min-width: 2.5em; text-align: center; }
+
+/* Stage colours */
+.ff-ga { background: #1a7f37; }
+.ff-publicpreview { background: #1f6feb; }
+.ff-privatepreview { background: #8250df; }
+.ff-experimental { background: #9a6700; }
+.ff-deprecated { background: #cf222e; }
+.ff-unknown { background: #6b7280; }
+
+/* Filter controls */
+.ff-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75em;
+  align-items: center;
+  margin: 1em 0;
+}
+.ff-controls input,
+.ff-controls select { padding: 0.4em 0.6em; font-size: 0.9em; }
+.ff-controls input { min-width: 16em; }
+
+/* Tables */
+#ff-table td:first-child,
+#ff-changes td:nth-child(2) { white-space: nowrap; }
+#ff-table code { font-size: 0.85em; }
+
+.ff-change-new { color: #1a7f37; font-weight: 600; }
+.ff-change-stage_change { color: #1f6feb; font-weight: 600; }
+.ff-change-removed { color: #cf222e; font-weight: 600; }
