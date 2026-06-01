@@ -1,4 +1,15 @@
-/* Styles for the Grafana Feature Tracker page (/grafana-feature-tracker/). */
+/* Styles for the Grafana Feature Tracker page (/grafana-feature-tracker/).
+   This file is loaded ONLY on that page (guarded include in head/custom.html),
+   so the .page override below cannot affect the home page or blog posts. */
+
+/* This page has no author-profile sidebar (author_profile: false). The theme
+   still floats .page to the inline-end at a reduced width to reserve the left
+   sidebar column, leaving an empty left band. Reclaim the full width here. */
+.wide .page {
+  float: none;
+  width: 100%;
+  padding-inline-end: 0;
+}
 
 .ff-meta { color: #6b7280; font-size: 0.85em; margin-bottom: 1em; }
 

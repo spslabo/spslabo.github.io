@@ -4,9 +4,6 @@ permalink: /grafana-feature-tracker/
 layout: single
 classes: wide
 author_profile: false
-toc: true
-toc_label: "On this page"
-toc_sticky: true
 ---
 
 {% assign data = site.data.grafana_feature_flags %}
@@ -14,7 +11,7 @@ toc_sticky: true
 
 <p class="ff-meta">
   Source: <a href="{{ data.source_url }}">{{ data.source_url | remove: "https://github.com/" }}</a><br>
-  {{ data.total }} feature flags &middot; last updated {{ data.generated_at }} (auto-refreshed daily)
+  {{ data.total }} feature flags &middot; checked daily{% if changes and changes.size > 0 %} &middot; most recent change {{ changes[0].date }}{% endif %}
 </p>
 
 {% assign order = "GA,PublicPreview,PrivatePreview,Experimental,Deprecated" | split: "," %}
