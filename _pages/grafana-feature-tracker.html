@@ -1,0 +1,83 @@
+---
+title: "Grafana Feature Tracker"
+permalink: /grafana-feature-tracker/
+layout: single
+classes: wide
+author_profile: false
+toc: true
+toc_label: "On this page"
+toc_sticky: true
+---
+
+{% assign data = site.data.grafana_feature_flags %}
+{% assign changes = site.data.grafana_feature_changes.changes %}
+
+<p class="ff-meta">
+  Source: <a href="{{ data.source_url }}">{{ data.source_url | remove: "https://github.com/" }}</a><br>
+  {{ data.total }} feature flags &middot; last updated {{ data.generated_at }} (auto-refreshed daily)
+</p>
+
+{% assign order = "GA,PublicPreview,PrivatePreview,Experimental,Deprecated" | split: "," %}
+<div class="ff-badges ff-stat">
+  {% for s in order %}
+    {% assign c = data.counts_by_stage[s] | default: 0 %}
+    <span><span class="ff-badge ff-{{ s | downcase }}">{{ c }}</span> {{ s }}</span>
+  {% endfor %}
+</div>
+
+## Latest changes
+
+{% if changes and changes.size > 0 %}
+<table id="ff-changes">
+  <thead>
+    <tr><th>Date</th><th>Flag</th><th>Change</th><th>Details</th><th>Commit</th></tr>
+  </thead>
+  <tbody>
+  {% assign recent = changes | slice: 0, 20 %}
+  {% for c in recent %}
+    <tr>
+      <td>{{ c.date }}</td>
+      <td><code>{{ c.flag }}</code></td>
+      <td><span class="ff-change-{{ c.change }}">
+        {% if c.change == "stage_change" %}stage{% elsif c.change == "new" %}new{% else %}removed{% endif %}
+      </span></td>
+      <td>
+        {% if c.change == "stage_change" %}{{ c.from_stage }} &rarr; {{ c.to_stage }}
+        {% elsif c.change == "new" %}{{ c.stage }}
+        {% else %}was {{ c.from_stage }}{% endif %}
+      </td>
+      <td>{% if c.sha %}<a href="{{ c.commit_url }}"><code>{{ c.sha }}</code></a>{% else %}&mdash;{% endif %}</td>
+    </tr>
+  {% endfor %}
+  </tbody>
+</table>
+<p class="ff-meta">Showing the {{ recent.size }} most recent change(s). Full history lives in the tracker's <code>changes_log.jsonl</code>.</p>
+{% else %}
+_No changes recorded yet — the changelog populates as flags change Stage, get added, or are removed._
+{% endif %}
+
+## All feature flags
+
+<div class="ff-controls">
+  <input type="text" id="ff-search" placeholder="Filter by name or description…" aria-label="Filter flags">
+  <select id="ff-stage" aria-label="Filter by stage">
+    <option value="">All stages</option>
+    {% for s in order %}<option value="{{ s }}">{{ s }}</option>{% endfor %}
+  </select>
+  <span class="ff-meta">Showing <span id="ff-count">{{ data.total }}</span> of {{ data.total }}</span>
+</div>
+
+<table id="ff-table">
+  <thead>
+    <tr><th>Flag</th><th>Stage</th><th>Description</th></tr>
+  </thead>
+  <tbody>
+  {% for f in data.flags %}
+    <tr data-stage="{{ f.stage }}" data-name="{{ f.name | downcase }}">
+      <td><code>{{ f.name }}</code></td>
+      <td><span class="ff-badge ff-{{ f.stage | downcase }}">{{ f.stage }}</span></td>
+      <td>{{ f.description | escape }}</td>
+    </tr>
+  {% endfor %}
+  </tbody>
+</table>

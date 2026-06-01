@@ -1,0 +1,1874 @@
+{
+  "generated_at": "2026-06-01T19:02:50Z",
+  "source_url": "https://github.com/grafana/grafana/blob/main/pkg/services/featuremgmt/registry.go",
+  "total": 372,
+  "counts_by_stage": {
+    "Experimental": 248,
+    "GA": 67,
+    "PublicPreview": 40,
+    "PrivatePreview": 14,
+    "Deprecated": 3
+  },
+  "flags": [
+    {
+      "name": "adHocFilterDefaultValues",
+      "stage": "Experimental",
+      "description": "Enables configuring default origin filters for ad-hoc filter variables"
+    },
+    {
+      "name": "advisorDatasourceIntegration",
+      "stage": "Experimental",
+      "description": "Enables the advisor report integration with datasource pages"
+    },
+    {
+      "name": "aiGeneratedDashboardChanges",
+      "stage": "Experimental",
+      "description": "Enable AI powered features for dashboards to auto-summary changes when saving"
+    },
+    {
+      "name": "alertEnrichment",
+      "stage": "Experimental",
+      "description": "Enable configuration of alert enrichments in Grafana Cloud."
+    },
+    {
+      "name": "alertEnrichmentConditional",
+      "stage": "Experimental",
+      "description": "Enable conditional alert enrichment steps."
+    },
+    {
+      "name": "alertEnrichmentMultiStep",
+      "stage": "Experimental",
+      "description": "Allow multiple steps per enrichment."
+    },
+    {
+      "name": "alertEnrichmentPreview",
+      "stage": "Experimental",
+      "description": "Enable alert enrichment preview (notification-history-based) in view and edit drawers."
+    },
+    {
+      "name": "alerting.notificationsAPIV1Beta1",
+      "stage": "Experimental",
+      "description": "Switch the Grafana Alerting UI from notifications.alerting.grafana.app/v0alpha1 to v1beta1"
+    },
+    {
+      "name": "alerting.rulesAPIV2",
+      "stage": "Experimental",
+      "description": "Enables the new Rules API v2 UI with evaluation chains and groupless rule creation"
+    },
+    {
+      "name": "alerting.syncExternalAlertmanager",
+      "stage": "Experimental",
+      "description": "Automatically syncs external Alertmanager datasource configuration as ExtraConfiguration in Grafana"
+    },
+    {
+      "name": "alertingAIAnalyzeCentralStateHistory",
+      "stage": "Experimental",
+      "description": "Enable AI-analyze central state history."
+    },
+    {
+      "name": "alertingAIFeedback",
+      "stage": "Experimental",
+      "description": "Enable AI-generated feedback from the Grafana UI."
+    },
+    {
+      "name": "alertingAIGenAlertRules",
+      "stage": "Experimental",
+      "description": "Enable AI-generated alert rules."
+    },
+    {
+      "name": "alertingAIGenTemplates",
+      "stage": "Experimental",
+      "description": "Enable AI-generated alerting templates."
+    },
+    {
+      "name": "alertingAIImproveAlertRules",
+      "stage": "Experimental",
+      "description": "Enable AI-improve alert rules labels and annotations."
+    },
+    {
+      "name": "alertingAlertListPanelEnhancements",
+      "stage": "Experimental",
+      "description": "Enables enhanced stat mode for the Alert List panel with thresholds, value mappings, and linking"
+    },
+    {
+      "name": "alertingAlertsActivityBanner",
+      "stage": "Experimental",
+      "description": "Shows a promotional banner for the Alerts Activity feature on the Rule List page"
+    },
+    {
+      "name": "alertingBacktesting",
+      "stage": "Experimental",
+      "description": "Rule backtesting API for alerting"
+    },
+    {
+      "name": "alertingBulkActionsInUI",
+      "stage": "GA",
+      "description": "Enables the alerting bulk actions in the UI"
+    },
+    {
+      "name": "alertingCentralAlertHistory",
+      "stage": "Experimental",
+      "description": "Enables the new central alert history."
+    },
+    {
+      "name": "alertingDisableDMAinUI",
+      "stage": "Experimental",
+      "description": "Disables the DMA feature in the UI"
+    },
+    {
+      "name": "alertingDisableSendAlertsExternal",
+      "stage": "Experimental",
+      "description": "Disables the ability to send alerts to an external Alertmanager datasource."
+    },
+    {
+      "name": "alertingEnrichmentAssistantInvestigations",
+      "stage": "Experimental",
+      "description": "Enable Assistant Investigations enrichment type."
+    },
+    {
+      "name": "alertingEnrichmentPerRule",
+      "stage": "Experimental",
+      "description": "Enable enrichment per rule in the alerting UI."
+    },
+    {
+      "name": "alertingIgnorePendingForNoDataAndError",
+      "stage": "Experimental",
+      "description": "Makes NoData and Error alerts fire immediately, without 'pending' stage"
+    },
+    {
+      "name": "alertingImportAlertmanagerAPI",
+      "stage": "Experimental",
+      "description": "Enables the API to import Alertmanager configuration"
+    },
+    {
+      "name": "alertingImportYAMLUI",
+      "stage": "GA",
+      "description": "Enables a UI feature for importing rules from a Prometheus file to Grafana-managed rules"
+    },
+    {
+      "name": "alertingJiraIntegration",
+      "stage": "Experimental",
+      "description": "Enables the new Jira integration for contact points in cloud alert managers."
+    },
+    {
+      "name": "alertingListViewV2",
+      "stage": "GA",
+      "description": "Enables the new alert list view design"
+    },
+    {
+      "name": "alertingListViewV2PreviewToggle",
+      "stage": "PublicPreview",
+      "description": "Enables the alerting list view v2 preview toggle"
+    },
+    {
+      "name": "alertingMigrationUI",
+      "stage": "GA",
+      "description": "Enables the alerting migration UI, to migrate data source-managed rules to Grafana-managed rules"
+    },
+    {
+      "name": "alertingMigrationWizardUI",
+      "stage": "Experimental",
+      "description": "Enables the migration wizard UI to migrate alert rules and notification resources from external sources to Grafana Alerting"
+    },
+    {
+      "name": "alertingMultiplePolicies",
+      "stage": "Experimental",
+      "description": "Enables the ability to create multiple alerting policies"
+    },
+    {
+      "name": "alertingNavigationV2",
+      "stage": "GA",
+      "description": "Enables the new Alerting navigation structure with improved menu grouping"
+    },
+    {
+      "name": "alertingNotificationHistory",
+      "stage": "Experimental",
+      "description": "Enables the notification history feature"
+    },
+    {
+      "name": "alertingNotificationHistoryDetail",
+      "stage": "Experimental",
+      "description": "Enables the notification history detail page"
+    },
+    {
+      "name": "alertingNotificationHistoryGlobal",
+      "stage": "Experimental",
+      "description": "Enables the notification history global menu item viewer"
+    },
+    {
+      "name": "alertingNotificationHistoryRuleViewer",
+      "stage": "Experimental",
+      "description": "Enables the notification history tab in the rule viewer"
+    },
+    {
+      "name": "alertingNotificationHistoryTriage",
+      "stage": "Experimental",
+      "description": "Enables the notification history timeline in the triage instance details drawer"
+    },
+    {
+      "name": "alertingNotificationsStepMode",
+      "stage": "GA",
+      "description": "Enables simplified step mode in the notifications section"
+    },
+    {
+      "name": "alertingPolicyRoutingSettings",
+      "stage": "Experimental",
+      "description": "Use notification settings policy field instead of labels for named policy routing in alert rules"
+    },
+    {
+      "name": "alertingPrometheusRulesPrimary",
+      "stage": "Experimental",
+      "description": "Uses Prometheus rules as the primary source of truth for ruler-enabled data sources"
+    },
+    {
+      "name": "alertingProvenanceLockWrites",
+      "stage": "Experimental",
+      "description": "Enables a feature to avoid issues with concurrent writes to the alerting provenance table in MySQL"
+    },
+    {
+      "name": "alertingQueryAndExpressionsStepMode",
+      "stage": "GA",
+      "description": "Enables step mode for alerting queries and expressions"
+    },
+    {
+      "name": "alertingQueryOptimization",
+      "stage": "GA",
+      "description": "Optimizes eligible queries in order to reduce load on datasources"
+    },
+    {
+      "name": "alertingRuleGroupSortByFolderFullpath",
+      "stage": "Experimental",
+      "description": "Sort alert rule groups by folder full path in the Prometheus rules API"
+    },
+    {
+      "name": "alertingRulePermanentlyDelete",
+      "stage": "GA",
+      "description": "Enables UI functionality to permanently delete alert rules"
+    },
+    {
+      "name": "alertingRuleRecoverDeleted",
+      "stage": "GA",
+      "description": "Enables the UI functionality to recover and view deleted alert rules"
+    },
+    {
+      "name": "alertingRuleVersionHistoryRestore",
+      "stage": "GA",
+      "description": "Enables the alert rule version history restore feature"
+    },
+    {
+      "name": "alertingSaveStateCompressed",
+      "stage": "PublicPreview",
+      "description": "Enables the compressed protobuf-based alert state storage. Default is enabled."
+    },
+    {
+      "name": "alertingSaveStatePeriodic",
+      "stage": "PrivatePreview",
+      "description": "Writes the state periodically to the database, asynchronous to rule evaluation"
+    },
+    {
+      "name": "alertingSyncDispatchTimer",
+      "stage": "Experimental",
+      "description": "Use synchronized dispatch timer to minimize duplicate notifications across alertmanager HA pods"
+    },
+    {
+      "name": "alertingSyncNotifiersApiMigration",
+      "stage": "Experimental",
+      "description": "Use the new k8s API for fetching integration type schemas"
+    },
+    {
+      "name": "alertingTriage",
+      "stage": "Experimental",
+      "description": "Enables the alerting triage feature"
+    },
+    {
+      "name": "alertingUIOptimizeReducer",
+      "stage": "GA",
+      "description": "Enables removing the reducer from the alerting UI when creating a new alert rule and using instant query"
+    },
+    {
+      "name": "alertingUIUseBackendFilters",
+      "stage": "PublicPreview",
+      "description": "Enables the UI to use certain backend-side filters"
+    },
+    {
+      "name": "alertingUIUseFullyCompatBackendFilters",
+      "stage": "PublicPreview",
+      "description": "Enables the UI to use rules backend-side filters 100% compatible with the frontend filters"
+    },
+    {
+      "name": "alertingUseNewSimplifiedRoutingHashAlgorithm",
+      "stage": "PublicPreview",
+      "description": ""
+    },
+    {
+      "name": "alertmanagerRemotePrimary",
+      "stage": "Experimental",
+      "description": "Enable Grafana to have a remote Alertmanager instance as the primary Alertmanager."
+    },
+    {
+      "name": "alertmanagerRemoteSecondary",
+      "stage": "Experimental",
+      "description": "Enable Grafana to sync configuration and state with a remote Alertmanager."
+    },
+    {
+      "name": "alertmanagerRemoteSecondaryWithRemoteState",
+      "stage": "Experimental",
+      "description": "Starts Grafana in remote secondary mode pulling the latest state from the remote Alertmanager to avoid duplicate notifications."
+    },
+    {
+      "name": "alertRuleRestore",
+      "stage": "PublicPreview",
+      "description": "Enables the alert rule restore feature"
+    },
+    {
+      "name": "analyticsFramework",
+      "stage": "Experimental",
+      "description": "Enables new analytics framework"
+    },
+    {
+      "name": "annotationPermissionUpdate",
+      "stage": "GA",
+      "description": "Change the way annotation permissions work by scoping them to folders and dashboards."
+    },
+    {
+      "name": "annotationsClustering",
+      "stage": "GA",
+      "description": "Enables annotation clustering and switches to refactored annotation code"
+    },
+    {
+      "name": "appPlatformGrpcClientAuth",
+      "stage": "Experimental",
+      "description": "Enables the gRPC client to authenticate with the App Platform by using ID & access tokens"
+    },
+    {
+      "name": "appplugins.handleProxyRequests",
+      "stage": "Experimental",
+      "description": "Register the proxy endpoints"
+    },
+    {
+      "name": "appplugins.registerAPIServer",
+      "stage": "Experimental",
+      "description": "Registers an API server for each backend app plugin exposing a settings endpoint"
+    },
+    {
+      "name": "assistant.frontend.tools.dashboardTemplates",
+      "stage": "Experimental",
+      "description": "Enables the template dashboard assistant"
+    },
+    {
+      "name": "auditLoggingAppPlatform",
+      "stage": "Experimental",
+      "description": "Enable audit logging with Kubernetes under app platform"
+    },
+    {
+      "name": "authZGRPCServer",
+      "stage": "Experimental",
+      "description": "Enables the gRPC server for authorization"
+    },
+    {
+      "name": "awsAsyncQueryCaching",
+      "stage": "GA",
+      "description": "Enable caching for async queries for Redshift and Athena. Requires that the data source has caching and async query support enabled"
+    },
+    {
+      "name": "awsDatasourcesHttpProxy",
+      "stage": "Experimental",
+      "description": "Enables http proxy settings for aws datasources"
+    },
+    {
+      "name": "awsDatasourcesTempCredentials",
+      "stage": "GA",
+      "description": "Support temporary security credentials in AWS plugins for Grafana Cloud customers"
+    },
+    {
+      "name": "azureMonitorDisableLogLimit",
+      "stage": "GA",
+      "description": "Disables the log limit restriction for Azure Monitor when true. The limit is enabled by default."
+    },
+    {
+      "name": "azureMonitorEnableUserAuth",
+      "stage": "GA",
+      "description": "Enables user auth for Azure Monitor datasource only"
+    },
+    {
+      "name": "azureMonitorLogsBuilderEditor",
+      "stage": "PublicPreview",
+      "description": "Enables the logs builder mode for the Azure Monitor data source"
+    },
+    {
+      "name": "azureMonitorPrometheusExemplars",
+      "stage": "GA",
+      "description": "Allows configuration of Azure Monitor as a data source that can provide Prometheus exemplars"
+    },
+    {
+      "name": "azureResourcePickerUpdates",
+      "stage": "GA",
+      "description": "Enables the updated Azure Monitor resource picker"
+    },
+    {
+      "name": "cacheConfigUnifiedStorageMigration",
+      "stage": "Experimental",
+      "description": "Enables cache configs data migration to unified storage"
+    },
+    {
+      "name": "cachingOptimizeSerializationMemoryUsage",
+      "stage": "Experimental",
+      "description": "If enabled, the caching backend gradually serializes query responses for the cache, comparing against the configured `[caching]max_value_mb` value as it goes. This can can help prevent Grafana from running out of memory while attempting to cache very large query responses."
+    },
+    {
+      "name": "canvasPanelNesting",
+      "stage": "Experimental",
+      "description": "Allow elements nesting"
+    },
+    {
+      "name": "canvasPanelPanZoom",
+      "stage": "PublicPreview",
+      "description": "Allow pan and zoom in canvas panel"
+    },
+    {
+      "name": "cdnPluginsLoadFirst",
+      "stage": "Experimental",
+      "description": "Prioritize loading plugins from the CDN before other sources"
+    },
+    {
+      "name": "cdnPluginsUrls",
+      "stage": "Experimental",
+      "description": "Enable loading plugins via declarative URLs"
+    },
+    {
+      "name": "clearPreviousFieldValues",
+      "stage": "GA",
+      "description": "Mitigates React fiber's retention of previous props/state, causing 2x memory use: https://github.com/facebook/react/issues/36176"
+    },
+    {
+      "name": "clickHouseConfigValidation",
+      "stage": "Experimental",
+      "description": "Enables validation on the ClickHouse data source configuration page"
+    },
+    {
+      "name": "cloudRBACRoles",
+      "stage": "PublicPreview",
+      "description": "Enabled grafana cloud specific RBAC roles"
+    },
+    {
+      "name": "cloudWatchBatchQueries",
+      "stage": "GA",
+      "description": "Runs CloudWatch metrics queries as separate batches"
+    },
+    {
+      "name": "cloudWatchCrossAccountQuerying",
+      "stage": "GA",
+      "description": "Enables cross-account querying in CloudWatch datasources"
+    },
+    {
+      "name": "cloudWatchNewLabelParsing",
+      "stage": "GA",
+      "description": "Updates CloudWatch label parsing to be more accurate"
+    },
+    {
+      "name": "cloudWatchRoundUpEndTime",
+      "stage": "GA",
+      "description": "Round up end time for metric queries to the next minute to avoid missing data"
+    },
+    {
+      "name": "colorblindThemes",
+      "stage": "GA",
+      "description": "Enables the new colorblind-friendly themes"
+    },
+    {
+      "name": "compiledBootScript",
+      "stage": "Experimental",
+      "description": "Boots the frontend using the boot.js script built from TS instead of the embedded boot script"
+    },
+    {
+      "name": "configurableSchedulerTick",
+      "stage": "Experimental",
+      "description": "Enable changing the scheduler base interval via configuration option unified_alerting.scheduler_tick_interval"
+    },
+    {
+      "name": "crashDetection",
+      "stage": "Experimental",
+      "description": "Enables browser crash detection reporting to Faro."
+    },
+    {
+      "name": "createAlertRuleFromPanel",
+      "stage": "Experimental",
+      "description": "Enables creating alert rules from a panel using a drawer UI"
+    },
+    {
+      "name": "createdByMeSearchFilter",
+      "stage": "Experimental",
+      "description": "Enables the created by me search filter on the browse dashboards page"
+    },
+    {
+      "name": "dashboardAssistantPopover",
+      "stage": "Experimental",
+      "description": "Enables the assistant prompt popover on panel click in dashboard view mode"
+    },
+    {
+      "name": "dashboardDefaultLayoutSelector",
+      "stage": "GA",
+      "description": "Enables default layout selector in dashboard settings"
+    },
+    {
+      "name": "dashboardFiltersOverview",
+      "stage": "PublicPreview",
+      "description": "Enables the dashboard filters overview pane"
+    },
+    {
+      "name": "dashboardLevelTimeMacros",
+      "stage": "Experimental",
+      "description": "Supports __from and __to macros that always use the dashboard level time range"
+    },
+    {
+      "name": "dashboardLibrary",
+      "stage": "Experimental",
+      "description": "Displays datasource provisioned dashboards in dashboard empty page, only when coming from datasource configuration page"
+    },
+    {
+      "name": "dashboardNewLayouts",
+      "stage": "GA",
+      "description": "Enables new dashboard layouts"
+    },
+    {
+      "name": "dashboardSectionVariables",
+      "stage": "GA",
+      "description": "Enables support for section level variables (rows and tabs)"
+    },
+    {
+      "name": "dashboardTemplates",
+      "stage": "PublicPreview",
+      "description": "Enables a flow to get started with a new dashboard from a template"
+    },
+    {
+      "name": "dashboardTemplatesAssistantButton",
+      "stage": "Experimental",
+      "description": "Enables the Assistant button in the dashboard templates card"
+    },
+    {
+      "name": "dashboardUndoRedo",
+      "stage": "Experimental",
+      "description": "Enables undo/redo in dynamic dashboards"
+    },
+    {
+      "name": "dashboardUnifiedDrilldownControls",
+      "stage": "GA",
+      "description": "Renders ad hoc filters and group by in a single unified control"
+    },
+    {
+      "name": "dashboardValidatorApp",
+      "stage": "Experimental",
+      "description": "Enables dashboard validator app to run compatibility checks between a dashboard and data source"
+    },
+    {
+      "name": "dashgpt",
+      "stage": "GA",
+      "description": "Enable AI powered features in dashboards"
+    },
+    {
+      "name": "dataplaneAggregator",
+      "stage": "Experimental",
+      "description": "Enable grafana dataplane aggregator"
+    },
+    {
+      "name": "datasource.useNewCRUDAPIs",
+      "stage": "Experimental",
+      "description": "Use the new datasource API groups for datasource CRUD requests, backend flag"
+    },
+    {
+      "name": "datasourceAPIServers",
+      "stage": "Experimental",
+      "description": "Expose some datasources as apiservers."
+    },
+    {
+      "name": "datasourceConnectionsTab",
+      "stage": "PrivatePreview",
+      "description": "Shows defined connections for a data source in the plugins detail page"
+    },
+    {
+      "name": "datasourceLegacyIdApi",
+      "stage": "Experimental",
+      "description": "Register legacy datasource apis that use the numeric id"
+    },
+    {
+      "name": "datasources.apiserver.useNewAPIsForDatasourceResources",
+      "stage": "Experimental",
+      "description": "Use the new datasource API groups for datasource resource requests, frontend flag"
+    },
+    {
+      "name": "datasources.chunkedQueryStreaming",
+      "stage": "Experimental",
+      "description": "Allow requesting query results as chunked jsonl rather than single json blob"
+    },
+    {
+      "name": "datasources.config.ui.useNewDatasourceCRUDAPIs",
+      "stage": "Experimental",
+      "description": "Use the new datasource API groups for datasource CRUD requests, frontend flag"
+    },
+    {
+      "name": "datasources.loadOpenAPI",
+      "stage": "Experimental",
+      "description": "Load the openapi spec from spec.{version}.openapi.{yaml|json}"
+    },
+    {
+      "name": "datasources.queryTypes",
+      "stage": "Experimental",
+      "description": "Load Query types from spec.{version}.query.{yaml|json}"
+    },
+    {
+      "name": "datasources.useNewStackInfoToSettingsCache",
+      "stage": "GA",
+      "description": "Use the new cache for datasource.StackInfoToSettings, backend flag"
+    },
+    {
+      "name": "datasourcesApiServerEnableHealthEndpoint",
+      "stage": "Experimental",
+      "description": "Handle datasource health requests to the legacy API routes by querying the new datasource api group endpoints behind the scenes."
+    },
+    {
+      "name": "datasourcesApiServerEnableHealthEndpointFrontend",
+      "stage": "Experimental",
+      "description": "Send Datsource health requests to /apis/ API routes instead of the legacy /api/datasources/uid/{uid}/health route."
+    },
+    {
+      "name": "datasourcesApiServerEnableHealthEndpointRedirect",
+      "stage": "Experimental",
+      "description": "Redirect datasource health requests from the legacy API routes to the new datasource api group endpoints."
+    },
+    {
+      "name": "datasourcesApiServerEnableResourceEndpoint",
+      "stage": "Experimental",
+      "description": "Handle datasource resource requests to the legacy API routes by querying the new datasource api group endpoints behind the scenes."
+    },
+    {
+      "name": "datasourcesApiserverEnableResourceEndpointRedirect",
+      "stage": "Experimental",
+      "description": "redirect datasource resource requests from the legacy API routes to the new datasource api group endpoints."
+    },
+    {
+      "name": "datasourcesRerouteLegacyCRUDAPIs",
+      "stage": "Experimental",
+      "description": "Handle datasource CRUD requests to the legacy API routes by querying the new datasource api group endpoints behind the scenes."
+    },
+    {
+      "name": "disableNumericMetricsSortingInExpressions",
+      "stage": "Experimental",
+      "description": "In server-side expressions, disable the sorting of numeric-kind metrics by their metric name or labels."
+    },
+    {
+      "name": "disableSSEDataplane",
+      "stage": "Experimental",
+      "description": "Disables dataplane specific processing in server side expressions."
+    },
+    {
+      "name": "drilldownRecommendations",
+      "stage": "Experimental",
+      "description": "Enables showing recently used drilldowns or recommendations given by the datasource in the AdHocFilters and GroupBy variables"
+    },
+    {
+      "name": "dsAbstractionApp",
+      "stage": "Experimental",
+      "description": "Registers the dsabstraction app for querying datasources via unified SQL"
+    },
+    {
+      "name": "elasticsearchCrossClusterSearch",
+      "stage": "GA",
+      "description": "Enables cross cluster search in the Elasticsearch data source"
+    },
+    {
+      "name": "elasticsearchESQLQuery",
+      "stage": "Experimental",
+      "description": "Enables the ES|QL query editor in the Elasticsearch data source"
+    },
+    {
+      "name": "elasticsearchImprovedParsing",
+      "stage": "Experimental",
+      "description": "Enables less memory intensive Elasticsearch result parsing"
+    },
+    {
+      "name": "elasticsearchRawDSLQuery",
+      "stage": "Experimental",
+      "description": "Enables the raw DSL query editor in the Elasticsearch data source"
+    },
+    {
+      "name": "enableAppChromeExtensions",
+      "stage": "Experimental",
+      "description": "Set this to true to enable all app chrome extensions registered by plugins."
+    },
+    {
+      "name": "enableColorblindSafePanelOptions",
+      "stage": "Experimental",
+      "description": "Enables new colorblind safe palette and line fill patterns for panels"
+    },
+    {
+      "name": "enableDashboardEmptyExtensions",
+      "stage": "Experimental",
+      "description": "Set this to true to enable all dashboard empty state extensions registered by plugins."
+    },
+    {
+      "name": "enableExtensionsAdminPage",
+      "stage": "Experimental",
+      "description": "Enables the extension admin page regardless of development mode"
+    },
+    {
+      "name": "enableSCIM",
+      "stage": "GA",
+      "description": "Enables SCIM support for user and group management"
+    },
+    {
+      "name": "enableScopesInMetricsExplore",
+      "stage": "Experimental",
+      "description": "Enables the scopes usage in Metrics Explore"
+    },
+    {
+      "name": "excludeRedundantManagedPermissions",
+      "stage": "Experimental",
+      "description": "Exclude redundant individual dashboard/folder permissions from managed roles at query time"
+    },
+    {
+      "name": "experimentRecentlyViewedDashboards",
+      "stage": "Experimental",
+      "description": "A/A test for recently viewed dashboards feature"
+    },
+    {
+      "name": "exploreLogsAggregatedMetrics",
+      "stage": "Experimental",
+      "description": "Used in Logs Drilldown to query by aggregated metrics"
+    },
+    {
+      "name": "exploreLogsShardSplitting",
+      "stage": "Experimental",
+      "description": "Deprecated. Replace with lokiShardSplitting. Used in Logs Drilldown to split queries into multiple queries based on the number of shards"
+    },
+    {
+      "name": "externalServiceAccounts",
+      "stage": "PublicPreview",
+      "description": "Automatic service account and token setup for plugins"
+    },
+    {
+      "name": "faroDatasourceSelector",
+      "stage": "PublicPreview",
+      "description": "Enable the data source selector within the Frontend Apps section of the Frontend Observability"
+    },
+    {
+      "name": "faroSessionReplay",
+      "stage": "Experimental",
+      "description": "Enable Faro session replay for Grafana"
+    },
+    {
+      "name": "favoriteDatasources",
+      "stage": "Experimental",
+      "description": "Enable favorite datasources"
+    },
+    {
+      "name": "featureHighlights",
+      "stage": "GA",
+      "description": "Highlight Grafana Enterprise features"
+    },
+    {
+      "name": "feedbackButton",
+      "stage": "PublicPreview",
+      "description": "Enables the feedback button in the dashboard edit sidebar"
+    },
+    {
+      "name": "fetchRulesInCompactMode",
+      "stage": "Experimental",
+      "description": "Add compact=true when fetching rules"
+    },
+    {
+      "name": "fetchRulesUsingPost",
+      "stage": "Experimental",
+      "description": "Use a POST request to list rules by passing down the namespaces user has access to"
+    },
+    {
+      "name": "flameGraphWithCallTree",
+      "stage": "PublicPreview",
+      "description": "Enables the new Flame Graph UI containing the Call Tree view"
+    },
+    {
+      "name": "foldersAppPlatformAPI",
+      "stage": "Experimental",
+      "description": "Enables use of app platform API for folders"
+    },
+    {
+      "name": "frontendService.reducedBootDataAPI",
+      "stage": "Experimental",
+      "description": "Frontend Service doesn't rely on the /bootdata API, instead loads configuration as needed"
+    },
+    {
+      "name": "frontendService.settingsSourceFilter",
+      "stage": "Experimental",
+      "description": "Adds a label filter for source=us when fetching settings from the settings service in the frontend service"
+    },
+    {
+      "name": "frontendServiceSSOAutoLogin",
+      "stage": "Experimental",
+      "description": "Returns SSO auto-login information in /bootdata to automatically log in users with SSO when they access Grafana"
+    },
+    {
+      "name": "frontendServiceUseSettingsService",
+      "stage": "Experimental",
+      "description": "Enables the frontend service to fetch tenant-specific settings overrides from the settings service"
+    },
+    {
+      "name": "globalDashboardVariables",
+      "stage": "Experimental",
+      "description": "Enables global and folder-scoped dashboard variables via dashboard.grafana.app"
+    },
+    {
+      "name": "grafana.assetSriChecks",
+      "stage": "Experimental",
+      "description": "Enables SRI checks for Grafana JavaScript assets"
+    },
+    {
+      "name": "grafana.correlationsSkipLegacy",
+      "stage": "Experimental",
+      "description": "Route any calls to legacy correlations endpoints to call through to app platform"
+    },
+    {
+      "name": "grafana.dedicatedGrafanaComProxyAPIToken",
+      "stage": "Experimental",
+      "description": "Use a dedicated auth token for Grafana.com proxy requests and plugin installs"
+    },
+    {
+      "name": "grafana.enableScopesFirstMode",
+      "stage": "Experimental",
+      "description": "Enables UI changes for integrations that require a scope to always be selected (for example, hides the scope selector's Remove all button)"
+    },
+    {
+      "name": "grafana.kubernetesAnnotationsClient",
+      "stage": "Experimental",
+      "description": "Enables usage of the new annotations API client"
+    },
+    {
+      "name": "grafana.logLevelInference",
+      "stage": "Deprecated",
+      "description": "Enables log level inference from log line contents when level is not defined as a field or a label"
+    },
+    {
+      "name": "grafana.meticulousAIMode",
+      "stage": "Experimental",
+      "description": ""
+    },
+    {
+      "name": "grafana.meticulousAIRecorder",
+      "stage": "Experimental",
+      "description": "Enable Meticulous AI session recorder for automated UI test generation"
+    },
+    {
+      "name": "grafana.meticulousAIRecorderHighVolume",
+      "stage": "Experimental",
+      "description": "When true, increases the volume of data transferred before abandoning sessions for Meticulous AI session recorder."
+    },
+    {
+      "name": "grafana.newPreferencesPage",
+      "stage": "Experimental",
+      "description": "Whether to use the new SharedPreferences functional component"
+    },
+    {
+      "name": "grafana.orgDashboardTemplates",
+      "stage": "Experimental",
+      "description": "Enables org-defined dashboard templates for enterprise"
+    },
+    {
+      "name": "grafana.panelEditNextFeedbackEvent",
+      "stage": "Experimental",
+      "description": "Replaces the Intercom survey for PanelEditNext feedback with an event that triggers an in-house survey"
+    },
+    {
+      "name": "grafana.scenesFlickeringFix",
+      "stage": "GA",
+      "description": "Prevents flickering in dashboards"
+    },
+    {
+      "name": "grafana.unifiedHomepage",
+      "stage": "Experimental",
+      "description": "Replaces the bundled home dashboard with the unified homepage React page"
+    },
+    {
+      "name": "grafanaAdvisor",
+      "stage": "GA",
+      "description": "Enables Advisor app"
+    },
+    {
+      "name": "grafanaAPIServerEnsureKubectlAccess",
+      "stage": "Experimental",
+      "description": "Start an additional https handler and write kubectl options"
+    },
+    {
+      "name": "grafanaAPIServerWithExperimentalAPIs",
+      "stage": "Experimental",
+      "description": "Register experimental APIs with the k8s API server, including all datasources"
+    },
+    {
+      "name": "grafanaAssistantInProfilesDrilldown",
+      "stage": "GA",
+      "description": "Enables integration with Grafana Assistant in Profiles Drilldown"
+    },
+    {
+      "name": "grafanaconThemes",
+      "stage": "GA",
+      "description": "Enables the temporary themes for GrafanaCon"
+    },
+    {
+      "name": "grafanaManagedRecordingRules",
+      "stage": "Experimental",
+      "description": "Enables Grafana-managed recording rules."
+    },
+    {
+      "name": "graphiteBackendMode",
+      "stage": "PrivatePreview",
+      "description": "Enables the Graphite data source full backend mode"
+    },
+    {
+      "name": "groupAttributeSync",
+      "stage": "PrivatePreview",
+      "description": "Enable the groupsync extension for managing Group Attribute Sync feature"
+    },
+    {
+      "name": "groupByVariable",
+      "stage": "Experimental",
+      "description": "Enable groupBy variable support in scenes dashboards"
+    },
+    {
+      "name": "groupToNestedTableV2",
+      "stage": "PublicPreview",
+      "description": "Enable the new matcher-based UI and config shape for the Group to Nested Tables transformation"
+    },
+    {
+      "name": "heatmapRowsAxisOptions",
+      "stage": "PublicPreview",
+      "description": "Enable Y-axis scale configuration options for pre-bucketed heatmap data (heatmap-rows)"
+    },
+    {
+      "name": "improvedExternalSessionHandling",
+      "stage": "GA",
+      "description": "Enables improved support for OAuth external sessions. After enabling this feature, users might need to re-authenticate themselves."
+    },
+    {
+      "name": "improvedExternalSessionHandlingSAML",
+      "stage": "GA",
+      "description": "Enables improved support for SAML external sessions. Ensure the NameID format is correctly configured in Grafana for SAML Single Logout to function properly."
+    },
+    {
+      "name": "infinityRunQueriesInParallel",
+      "stage": "PrivatePreview",
+      "description": "Enables running Infinity queries in parallel"
+    },
+    {
+      "name": "influxdbBackendMigration",
+      "stage": "GA",
+      "description": "Query InfluxDB InfluxQL without the proxy"
+    },
+    {
+      "name": "influxDBConfigValidation",
+      "stage": "Experimental",
+      "description": "Enables validation on the InfluxDB data source configuration page"
+    },
+    {
+      "name": "influxdbRunQueriesInParallel",
+      "stage": "PrivatePreview",
+      "description": "Enables running InfluxDB Influxql queries in parallel"
+    },
+    {
+      "name": "influxqlStreamingParser",
+      "stage": "Experimental",
+      "description": "Enable streaming JSON parser for InfluxDB datasource InfluxQL query language"
+    },
+    {
+      "name": "inlineLogDetailsNoScrolls",
+      "stage": "Experimental",
+      "description": "Enables an inline version of Log Details that creates no new scrolls"
+    },
+    {
+      "name": "interactiveLearning",
+      "stage": "PublicPreview",
+      "description": "Enables the interactive learning app"
+    },
+    {
+      "name": "jaegerEnableGrpcEndpoint",
+      "stage": "Experimental",
+      "description": "Enable querying trace data through Jaeger's gRPC endpoint (HTTP)"
+    },
+    {
+      "name": "jitterAlertRulesWithinGroups",
+      "stage": "PublicPreview",
+      "description": "Distributes alert rule evaluations more evenly over time, including spreading out rules within the same group. Disables sequential evaluation if enabled."
+    },
+    {
+      "name": "kubernetesAggregator",
+      "stage": "Experimental",
+      "description": "Enable grafana's embedded kube-aggregator"
+    },
+    {
+      "name": "kubernetesAggregatorCapTokenAuth",
+      "stage": "Experimental",
+      "description": "Enable CAP token based authentication in grafana's embedded kube-aggregator"
+    },
+    {
+      "name": "kubernetesAlertingHistorian",
+      "stage": "Experimental",
+      "description": "Adds support for Kubernetes alerting historian APIs"
+    },
+    {
+      "name": "kubernetesAuthzDatasourceResourcePermissions",
+      "stage": "Experimental",
+      "description": "Enables datasource resource permissions via the K8s IAM resource permission APIs"
+    },
+    {
+      "name": "kubernetesAuthzGlobalRolesApi",
+      "stage": "Experimental",
+      "description": "Registers AuthZ Global Roles /apis endpoint"
+    },
+    {
+      "name": "kubernetesAuthzResourcePermissionApis",
+      "stage": "Experimental",
+      "description": "Registers AuthZ resource permission /apis endpoints"
+    },
+    {
+      "name": "kubernetesAuthZResourcePermissionsRedirect",
+      "stage": "Experimental",
+      "description": "Redirects the traffic from the legacy resource permissions endpoints to the new K8s AuthZ endpoints"
+    },
+    {
+      "name": "kubernetesAuthzRoleBindingsApi",
+      "stage": "Experimental",
+      "description": "Registers AuthZ Role Bindings /apis endpoint"
+    },
+    {
+      "name": "kubernetesAuthzRolesAndRoleBindingsRedirect",
+      "stage": "Experimental",
+      "description": "Redirects the traffic from the legacy roles and role bindings endpoints to the new K8s AuthZ endpoints"
+    },
+    {
+      "name": "kubernetesAuthzRolesApi",
+      "stage": "Experimental",
+      "description": "Registers AuthZ Roles /apis endpoint"
+    },
+    {
+      "name": "kubernetesAuthzServiceAccountResourcePermissions",
+      "stage": "Experimental",
+      "description": "Enables service account resource permissions via the K8s IAM resource permission APIs"
+    },
+    {
+      "name": "kubernetesAuthzTeamLBACRuleApi",
+      "stage": "Experimental",
+      "description": "Registers AuthZ TeamLBACRule /apis endpoint"
+    },
+    {
+      "name": "kubernetesAuthzZanzanaSync",
+      "stage": "Experimental",
+      "description": "Enable sync of Zanzana authorization store on AuthZ CRD mutations"
+    },
+    {
+      "name": "kubernetesCorrelations",
+      "stage": "Experimental",
+      "description": "Adds support for Kubernetes correlations"
+    },
+    {
+      "name": "kubernetesExternalGroupMappingsApi",
+      "stage": "Experimental",
+      "description": "Enables external group mapping APIs in the app platform"
+    },
+    {
+      "name": "kubernetesExternalGroupMappingsRedirect",
+      "stage": "Experimental",
+      "description": "Redirects the request of the external group mapping endpoints to the app platform APIs"
+    },
+    {
+      "name": "kubernetesFolderCascadeDelete",
+      "stage": "Experimental",
+      "description": "Enable folder.grafana.app cascade deletion: opt-in non-empty delete via gracePeriodSeconds=0. Until cascade reconciliation exists, deleting a non-empty folder removes only the folder and leaves child dashboards, nested folders, and other contained resources orphaned"
+    },
+    {
+      "name": "kubernetesLibraryPanels",
+      "stage": "Experimental",
+      "description": "Routes library panel requests from /api to the /apis endpoint"
+    },
+    {
+      "name": "kubernetesLogsDrilldown",
+      "stage": "Experimental",
+      "description": "Adds support for Kubernetes logs drilldown"
+    },
+    {
+      "name": "kubernetesQueryCaching",
+      "stage": "Experimental",
+      "description": "Adds support for Kubernetes querycaching"
+    },
+    {
+      "name": "kubernetesServiceAccountsApi",
+      "stage": "Experimental",
+      "description": "Enables service account APIs in the app platform"
+    },
+    {
+      "name": "kubernetesServiceAccountTokensApi",
+      "stage": "Experimental",
+      "description": "Enables service account token APIs in the app platform"
+    },
+    {
+      "name": "kubernetesShortURLs",
+      "stage": "GA",
+      "description": "Enables k8s short URL API and uses it under the hood when handling legacy /api"
+    },
+    {
+      "name": "kubernetesSnapshots",
+      "stage": "Experimental",
+      "description": "Routes snapshot requests from /api to the /apis endpoint"
+    },
+    {
+      "name": "kubernetesSsoSettingsApi",
+      "stage": "Experimental",
+      "description": "Enables SSO settings APIs in the app platform"
+    },
+    {
+      "name": "kubernetesTeamsApi",
+      "stage": "Experimental",
+      "description": "Enables team APIs in the app platform"
+    },
+    {
+      "name": "kubernetesTeamsRedirect",
+      "stage": "Experimental",
+      "description": "Redirects the request of the team endpoints to the app platform APIs"
+    },
+    {
+      "name": "kubernetesTeamSync",
+      "stage": "Experimental",
+      "description": "Use the new APIs for syncing users to teams"
+    },
+    {
+      "name": "kubernetesUsersApi",
+      "stage": "Experimental",
+      "description": "Enables user APIs in the app platform"
+    },
+    {
+      "name": "kubernetesUsersRedirect",
+      "stage": "Experimental",
+      "description": "Redirects the requests of the user service to the app platform APIs"
+    },
+    {
+      "name": "live.keepHAPrefixInCloud",
+      "stage": "Experimental",
+      "description": "keep the prefix (just in case)"
+    },
+    {
+      "name": "live.runAPIServer",
+      "stage": "Experimental",
+      "description": "Registers a live apiserver"
+    },
+    {
+      "name": "logQLScope",
+      "stage": "PrivatePreview",
+      "description": "In-development feature that will allow injection of labels into loki queries."
+    },
+    {
+      "name": "logsTablePanelNG",
+      "stage": "Experimental",
+      "description": "Enables the logs tableNG panel to replace existing tableRT"
+    },
+    {
+      "name": "lokiAlignedQuerySplitting",
+      "stage": "Experimental",
+      "description": "Aligns query splitting chunks with UTC midnight"
+    },
+    {
+      "name": "lokiExperimentalStreaming",
+      "stage": "Experimental",
+      "description": "Support new streaming approach for loki (prototype, needs special loki build)"
+    },
+    {
+      "name": "lokiLabelNamesQueryApi",
+      "stage": "GA",
+      "description": "Defaults to using the Loki `/labels` API instead of `/series`"
+    },
+    {
+      "name": "lokiLogsDataplane",
+      "stage": "Experimental",
+      "description": "Changes logs responses from Loki to be compliant with the dataplane specification."
+    },
+    {
+      "name": "lokiQueryLimitsContext",
+      "stage": "Experimental",
+      "description": "Send X-Loki-Query-Limits-Context header to Loki on first split request"
+    },
+    {
+      "name": "lokiQuerySplitting",
+      "stage": "GA",
+      "description": "Split large interval queries into subqueries with smaller time intervals"
+    },
+    {
+      "name": "lokiRunQueriesInParallel",
+      "stage": "PrivatePreview",
+      "description": "Enables running Loki queries in parallel"
+    },
+    {
+      "name": "lokiShardSplitting",
+      "stage": "Experimental",
+      "description": "Use stream shards to split queries into smaller subqueries"
+    },
+    {
+      "name": "managedPluginsV2",
+      "stage": "Experimental",
+      "description": "Enables managed plugins v2 (expanded rollout, community plugin coverage)"
+    },
+    {
+      "name": "metricsFromProfiles",
+      "stage": "PrivatePreview",
+      "description": "Enables creating metrics from profiles and storing them as recording rules"
+    },
+    {
+      "name": "mlExpressions",
+      "stage": "Experimental",
+      "description": "Enable support for Machine Learning in server-side expressions"
+    },
+    {
+      "name": "multiPropsVariables",
+      "stage": "GA",
+      "description": "Enables support for variables whose values can have multiple properties"
+    },
+    {
+      "name": "multiTenantTempCredentials",
+      "stage": "Experimental",
+      "description": "use multi-tenant path for awsTempCredentials"
+    },
+    {
+      "name": "nestedFramesFieldOverrides",
+      "stage": "PublicPreview",
+      "description": "Enable field overrides for FieldType.nestedFrames fields (like in nested tables)"
+    },
+    {
+      "name": "newClickhouseConfigPageDesign",
+      "stage": "GA",
+      "description": "Enables new design for the Clickhouse data source configuration page"
+    },
+    {
+      "name": "newDashboardWithFiltersAndGroupBy",
+      "stage": "Experimental",
+      "description": "Enables filters and group by variables on all new dashboards. Variables are added only if default data source supports filtering."
+    },
+    {
+      "name": "newInfluxDSConfigPageDesign",
+      "stage": "PrivatePreview",
+      "description": "Enables new design for the InfluxDB data source configuration page"
+    },
+    {
+      "name": "newLogContext",
+      "stage": "Experimental",
+      "description": "New Log Context component"
+    },
+    {
+      "name": "newLogsPanel",
+      "stage": "GA",
+      "description": "Enables the new logs panel"
+    },
+    {
+      "name": "newSavedQueriesExperience",
+      "stage": "PublicPreview",
+      "description": "Enables the new Saved queries (query library) modal experience"
+    },
+    {
+      "name": "newShareReportDrawer",
+      "stage": "PublicPreview",
+      "description": "Enables the report creation drawer in a dashboard"
+    },
+    {
+      "name": "newUnconfiguredPanel",
+      "stage": "GA",
+      "description": "Enables the new unconfigured panel experience"
+    },
+    {
+      "name": "oauthRequireSubClaim",
+      "stage": "Experimental",
+      "description": "Require that sub claims is present in oauth tokens."
+    },
+    {
+      "name": "onlyStoreActionSets",
+      "stage": "GA",
+      "description": "When storing dashboard and folder resource permissions, only store action sets and not the full list of underlying permission"
+    },
+    {
+      "name": "onlyStoreServiceAccountActionSets",
+      "stage": "Experimental",
+      "description": "When storing service account resource permissions, only store action sets and not the full list of underlying permissions"
+    },
+    {
+      "name": "opentsdbBackendMigration",
+      "stage": "GA",
+      "description": "Run queries through the data source backend"
+    },
+    {
+      "name": "otelLogsFormatting",
+      "stage": "Experimental",
+      "description": "Applies OTel formatting templates to displayed logs"
+    },
+    {
+      "name": "panelFilterVariable",
+      "stage": "Experimental",
+      "description": "Enables use of the `systemPanelFilterVar` variable to filter panels in a dashboard"
+    },
+    {
+      "name": "panelGroupBy",
+      "stage": "Experimental",
+      "description": "Enables a group by action per panel"
+    },
+    {
+      "name": "panelStyleActions",
+      "stage": "GA",
+      "description": "Enable style actions (copy/paste) in the panel editor"
+    },
+    {
+      "name": "panelTimeSettings",
+      "stage": "PublicPreview",
+      "description": "Enables a new panel time settings drawer"
+    },
+    {
+      "name": "panelTitleSearch",
+      "stage": "PublicPreview",
+      "description": "Search for dashboards using panel title"
+    },
+    {
+      "name": "pdfTables",
+      "stage": "PublicPreview",
+      "description": "Enables generating table data as PDF in reporting"
+    },
+    {
+      "name": "perPanelFiltering",
+      "stage": "Experimental",
+      "description": "Enables filtering by grouping labels on the panel level through legend or tooltip"
+    },
+    {
+      "name": "perPanelNonApplicableDrilldowns",
+      "stage": "Experimental",
+      "description": "Enables viewing non-applicable drilldowns on a panel level"
+    },
+    {
+      "name": "pieChartGradientColorScheme",
+      "stage": "Experimental",
+      "description": "Enable gradient color scheme option for the pie chart panel"
+    },
+    {
+      "name": "playlistsRBAC",
+      "stage": "GA",
+      "description": "Enables RBAC for playlists"
+    },
+    {
+      "name": "playlistsReconciler",
+      "stage": "Experimental",
+      "description": "Enables experimental reconciler for playlists"
+    },
+    {
+      "name": "pluginContainers",
+      "stage": "PrivatePreview",
+      "description": "Enables running plugins in containers"
+    },
+    {
+      "name": "pluginInsights",
+      "stage": "Experimental",
+      "description": "Show insights for plugins in the plugin details page"
+    },
+    {
+      "name": "pluginInstallAPISync",
+      "stage": "Experimental",
+      "description": "Enable syncing plugin installations to the installs API"
+    },
+    {
+      "name": "pluginProxyPreserveTrailingSlash",
+      "stage": "GA",
+      "description": "Preserve plugin proxy trailing slash."
+    },
+    {
+      "name": "plugins.initDataSourcesAsync",
+      "stage": "Experimental",
+      "description": "Initializes data source instance settings asynchronously from the API instead of synchronously from boot data"
+    },
+    {
+      "name": "plugins.marketplaceLicensing",
+      "stage": "Experimental",
+      "description": "Enables marketplace plugin licensing"
+    },
+    {
+      "name": "plugins.useMTPlugins",
+      "stage": "Experimental",
+      "description": "Enables plugins decoupling from bootdata"
+    },
+    {
+      "name": "plugins.useMTPluginSettings",
+      "stage": "Experimental",
+      "description": "Enables plugins setting from new apis"
+    },
+    {
+      "name": "pluginsAutoUpdate",
+      "stage": "Experimental",
+      "description": "Enables auto-updating of users installed plugins"
+    },
+    {
+      "name": "pluginsSriChecks",
+      "stage": "GA",
+      "description": "Enables SRI checks for plugin assets"
+    },
+    {
+      "name": "pluginStoreServiceLoading",
+      "stage": "Experimental",
+      "description": "Load plugins on store service startup instead of wire provider, and call RegisterFixedRoles after all plugins are loaded"
+    },
+    {
+      "name": "preferences.rerouteLegacyAPIs",
+      "stage": "Experimental",
+      "description": "Use K8s client implementation for legacy preferences API"
+    },
+    {
+      "name": "preferLibraryPanelTitle",
+      "stage": "PrivatePreview",
+      "description": "Prefer library panel title over viz panel title."
+    },
+    {
+      "name": "preserveDashboardStateWhenNavigating",
+      "stage": "Experimental",
+      "description": "Enables possibility to preserve dashboard variables and time range when navigating between dashboards"
+    },
+    {
+      "name": "preventPanelChromeOverflow",
+      "stage": "PublicPreview",
+      "description": "Restrict PanelChrome contents with overflow: hidden;"
+    },
+    {
+      "name": "profilesExemplars",
+      "stage": "PublicPreview",
+      "description": "Enables profiles exemplars support in profiles drilldown"
+    },
+    {
+      "name": "profilesHeatmap",
+      "stage": "Experimental",
+      "description": "Enables heatmap visualization support for Pyroscope profiles"
+    },
+    {
+      "name": "prometheusAzureOverrideAudience",
+      "stage": "Deprecated",
+      "description": "Deprecated. Allow override default AAD audience for Azure Prometheus endpoint. Enabled by default. This feature should no longer be used and will be removed in the future."
+    },
+    {
+      "name": "prometheusSpecialCharsInLabelValues",
+      "stage": "Experimental",
+      "description": "Adds support for quotes and special characters in label values for Prometheus queries"
+    },
+    {
+      "name": "prometheusTypeMigration",
+      "stage": "Deprecated",
+      "description": "Checks for deprecated Prometheus authentication methods (SigV4 and Azure), installs the relevant data source, and migrates the Prometheus data sources"
+    },
+    {
+      "name": "provisioning",
+      "stage": "GA",
+      "description": "Enables Git Sync and as-code provisioning for Grafana resources"
+    },
+    {
+      "name": "provisioning.readmes",
+      "stage": "Experimental",
+      "description": "Render the README.md of a Git Sync provisioned folder inline below its dashboards list"
+    },
+    {
+      "name": "provisioningExport",
+      "stage": "Experimental",
+      "description": "Enable export functionality for provisioned resources"
+    },
+    {
+      "name": "provisioningFolderMetadata",
+      "stage": "GA",
+      "description": "Allow setting folder metadata for provisioned folders"
+    },
+    {
+      "name": "publicDashboardsEmailSharing",
+      "stage": "PublicPreview",
+      "description": "Enables public dashboard sharing to be restricted to only allowed emails"
+    },
+    {
+      "name": "pyroscopeUTF8LabelNames",
+      "stage": "PublicPreview",
+      "description": "Enables support for UTF-8 label names in Pyroscope label selectors"
+    },
+    {
+      "name": "querycaching.enableConnectionsClient",
+      "stage": "Experimental",
+      "description": "Use connections client instead of storage to resolve datasource plugin ID in query caching"
+    },
+    {
+      "name": "querycaching.redirectToK8SApi",
+      "stage": "Experimental",
+      "description": "Redirect caching service cache config reads from legacy storage to K8s API"
+    },
+    {
+      "name": "querycaching.useInQueryService",
+      "stage": "Experimental",
+      "description": "Enables the query service to do query caching"
+    },
+    {
+      "name": "queryEditorNext",
+      "stage": "PrivatePreview",
+      "description": "Enables next generation query editor experience"
+    },
+    {
+      "name": "queryEditorNextMultiSelect",
+      "stage": "Experimental",
+      "description": "Enables multi-select UX (card checkboxes and bulk-actions footer) in the next query editor"
+    },
+    {
+      "name": "queryFetchConfigFromSettingsService",
+      "stage": "Experimental",
+      "description": "Enables the query service to fetch the configuration from the settings service"
+    },
+    {
+      "name": "queryHistory.localOnly",
+      "stage": "Experimental",
+      "description": "Store query history in browser IndexedDB instead of server-side"
+    },
+    {
+      "name": "queryHistory.recentQueriesUI",
+      "stage": "Experimental",
+      "description": "Replace the Query History drawer with a new Recent Queries modal UI"
+    },
+    {
+      "name": "queryLibrary",
+      "stage": "PublicPreview",
+      "description": "Enables Saved queries (query library) feature"
+    },
+    {
+      "name": "queryService",
+      "stage": "Experimental",
+      "description": "Register /apis/query.grafana.app/ -- will eventually replace /api/ds/query"
+    },
+    {
+      "name": "queryServiceFromUI",
+      "stage": "Experimental",
+      "description": "Routes requests to the new query service"
+    },
+    {
+      "name": "queryServiceRewrite",
+      "stage": "Experimental",
+      "description": "Rewrite requests targeting /ds/query to the query service"
+    },
+    {
+      "name": "queryServiceWithConnections",
+      "stage": "Experimental",
+      "description": "Adds datasource connections to the query service"
+    },
+    {
+      "name": "queryWithAssistant",
+      "stage": "Experimental",
+      "description": "Enables the Query with Assistant button in the query editor"
+    },
+    {
+      "name": "react19",
+      "stage": "Experimental",
+      "description": "Whether to use the new React 19 runtime"
+    },
+    {
+      "name": "recentlyViewedDashboards",
+      "stage": "Experimental",
+      "description": "Enables recently viewed dashboards section in the browsing dashboard page"
+    },
+    {
+      "name": "refactorVariablesTimeRange",
+      "stage": "PublicPreview",
+      "description": "Refactor time range variables flow to reduce number of API calls made when query variables are chained"
+    },
+    {
+      "name": "refreshTokenRequired",
+      "stage": "Experimental",
+      "description": "Require that refresh tokens are present in oauth tokens."
+    },
+    {
+      "name": "reloadDashboardsOnParamsChange",
+      "stage": "Experimental",
+      "description": "Enables reload of dashboards on scopes, time range and variables changes"
+    },
+    {
+      "name": "rememberUserOrgForSso",
+      "stage": "GA",
+      "description": "Remember the last viewed organization for users using SSO"
+    },
+    {
+      "name": "renderAuthJWT",
+      "stage": "GA",
+      "description": "Uses JWT-based auth for rendering instead of relying on remote cache"
+    },
+    {
+      "name": "reporting.anyPageReporting",
+      "stage": "Experimental",
+      "description": "Enables reporting for any page in Grafana"
+    },
+    {
+      "name": "reporting.pdfTablesFrontend",
+      "stage": "Experimental",
+      "description": "Enables frontend-rendered table appendix pages in PDF reports"
+    },
+    {
+      "name": "reportingFooterSettings",
+      "stage": "Experimental",
+      "description": "Enables the configurable footer settings for PDF reports"
+    },
+    {
+      "name": "reportingHeaderSettings",
+      "stage": "Experimental",
+      "description": "Enables configuration of PDF report settings"
+    },
+    {
+      "name": "reportingV2Layouts",
+      "stage": "Experimental",
+      "description": "Enable v2 dashboard layout support in reports (auto-grid, tabs, rows)"
+    },
+    {
+      "name": "reportRenderBinding",
+      "stage": "Experimental",
+      "description": "Enables render binding support for report rendering"
+    },
+    {
+      "name": "restrictedPluginApis",
+      "stage": "GA",
+      "description": "Enables sharing a list of APIs with a list of plugins"
+    },
+    {
+      "name": "rolePickerDrawer",
+      "stage": "Experimental",
+      "description": "Enables the new role picker drawer design"
+    },
+    {
+      "name": "rudderstackUpgrade",
+      "stage": "Experimental",
+      "description": "Enables the new version of rudderstack"
+    },
+    {
+      "name": "savedQueriesRBAC",
+      "stage": "PublicPreview",
+      "description": "Enables Saved queries (query library) RBAC permissions"
+    },
+    {
+      "name": "scopeApi",
+      "stage": "Experimental",
+      "description": "In-development feature flag for the scope api using the app platform."
+    },
+    {
+      "name": "scopeFilters",
+      "stage": "Experimental",
+      "description": "Enables the use of scope filters in Grafana"
+    },
+    {
+      "name": "scopeSearchAllLevels",
+      "stage": "Experimental",
+      "description": "Enable scope search to include all levels of the scope node tree"
+    },
+    {
+      "name": "secretsKeeperUI",
+      "stage": "Experimental",
+      "description": "Enable the Secrets Keeper management UI for configuring external secret storage"
+    },
+    {
+      "name": "secretsManagementAppPlatformAwsKeeper",
+      "stage": "Experimental",
+      "description": "Enables the creation of keepers that manage secrets stored on AWS secrets manager"
+    },
+    {
+      "name": "secretsManagementAppPlatformUI",
+      "stage": "PublicPreview",
+      "description": "Enable the secrets management app platform UI"
+    },
+    {
+      "name": "sharingDashboardImage",
+      "stage": "GA",
+      "description": "Enables image sharing functionality for dashboards"
+    },
+    {
+      "name": "smoothingTransformation",
+      "stage": "Experimental",
+      "description": "Enables the ASAP smoothing transformation for time series data"
+    },
+    {
+      "name": "splashScreen",
+      "stage": "PublicPreview",
+      "description": "Enables the splash screen modal for introducing new Grafana features on first session"
+    },
+    {
+      "name": "sqlExpressions",
+      "stage": "GA",
+      "description": "Enables SQL Expressions, which can execute SQL queries against data source results."
+    },
+    {
+      "name": "sqlExpressionsCodeMirror",
+      "stage": "Experimental",
+      "description": "Enables CodeMirror editor for SQL Expressions"
+    },
+    {
+      "name": "sqlExpressionsColumnAutoComplete",
+      "stage": "Experimental",
+      "description": "Enables column autocomplete for SQL Expressions"
+    },
+    {
+      "name": "sseExpressionErrorIsolation",
+      "stage": "Experimental",
+      "description": "Isolate expression build errors to the broken expression's refID instead of failing the entire pipeline"
+    },
+    {
+      "name": "sseGroupByDatasource",
+      "stage": "Experimental",
+      "description": "Send query to the same datasource in a single request when using server side expressions. The `cloudWatchBatchQueries` feature toggle should be enabled if this used with CloudWatch."
+    },
+    {
+      "name": "starsFromAPIServer",
+      "stage": "Experimental",
+      "description": "populate star status from apiserver"
+    },
+    {
+      "name": "stateTimeline.nameAboveBars",
+      "stage": "Experimental",
+      "description": "Enables option to position series names above bars in the state timeline panel"
+    },
+    {
+      "name": "streamingForwardTeamHeadersTempo",
+      "stage": "PrivatePreview",
+      "description": "Enables forwarding team headers from tempo for streaming requests with LBAC rules"
+    },
+    {
+      "name": "suggestedDashboards",
+      "stage": "Experimental",
+      "description": "Displays datasource provisioned and community dashboards in dashboard empty page, only when coming from datasource configuration page"
+    },
+    {
+      "name": "suggestedDashboardsAssistantButton",
+      "stage": "Experimental",
+      "description": "Enables the 'Customize with Assistant' button on suggested dashboard cards"
+    },
+    {
+      "name": "tableSharedCrosshair",
+      "stage": "Experimental",
+      "description": "Enables shared crosshair in table panel"
+    },
+    {
+      "name": "teamFolders",
+      "stage": "PublicPreview",
+      "description": "Enables team folders functionality"
+    },
+    {
+      "name": "teamHttpHeadersFromAppPlatform",
+      "stage": "Experimental",
+      "description": "Use the Kubernetes TeamLBACRule API for team HTTP headers on datasource query requests"
+    },
+    {
+      "name": "teamHttpHeadersTempo",
+      "stage": "Experimental",
+      "description": "Enables LBAC for datasources for Tempo to apply LBAC filtering of traces to the client requests for users in teams"
+    },
+    {
+      "name": "teamLBACApiReadFromAppPlatform",
+      "stage": "Experimental",
+      "description": "Use the Kubernetes TeamLBACRule API for reading team LBAC rules in the legacy API server"
+    },
+    {
+      "name": "teamLBACApiWriteFromAppPlatform",
+      "stage": "Experimental",
+      "description": "Use the Kubernetes TeamLBACRule API for writing team LBAC rules in the legacy API server"
+    },
+    {
+      "name": "tempoAlerting",
+      "stage": "Experimental",
+      "description": "Enables creating alerts from Tempo data source"
+    },
+    {
+      "name": "timeComparison",
+      "stage": "PublicPreview",
+      "description": "Enables time comparison option in supported panels"
+    },
+    {
+      "name": "timeRangeProvider",
+      "stage": "Experimental",
+      "description": "Enables time pickers sync"
+    },
+    {
+      "name": "tracesDrilldownTimeSeeker",
+      "stage": "Experimental",
+      "description": "Enables the time seeker in traces drilldown"
+    },
+    {
+      "name": "transformationsEmptyPlaceholder",
+      "stage": "PublicPreview",
+      "description": "Show transformation quick-start cards in empty transformations state"
+    },
+    {
+      "name": "ttlPluginInstanceManager",
+      "stage": "Experimental",
+      "description": "Enable TTL plugin instance manager"
+    },
+    {
+      "name": "unifiedNavbars",
+      "stage": "GA",
+      "description": "Enables unified navbars"
+    },
+    {
+      "name": "unlimitedLayoutsNesting",
+      "stage": "Experimental",
+      "description": "Enables unlimited dashboard panel grouping"
+    },
+    {
+      "name": "useKubernetesShortURLsAPI",
+      "stage": "GA",
+      "description": "Routes short URL requests from /api to the /apis endpoint in the frontend. Depends on kubernetesShortURLs"
+    },
+    {
+      "name": "useMultipleScopeNodesEndpoint",
+      "stage": "PublicPreview",
+      "description": "Makes the frontend use the 'names' param for fetching multiple scope nodes at once"
+    },
+    {
+      "name": "useNewAPIsForDatasourceCRUD",
+      "stage": "Experimental",
+      "description": "Use the new datasource API groups for datasource CRUD requests"
+    },
+    {
+      "name": "useScopeSingleNodeEndpoint",
+      "stage": "PublicPreview",
+      "description": "Use the single node endpoint for the scope api. This is used to fetch the scope parent node."
+    },
+    {
+      "name": "useScopesNavigationEndpoint",
+      "stage": "Experimental",
+      "description": "Use the scopes navigation endpoint instead of the dashboardbindings endpoint"
+    },
+    {
+      "name": "useSessionStorageForRedirection",
+      "stage": "GA",
+      "description": "Use session storage for handling the redirection after login"
+    },
+    {
+      "name": "vizActionsAuth",
+      "stage": "PublicPreview",
+      "description": "Allows authenticated API calls in actions"
+    },
+    {
+      "name": "vizLegendFacetedFilter",
+      "stage": "GA",
+      "description": "Enable faceted labels filter for series visibility in the legend"
+    },
+    {
+      "name": "vizPresets",
+      "stage": "GA",
+      "description": "Enable visualization presets"
+    },
+    {
+      "name": "yAxisTickControl",
+      "stage": "Experimental",
+      "description": "Enables fine-grained Y-axis tick options beyond the auto-ticks"
+    },
+    {
+      "name": "zanzana",
+      "stage": "Experimental",
+      "description": "Use openFGA as authorization engine."
+    },
+    {
+      "name": "zanzanaMergeUserPermissions",
+      "stage": "Experimental",
+      "description": "Merge Zanzana permissions into legacy RBAC for access-control API endpoints."
+    },
+    {
+      "name": "zanzanaNoLegacyClient",
+      "stage": "Experimental",
+      "description": "Use openFGA as main authorization engine and disable legacy RBAC clietn."
+    }
+  ]
+}
