@@ -1,5 +1,4 @@
 {
-  "generated_at": "2026-06-01T20:58:11Z",
   "source_url": "https://github.com/grafana/grafana/blob/main/pkg/services/featuremgmt/registry.go",
   "total": 372,
   "counts_by_stage": {
