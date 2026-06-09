@@ -2,8 +2,8 @@
   "source_url": "https://github.com/grafana/grafana/blob/main/pkg/services/featuremgmt/registry.go",
   "total": 372,
   "counts_by_stage": {
-    "Experimental": 248,
-    "GA": 67,
+    "Experimental": 249,
+    "GA": 66,
     "PublicPreview": 40,
     "PrivatePreview": 14,
     "Deprecated": 3
@@ -468,11 +468,6 @@
       "name": "cloudWatchRoundUpEndTime",
       "stage": "GA",
       "description": "Round up end time for metric queries to the next minute to avoid missing data"
-    },
-    {
-      "name": "colorblindThemes",
-      "stage": "GA",
-      "description": "Enables the new colorblind-friendly themes"
     },
     {
       "name": "compiledBootScript",
@@ -1458,6 +1453,11 @@
       "name": "provisioning",
       "stage": "GA",
       "description": "Enables Git Sync and as-code provisioning for Grafana resources"
+    },
+    {
+      "name": "provisioning.gitConventions",
+      "stage": "Experimental",
+      "description": "Enable configurable commit message, branch name, and pull request title conventions for Git Sync"
     },
     {
       "name": "provisioning.readmes",

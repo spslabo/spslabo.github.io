@@ -1,3 +1,22 @@
 {
-  "changes": []
+  "changes": [
+    {
+      "date": "2026-06-09",
+      "flag": "provisioning.gitConventions",
+      "change": "new",
+      "sha": "0dfdd30",
+      "commit_url": "https://github.com/grafana/grafana/commit/0dfdd30ca9d366e9ed0487ff6cf5d08796375f15",
+      "detected_at": "2026-06-09T10:05:03Z",
+      "stage": "Experimental"
+    },
+    {
+      "date": "2026-06-08",
+      "flag": "colorblindThemes",
+      "change": "removed",
+      "sha": "25ff40a",
+      "commit_url": "https://github.com/grafana/grafana/commit/25ff40a99da17343e87e4002240b53abf513313e",
+      "detected_at": "2026-06-09T10:05:03Z",
+      "from_stage": "GA"
+    }
+  ]
 }
