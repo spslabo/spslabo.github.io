@@ -1,6 +1,24 @@
 {
   "changes": [
     {
+      "date": "2026-06-10",
+      "flag": "grafanaconThemes",
+      "change": "removed",
+      "sha": "65f5a81",
+      "commit_url": "https://github.com/grafana/grafana/commit/65f5a812dcc53961972bd14ce4d67223953ad499",
+      "detected_at": "2026-06-10T10:35:51Z",
+      "from_stage": "GA"
+    },
+    {
+      "date": "2026-06-09",
+      "flag": "queryEditorNextMultiSelect",
+      "change": "removed",
+      "sha": "3e351e9",
+      "commit_url": "https://github.com/grafana/grafana/commit/3e351e9f9c6e20ec8a2bd82fb919f2f05804583b",
+      "detected_at": "2026-06-10T10:35:51Z",
+      "from_stage": "Experimental"
+    },
+    {
       "date": "2026-06-09",
       "flag": "provisioning.gitConventions",
       "change": "new",

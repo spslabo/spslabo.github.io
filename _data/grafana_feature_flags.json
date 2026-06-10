@@ -1,9 +1,9 @@
 {
   "source_url": "https://github.com/grafana/grafana/blob/main/pkg/services/featuremgmt/registry.go",
-  "total": 372,
+  "total": 370,
   "counts_by_stage": {
-    "Experimental": 249,
-    "GA": 66,
+    "Experimental": 248,
+    "GA": 65,
     "PublicPreview": 40,
     "PrivatePreview": 14,
     "Deprecated": 3
@@ -900,11 +900,6 @@
       "description": "Enables integration with Grafana Assistant in Profiles Drilldown"
     },
     {
-      "name": "grafanaconThemes",
-      "stage": "GA",
-      "description": "Enables the temporary themes for GrafanaCon"
-    },
-    {
       "name": "grafanaManagedRecordingRules",
       "stage": "Experimental",
       "description": "Enables Grafana-managed recording rules."
@@ -1503,11 +1498,6 @@
       "name": "queryEditorNext",
       "stage": "PrivatePreview",
       "description": "Enables next generation query editor experience"
-    },
-    {
-      "name": "queryEditorNextMultiSelect",
-      "stage": "Experimental",
-      "description": "Enables multi-select UX (card checkboxes and bulk-actions footer) in the next query editor"
     },
     {
       "name": "queryFetchConfigFromSettingsService",
