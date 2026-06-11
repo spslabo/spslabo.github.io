@@ -2,8 +2,8 @@
   "source_url": "https://github.com/grafana/grafana/blob/main/pkg/services/featuremgmt/registry.go",
   "total": 370,
   "counts_by_stage": {
-    "Experimental": 248,
-    "GA": 65,
+    "Experimental": 246,
+    "GA": 67,
     "PublicPreview": 40,
     "PrivatePreview": 14,
     "Deprecated": 3
@@ -171,8 +171,8 @@
     },
     {
       "name": "alertingMultiplePolicies",
-      "stage": "Experimental",
-      "description": "Enables the ability to create multiple alerting policies"
+      "stage": "GA",
+      "description": "Enables the ability to create multiple notification policies in alerting"
     },
     {
       "name": "alertingNavigationV2",
@@ -470,11 +470,6 @@
       "description": "Round up end time for metric queries to the next minute to avoid missing data"
     },
     {
-      "name": "compiledBootScript",
-      "stage": "Experimental",
-      "description": "Boots the frontend using the boot.js script built from TS instead of the embedded boot script"
-    },
-    {
       "name": "configurableSchedulerTick",
       "stage": "Experimental",
       "description": "Enable changing the scheduler base interval via configuration option unified_alerting.scheduler_tick_interval"
@@ -523,6 +518,11 @@
       "name": "dashboardNewLayouts",
       "stage": "GA",
       "description": "Enables new dashboard layouts"
+    },
+    {
+      "name": "dashboardNotebookLayout",
+      "stage": "Experimental",
+      "description": "Enable notebook-style layout for dashboards, mixing text cells, code cells, and visualization panels"
     },
     {
       "name": "dashboardSectionVariables",
@@ -1421,7 +1421,7 @@
     },
     {
       "name": "profilesExemplars",
-      "stage": "PublicPreview",
+      "stage": "GA",
       "description": "Enables profiles exemplars support in profiles drilldown"
     },
     {
@@ -1456,7 +1456,7 @@
     },
     {
       "name": "provisioning.readmes",
-      "stage": "Experimental",
+      "stage": "PublicPreview",
       "description": "Render the README.md of a Git Sync provisioned folder inline below its dashboards list"
     },
     {

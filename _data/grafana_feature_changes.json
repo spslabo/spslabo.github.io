@@ -1,6 +1,54 @@
 {
   "changes": [
     {
+      "date": "2026-06-11",
+      "flag": "profilesExemplars",
+      "change": "stage_change",
+      "sha": "0529e8a",
+      "commit_url": "https://github.com/grafana/grafana/commit/0529e8a65e27573f058e22c62c13e1e00a975e49",
+      "detected_at": "2026-06-11T11:00:17Z",
+      "from_stage": "PublicPreview",
+      "to_stage": "GA"
+    },
+    {
+      "date": "2026-06-10",
+      "flag": "provisioning.readmes",
+      "change": "stage_change",
+      "sha": "53bbb99",
+      "commit_url": "https://github.com/grafana/grafana/commit/53bbb9920609fa131270b8aeb710b05087c88295",
+      "detected_at": "2026-06-11T11:00:17Z",
+      "from_stage": "Experimental",
+      "to_stage": "PublicPreview"
+    },
+    {
+      "date": "2026-06-10",
+      "flag": "dashboardNotebookLayout",
+      "change": "new",
+      "sha": "8a06f4a",
+      "commit_url": "https://github.com/grafana/grafana/commit/8a06f4af031ee5c8ad9ecec40c7e887b5f7ab806",
+      "detected_at": "2026-06-11T11:00:17Z",
+      "stage": "Experimental"
+    },
+    {
+      "date": "2026-06-10",
+      "flag": "alertingMultiplePolicies",
+      "change": "stage_change",
+      "sha": "a1b846a",
+      "commit_url": "https://github.com/grafana/grafana/commit/a1b846a5b0dd383a7b609a5a581d577a196e3e6f",
+      "detected_at": "2026-06-11T11:00:17Z",
+      "from_stage": "Experimental",
+      "to_stage": "GA"
+    },
+    {
+      "date": "2026-06-10",
+      "flag": "compiledBootScript",
+      "change": "removed",
+      "sha": "c742619",
+      "commit_url": "https://github.com/grafana/grafana/commit/c742619b2f3d8593322a48d7f3c650b3dede786e",
+      "detected_at": "2026-06-11T11:00:17Z",
+      "from_stage": "Experimental"
+    },
+    {
       "date": "2026-06-10",
       "flag": "grafanaconThemes",
       "change": "removed",
