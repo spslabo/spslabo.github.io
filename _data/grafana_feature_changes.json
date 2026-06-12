@@ -2,6 +2,15 @@
   "changes": [
     {
       "date": "2026-06-11",
+      "flag": "canvasExternalPlugin",
+      "change": "new",
+      "sha": "ef29172",
+      "commit_url": "https://github.com/grafana/grafana/commit/ef2917216ffd343cb3b6eff2fcc24ce521e48d47",
+      "detected_at": "2026-06-12T10:41:59Z",
+      "stage": "Experimental"
+    },
+    {
+      "date": "2026-06-11",
       "flag": "profilesExemplars",
       "change": "stage_change",
       "sha": "0529e8a",

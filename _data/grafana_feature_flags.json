@@ -1,8 +1,8 @@
 {
   "source_url": "https://github.com/grafana/grafana/blob/main/pkg/services/featuremgmt/registry.go",
-  "total": 370,
+  "total": 371,
   "counts_by_stage": {
-    "Experimental": 246,
+    "Experimental": 247,
     "GA": 67,
     "PublicPreview": 40,
     "PrivatePreview": 14,
@@ -413,6 +413,11 @@
       "name": "cachingOptimizeSerializationMemoryUsage",
       "stage": "Experimental",
       "description": "If enabled, the caching backend gradually serializes query responses for the cache, comparing against the configured `[caching]max_value_mb` value as it goes. This can can help prevent Grafana from running out of memory while attempting to cache very large query responses."
+    },
+    {
+      "name": "canvasExternalPlugin",
+      "stage": "Experimental",
+      "description": "Load Canvas panel from an external plugin instead of the bundled core plugin"
     },
     {
       "name": "canvasPanelNesting",
