@@ -1,10 +1,10 @@
 {
   "source_url": "https://github.com/grafana/grafana/blob/main/pkg/services/featuremgmt/registry.go",
-  "total": 372,
+  "total": 370,
   "counts_by_stage": {
-    "Experimental": 248,
-    "GA": 67,
-    "PublicPreview": 40,
+    "Experimental": 246,
+    "GA": 68,
+    "PublicPreview": 39,
     "PrivatePreview": 14,
     "Deprecated": 3
   },
@@ -488,11 +488,6 @@
       "name": "createAlertRuleFromPanel",
       "stage": "Experimental",
       "description": "Enables creating alert rules from a panel using a drawer UI"
-    },
-    {
-      "name": "createdByMeSearchFilter",
-      "stage": "Experimental",
-      "description": "Enables the created by me search filter on the browse dashboards page"
     },
     {
       "name": "dashboardAssistantPopover",
@@ -1251,7 +1246,7 @@
     },
     {
       "name": "newLogContext",
-      "stage": "Experimental",
+      "stage": "GA",
       "description": "New Log Context component"
     },
     {
@@ -1423,11 +1418,6 @@
       "name": "preserveDashboardStateWhenNavigating",
       "stage": "Experimental",
       "description": "Enables possibility to preserve dashboard variables and time range when navigating between dashboards"
-    },
-    {
-      "name": "preventPanelChromeOverflow",
-      "stage": "PublicPreview",
-      "description": "Restrict PanelChrome contents with overflow: hidden;"
     },
     {
       "name": "profilesExemplars",
