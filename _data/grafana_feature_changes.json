@@ -2,6 +2,43 @@
   "changes": [
     {
       "date": "2026-06-17",
+      "flag": "react19",
+      "change": "stage_change",
+      "sha": "f720390",
+      "commit_url": "https://github.com/grafana/grafana/commit/f7203903ec7de5b4b7ffb9519287252fac094efa",
+      "detected_at": "2026-06-18T10:49:43Z",
+      "from_stage": "Experimental",
+      "to_stage": "GA"
+    },
+    {
+      "date": "2026-06-17",
+      "flag": "grafana.viewPanelPane",
+      "change": "new",
+      "sha": "4dd54ca",
+      "commit_url": "https://github.com/grafana/grafana/commit/4dd54ca7568655e91643d010496f5d145389c9c1",
+      "detected_at": "2026-06-18T10:49:43Z",
+      "stage": "Experimental"
+    },
+    {
+      "date": "2026-06-17",
+      "flag": "dashboard.vectorSearch",
+      "change": "new",
+      "sha": "986f20d",
+      "commit_url": "https://github.com/grafana/grafana/commit/986f20d07e103c8b04b102f7c75cd131295d330c",
+      "detected_at": "2026-06-18T10:49:43Z",
+      "stage": "Experimental"
+    },
+    {
+      "date": "2026-06-17",
+      "flag": "cachingOptimizeSerializationMemoryUsage",
+      "change": "removed",
+      "sha": "e29e1d9",
+      "commit_url": "https://github.com/grafana/grafana/commit/e29e1d9b5abfd5f491099adfa9253f04fca974e7",
+      "detected_at": "2026-06-18T10:49:43Z",
+      "from_stage": "Experimental"
+    },
+    {
+      "date": "2026-06-17",
       "flag": "newLogContext",
       "change": "stage_change",
       "sha": "db71f87",

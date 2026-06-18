@@ -1,9 +1,9 @@
 {
   "source_url": "https://github.com/grafana/grafana/blob/main/pkg/services/featuremgmt/registry.go",
-  "total": 370,
+  "total": 371,
   "counts_by_stage": {
     "Experimental": 246,
-    "GA": 68,
+    "GA": 69,
     "PublicPreview": 39,
     "PrivatePreview": 14,
     "Deprecated": 3
@@ -410,11 +410,6 @@
       "description": "Enables cache configs data migration to unified storage"
     },
     {
-      "name": "cachingOptimizeSerializationMemoryUsage",
-      "stage": "Experimental",
-      "description": "If enabled, the caching backend gradually serializes query responses for the cache, comparing against the configured `[caching]max_value_mb` value as it goes. This can can help prevent Grafana from running out of memory while attempting to cache very large query responses."
-    },
-    {
       "name": "canvasExternalPlugin",
       "stage": "Experimental",
       "description": "Load Canvas panel from an external plugin instead of the bundled core plugin"
@@ -488,6 +483,11 @@
       "name": "createAlertRuleFromPanel",
       "stage": "Experimental",
       "description": "Enables creating alert rules from a panel using a drawer UI"
+    },
+    {
+      "name": "dashboard.vectorSearch",
+      "stage": "Experimental",
+      "description": "Exposes the semantic (vector) search endpoint for dashboards under the dashboard API"
     },
     {
       "name": "dashboardAssistantPopover",
@@ -878,6 +878,11 @@
       "name": "grafana.unifiedHomepage",
       "stage": "Experimental",
       "description": "Replaces the bundled home dashboard with the unified homepage React page"
+    },
+    {
+      "name": "grafana.viewPanelPane",
+      "stage": "Experimental",
+      "description": "Enables the sidebar pane with new toggles and options in panel view mode"
     },
     {
       "name": "grafana.visualDesignRefresh",
@@ -1546,7 +1551,7 @@
     },
     {
       "name": "react19",
-      "stage": "Experimental",
+      "stage": "GA",
       "description": "Whether to use the new React 19 runtime"
     },
     {
