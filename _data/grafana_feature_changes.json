@@ -1,6 +1,33 @@
 {
   "changes": [
     {
+      "date": "2026-06-19",
+      "flag": "grafana.newPanelQueryErrorsUI",
+      "change": "new",
+      "sha": "3dd5247",
+      "commit_url": "https://github.com/grafana/grafana/commit/3dd5247fcb08fd2a01be4fb570e7a856387c9a93",
+      "detected_at": "2026-06-19T10:58:34Z",
+      "stage": "Experimental"
+    },
+    {
+      "date": "2026-06-19",
+      "flag": "dashgpt",
+      "change": "removed",
+      "sha": "ca289e8",
+      "commit_url": "https://github.com/grafana/grafana/commit/ca289e8b6decab96c8d85daeee87b0586cdebb0a",
+      "detected_at": "2026-06-19T10:58:34Z",
+      "from_stage": "GA"
+    },
+    {
+      "date": "2026-06-19",
+      "flag": "sharingDashboardImage",
+      "change": "removed",
+      "sha": "bd5ccf0",
+      "commit_url": "https://github.com/grafana/grafana/commit/bd5ccf0ab03f9ff7e59fe71a75b7ee035f3815cf",
+      "detected_at": "2026-06-19T10:58:34Z",
+      "from_stage": "GA"
+    },
+    {
       "date": "2026-06-17",
       "flag": "react19",
       "change": "stage_change",

@@ -1,9 +1,9 @@
 {
   "source_url": "https://github.com/grafana/grafana/blob/main/pkg/services/featuremgmt/registry.go",
-  "total": 371,
+  "total": 370,
   "counts_by_stage": {
-    "Experimental": 246,
-    "GA": 69,
+    "Experimental": 247,
+    "GA": 67,
     "PublicPreview": 39,
     "PrivatePreview": 14,
     "Deprecated": 3
@@ -555,11 +555,6 @@
       "description": "Enables dashboard validator app to run compatibility checks between a dashboard and data source"
     },
     {
-      "name": "dashgpt",
-      "stage": "GA",
-      "description": "Enable AI powered features in dashboards"
-    },
-    {
       "name": "dataplaneAggregator",
       "stage": "Experimental",
       "description": "Enable grafana dataplane aggregator"
@@ -853,6 +848,11 @@
       "name": "grafana.meticulousAIRecorderHighVolume",
       "stage": "Experimental",
       "description": "When true, increases the volume of data transferred before abandoning sessions for Meticulous AI session recorder."
+    },
+    {
+      "name": "grafana.newPanelQueryErrorsUI",
+      "stage": "Experimental",
+      "description": "Enables a new UI for query errors and notices"
     },
     {
       "name": "grafana.newPreferencesPage",
@@ -1663,11 +1663,6 @@
       "name": "secretsManagementAppPlatformUI",
       "stage": "PublicPreview",
       "description": "Enable the secrets management app platform UI"
-    },
-    {
-      "name": "sharingDashboardImage",
-      "stage": "GA",
-      "description": "Enables image sharing functionality for dashboards"
     },
     {
       "name": "smoothingTransformation",
