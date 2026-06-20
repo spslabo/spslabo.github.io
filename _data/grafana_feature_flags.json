@@ -4,8 +4,8 @@
   "counts_by_stage": {
     "Experimental": 247,
     "GA": 67,
-    "PublicPreview": 39,
-    "PrivatePreview": 14,
+    "PublicPreview": 40,
+    "PrivatePreview": 13,
     "Deprecated": 3
   },
   "flags": [
@@ -1300,11 +1300,6 @@
       "description": "Applies OTel formatting templates to displayed logs"
     },
     {
-      "name": "panelFilterVariable",
-      "stage": "Experimental",
-      "description": "Enables use of the `systemPanelFilterVar` variable to filter panels in a dashboard"
-    },
-    {
       "name": "panelGroupBy",
       "stage": "Experimental",
       "description": "Enables a group by action per panel"
@@ -1501,7 +1496,7 @@
     },
     {
       "name": "queryEditorNext",
-      "stage": "PrivatePreview",
+      "stage": "PublicPreview",
       "description": "Enables next generation query editor experience"
     },
     {
@@ -1673,6 +1668,11 @@
       "name": "splashScreen",
       "stage": "PublicPreview",
       "description": "Enables the splash screen modal for introducing new Grafana features on first session"
+    },
+    {
+      "name": "splunk.useLegacyResultsApi",
+      "stage": "Experimental",
+      "description": "Makes the Splunk data source use the deprecated REST API v1 search result endpoints instead of v2"
     },
     {
       "name": "sqlExpressions",
