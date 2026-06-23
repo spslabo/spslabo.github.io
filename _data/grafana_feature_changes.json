@@ -1,6 +1,44 @@
 {
   "changes": [
     {
+      "date": "2026-06-23",
+      "flag": "refactorVariablesTimeRange",
+      "change": "removed",
+      "sha": "27750f0",
+      "commit_url": "https://github.com/grafana/grafana/commit/27750f0e0e3443c39f992bfe22efe3d352ee4357",
+      "detected_at": "2026-06-23T10:06:07Z",
+      "from_stage": "PublicPreview"
+    },
+    {
+      "date": "2026-06-22",
+      "flag": "heatmapRowsAxisOptions",
+      "change": "stage_change",
+      "sha": "6129fd1",
+      "commit_url": "https://github.com/grafana/grafana/commit/6129fd16f339e55c76a9c7839cdbafe02f5e1d77",
+      "detected_at": "2026-06-23T10:06:07Z",
+      "from_stage": "PublicPreview",
+      "to_stage": "GA"
+    },
+    {
+      "date": "2026-06-22",
+      "flag": "multiPropsVariables",
+      "change": "stage_change",
+      "sha": "e52470c",
+      "commit_url": "https://github.com/grafana/grafana/commit/e52470c15a094d4e03d0b45d6af97f0d3d5484b3",
+      "detected_at": "2026-06-23T10:06:07Z",
+      "from_stage": "GA",
+      "to_stage": "Deprecated"
+    },
+    {
+      "date": "2026-06-22",
+      "flag": "table.protoRowParser",
+      "change": "new",
+      "sha": "1dcb8b0",
+      "commit_url": "https://github.com/grafana/grafana/commit/1dcb8b0accdb27a9c853b5f3b54b36f76aaf78ca",
+      "detected_at": "2026-06-23T10:06:07Z",
+      "stage": "Experimental"
+    },
+    {
       "date": "2026-06-19",
       "flag": "queryEditorNext",
       "change": "stage_change",

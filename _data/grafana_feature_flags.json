@@ -2,11 +2,11 @@
   "source_url": "https://github.com/grafana/grafana/blob/main/pkg/services/featuremgmt/registry.go",
   "total": 370,
   "counts_by_stage": {
-    "Experimental": 247,
+    "Experimental": 248,
     "GA": 67,
-    "PublicPreview": 40,
+    "PublicPreview": 38,
     "PrivatePreview": 13,
-    "Deprecated": 3
+    "Deprecated": 4
   },
   "flags": [
     {
@@ -936,7 +936,7 @@
     },
     {
       "name": "heatmapRowsAxisOptions",
-      "stage": "PublicPreview",
+      "stage": "GA",
       "description": "Enable Y-axis scale configuration options for pre-bucketed heatmap data (heatmap-rows)"
     },
     {
@@ -1221,8 +1221,8 @@
     },
     {
       "name": "multiPropsVariables",
-      "stage": "GA",
-      "description": "Enables support for variables whose values can have multiple properties"
+      "stage": "Deprecated",
+      "description": "Deprecated. Enables support for variables whose values can have multiple properties"
     },
     {
       "name": "multiTenantTempCredentials",
@@ -1555,11 +1555,6 @@
       "description": "Enables recently viewed dashboards section in the browsing dashboard page"
     },
     {
-      "name": "refactorVariablesTimeRange",
-      "stage": "PublicPreview",
-      "description": "Refactor time range variables flow to reduce number of API calls made when query variables are chained"
-    },
-    {
       "name": "refreshTokenRequired",
       "stage": "Experimental",
       "description": "Require that refresh tokens are present in oauth tokens."
@@ -1723,6 +1718,11 @@
       "name": "suggestedDashboardsAssistantButton",
       "stage": "Experimental",
       "description": "Enables the 'Customize with Assistant' button on suggested dashboard cards"
+    },
+    {
+      "name": "table.protoRowParser",
+      "stage": "Experimental",
+      "description": "Enables a new internal parser for table panel which doesn't rely on constructing a dynamic function and works in more browser environments."
     },
     {
       "name": "tableSharedCrosshair",
