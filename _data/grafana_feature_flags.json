@@ -1,9 +1,9 @@
 {
   "source_url": "https://github.com/grafana/grafana/blob/main/pkg/services/featuremgmt/registry.go",
-  "total": 370,
+  "total": 369,
   "counts_by_stage": {
-    "Experimental": 248,
-    "GA": 67,
+    "Experimental": 249,
+    "GA": 65,
     "PublicPreview": 38,
     "PrivatePreview": 13,
     "Deprecated": 4
@@ -555,11 +555,6 @@
       "description": "Enables dashboard validator app to run compatibility checks between a dashboard and data source"
     },
     {
-      "name": "dataplaneAggregator",
-      "stage": "Experimental",
-      "description": "Enable grafana dataplane aggregator"
-    },
-    {
       "name": "datasource.useNewCRUDAPIs",
       "stage": "Experimental",
       "description": "Use the new datasource API groups for datasource CRUD requests, backend flag"
@@ -638,6 +633,11 @@
       "name": "datasourcesRerouteLegacyCRUDAPIs",
       "stage": "Experimental",
       "description": "Handle datasource CRUD requests to the legacy API routes by querying the new datasource api group endpoints behind the scenes."
+    },
+    {
+      "name": "dataviz.experimentalColorSchemes",
+      "stage": "Experimental",
+      "description": "Enables additional experimental color schemes for visualizations."
     },
     {
       "name": "disableNumericMetricsSortingInExpressions",
@@ -875,6 +875,11 @@
       "description": "Prevents flickering in dashboards"
     },
     {
+      "name": "grafana.starredFolders",
+      "stage": "Experimental",
+      "description": "Enables starring folders and a virtual Starred folders folder in the dashboards list and folder picker"
+    },
+    {
       "name": "grafana.unifiedHomepage",
       "stage": "Experimental",
       "description": "Replaces the bundled home dashboard with the unified homepage React page"
@@ -1105,11 +1110,6 @@
       "description": "Enables service account token APIs in the app platform"
     },
     {
-      "name": "kubernetesShortURLs",
-      "stage": "GA",
-      "description": "Enables k8s short URL API and uses it under the hood when handling legacy /api"
-    },
-    {
       "name": "kubernetesSnapshots",
       "stage": "Experimental",
       "description": "Routes snapshot requests from /api to the /apis endpoint"
@@ -1288,11 +1288,6 @@
       "name": "onlyStoreServiceAccountActionSets",
       "stage": "Experimental",
       "description": "When storing service account resource permissions, only store action sets and not the full list of underlying permissions"
-    },
-    {
-      "name": "opentsdbBackendMigration",
-      "stage": "GA",
-      "description": "Run queries through the data source backend"
     },
     {
       "name": "otelLogsFormatting",

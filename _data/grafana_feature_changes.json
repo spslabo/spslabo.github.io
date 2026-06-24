@@ -1,6 +1,51 @@
 {
   "changes": [
     {
+      "date": "2026-06-24",
+      "flag": "grafana.starredFolders",
+      "change": "new",
+      "sha": "308ed52",
+      "commit_url": "https://github.com/grafana/grafana/commit/308ed527e651d314a88eb0e232b4e39712e26bcb",
+      "detected_at": "2026-06-24T09:52:41Z",
+      "stage": "Experimental"
+    },
+    {
+      "date": "2026-06-24",
+      "flag": "kubernetesShortURLs",
+      "change": "removed",
+      "sha": "71a6a6d",
+      "commit_url": "https://github.com/grafana/grafana/commit/71a6a6d432aedad7e3904f8b0d0aae81b01c7df5",
+      "detected_at": "2026-06-24T09:52:41Z",
+      "from_stage": "GA"
+    },
+    {
+      "date": "2026-06-23",
+      "flag": "dataviz.experimentalColorSchemes",
+      "change": "new",
+      "sha": "24fbab5",
+      "commit_url": "https://github.com/grafana/grafana/commit/24fbab5376c4f75ee47cce64b5a64677c54f5f01",
+      "detected_at": "2026-06-24T09:52:41Z",
+      "stage": "Experimental"
+    },
+    {
+      "date": "2026-06-23",
+      "flag": "dataplaneAggregator",
+      "change": "removed",
+      "sha": "0bf2d70",
+      "commit_url": "https://github.com/grafana/grafana/commit/0bf2d70d94085198262a36adbeed9f23c85f11b3",
+      "detected_at": "2026-06-24T09:52:41Z",
+      "from_stage": "Experimental"
+    },
+    {
+      "date": "2026-06-23",
+      "flag": "opentsdbBackendMigration",
+      "change": "removed",
+      "sha": "4f7a6cf",
+      "commit_url": "https://github.com/grafana/grafana/commit/4f7a6cf8a4f941d4352e91d96292b88afdd5d914",
+      "detected_at": "2026-06-24T09:52:41Z",
+      "from_stage": "GA"
+    },
+    {
       "date": "2026-06-23",
       "flag": "refactorVariablesTimeRange",
       "change": "removed",
