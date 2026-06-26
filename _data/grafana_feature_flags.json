@@ -1,12 +1,12 @@
 {
   "source_url": "https://github.com/grafana/grafana/blob/main/pkg/services/featuremgmt/registry.go",
-  "total": 369,
+  "total": 366,
   "counts_by_stage": {
     "Experimental": 250,
-    "GA": 64,
+    "GA": 62,
     "PublicPreview": 38,
     "PrivatePreview": 13,
-    "Deprecated": 4
+    "Deprecated": 3
   },
   "flags": [
     {
@@ -820,6 +820,11 @@
       "description": "Enables custom dashboard templates for enterprise"
     },
     {
+      "name": "grafana.customizableMegaMenu",
+      "stage": "Experimental",
+      "description": "Allows users to customise the mega menu by hiding top-level navigation items they are not interested in"
+    },
+    {
       "name": "grafana.dedicatedGrafanaComProxyAPIToken",
       "stage": "Experimental",
       "description": "Use a dedicated auth token for Grafana.com proxy requests and plugin installs"
@@ -863,11 +868,6 @@
       "name": "grafana.newPreferencesPage",
       "stage": "Experimental",
       "description": "Whether to use the new SharedPreferences functional component"
-    },
-    {
-      "name": "grafana.orgDashboardTemplates",
-      "stage": "Experimental",
-      "description": "Enables org-defined dashboard templates for enterprise"
     },
     {
       "name": "grafana.panelEditNextFeedbackEvent",
@@ -1225,11 +1225,6 @@
       "description": "Enable support for Machine Learning in server-side expressions"
     },
     {
-      "name": "multiPropsVariables",
-      "stage": "Deprecated",
-      "description": "Deprecated. Enables support for variables whose values can have multiple properties"
-    },
-    {
       "name": "multiTenantTempCredentials",
       "stage": "Experimental",
       "description": "use multi-tenant path for awsTempCredentials"
@@ -1253,16 +1248,6 @@
       "name": "newInfluxDSConfigPageDesign",
       "stage": "PrivatePreview",
       "description": "Enables new design for the InfluxDB data source configuration page"
-    },
-    {
-      "name": "newLogContext",
-      "stage": "GA",
-      "description": "New Log Context component"
-    },
-    {
-      "name": "newLogsPanel",
-      "stage": "GA",
-      "description": "Enables the new logs panel"
     },
     {
       "name": "newSavedQueriesExperience",

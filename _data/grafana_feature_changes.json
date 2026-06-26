@@ -1,6 +1,51 @@
 {
   "changes": [
     {
+      "date": "2026-06-25",
+      "flag": "grafana.customizableMegaMenu",
+      "change": "new",
+      "sha": "8a3435c",
+      "commit_url": "https://github.com/grafana/grafana/commit/8a3435c121f889842aa671bc6fcd66c1f472c610",
+      "detected_at": "2026-06-26T09:53:36Z",
+      "stage": "Experimental"
+    },
+    {
+      "date": "2026-06-25",
+      "flag": "grafana.orgDashboardTemplates",
+      "change": "removed",
+      "sha": "657e263",
+      "commit_url": "https://github.com/grafana/grafana/commit/657e26345bd999410c84ac308d45eb206b6f8952",
+      "detected_at": "2026-06-26T09:53:36Z",
+      "from_stage": "Experimental"
+    },
+    {
+      "date": "2026-06-25",
+      "flag": "multiPropsVariables",
+      "change": "removed",
+      "sha": "d485fbf",
+      "commit_url": "https://github.com/grafana/grafana/commit/d485fbfa95a7b62ac38386777dcbff8e3860c016",
+      "detected_at": "2026-06-26T09:53:36Z",
+      "from_stage": "Deprecated"
+    },
+    {
+      "date": "2026-06-25",
+      "flag": "newLogContext",
+      "change": "removed",
+      "sha": "6ac12de",
+      "commit_url": "https://github.com/grafana/grafana/commit/6ac12de7fd90ee121343854bbe6ad8ab9fffda62",
+      "detected_at": "2026-06-26T09:53:36Z",
+      "from_stage": "GA"
+    },
+    {
+      "date": "2026-06-25",
+      "flag": "newLogsPanel",
+      "change": "removed",
+      "sha": "6ac12de",
+      "commit_url": "https://github.com/grafana/grafana/commit/6ac12de7fd90ee121343854bbe6ad8ab9fffda62",
+      "detected_at": "2026-06-26T09:53:36Z",
+      "from_stage": "GA"
+    },
+    {
       "date": "2026-06-24",
       "flag": "grafana.customDashboardTemplates",
       "change": "new",
