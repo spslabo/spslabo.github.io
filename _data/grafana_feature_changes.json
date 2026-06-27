@@ -1,6 +1,33 @@
 {
   "changes": [
     {
+      "date": "2026-06-26",
+      "flag": "frontendServiceUseSettingsService",
+      "change": "removed",
+      "sha": "4dbb500",
+      "commit_url": "https://github.com/grafana/grafana/commit/4dbb500de26a1c347e6216d566101ea0a8ab630c",
+      "detected_at": "2026-06-27T09:07:15Z",
+      "from_stage": "Experimental"
+    },
+    {
+      "date": "2026-06-26",
+      "flag": "grafana.meticulousAIRecorder",
+      "change": "removed",
+      "sha": "02f4fec",
+      "commit_url": "https://github.com/grafana/grafana/commit/02f4fec126c5e9ee291506ad4fbd66dbbf284012",
+      "detected_at": "2026-06-27T09:07:15Z",
+      "from_stage": "Experimental"
+    },
+    {
+      "date": "2026-06-26",
+      "flag": "grafana.meticulousAIRecorderHighVolume",
+      "change": "removed",
+      "sha": "02f4fec",
+      "commit_url": "https://github.com/grafana/grafana/commit/02f4fec126c5e9ee291506ad4fbd66dbbf284012",
+      "detected_at": "2026-06-27T09:07:15Z",
+      "from_stage": "Experimental"
+    },
+    {
       "date": "2026-06-25",
       "flag": "grafana.customizableMegaMenu",
       "change": "new",

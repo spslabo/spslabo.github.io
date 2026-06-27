@@ -1,8 +1,8 @@
 {
   "source_url": "https://github.com/grafana/grafana/blob/main/pkg/services/featuremgmt/registry.go",
-  "total": 366,
+  "total": 363,
   "counts_by_stage": {
-    "Experimental": 250,
+    "Experimental": 247,
     "GA": 62,
     "PublicPreview": 38,
     "PrivatePreview": 13,
@@ -795,11 +795,6 @@
       "description": "Returns SSO auto-login information in /bootdata to automatically log in users with SSO when they access Grafana"
     },
     {
-      "name": "frontendServiceUseSettingsService",
-      "stage": "Experimental",
-      "description": "Enables the frontend service to fetch tenant-specific settings overrides from the settings service"
-    },
-    {
       "name": "globalDashboardVariables",
       "stage": "Experimental",
       "description": "Enables global and folder-scoped dashboard variables via dashboard.grafana.app"
@@ -848,16 +843,6 @@
       "name": "grafana.meticulousAIMode",
       "stage": "Experimental",
       "description": ""
-    },
-    {
-      "name": "grafana.meticulousAIRecorder",
-      "stage": "Experimental",
-      "description": "Enable Meticulous AI session recorder for automated UI test generation"
-    },
-    {
-      "name": "grafana.meticulousAIRecorderHighVolume",
-      "stage": "Experimental",
-      "description": "When true, increases the volume of data transferred before abandoning sessions for Meticulous AI session recorder."
     },
     {
       "name": "grafana.newPanelQueryErrorsUI",
