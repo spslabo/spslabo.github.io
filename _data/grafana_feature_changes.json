@@ -1,6 +1,42 @@
 {
   "changes": [
     {
+      "date": "2026-06-29",
+      "flag": "externalSnapshotsK8SAPIPush",
+      "change": "new",
+      "sha": "b31d703",
+      "commit_url": "https://github.com/grafana/grafana/commit/b31d703cb9d27a631ea3b21fb86daa631bcd9114",
+      "detected_at": "2026-06-30T10:03:39Z",
+      "stage": "Experimental"
+    },
+    {
+      "date": "2026-06-29",
+      "flag": "externalSnapshotsSupportLegacyAPI",
+      "change": "new",
+      "sha": "b31d703",
+      "commit_url": "https://github.com/grafana/grafana/commit/b31d703cb9d27a631ea3b21fb86daa631bcd9114",
+      "detected_at": "2026-06-30T10:03:39Z",
+      "stage": "Experimental"
+    },
+    {
+      "date": "2026-06-29",
+      "flag": "table.refactorNested",
+      "change": "new",
+      "sha": "f216983",
+      "commit_url": "https://github.com/grafana/grafana/commit/f2169833a6d44cde0f1e7a022c1dfc2ed5f64c97",
+      "detected_at": "2026-06-30T10:03:39Z",
+      "stage": "Experimental"
+    },
+    {
+      "date": "2026-06-29",
+      "flag": "influxdbBackendMigration",
+      "change": "removed",
+      "sha": "097a72e",
+      "commit_url": "https://github.com/grafana/grafana/commit/097a72e433dc179c60ef91e14b595d31528e0174",
+      "detected_at": "2026-06-30T10:03:39Z",
+      "from_stage": "GA"
+    },
+    {
       "date": "2026-06-26",
       "flag": "frontendServiceUseSettingsService",
       "change": "removed",

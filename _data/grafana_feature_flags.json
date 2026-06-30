@@ -1,9 +1,9 @@
 {
   "source_url": "https://github.com/grafana/grafana/blob/main/pkg/services/featuremgmt/registry.go",
-  "total": 363,
+  "total": 365,
   "counts_by_stage": {
-    "Experimental": 247,
-    "GA": 62,
+    "Experimental": 250,
+    "GA": 61,
     "PublicPreview": 38,
     "PrivatePreview": 13,
     "Deprecated": 3
@@ -735,6 +735,16 @@
       "description": "Automatic service account and token setup for plugins"
     },
     {
+      "name": "externalSnapshotsK8SAPIPush",
+      "stage": "Experimental",
+      "description": "When kubernetesSnapshots is enabled, push/delete external snapshots via the K8s API. When off, the K8s snapshots handler falls back to the legacy /api/snapshots endpoint on the external instance."
+    },
+    {
+      "name": "externalSnapshotsSupportLegacyAPI",
+      "stage": "Experimental",
+      "description": "On a SnapshotPublicMode instance with kubernetesSnapshots enabled, keep accepting anonymous /api/snapshots pushes by routing them through CreateDashboardSnapshotPublic instead of the authenticated k8s create endpoint. Default off: the migrated end state rejects anonymous legacy pushes. Turn on as a temporary backward-compat lever while senders migrate to the authenticated k8s API push, then turn off once migration completes. Not compatible with snapshot dual-write Mode5 (k8s-only storage), where the k8s create API is mandatory."
+    },
+    {
       "name": "faroDatasourceSelector",
       "stage": "PublicPreview",
       "description": "Enable the data source selector within the Frontend Apps section of the Frontend Observability"
@@ -948,11 +958,6 @@
       "name": "infinityRunQueriesInParallel",
       "stage": "PrivatePreview",
       "description": "Enables running Infinity queries in parallel"
-    },
-    {
-      "name": "influxdbBackendMigration",
-      "stage": "GA",
-      "description": "Query InfluxDB InfluxQL without the proxy"
     },
     {
       "name": "influxDBConfigValidation",
@@ -1688,6 +1693,11 @@
       "name": "table.protoRowParser",
       "stage": "Experimental",
       "description": "Enables a new internal parser for table panel which doesn't rely on constructing a dynamic function and works in more browser environments."
+    },
+    {
+      "name": "table.refactorNested",
+      "stage": "Experimental",
+      "description": "Enables the refactored TableNG nested-table implementation"
     },
     {
       "name": "tableSharedCrosshair",
