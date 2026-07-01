@@ -1,6 +1,51 @@
 {
   "changes": [
     {
+      "date": "2026-07-01",
+      "flag": "grafana.secretsReferenceValueUI",
+      "change": "new",
+      "sha": "232327d",
+      "commit_url": "https://github.com/grafana/grafana/commit/232327d55ab81ed9bb428656a3dd652c9c7b7440",
+      "detected_at": "2026-07-01T10:17:25Z",
+      "stage": "Experimental"
+    },
+    {
+      "date": "2026-07-01",
+      "flag": "useScopeSingleNodeEndpoint",
+      "change": "removed",
+      "sha": "61c7bb7",
+      "commit_url": "https://github.com/grafana/grafana/commit/61c7bb7c10fd6a67e269a32721adc798bf67e467",
+      "detected_at": "2026-07-01T10:17:25Z",
+      "from_stage": "PublicPreview"
+    },
+    {
+      "date": "2026-06-30",
+      "flag": "iam.onlyStoreDatasourceActionSets",
+      "change": "new",
+      "sha": "602b70c",
+      "commit_url": "https://github.com/grafana/grafana/commit/602b70c052c18e86c83b459cd9b4447113d720e4",
+      "detected_at": "2026-07-01T10:17:25Z",
+      "stage": "Experimental"
+    },
+    {
+      "date": "2026-06-30",
+      "flag": "auth.tokenRotationGracePeriod",
+      "change": "new",
+      "sha": "e26e232",
+      "commit_url": "https://github.com/grafana/grafana/commit/e26e232e21efd94a485797799d6961ecb9f32115",
+      "detected_at": "2026-07-01T10:17:25Z",
+      "stage": "Experimental"
+    },
+    {
+      "date": "2026-06-30",
+      "flag": "heatmapRowsAxisOptions",
+      "change": "removed",
+      "sha": "6b5b7ed",
+      "commit_url": "https://github.com/grafana/grafana/commit/6b5b7ed7ba854b65511af83bef03a74a634ef02d",
+      "detected_at": "2026-07-01T10:17:25Z",
+      "from_stage": "GA"
+    },
+    {
       "date": "2026-06-29",
       "flag": "externalSnapshotsK8SAPIPush",
       "change": "new",
