@@ -2,6 +2,51 @@
   "changes": [
     {
       "date": "2026-07-01",
+      "flag": "heatmapNegativeLogBuckets",
+      "change": "new",
+      "sha": "471dfda",
+      "commit_url": "https://github.com/grafana/grafana/commit/471dfda8ad95c95e6ac56f64ef6c40ae33c47682",
+      "detected_at": "2026-07-02T09:36:45Z",
+      "stage": "Experimental"
+    },
+    {
+      "date": "2026-07-01",
+      "flag": "grafana.vectorSearchCmdk",
+      "change": "new",
+      "sha": "8fd137a",
+      "commit_url": "https://github.com/grafana/grafana/commit/8fd137aa9d6906d15bd8f2ac7fdfa94c38b7bd5a",
+      "detected_at": "2026-07-02T09:36:45Z",
+      "stage": "Experimental"
+    },
+    {
+      "date": "2026-07-01",
+      "flag": "cujTracking",
+      "change": "new",
+      "sha": "8f07d59",
+      "commit_url": "https://github.com/grafana/grafana/commit/8f07d59726c089ee29877d2e4f31b39363ddbfde",
+      "detected_at": "2026-07-02T09:36:45Z",
+      "stage": "Experimental"
+    },
+    {
+      "date": "2026-07-01",
+      "flag": "frontendServiceSSOAutoLogin",
+      "change": "removed",
+      "sha": "1176b32",
+      "commit_url": "https://github.com/grafana/grafana/commit/1176b322c367d465994cc134af23952b9afa79cc",
+      "detected_at": "2026-07-02T09:36:45Z",
+      "from_stage": "Experimental"
+    },
+    {
+      "date": "2026-07-01",
+      "flag": "useMultipleScopeNodesEndpoint",
+      "change": "removed",
+      "sha": "f100c8a",
+      "commit_url": "https://github.com/grafana/grafana/commit/f100c8a74a1b7eb49790c2a64e252da15f670747",
+      "detected_at": "2026-07-02T09:36:45Z",
+      "from_stage": "PublicPreview"
+    },
+    {
+      "date": "2026-07-01",
       "flag": "grafana.secretsReferenceValueUI",
       "change": "new",
       "sha": "232327d",

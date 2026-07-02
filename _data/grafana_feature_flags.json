@@ -1,10 +1,10 @@
 {
   "source_url": "https://github.com/grafana/grafana/blob/main/pkg/services/featuremgmt/registry.go",
-  "total": 366,
+  "total": 367,
   "counts_by_stage": {
-    "Experimental": 253,
+    "Experimental": 255,
     "GA": 60,
-    "PublicPreview": 37,
+    "PublicPreview": 36,
     "PrivatePreview": 13,
     "Deprecated": 3
   },
@@ -490,6 +490,11 @@
       "description": "Enables creating alert rules from a panel using a drawer UI"
     },
     {
+      "name": "cujTracking",
+      "stage": "Experimental",
+      "description": "Enables Critical User Journey (CUJ) tracking"
+    },
+    {
       "name": "dashboard.vectorSearch",
       "stage": "Experimental",
       "description": "Exposes the semantic (vector) search endpoint for dashboards under the dashboard API"
@@ -805,11 +810,6 @@
       "description": "Adds a label filter for source=us when fetching settings from the settings service in the frontend service"
     },
     {
-      "name": "frontendServiceSSOAutoLogin",
-      "stage": "Experimental",
-      "description": "Returns SSO auto-login information in /bootdata to automatically log in users with SSO when they access Grafana"
-    },
-    {
       "name": "globalDashboardVariables",
       "stage": "Experimental",
       "description": "Enables global and folder-scoped dashboard variables via dashboard.grafana.app"
@@ -895,6 +895,11 @@
       "description": "Replaces the bundled home dashboard with the unified homepage React page"
     },
     {
+      "name": "grafana.vectorSearchCmdk",
+      "stage": "Experimental",
+      "description": "Enables semantic (vector) dashboard search in the command palette"
+    },
+    {
       "name": "grafana.viewPanelPane",
       "stage": "Experimental",
       "description": "Enables the sidebar pane with new toggles and options in panel view mode"
@@ -948,6 +953,11 @@
       "name": "groupToNestedTableV2",
       "stage": "PublicPreview",
       "description": "Enable the new matcher-based UI and config shape for the Group to Nested Tables transformation"
+    },
+    {
+      "name": "heatmapNegativeLogBuckets",
+      "stage": "Experimental",
+      "description": "Render native histogram (exponential and NHCB) zero and negative heatmap buckets on a symlog y-axis"
     },
     {
       "name": "iam.onlyStoreDatasourceActionSets",
@@ -1783,11 +1793,6 @@
       "name": "useKubernetesShortURLsAPI",
       "stage": "GA",
       "description": "Routes short URL requests from /api to the /apis endpoint in the frontend. Depends on kubernetesShortURLs"
-    },
-    {
-      "name": "useMultipleScopeNodesEndpoint",
-      "stage": "PublicPreview",
-      "description": "Makes the frontend use the 'names' param for fetching multiple scope nodes at once"
     },
     {
       "name": "useNewAPIsForDatasourceCRUD",
