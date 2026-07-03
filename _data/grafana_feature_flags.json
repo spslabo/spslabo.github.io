@@ -1,10 +1,10 @@
 {
   "source_url": "https://github.com/grafana/grafana/blob/main/pkg/services/featuremgmt/registry.go",
-  "total": 367,
+  "total": 369,
   "counts_by_stage": {
-    "Experimental": 255,
-    "GA": 60,
-    "PublicPreview": 36,
+    "Experimental": 257,
+    "GA": 61,
+    "PublicPreview": 35,
     "PrivatePreview": 13,
     "Deprecated": 3
   },
@@ -835,6 +835,11 @@
       "description": "Allows users to customise the mega menu by hiding top-level navigation items they are not interested in"
     },
     {
+      "name": "grafana.dashboardSettingsRedesign",
+      "stage": "GA",
+      "description": "Redesigns dashboard settings page into Advanced Settings in a modal window"
+    },
+    {
       "name": "grafana.dedicatedGrafanaComProxyAPIToken",
       "stage": "Experimental",
       "description": "Use a dedicated auth token for Grafana.com proxy requests and plugin installs"
@@ -843,6 +848,11 @@
       "name": "grafana.enableScopesFirstMode",
       "stage": "Experimental",
       "description": "Enables UI changes for integrations that require a scope to always be selected (for example, hides the scope selector's Remove all button)"
+    },
+    {
+      "name": "grafana.growthHomepage",
+      "stage": "Experimental",
+      "description": "Enables PLG-focused growth redesign of the unified homepage"
     },
     {
       "name": "grafana.kubernetesAnnotationsClient",
@@ -1113,6 +1123,11 @@
       "name": "kubernetesQueryCaching",
       "stage": "Experimental",
       "description": "Adds support for Kubernetes querycaching"
+    },
+    {
+      "name": "kubernetesReporting",
+      "stage": "Experimental",
+      "description": "Add support for Kubernetes reporting new APIs"
     },
     {
       "name": "kubernetesServiceAccountsApi",
@@ -1723,11 +1738,6 @@
       "name": "tableSharedCrosshair",
       "stage": "Experimental",
       "description": "Enables shared crosshair in table panel"
-    },
-    {
-      "name": "teamFolders",
-      "stage": "PublicPreview",
-      "description": "Enables team folders functionality"
     },
     {
       "name": "teamHttpHeadersFromAppPlatform",

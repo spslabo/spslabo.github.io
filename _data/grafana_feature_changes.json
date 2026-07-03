@@ -1,6 +1,42 @@
 {
   "changes": [
     {
+      "date": "2026-07-03",
+      "flag": "grafana.dashboardSettingsRedesign",
+      "change": "new",
+      "sha": "c000834",
+      "commit_url": "https://github.com/grafana/grafana/commit/c00083433312adb7b7cfef83f74751e1216f67f8",
+      "detected_at": "2026-07-03T09:37:31Z",
+      "stage": "GA"
+    },
+    {
+      "date": "2026-07-03",
+      "flag": "grafana.growthHomepage",
+      "change": "new",
+      "sha": "c000834",
+      "commit_url": "https://github.com/grafana/grafana/commit/c00083433312adb7b7cfef83f74751e1216f67f8",
+      "detected_at": "2026-07-03T09:37:31Z",
+      "stage": "Experimental"
+    },
+    {
+      "date": "2026-07-02",
+      "flag": "kubernetesReporting",
+      "change": "new",
+      "sha": "cc510d8",
+      "commit_url": "https://github.com/grafana/grafana/commit/cc510d8bc233fa9c86501bdb9896fccab64de766",
+      "detected_at": "2026-07-03T09:37:31Z",
+      "stage": "Experimental"
+    },
+    {
+      "date": "2026-07-02",
+      "flag": "teamFolders",
+      "change": "removed",
+      "sha": "d1c52b2",
+      "commit_url": "https://github.com/grafana/grafana/commit/d1c52b2ee2f40cdce605b132626e85df4fc4f225",
+      "detected_at": "2026-07-03T09:37:31Z",
+      "from_stage": "PublicPreview"
+    },
+    {
       "date": "2026-07-01",
       "flag": "heatmapNegativeLogBuckets",
       "change": "new",
