@@ -2,6 +2,24 @@
   "changes": [
     {
       "date": "2026-07-03",
+      "flag": "grafana.useDefaultScopesEndpoint",
+      "change": "new",
+      "sha": "ed9dd41",
+      "commit_url": "https://github.com/grafana/grafana/commit/ed9dd41c564b0177e6d08841fc4855b6488597c0",
+      "detected_at": "2026-07-04T09:02:24Z",
+      "stage": "Experimental"
+    },
+    {
+      "date": "2026-07-03",
+      "flag": "grafana.onDemandDiagnostics",
+      "change": "new",
+      "sha": "c74d55f",
+      "commit_url": "https://github.com/grafana/grafana/commit/c74d55f533ec51c3bd43b63095b5c71d9b348e99",
+      "detected_at": "2026-07-04T09:02:24Z",
+      "stage": "Experimental"
+    },
+    {
+      "date": "2026-07-03",
       "flag": "grafana.dashboardSettingsRedesign",
       "change": "new",
       "sha": "c000834",

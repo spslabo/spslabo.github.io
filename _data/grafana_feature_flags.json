@@ -1,8 +1,8 @@
 {
   "source_url": "https://github.com/grafana/grafana/blob/main/pkg/services/featuremgmt/registry.go",
-  "total": 369,
+  "total": 371,
   "counts_by_stage": {
-    "Experimental": 257,
+    "Experimental": 259,
     "GA": 61,
     "PublicPreview": 35,
     "PrivatePreview": 13,
@@ -880,6 +880,11 @@
       "description": "Whether to use the new SharedPreferences functional component"
     },
     {
+      "name": "grafana.onDemandDiagnostics",
+      "stage": "Experimental",
+      "description": "Adds a 'Download diagnostics' action that bundles diagnostic artifacts such as HTTP traffic (HAR), server log, dashboard and panel JSONs, and more"
+    },
+    {
       "name": "grafana.panelEditNextFeedbackEvent",
       "stage": "Experimental",
       "description": "Enables firing an event for PanelEditNext feedback that triggers an in-house survey"
@@ -903,6 +908,11 @@
       "name": "grafana.unifiedHomepage",
       "stage": "Experimental",
       "description": "Replaces the bundled home dashboard with the unified homepage React page"
+    },
+    {
+      "name": "grafana.useDefaultScopesEndpoint",
+      "stage": "Experimental",
+      "description": "Use the find default scope endpoint to seed the initial scope selection when none is set and grafana.enableScopesFirstMode is enabled."
     },
     {
       "name": "grafana.vectorSearchCmdk",
