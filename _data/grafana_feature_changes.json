@@ -1,6 +1,51 @@
 {
   "changes": [
     {
+      "date": "2026-07-07",
+      "flag": "adHocFilterDefaultValues",
+      "change": "removed",
+      "sha": "5c5ea3b",
+      "commit_url": "https://github.com/grafana/grafana/commit/5c5ea3b63eabd9d8e366dade0ad934f0a649f52c",
+      "detected_at": "2026-07-07T10:02:35Z",
+      "from_stage": "Experimental"
+    },
+    {
+      "date": "2026-07-07",
+      "flag": "dashboardFiltersOverview",
+      "change": "removed",
+      "sha": "5c5ea3b",
+      "commit_url": "https://github.com/grafana/grafana/commit/5c5ea3b63eabd9d8e366dade0ad934f0a649f52c",
+      "detected_at": "2026-07-07T10:02:35Z",
+      "from_stage": "PublicPreview"
+    },
+    {
+      "date": "2026-07-07",
+      "flag": "drilldownRecommendations",
+      "change": "removed",
+      "sha": "5c5ea3b",
+      "commit_url": "https://github.com/grafana/grafana/commit/5c5ea3b63eabd9d8e366dade0ad934f0a649f52c",
+      "detected_at": "2026-07-07T10:02:35Z",
+      "from_stage": "Experimental"
+    },
+    {
+      "date": "2026-07-07",
+      "flag": "panelGroupBy",
+      "change": "removed",
+      "sha": "5c5ea3b",
+      "commit_url": "https://github.com/grafana/grafana/commit/5c5ea3b63eabd9d8e366dade0ad934f0a649f52c",
+      "detected_at": "2026-07-07T10:02:35Z",
+      "from_stage": "Experimental"
+    },
+    {
+      "date": "2026-07-07",
+      "flag": "perPanelFiltering",
+      "change": "removed",
+      "sha": "5c5ea3b",
+      "commit_url": "https://github.com/grafana/grafana/commit/5c5ea3b63eabd9d8e366dade0ad934f0a649f52c",
+      "detected_at": "2026-07-07T10:02:35Z",
+      "from_stage": "Experimental"
+    },
+    {
       "date": "2026-07-03",
       "flag": "grafana.useDefaultScopesEndpoint",
       "change": "new",

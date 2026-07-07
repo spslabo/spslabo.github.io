@@ -1,19 +1,14 @@
 {
   "source_url": "https://github.com/grafana/grafana/blob/main/pkg/services/featuremgmt/registry.go",
-  "total": 371,
+  "total": 366,
   "counts_by_stage": {
-    "Experimental": 259,
+    "Experimental": 255,
     "GA": 61,
-    "PublicPreview": 35,
+    "PublicPreview": 34,
     "PrivatePreview": 13,
     "Deprecated": 3
   },
   "flags": [
-    {
-      "name": "adHocFilterDefaultValues",
-      "stage": "Experimental",
-      "description": "Enables configuring default origin filters for ad-hoc filter variables"
-    },
     {
       "name": "advisorDatasourceIntegration",
       "stage": "Experimental",
@@ -510,11 +505,6 @@
       "description": "Enables default layout selector in dashboard settings"
     },
     {
-      "name": "dashboardFiltersOverview",
-      "stage": "PublicPreview",
-      "description": "Enables the dashboard filters overview pane"
-    },
-    {
       "name": "dashboardLevelTimeMacros",
       "stage": "Experimental",
       "description": "Supports __from and __to macros that always use the dashboard level time range"
@@ -658,11 +648,6 @@
       "name": "disableSSEDataplane",
       "stage": "Experimental",
       "description": "Disables dataplane specific processing in server side expressions."
-    },
-    {
-      "name": "drilldownRecommendations",
-      "stage": "Experimental",
-      "description": "Enables showing recently used drilldowns or recommendations given by the datasource in the AdHocFilters and GroupBy variables"
     },
     {
       "name": "dsAbstractionApp",
@@ -1315,11 +1300,6 @@
       "description": "Applies OTel formatting templates to displayed logs"
     },
     {
-      "name": "panelGroupBy",
-      "stage": "Experimental",
-      "description": "Enables a group by action per panel"
-    },
-    {
       "name": "panelStyleActions",
       "stage": "GA",
       "description": "Enable style actions (copy/paste) in the panel editor"
@@ -1338,11 +1318,6 @@
       "name": "pdfTables",
       "stage": "PublicPreview",
       "description": "Enables generating table data as PDF in reporting"
-    },
-    {
-      "name": "perPanelFiltering",
-      "stage": "Experimental",
-      "description": "Enables filtering by grouping labels on the panel level through legend or tooltip"
     },
     {
       "name": "perPanelNonApplicableDrilldowns",
