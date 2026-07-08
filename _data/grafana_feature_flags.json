@@ -1,10 +1,10 @@
 {
   "source_url": "https://github.com/grafana/grafana/blob/main/pkg/services/featuremgmt/registry.go",
-  "total": 366,
+  "total": 363,
   "counts_by_stage": {
     "Experimental": 255,
-    "GA": 61,
-    "PublicPreview": 34,
+    "GA": 59,
+    "PublicPreview": 33,
     "PrivatePreview": 13,
     "Deprecated": 3
   },
@@ -323,11 +323,6 @@
       "name": "annotationPermissionUpdate",
       "stage": "GA",
       "description": "Change the way annotation permissions work by scoping them to folders and dashboards."
-    },
-    {
-      "name": "annotationsClustering",
-      "stage": "GA",
-      "description": "Enables annotation clustering and switches to refactored annotation code"
     },
     {
       "name": "appPlatformGrpcClientAuth",
@@ -1250,11 +1245,6 @@
       "description": "use multi-tenant path for awsTempCredentials"
     },
     {
-      "name": "nestedFramesFieldOverrides",
-      "stage": "PublicPreview",
-      "description": "Enable field overrides for FieldType.nestedFrames fields (like in nested tables)"
-    },
-    {
       "name": "newClickhouseConfigPageDesign",
       "stage": "GA",
       "description": "Enables new design for the Clickhouse data source configuration page"
@@ -1808,11 +1798,6 @@
       "name": "vizActionsAuth",
       "stage": "PublicPreview",
       "description": "Allows authenticated API calls in actions"
-    },
-    {
-      "name": "vizLegendFacetedFilter",
-      "stage": "GA",
-      "description": "Enable faceted labels filter for series visibility in the legend"
     },
     {
       "name": "vizPresets",

@@ -2,6 +2,33 @@
   "changes": [
     {
       "date": "2026-07-07",
+      "flag": "annotationsClustering",
+      "change": "removed",
+      "sha": "6a163c3",
+      "commit_url": "https://github.com/grafana/grafana/commit/6a163c357fc9a5fe092d4e5a251db9f2e9ed61ac",
+      "detected_at": "2026-07-08T08:46:33Z",
+      "from_stage": "GA"
+    },
+    {
+      "date": "2026-07-07",
+      "flag": "nestedFramesFieldOverrides",
+      "change": "removed",
+      "sha": "370b7ed",
+      "commit_url": "https://github.com/grafana/grafana/commit/370b7eda0a2d4f62a8ca75349e2db96ca539e987",
+      "detected_at": "2026-07-08T08:46:33Z",
+      "from_stage": "PublicPreview"
+    },
+    {
+      "date": "2026-07-07",
+      "flag": "vizLegendFacetedFilter",
+      "change": "removed",
+      "sha": "3a3267a",
+      "commit_url": "https://github.com/grafana/grafana/commit/3a3267a445e61efd70a637204cfadf65bbecfe50",
+      "detected_at": "2026-07-08T08:46:33Z",
+      "from_stage": "GA"
+    },
+    {
+      "date": "2026-07-07",
       "flag": "adHocFilterDefaultValues",
       "change": "removed",
       "sha": "5c5ea3b",
