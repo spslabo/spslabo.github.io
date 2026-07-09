@@ -1,10 +1,10 @@
 {
   "source_url": "https://github.com/grafana/grafana/blob/main/pkg/services/featuremgmt/registry.go",
-  "total": 363,
+  "total": 360,
   "counts_by_stage": {
     "Experimental": 255,
-    "GA": 59,
-    "PublicPreview": 33,
+    "GA": 57,
+    "PublicPreview": 32,
     "PrivatePreview": 13,
     "Deprecated": 3
   },
@@ -13,11 +13,6 @@
       "name": "advisorDatasourceIntegration",
       "stage": "Experimental",
       "description": "Enables the advisor report integration with datasource pages"
-    },
-    {
-      "name": "aiGeneratedDashboardChanges",
-      "stage": "Experimental",
-      "description": "Enable AI powered features for dashboards to auto-summary changes when saving"
     },
     {
       "name": "alertEnrichment",
@@ -430,11 +425,6 @@
       "description": "Enable loading plugins via declarative URLs"
     },
     {
-      "name": "clearPreviousFieldValues",
-      "stage": "GA",
-      "description": "Mitigates React fiber's retention of previous props/state, causing 2x memory use: https://github.com/facebook/react/issues/36176"
-    },
-    {
       "name": "clickHouseConfigValidation",
       "stage": "Experimental",
       "description": "Enables validation on the ClickHouse data source configuration page"
@@ -830,6 +820,11 @@
       "description": "Enables UI changes for integrations that require a scope to always be selected (for example, hides the scope selector's Remove all button)"
     },
     {
+      "name": "grafana.frontendLegacyAPIHandling",
+      "stage": "Experimental",
+      "description": "Controls whether the frontend blocks calls to legacy /api/ endpoints"
+    },
+    {
       "name": "grafana.growthHomepage",
       "stage": "Experimental",
       "description": "Enables PLG-focused growth redesign of the unified homepage"
@@ -948,11 +943,6 @@
       "name": "groupByVariable",
       "stage": "Experimental",
       "description": "Enable groupBy variable support in scenes dashboards"
-    },
-    {
-      "name": "groupToNestedTableV2",
-      "stage": "PublicPreview",
-      "description": "Enable the new matcher-based UI and config shape for the Group to Nested Tables transformation"
     },
     {
       "name": "heatmapNegativeLogBuckets",
@@ -1288,11 +1278,6 @@
       "name": "otelLogsFormatting",
       "stage": "Experimental",
       "description": "Applies OTel formatting templates to displayed logs"
-    },
-    {
-      "name": "panelStyleActions",
-      "stage": "GA",
-      "description": "Enable style actions (copy/paste) in the panel editor"
     },
     {
       "name": "panelTimeSettings",

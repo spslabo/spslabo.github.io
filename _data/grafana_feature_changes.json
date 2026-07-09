@@ -1,6 +1,51 @@
 {
   "changes": [
     {
+      "date": "2026-07-09",
+      "flag": "aiGeneratedDashboardChanges",
+      "change": "removed",
+      "sha": "30d6a64",
+      "commit_url": "https://github.com/grafana/grafana/commit/30d6a64a2f0266c3c99b43f72e44301d4e0130c3",
+      "detected_at": "2026-07-09T10:04:38Z",
+      "from_stage": "Experimental"
+    },
+    {
+      "date": "2026-07-08",
+      "flag": "grafana.frontendLegacyAPIHandling",
+      "change": "new",
+      "sha": "2fc743f",
+      "commit_url": "https://github.com/grafana/grafana/commit/2fc743f1627d022849e0ad4809bb5c44532481ce",
+      "detected_at": "2026-07-09T10:04:38Z",
+      "stage": "Experimental"
+    },
+    {
+      "date": "2026-07-08",
+      "flag": "clearPreviousFieldValues",
+      "change": "removed",
+      "sha": "d5e32aa",
+      "commit_url": "https://github.com/grafana/grafana/commit/d5e32aa99a93ac70c0e837f5fc4973a2bbb4c417",
+      "detected_at": "2026-07-09T10:04:38Z",
+      "from_stage": "GA"
+    },
+    {
+      "date": "2026-07-08",
+      "flag": "groupToNestedTableV2",
+      "change": "removed",
+      "sha": "743b203",
+      "commit_url": "https://github.com/grafana/grafana/commit/743b203baac2fa32c9a70ce568ebf5f3590d78d7",
+      "detected_at": "2026-07-09T10:04:38Z",
+      "from_stage": "PublicPreview"
+    },
+    {
+      "date": "2026-07-08",
+      "flag": "panelStyleActions",
+      "change": "removed",
+      "sha": "066978e",
+      "commit_url": "https://github.com/grafana/grafana/commit/066978e0f2813737625cd12afac0d2fe500c8ce0",
+      "detected_at": "2026-07-09T10:04:38Z",
+      "from_stage": "GA"
+    },
+    {
       "date": "2026-07-07",
       "flag": "annotationsClustering",
       "change": "removed",
