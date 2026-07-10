@@ -1,6 +1,51 @@
 {
   "changes": [
     {
+      "date": "2026-07-10",
+      "flag": "provisioning.userAttribution",
+      "change": "new",
+      "sha": "c06a1a0",
+      "commit_url": "https://github.com/grafana/grafana/commit/c06a1a017a5d844904513166700d3ff719b7e0ed",
+      "detected_at": "2026-07-10T09:55:05Z",
+      "stage": "PublicPreview"
+    },
+    {
+      "date": "2026-07-10",
+      "flag": "rudderstackUpgrade",
+      "change": "removed",
+      "sha": "202c24a",
+      "commit_url": "https://github.com/grafana/grafana/commit/202c24aa176d524f37a7073b3ffc36015d88eb4d",
+      "detected_at": "2026-07-10T09:55:05Z",
+      "from_stage": "Experimental"
+    },
+    {
+      "date": "2026-07-09",
+      "flag": "dashboard.notebooks",
+      "change": "new",
+      "sha": "aba9d54",
+      "commit_url": "https://github.com/grafana/grafana/commit/aba9d540bcdafd86dfb8e945b8084e5b37620164",
+      "detected_at": "2026-07-10T09:55:05Z",
+      "stage": "Experimental"
+    },
+    {
+      "date": "2026-07-09",
+      "flag": "dashboardNotebookLayout",
+      "change": "removed",
+      "sha": "aba9d54",
+      "commit_url": "https://github.com/grafana/grafana/commit/aba9d540bcdafd86dfb8e945b8084e5b37620164",
+      "detected_at": "2026-07-10T09:55:05Z",
+      "from_stage": "Experimental"
+    },
+    {
+      "date": "2026-07-09",
+      "flag": "unlimitedLayoutsNesting",
+      "change": "removed",
+      "sha": "2f621b4",
+      "commit_url": "https://github.com/grafana/grafana/commit/2f621b481a45cc70fa0616c74a577f5cc3404d43",
+      "detected_at": "2026-07-10T09:55:05Z",
+      "from_stage": "Experimental"
+    },
+    {
       "date": "2026-07-09",
       "flag": "aiGeneratedDashboardChanges",
       "change": "removed",

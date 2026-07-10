@@ -1,10 +1,10 @@
 {
   "source_url": "https://github.com/grafana/grafana/blob/main/pkg/services/featuremgmt/registry.go",
-  "total": 360,
+  "total": 359,
   "counts_by_stage": {
-    "Experimental": 255,
+    "Experimental": 253,
     "GA": 57,
-    "PublicPreview": 32,
+    "PublicPreview": 33,
     "PrivatePreview": 13,
     "Deprecated": 3
   },
@@ -475,6 +475,11 @@
       "description": "Enables Critical User Journey (CUJ) tracking"
     },
     {
+      "name": "dashboard.notebooks",
+      "stage": "Experimental",
+      "description": "Enable notebooks, a resource in the dashboard API group for mixing text cells, code cells, and visualization panels"
+    },
+    {
       "name": "dashboard.vectorSearch",
       "stage": "Experimental",
       "description": "Exposes the semantic (vector) search endpoint for dashboards under the dashboard API"
@@ -503,11 +508,6 @@
       "name": "dashboardNewLayouts",
       "stage": "GA",
       "description": "Enables new dashboard layouts"
-    },
-    {
-      "name": "dashboardNotebookLayout",
-      "stage": "Experimental",
-      "description": "Enable notebook-style layout for dashboards, mixing text cells, code cells, and visualization panels"
     },
     {
       "name": "dashboardSectionVariables",
@@ -1425,6 +1425,11 @@
       "description": "Render the README.md of a Git Sync provisioned folder inline below its dashboards list"
     },
     {
+      "name": "provisioning.userAttribution",
+      "stage": "PublicPreview",
+      "description": "Author Git Sync commits as the acting Grafana user"
+    },
+    {
       "name": "provisioningExport",
       "stage": "Experimental",
       "description": "Enable export functionality for provisioned resources"
@@ -1578,11 +1583,6 @@
       "name": "rolePickerDrawer",
       "stage": "Experimental",
       "description": "Enables the new role picker drawer design"
-    },
-    {
-      "name": "rudderstackUpgrade",
-      "stage": "Experimental",
-      "description": "Enables the new version of rudderstack"
     },
     {
       "name": "savedQueriesRBAC",
@@ -1753,11 +1753,6 @@
       "name": "unifiedNavbars",
       "stage": "GA",
       "description": "Enables unified navbars"
-    },
-    {
-      "name": "unlimitedLayoutsNesting",
-      "stage": "Experimental",
-      "description": "Enables unlimited dashboard panel grouping"
     },
     {
       "name": "useKubernetesShortURLsAPI",
