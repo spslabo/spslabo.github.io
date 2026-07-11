@@ -2,6 +2,33 @@
   "changes": [
     {
       "date": "2026-07-10",
+      "flag": "elasticsearchESQLQuery",
+      "change": "removed",
+      "sha": "cd5221e",
+      "commit_url": "https://github.com/grafana/grafana/commit/cd5221ea7cee1d08cbc2e4d39c119bc8cf9c951b",
+      "detected_at": "2026-07-11T08:15:58Z",
+      "from_stage": "Experimental"
+    },
+    {
+      "date": "2026-07-10",
+      "flag": "elasticsearchRawDSLQuery",
+      "change": "removed",
+      "sha": "cd5221e",
+      "commit_url": "https://github.com/grafana/grafana/commit/cd5221ea7cee1d08cbc2e4d39c119bc8cf9c951b",
+      "detected_at": "2026-07-11T08:15:58Z",
+      "from_stage": "Experimental"
+    },
+    {
+      "date": "2026-07-10",
+      "flag": "vizPresets",
+      "change": "removed",
+      "sha": "602b69e",
+      "commit_url": "https://github.com/grafana/grafana/commit/602b69ee9f5896cdf9adcdd8d2c3db75b1bf2943",
+      "detected_at": "2026-07-11T08:15:58Z",
+      "from_stage": "GA"
+    },
+    {
+      "date": "2026-07-10",
       "flag": "provisioning.userAttribution",
       "change": "new",
       "sha": "c06a1a0",

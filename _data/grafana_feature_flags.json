@@ -1,9 +1,9 @@
 {
   "source_url": "https://github.com/grafana/grafana/blob/main/pkg/services/featuremgmt/registry.go",
-  "total": 359,
+  "total": 356,
   "counts_by_stage": {
-    "Experimental": 253,
-    "GA": 57,
+    "Experimental": 251,
+    "GA": 56,
     "PublicPreview": 33,
     "PrivatePreview": 13,
     "Deprecated": 3
@@ -645,19 +645,9 @@
       "description": "Enables cross cluster search in the Elasticsearch data source"
     },
     {
-      "name": "elasticsearchESQLQuery",
-      "stage": "Experimental",
-      "description": "Enables the ES|QL query editor in the Elasticsearch data source"
-    },
-    {
       "name": "elasticsearchImprovedParsing",
       "stage": "Experimental",
       "description": "Enables less memory intensive Elasticsearch result parsing"
-    },
-    {
-      "name": "elasticsearchRawDSLQuery",
-      "stage": "Experimental",
-      "description": "Enables the raw DSL query editor in the Elasticsearch data source"
     },
     {
       "name": "enableAppChromeExtensions",
@@ -1778,11 +1768,6 @@
       "name": "vizActionsAuth",
       "stage": "PublicPreview",
       "description": "Allows authenticated API calls in actions"
-    },
-    {
-      "name": "vizPresets",
-      "stage": "GA",
-      "description": "Enable visualization presets"
     },
     {
       "name": "yAxisTickControl",
