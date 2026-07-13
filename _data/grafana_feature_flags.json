@@ -1,8 +1,8 @@
 {
   "source_url": "https://github.com/grafana/grafana/blob/main/pkg/services/featuremgmt/registry.go",
-  "total": 356,
+  "total": 357,
   "counts_by_stage": {
-    "Experimental": 251,
+    "Experimental": 252,
     "GA": 56,
     "PublicPreview": 33,
     "PrivatePreview": 13,
@@ -863,6 +863,11 @@
       "name": "grafana.secretsReferenceValueUI",
       "stage": "Experimental",
       "description": "Enable referencing an existing secret in an active keeper when creating a secure value"
+    },
+    {
+      "name": "grafana.ssoSettingsToMTSettings",
+      "stage": "Experimental",
+      "description": "Enables reading and writing SSO settings through the MT-Settings service"
     },
     {
       "name": "grafana.starredFolders",

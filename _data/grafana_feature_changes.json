@@ -1,6 +1,15 @@
 {
   "changes": [
     {
+      "date": "2026-07-13",
+      "flag": "grafana.ssoSettingsToMTSettings",
+      "change": "new",
+      "sha": "886f6bc",
+      "commit_url": "https://github.com/grafana/grafana/commit/886f6bc4d3124e5ee0f411aad6dea29f18755f0d",
+      "detected_at": "2026-07-13T09:49:43Z",
+      "stage": "Experimental"
+    },
+    {
       "date": "2026-07-10",
       "flag": "elasticsearchESQLQuery",
       "change": "removed",
