@@ -2,6 +2,24 @@
   "changes": [
     {
       "date": "2026-07-13",
+      "flag": "grafana.queryVarEditorRedesign",
+      "change": "new",
+      "sha": "01d3bfd",
+      "commit_url": "https://github.com/grafana/grafana/commit/01d3bfd9aaaab32f90e41962748fbcf6b292fc31",
+      "detected_at": "2026-07-14T08:29:54Z",
+      "stage": "GA"
+    },
+    {
+      "date": "2026-07-13",
+      "flag": "alertingMultiplePolicies",
+      "change": "removed",
+      "sha": "1c18357",
+      "commit_url": "https://github.com/grafana/grafana/commit/1c18357c92a547de962aba867ee92651705eb92a",
+      "detected_at": "2026-07-14T08:29:54Z",
+      "from_stage": "GA"
+    },
+    {
+      "date": "2026-07-13",
       "flag": "grafana.ssoSettingsToMTSettings",
       "change": "new",
       "sha": "886f6bc",

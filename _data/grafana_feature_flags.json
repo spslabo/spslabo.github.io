@@ -160,11 +160,6 @@
       "description": "Enables the migration wizard UI to migrate alert rules and notification resources from external sources to Grafana Alerting"
     },
     {
-      "name": "alertingMultiplePolicies",
-      "stage": "GA",
-      "description": "Enables the ability to create multiple notification policies in alerting"
-    },
-    {
       "name": "alertingNavigationV2",
       "stage": "GA",
       "description": "Enables the new Alerting navigation structure with improved menu grouping"
@@ -853,6 +848,11 @@
       "name": "grafana.panelEditNextFeedbackEvent",
       "stage": "Experimental",
       "description": "Enables firing an event for PanelEditNext feedback that triggers an in-house survey"
+    },
+    {
+      "name": "grafana.queryVarEditorRedesign",
+      "stage": "GA",
+      "description": "Enables a redesigned query variable editor with split-pane preview and a spreadsheet for managing static options"
     },
     {
       "name": "grafana.scenesFlickeringFix",
