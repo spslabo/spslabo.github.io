@@ -1,8 +1,8 @@
 {
   "source_url": "https://github.com/grafana/grafana/blob/main/pkg/services/featuremgmt/registry.go",
-  "total": 357,
+  "total": 359,
   "counts_by_stage": {
-    "Experimental": 252,
+    "Experimental": 254,
     "GA": 56,
     "PublicPreview": 33,
     "PrivatePreview": 13,
@@ -38,6 +38,11 @@
       "name": "alerting.notificationsAPIV1Beta1",
       "stage": "Experimental",
       "description": "Switch the Grafana Alerting UI from notifications.alerting.grafana.app/v0alpha1 to v1beta1"
+    },
+    {
+      "name": "alerting.ruleQuality",
+      "stage": "Experimental",
+      "description": "Enable the alert quality tab, which surfaces the health of your alert rules and recommends actions to improve them."
     },
     {
       "name": "alerting.rulesAPIV2",
@@ -455,6 +460,11 @@
       "description": "Enable changing the scheduler base interval via configuration option unified_alerting.scheduler_tick_interval"
     },
     {
+      "name": "connectionsFilterSidebar",
+      "stage": "Experimental",
+      "description": "Enables the new sidebar filter panel in the Add new connection page"
+    },
+    {
       "name": "crashDetection",
       "stage": "Experimental",
       "description": "Enables browser crash detection reporting to Faro."
@@ -618,6 +628,11 @@
       "name": "dataviz.experimentalColorSchemes",
       "stage": "Experimental",
       "description": "Enables additional experimental color schemes for visualizations."
+    },
+    {
+      "name": "deletedFolderResourceCleanup",
+      "stage": "Experimental",
+      "description": "Periodically deletes resources (alert rules, library panels) whose folder no longer exists in the folder API server"
     },
     {
       "name": "disableNumericMetricsSortingInExpressions",
@@ -1773,11 +1788,6 @@
       "name": "vizActionsAuth",
       "stage": "PublicPreview",
       "description": "Allows authenticated API calls in actions"
-    },
-    {
-      "name": "yAxisTickControl",
-      "stage": "Experimental",
-      "description": "Enables fine-grained Y-axis tick options beyond the auto-ticks"
     },
     {
       "name": "zanzana",

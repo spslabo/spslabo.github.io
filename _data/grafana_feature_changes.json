@@ -1,6 +1,42 @@
 {
   "changes": [
     {
+      "date": "2026-07-14",
+      "flag": "alerting.ruleQuality",
+      "change": "new",
+      "sha": "ed0863d",
+      "commit_url": "https://github.com/grafana/grafana/commit/ed0863d9b3700bfe5e0f412c9079b52e270be566",
+      "detected_at": "2026-07-15T08:37:52Z",
+      "stage": "Experimental"
+    },
+    {
+      "date": "2026-07-14",
+      "flag": "connectionsFilterSidebar",
+      "change": "new",
+      "sha": "dbe657e",
+      "commit_url": "https://github.com/grafana/grafana/commit/dbe657ed52b0d4fc799a7e343a68df6780eeea1f",
+      "detected_at": "2026-07-15T08:37:52Z",
+      "stage": "Experimental"
+    },
+    {
+      "date": "2026-07-14",
+      "flag": "deletedFolderResourceCleanup",
+      "change": "new",
+      "sha": "730f10a",
+      "commit_url": "https://github.com/grafana/grafana/commit/730f10a07d64f6d57efd0147553b617489e6d054",
+      "detected_at": "2026-07-15T08:37:52Z",
+      "stage": "Experimental"
+    },
+    {
+      "date": "2026-07-14",
+      "flag": "yAxisTickControl",
+      "change": "removed",
+      "sha": "a8082ee",
+      "commit_url": "https://github.com/grafana/grafana/commit/a8082ee458ff1e9c40ccf8830067245a7f1f302e",
+      "detected_at": "2026-07-15T08:37:52Z",
+      "from_stage": "Experimental"
+    },
+    {
       "date": "2026-07-13",
       "flag": "grafana.queryVarEditorRedesign",
       "change": "new",
