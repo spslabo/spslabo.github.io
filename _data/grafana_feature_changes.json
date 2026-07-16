@@ -1,6 +1,62 @@
 {
   "changes": [
     {
+      "date": "2026-07-15",
+      "flag": "awsAssumeRolePerDatasourceExternalId",
+      "change": "new",
+      "sha": "da65b80",
+      "commit_url": "https://github.com/grafana/grafana/commit/da65b80a33ef55560c905d235d088aced31b6de0",
+      "detected_at": "2026-07-16T08:36:14Z",
+      "stage": "Experimental"
+    },
+    {
+      "date": "2026-07-15",
+      "flag": "grafana.savedQueriesPage",
+      "change": "new",
+      "sha": "8544d8c",
+      "commit_url": "https://github.com/grafana/grafana/commit/8544d8c7bb3572fe93d1789596e6c9c4fa5c73b8",
+      "detected_at": "2026-07-16T08:36:14Z",
+      "stage": "Experimental"
+    },
+    {
+      "date": "2026-07-15",
+      "flag": "grafana.newPreferencesPage",
+      "change": "stage_change",
+      "sha": "51e7b5a",
+      "commit_url": "https://github.com/grafana/grafana/commit/51e7b5a4ca8ca34db67b425da6b15f3d8753ef84",
+      "detected_at": "2026-07-16T08:36:14Z",
+      "from_stage": "Experimental",
+      "to_stage": "GA"
+    },
+    {
+      "date": "2026-07-15",
+      "flag": "preferences.rerouteLegacyAPIs",
+      "change": "stage_change",
+      "sha": "51e7b5a",
+      "commit_url": "https://github.com/grafana/grafana/commit/51e7b5a4ca8ca34db67b425da6b15f3d8753ef84",
+      "detected_at": "2026-07-16T08:36:14Z",
+      "from_stage": "Experimental",
+      "to_stage": "GA"
+    },
+    {
+      "date": "2026-07-15",
+      "flag": "grafana.multiTenantNavTree",
+      "change": "new",
+      "sha": "8fd5daf",
+      "commit_url": "https://github.com/grafana/grafana/commit/8fd5daf9d5711e52def15461e92a4a28d473c258",
+      "detected_at": "2026-07-16T08:36:14Z",
+      "stage": "Experimental"
+    },
+    {
+      "date": "2026-07-15",
+      "flag": "grafanaAdvisor",
+      "change": "removed",
+      "sha": "c08911b",
+      "commit_url": "https://github.com/grafana/grafana/commit/c08911be21edd037236f08e0a42b92b9d6de239f",
+      "detected_at": "2026-07-16T08:36:14Z",
+      "from_stage": "GA"
+    },
+    {
       "date": "2026-07-14",
       "flag": "alerting.ruleQuality",
       "change": "new",

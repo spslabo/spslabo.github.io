@@ -1,9 +1,9 @@
 {
   "source_url": "https://github.com/grafana/grafana/blob/main/pkg/services/featuremgmt/registry.go",
-  "total": 359,
+  "total": 361,
   "counts_by_stage": {
-    "Experimental": 254,
-    "GA": 56,
+    "Experimental": 255,
+    "GA": 57,
     "PublicPreview": 33,
     "PrivatePreview": 13,
     "Deprecated": 3
@@ -353,6 +353,11 @@
       "name": "authZGRPCServer",
       "stage": "Experimental",
       "description": "Enables the gRPC server for authorization"
+    },
+    {
+      "name": "awsAssumeRolePerDatasourceExternalId",
+      "stage": "Experimental",
+      "description": "Generate a per-datasource external ID for Grafana Assume Role "
     },
     {
       "name": "awsAsyncQueryCaching",
@@ -845,13 +850,18 @@
       "description": ""
     },
     {
+      "name": "grafana.multiTenantNavTree",
+      "stage": "Experimental",
+      "description": "Builds the navigation tree client-side instead of reading it from /bootdata"
+    },
+    {
       "name": "grafana.newPanelQueryErrorsUI",
       "stage": "Experimental",
       "description": "Enables a new UI for query errors and notices"
     },
     {
       "name": "grafana.newPreferencesPage",
-      "stage": "Experimental",
+      "stage": "GA",
       "description": "Whether to use the new SharedPreferences functional component"
     },
     {
@@ -868,6 +878,11 @@
       "name": "grafana.queryVarEditorRedesign",
       "stage": "GA",
       "description": "Enables a redesigned query variable editor with split-pane preview and a spreadsheet for managing static options"
+    },
+    {
+      "name": "grafana.savedQueriesPage",
+      "stage": "Experimental",
+      "description": "Enables the dedicated Saved queries page and its navigation entry"
     },
     {
       "name": "grafana.scenesFlickeringFix",
@@ -913,11 +928,6 @@
       "name": "grafana.visualDesignRefresh",
       "stage": "Experimental",
       "description": "Enables the new visual design refresh for the Grafana UI"
-    },
-    {
-      "name": "grafanaAdvisor",
-      "stage": "GA",
-      "description": "Enables Advisor app"
     },
     {
       "name": "grafanaAPIServerEnsureKubectlAccess",
@@ -1381,7 +1391,7 @@
     },
     {
       "name": "preferences.rerouteLegacyAPIs",
-      "stage": "Experimental",
+      "stage": "GA",
       "description": "Use K8s client implementation for legacy preferences API"
     },
     {
