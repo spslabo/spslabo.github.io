@@ -2,18 +2,13 @@
   "source_url": "https://github.com/grafana/grafana/blob/main/pkg/services/featuremgmt/registry.go",
   "total": 361,
   "counts_by_stage": {
-    "Experimental": 255,
-    "GA": 57,
+    "Experimental": 256,
+    "GA": 56,
     "PublicPreview": 33,
     "PrivatePreview": 13,
     "Deprecated": 3
   },
   "flags": [
-    {
-      "name": "advisorDatasourceIntegration",
-      "stage": "Experimental",
-      "description": "Enables the advisor report integration with datasource pages"
-    },
     {
       "name": "alertEnrichment",
       "stage": "Experimental",
@@ -340,6 +335,11 @@
       "description": "Enables the template dashboard assistant"
     },
     {
+      "name": "assistant.fullscreenWorkspace",
+      "stage": "Experimental",
+      "description": "Enables the global fullscreen Workspace (Grafana Assistant workspace shell) in the top bar"
+    },
+    {
       "name": "auditLoggingAppPlatform",
       "stage": "Experimental",
       "description": "Enable audit logging with Kubernetes under app platform"
@@ -653,11 +653,6 @@
       "name": "dsAbstractionApp",
       "stage": "Experimental",
       "description": "Registers the dsabstraction app for querying datasources via unified SQL"
-    },
-    {
-      "name": "elasticsearchCrossClusterSearch",
-      "stage": "GA",
-      "description": "Enables cross cluster search in the Elasticsearch data source"
     },
     {
       "name": "elasticsearchImprovedParsing",
@@ -1438,6 +1433,11 @@
       "name": "provisioning.gitConventions",
       "stage": "Experimental",
       "description": "Enable configurable commit message, branch name, and pull request title conventions for Git Sync"
+    },
+    {
+      "name": "provisioning.performance",
+      "stage": "Experimental",
+      "description": "Enables the synthetic 'test' provisioning job type for load and performance testing of the job queue and controllers"
     },
     {
       "name": "provisioning.readmes",
