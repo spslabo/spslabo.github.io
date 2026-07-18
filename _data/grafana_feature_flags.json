@@ -1,8 +1,8 @@
 {
   "source_url": "https://github.com/grafana/grafana/blob/main/pkg/services/featuremgmt/registry.go",
-  "total": 361,
+  "total": 362,
   "counts_by_stage": {
-    "Experimental": 256,
+    "Experimental": 257,
     "GA": 56,
     "PublicPreview": 33,
     "PrivatePreview": 13,
@@ -745,6 +745,11 @@
       "description": "Highlight Grafana Enterprise features"
     },
     {
+      "name": "features.bulkFlagEvalFiltering",
+      "stage": "Experimental",
+      "description": "Filters bulk OFREP flag evaluations to public-metadata flags only"
+    },
+    {
       "name": "feedbackButton",
       "stage": "PublicPreview",
       "description": "Enables the feedback button in the dashboard edit sidebar"
@@ -907,7 +912,7 @@
     {
       "name": "grafana.useDefaultScopesEndpoint",
       "stage": "Experimental",
-      "description": "Use the find default scope endpoint to seed the initial scope selection when none is set and grafana.enableScopesFirstMode is enabled."
+      "description": "Use the find default scope endpoint to seed the initial scope selection when none is set."
     },
     {
       "name": "grafana.vectorSearchCmdk",

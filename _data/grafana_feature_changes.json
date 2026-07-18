@@ -1,6 +1,15 @@
 {
   "changes": [
     {
+      "date": "2026-07-17",
+      "flag": "features.bulkFlagEvalFiltering",
+      "change": "new",
+      "sha": "8c55950",
+      "commit_url": "https://github.com/grafana/grafana/commit/8c55950f4de41b201087747880df3d1f4ccbc831",
+      "detected_at": "2026-07-18T08:11:15Z",
+      "stage": "Experimental"
+    },
+    {
       "date": "2026-07-16",
       "flag": "provisioning.performance",
       "change": "new",
