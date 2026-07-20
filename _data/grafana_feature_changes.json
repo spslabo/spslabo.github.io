@@ -1,6 +1,15 @@
 {
   "changes": [
     {
+      "date": "2026-07-20",
+      "flag": "dashboards.filterablePanels",
+      "change": "new",
+      "sha": "5f970e9",
+      "commit_url": "https://github.com/grafana/grafana/commit/5f970e98f2cbf446e7d3240535c8e4fc14acd237",
+      "detected_at": "2026-07-20T09:37:50Z",
+      "stage": "Experimental"
+    },
+    {
       "date": "2026-07-17",
       "flag": "features.bulkFlagEvalFiltering",
       "change": "new",
