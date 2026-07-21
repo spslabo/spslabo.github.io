@@ -1,8 +1,8 @@
 {
   "source_url": "https://github.com/grafana/grafana/blob/main/pkg/services/featuremgmt/registry.go",
-  "total": 363,
+  "total": 365,
   "counts_by_stage": {
-    "Experimental": 258,
+    "Experimental": 260,
     "GA": 56,
     "PublicPreview": 33,
     "PrivatePreview": 13,
@@ -830,6 +830,11 @@
       "description": "Enables UI changes for integrations that require a scope to always be selected (for example, hides the scope selector's Remove all button)"
     },
     {
+      "name": "grafana.exploreMetricsSidebar",
+      "stage": "Experimental",
+      "description": "Enables the sidebar in Explore metrics (Metrics Drilldown)"
+    },
+    {
       "name": "grafana.frontendLegacyAPIHandling",
       "stage": "Experimental",
       "description": "Controls whether the frontend blocks calls to legacy /api/ endpoints"
@@ -868,6 +873,11 @@
       "name": "grafana.newPreferencesPage",
       "stage": "GA",
       "description": "Whether to use the new SharedPreferences functional component"
+    },
+    {
+      "name": "grafana.newTextPanel",
+      "stage": "Experimental",
+      "description": "Enables the new text panel"
     },
     {
       "name": "grafana.onDemandDiagnostics",

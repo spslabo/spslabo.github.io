@@ -2,6 +2,24 @@
   "changes": [
     {
       "date": "2026-07-20",
+      "flag": "grafana.newTextPanel",
+      "change": "new",
+      "sha": "ca001f6",
+      "commit_url": "https://github.com/grafana/grafana/commit/ca001f6023b1d05009911b080b8ed0969e38090b",
+      "detected_at": "2026-07-21T09:03:50Z",
+      "stage": "Experimental"
+    },
+    {
+      "date": "2026-07-20",
+      "flag": "grafana.exploreMetricsSidebar",
+      "change": "new",
+      "sha": "3a222ec",
+      "commit_url": "https://github.com/grafana/grafana/commit/3a222ec17588053fc7baf73742e027c94c1d9439",
+      "detected_at": "2026-07-21T09:03:50Z",
+      "stage": "Experimental"
+    },
+    {
+      "date": "2026-07-20",
       "flag": "dashboards.filterablePanels",
       "change": "new",
       "sha": "5f970e9",
