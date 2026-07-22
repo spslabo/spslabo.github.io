@@ -1,8 +1,8 @@
 {
   "source_url": "https://github.com/grafana/grafana/blob/main/pkg/services/featuremgmt/registry.go",
-  "total": 365,
+  "total": 366,
   "counts_by_stage": {
-    "Experimental": 260,
+    "Experimental": 261,
     "GA": 56,
     "PublicPreview": 33,
     "PrivatePreview": 13,
@@ -833,6 +833,11 @@
       "name": "grafana.exploreMetricsSidebar",
       "stage": "Experimental",
       "description": "Enables the sidebar in Explore metrics (Metrics Drilldown)"
+    },
+    {
+      "name": "grafana.filterablePanels",
+      "stage": "Experimental",
+      "description": "Enables interactive grouped-label filtering through the tooltip in state timeline, status history and histogram panels"
     },
     {
       "name": "grafana.frontendLegacyAPIHandling",

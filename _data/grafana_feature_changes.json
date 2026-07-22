@@ -1,6 +1,15 @@
 {
   "changes": [
     {
+      "date": "2026-07-21",
+      "flag": "grafana.filterablePanels",
+      "change": "new",
+      "sha": "55e044b",
+      "commit_url": "https://github.com/grafana/grafana/commit/55e044bf7d818ea032a0f0d8537b83128fc6495a",
+      "detected_at": "2026-07-22T08:47:45Z",
+      "stage": "Experimental"
+    },
+    {
       "date": "2026-07-20",
       "flag": "grafana.newTextPanel",
       "change": "new",
