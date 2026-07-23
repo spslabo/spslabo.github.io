@@ -1,8 +1,8 @@
 {
   "source_url": "https://github.com/grafana/grafana/blob/main/pkg/services/featuremgmt/registry.go",
-  "total": 366,
+  "total": 364,
   "counts_by_stage": {
-    "Experimental": 261,
+    "Experimental": 259,
     "GA": 56,
     "PublicPreview": 33,
     "PrivatePreview": 13,
@@ -520,11 +520,6 @@
       "description": "Enables new dashboard layouts"
     },
     {
-      "name": "dashboards.filterablePanels",
-      "stage": "Experimental",
-      "description": "Enables interactive grouped-label filtering through the tooltip in state timeline, status history and histogram panels"
-    },
-    {
       "name": "dashboardSectionVariables",
       "stage": "GA",
       "description": "Enables support for section level variables (rows and tabs)"
@@ -558,11 +553,6 @@
       "name": "datasource.useNewCRUDAPIs",
       "stage": "Experimental",
       "description": "Use the new datasource API groups for datasource CRUD requests, backend flag"
-    },
-    {
-      "name": "datasourceAPIServers",
-      "stage": "Experimental",
-      "description": "Expose some datasources as apiservers."
     },
     {
       "name": "datasourceConnectionsTab",

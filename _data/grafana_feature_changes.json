@@ -1,6 +1,24 @@
 {
   "changes": [
     {
+      "date": "2026-07-22",
+      "flag": "dashboards.filterablePanels",
+      "change": "removed",
+      "sha": "4bf7333",
+      "commit_url": "https://github.com/grafana/grafana/commit/4bf7333e2340ec57fe9694410d091bfe1486c213",
+      "detected_at": "2026-07-23T08:46:47Z",
+      "from_stage": "Experimental"
+    },
+    {
+      "date": "2026-07-22",
+      "flag": "datasourceAPIServers",
+      "change": "removed",
+      "sha": "be96d8a",
+      "commit_url": "https://github.com/grafana/grafana/commit/be96d8a51c29eb99fe530e51043650a9b4ecd078",
+      "detected_at": "2026-07-23T08:46:47Z",
+      "from_stage": "Experimental"
+    },
+    {
       "date": "2026-07-21",
       "flag": "grafana.filterablePanels",
       "change": "new",
