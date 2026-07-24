@@ -1,6 +1,16 @@
 {
   "changes": [
     {
+      "date": "2026-07-23",
+      "flag": "auditLoggingAppPlatform",
+      "change": "stage_change",
+      "sha": "86ea88a",
+      "commit_url": "https://github.com/grafana/grafana/commit/86ea88acfda7d9c440db079c5efb9506f0f03b7d",
+      "detected_at": "2026-07-24T08:45:15Z",
+      "from_stage": "Experimental",
+      "to_stage": "PublicPreview"
+    },
+    {
       "date": "2026-07-22",
       "flag": "dashboards.filterablePanels",
       "change": "removed",
