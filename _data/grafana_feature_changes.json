@@ -1,6 +1,70 @@
 {
   "changes": [
     {
+      "date": "2026-07-24",
+      "flag": "libraryelements.kubernetesLibraryPanels",
+      "change": "new",
+      "sha": "7d711f8",
+      "commit_url": "https://github.com/grafana/grafana/commit/7d711f8f01ea57968c510a37b6a0246ad23e6b8d",
+      "detected_at": "2026-07-25T08:26:09Z",
+      "stage": "Experimental"
+    },
+    {
+      "date": "2026-07-24",
+      "flag": "azureMonitorBatchAPI",
+      "change": "new",
+      "sha": "bf4d3c6",
+      "commit_url": "https://github.com/grafana/grafana/commit/bf4d3c600a694a32fedd30af57f7edc734ec8f0b",
+      "detected_at": "2026-07-25T08:26:09Z",
+      "stage": "Experimental"
+    },
+    {
+      "date": "2026-07-24",
+      "flag": "grafana.viewPanelPane",
+      "change": "stage_change",
+      "sha": "c11d66e",
+      "commit_url": "https://github.com/grafana/grafana/commit/c11d66e9cab166fd56cfba822942feccfb38cf80",
+      "detected_at": "2026-07-25T08:26:09Z",
+      "from_stage": "Experimental",
+      "to_stage": "PublicPreview"
+    },
+    {
+      "date": "2026-07-24",
+      "flag": "grafana.dynamicTraceToLogs",
+      "change": "new",
+      "sha": "d00f636",
+      "commit_url": "https://github.com/grafana/grafana/commit/d00f636cd7e965628833454789859b8dcc1804c1",
+      "detected_at": "2026-07-25T08:26:09Z",
+      "stage": "PublicPreview"
+    },
+    {
+      "date": "2026-07-24",
+      "flag": "dashboardAssistantPopover",
+      "change": "removed",
+      "sha": "f70ae5e",
+      "commit_url": "https://github.com/grafana/grafana/commit/f70ae5e2556bb975829b3a533391f98e7d630ef3",
+      "detected_at": "2026-07-25T08:26:09Z",
+      "from_stage": "Experimental"
+    },
+    {
+      "date": "2026-07-24",
+      "flag": "kubernetesLibraryPanels",
+      "change": "removed",
+      "sha": "7d711f8",
+      "commit_url": "https://github.com/grafana/grafana/commit/7d711f8f01ea57968c510a37b6a0246ad23e6b8d",
+      "detected_at": "2026-07-25T08:26:09Z",
+      "from_stage": "Experimental"
+    },
+    {
+      "date": "2026-07-24",
+      "flag": "playlistsReconciler",
+      "change": "removed",
+      "sha": "6f3efdc",
+      "commit_url": "https://github.com/grafana/grafana/commit/6f3efdc9641ce6782d278564427d49fb4429708b",
+      "detected_at": "2026-07-25T08:26:09Z",
+      "from_stage": "Experimental"
+    },
+    {
       "date": "2026-07-23",
       "flag": "auditLoggingAppPlatform",
       "change": "stage_change",

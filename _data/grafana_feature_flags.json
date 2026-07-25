@@ -2,9 +2,9 @@
   "source_url": "https://github.com/grafana/grafana/blob/main/pkg/services/featuremgmt/registry.go",
   "total": 364,
   "counts_by_stage": {
-    "Experimental": 258,
+    "Experimental": 256,
     "GA": 56,
-    "PublicPreview": 34,
+    "PublicPreview": 36,
     "PrivatePreview": 13,
     "Deprecated": 3
   },
@@ -375,6 +375,11 @@
       "description": "Support temporary security credentials in AWS plugins for Grafana Cloud customers"
     },
     {
+      "name": "azureMonitorBatchAPI",
+      "stage": "Experimental",
+      "description": "Enables the Metrics Batch API for the Azure Monitor data source, allowing up to 50 resources to be queried in a single request"
+    },
+    {
       "name": "azureMonitorDisableLogLimit",
       "stage": "GA",
       "description": "Disables the log limit restriction for Azure Monitor when true. The limit is enabled by default."
@@ -493,11 +498,6 @@
       "name": "dashboard.vectorSearch",
       "stage": "Experimental",
       "description": "Exposes the semantic (vector) search endpoint for dashboards under the dashboard API"
-    },
-    {
-      "name": "dashboardAssistantPopover",
-      "stage": "Experimental",
-      "description": "Enables the assistant prompt popover on panel click in dashboard view mode"
     },
     {
       "name": "dashboardDefaultLayoutSelector",
@@ -815,6 +815,11 @@
       "description": "Use a dedicated auth token for Grafana.com proxy requests and plugin installs"
     },
     {
+      "name": "grafana.dynamicTraceToLogs",
+      "stage": "PublicPreview",
+      "description": "Check for the existence of logs when linking from the Trace View"
+    },
+    {
       "name": "grafana.enableScopesFirstMode",
       "stage": "Experimental",
       "description": "Enables UI changes for integrations that require a scope to always be selected (for example, hides the scope selector's Remove all button)"
@@ -931,7 +936,7 @@
     },
     {
       "name": "grafana.viewPanelPane",
-      "stage": "Experimental",
+      "stage": "PublicPreview",
       "description": "Enables the sidebar pane with new toggles and options in panel view mode"
     },
     {
@@ -1120,11 +1125,6 @@
       "description": "Enable folder.grafana.app cascade deletion: opt-in non-empty delete via gracePeriodSeconds=0. Until cascade reconciliation exists, deleting a non-empty folder removes only the folder and leaves child dashboards, nested folders, and other contained resources orphaned"
     },
     {
-      "name": "kubernetesLibraryPanels",
-      "stage": "Experimental",
-      "description": "Routes library panel requests from /api to the /apis endpoint"
-    },
-    {
       "name": "kubernetesLogsDrilldown",
       "stage": "Experimental",
       "description": "Adds support for Kubernetes logs drilldown"
@@ -1183,6 +1183,11 @@
       "name": "kubernetesUsersRedirect",
       "stage": "Experimental",
       "description": "Redirects the requests of the user service to the app platform APIs"
+    },
+    {
+      "name": "libraryelements.kubernetesLibraryPanels",
+      "stage": "Experimental",
+      "description": "Routes library panel requests from /api to the /apis endpoint"
     },
     {
       "name": "live.keepHAPrefixInCloud",
@@ -1338,11 +1343,6 @@
       "name": "playlistsRBAC",
       "stage": "GA",
       "description": "Enables RBAC for playlists"
-    },
-    {
-      "name": "playlistsReconciler",
-      "stage": "Experimental",
-      "description": "Enables experimental reconciler for playlists"
     },
     {
       "name": "pluginContainers",
