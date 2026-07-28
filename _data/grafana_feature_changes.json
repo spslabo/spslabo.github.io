@@ -1,6 +1,15 @@
 {
   "changes": [
     {
+      "date": "2026-07-28",
+      "flag": "reporting.redirectReportsToK8SApi",
+      "change": "new",
+      "sha": "6cb0165",
+      "commit_url": "https://github.com/grafana/grafana/commit/6cb01650cb22155f50ddda8bf58ef97e2d28ff43",
+      "detected_at": "2026-07-28T09:08:35Z",
+      "stage": "Experimental"
+    },
+    {
       "date": "2026-07-24",
       "flag": "libraryelements.kubernetesLibraryPanels",
       "change": "new",

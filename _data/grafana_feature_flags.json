@@ -1,8 +1,8 @@
 {
   "source_url": "https://github.com/grafana/grafana/blob/main/pkg/services/featuremgmt/registry.go",
-  "total": 364,
+  "total": 365,
   "counts_by_stage": {
-    "Experimental": 256,
+    "Experimental": 257,
     "GA": 56,
     "PublicPreview": 36,
     "PrivatePreview": 13,
@@ -1588,6 +1588,11 @@
       "name": "reporting.pdfTablesFrontend",
       "stage": "Experimental",
       "description": "Enables frontend-rendered table appendix pages in PDF reports"
+    },
+    {
+      "name": "reporting.redirectReportsToK8SApi",
+      "stage": "Experimental",
+      "description": "Redirect legacy report CRUD API endpoints to the Kubernetes reporting API"
     },
     {
       "name": "reportingFooterSettings",
