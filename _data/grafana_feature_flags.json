@@ -1,11 +1,11 @@
 {
   "source_url": "https://github.com/grafana/grafana/blob/main/pkg/services/featuremgmt/registry.go",
-  "total": 365,
+  "total": 366,
   "counts_by_stage": {
-    "Experimental": 257,
-    "GA": 56,
+    "Experimental": 261,
+    "GA": 54,
     "PublicPreview": 36,
-    "PrivatePreview": 13,
+    "PrivatePreview": 12,
     "Deprecated": 3
   },
   "flags": [
@@ -28,6 +28,11 @@
       "name": "alertEnrichmentPreview",
       "stage": "Experimental",
       "description": "Enable alert enrichment preview (notification-history-based) in view and edit drawers."
+    },
+    {
+      "name": "alerting.manualAssistantInvestigation",
+      "stage": "Experimental",
+      "description": "Enable manually starting an Assistant investigation from the alert instance drawer."
     },
     {
       "name": "alerting.notificationsAPIV1Beta1",
@@ -350,6 +355,11 @@
       "description": "Keeps a recently rotated previous session token valid instead of forcing an urgent re-rotation, which should prevent multi-tab race-condition logouts"
     },
     {
+      "name": "authz.listFoldersViaSearch",
+      "stage": "Experimental",
+      "description": "Build the access-control folder tree by listing folders via the unified-storage search index (lightweight UID+parent refs) instead of a full object list, avoiding paged object-list round-trips."
+    },
+    {
       "name": "authZGRPCServer",
       "stage": "Experimental",
       "description": "Enables the gRPC server for authorization"
@@ -500,11 +510,6 @@
       "description": "Exposes the semantic (vector) search endpoint for dashboards under the dashboard API"
     },
     {
-      "name": "dashboardDefaultLayoutSelector",
-      "stage": "GA",
-      "description": "Enables default layout selector in dashboard settings"
-    },
-    {
       "name": "dashboardLevelTimeMacros",
       "stage": "Experimental",
       "description": "Supports __from and __to macros that always use the dashboard level time range"
@@ -518,11 +523,6 @@
       "name": "dashboardNewLayouts",
       "stage": "GA",
       "description": "Enables new dashboard layouts"
-    },
-    {
-      "name": "dashboardSectionVariables",
-      "stage": "GA",
-      "description": "Enables support for section level variables (rows and tabs)"
     },
     {
       "name": "dashboardTemplates",
@@ -920,6 +920,11 @@
       "description": "Enables starring folders and a virtual Starred folders folder in the dashboards list and folder picker"
     },
     {
+      "name": "grafana.thresholdsInterpolation",
+      "stage": "Experimental",
+      "description": "Enables using dashboard variables in panel threshold values"
+    },
+    {
       "name": "grafana.unifiedHomepage",
       "stage": "Experimental",
       "description": "Replaces the bundled home dashboard with the unified homepage React page"
@@ -1185,6 +1190,11 @@
       "description": "Redirects the requests of the user service to the app platform APIs"
     },
     {
+      "name": "libraryElements.folderTreeViaSearch",
+      "stage": "Experimental",
+      "description": "Build the library-elements folder tree by listing folders via the unified-storage search index (lightweight UID+parent refs) instead of a full object list, avoiding paged object-list round-trips on GET /api/library-elements."
+    },
+    {
       "name": "libraryelements.kubernetesLibraryPanels",
       "stage": "Experimental",
       "description": "Routes library panel requests from /api to the /apis endpoint"
@@ -1343,11 +1353,6 @@
       "name": "playlistsRBAC",
       "stage": "GA",
       "description": "Enables RBAC for playlists"
-    },
-    {
-      "name": "pluginContainers",
-      "stage": "PrivatePreview",
-      "description": "Enables running plugins in containers"
     },
     {
       "name": "pluginInsights",

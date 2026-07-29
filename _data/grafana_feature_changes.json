@@ -2,6 +2,69 @@
   "changes": [
     {
       "date": "2026-07-28",
+      "flag": "alerting.manualAssistantInvestigation",
+      "change": "new",
+      "sha": "0bc2cfb",
+      "commit_url": "https://github.com/grafana/grafana/commit/0bc2cfbcd6976629fc069b0734f008ca6d8d1f9e",
+      "detected_at": "2026-07-29T09:14:05Z",
+      "stage": "Experimental"
+    },
+    {
+      "date": "2026-07-28",
+      "flag": "grafana.thresholdsInterpolation",
+      "change": "new",
+      "sha": "106b27e",
+      "commit_url": "https://github.com/grafana/grafana/commit/106b27e6e855a6e7715054e155eaed7aed5ab936",
+      "detected_at": "2026-07-29T09:14:05Z",
+      "stage": "Experimental"
+    },
+    {
+      "date": "2026-07-28",
+      "flag": "authz.listFoldersViaSearch",
+      "change": "new",
+      "sha": "d46296b",
+      "commit_url": "https://github.com/grafana/grafana/commit/d46296b509f953b6537eaaf2002011cce42c5e82",
+      "detected_at": "2026-07-29T09:14:05Z",
+      "stage": "Experimental"
+    },
+    {
+      "date": "2026-07-28",
+      "flag": "libraryElements.folderTreeViaSearch",
+      "change": "new",
+      "sha": "d46296b",
+      "commit_url": "https://github.com/grafana/grafana/commit/d46296b509f953b6537eaaf2002011cce42c5e82",
+      "detected_at": "2026-07-29T09:14:05Z",
+      "stage": "Experimental"
+    },
+    {
+      "date": "2026-07-28",
+      "flag": "dashboardDefaultLayoutSelector",
+      "change": "removed",
+      "sha": "c1e679a",
+      "commit_url": "https://github.com/grafana/grafana/commit/c1e679a8701bd29bd15baefc664dfaf1e312eab7",
+      "detected_at": "2026-07-29T09:14:05Z",
+      "from_stage": "GA"
+    },
+    {
+      "date": "2026-07-28",
+      "flag": "dashboardSectionVariables",
+      "change": "removed",
+      "sha": "09a8a2e",
+      "commit_url": "https://github.com/grafana/grafana/commit/09a8a2ebcf1fcf6727e20fe922d9b9200837e317",
+      "detected_at": "2026-07-29T09:14:05Z",
+      "from_stage": "GA"
+    },
+    {
+      "date": "2026-07-28",
+      "flag": "pluginContainers",
+      "change": "removed",
+      "sha": "7b868be",
+      "commit_url": "https://github.com/grafana/grafana/commit/7b868bedf0b54db6521f6d21aa381230a2fe92df",
+      "detected_at": "2026-07-29T09:14:05Z",
+      "from_stage": "PrivatePreview"
+    },
+    {
+      "date": "2026-07-28",
       "flag": "reporting.redirectReportsToK8SApi",
       "change": "new",
       "sha": "6cb0165",
