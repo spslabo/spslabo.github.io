@@ -1,10 +1,10 @@
 {
   "source_url": "https://github.com/grafana/grafana/blob/main/pkg/services/featuremgmt/registry.go",
-  "total": 366,
+  "total": 367,
   "counts_by_stage": {
-    "Experimental": 261,
-    "GA": 54,
-    "PublicPreview": 36,
+    "Experimental": 262,
+    "GA": 57,
+    "PublicPreview": 33,
     "PrivatePreview": 12,
     "Deprecated": 3
   },
@@ -1296,7 +1296,7 @@
     },
     {
       "name": "newSavedQueriesExperience",
-      "stage": "PublicPreview",
+      "stage": "GA",
       "description": "Enables the new Saved queries (query library) modal experience"
     },
     {
@@ -1526,7 +1526,7 @@
     },
     {
       "name": "queryLibrary",
-      "stage": "PublicPreview",
+      "stage": "GA",
       "description": "Enables Saved queries (query library) feature"
     },
     {
@@ -1631,7 +1631,7 @@
     },
     {
       "name": "savedQueriesRBAC",
-      "stage": "PublicPreview",
+      "stage": "GA",
       "description": "Enables Saved queries (query library) RBAC permissions"
     },
     {
@@ -1728,6 +1728,11 @@
       "name": "suggestedDashboardsAssistantButton",
       "stage": "Experimental",
       "description": "Enables the 'Customize with Assistant' button on suggested dashboard cards"
+    },
+    {
+      "name": "table.autoColumnWidths",
+      "stage": "Experimental",
+      "description": "Sizes TableNG auto-width columns to fit their content instead of distributing evenly"
     },
     {
       "name": "table.protoRowParser",

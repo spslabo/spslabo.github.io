@@ -1,6 +1,45 @@
 {
   "changes": [
     {
+      "date": "2026-07-29",
+      "flag": "queryLibrary",
+      "change": "stage_change",
+      "sha": "b7a238f",
+      "commit_url": "https://github.com/grafana/grafana/commit/b7a238f355d155542fc6eabcbda96b48a218d17c",
+      "detected_at": "2026-07-30T09:06:20Z",
+      "from_stage": "PublicPreview",
+      "to_stage": "GA"
+    },
+    {
+      "date": "2026-07-29",
+      "flag": "savedQueriesRBAC",
+      "change": "stage_change",
+      "sha": "b7a238f",
+      "commit_url": "https://github.com/grafana/grafana/commit/b7a238f355d155542fc6eabcbda96b48a218d17c",
+      "detected_at": "2026-07-30T09:06:20Z",
+      "from_stage": "PublicPreview",
+      "to_stage": "GA"
+    },
+    {
+      "date": "2026-07-29",
+      "flag": "newSavedQueriesExperience",
+      "change": "stage_change",
+      "sha": "b7a238f",
+      "commit_url": "https://github.com/grafana/grafana/commit/b7a238f355d155542fc6eabcbda96b48a218d17c",
+      "detected_at": "2026-07-30T09:06:20Z",
+      "from_stage": "PublicPreview",
+      "to_stage": "GA"
+    },
+    {
+      "date": "2026-07-29",
+      "flag": "table.autoColumnWidths",
+      "change": "new",
+      "sha": "1d82551",
+      "commit_url": "https://github.com/grafana/grafana/commit/1d8255158dfeb7e12d37ff9c6e5a3f825d92f4d9",
+      "detected_at": "2026-07-30T09:06:20Z",
+      "stage": "Experimental"
+    },
+    {
       "date": "2026-07-28",
       "flag": "alerting.manualAssistantInvestigation",
       "change": "new",
