@@ -1,8 +1,8 @@
 {
   "source_url": "https://github.com/grafana/grafana/blob/main/pkg/services/featuremgmt/registry.go",
-  "total": 367,
+  "total": 368,
   "counts_by_stage": {
-    "Experimental": 262,
+    "Experimental": 263,
     "GA": 57,
     "PublicPreview": 33,
     "PrivatePreview": 12,
@@ -1733,6 +1733,11 @@
       "name": "table.autoColumnWidths",
       "stage": "Experimental",
       "description": "Sizes TableNG auto-width columns to fit their content instead of distributing evenly"
+    },
+    {
+      "name": "table.paginationPageSize",
+      "stage": "Experimental",
+      "description": "Enables configuring a fixed page size for paginated tables instead of deriving it from the panel height"
     },
     {
       "name": "table.protoRowParser",
