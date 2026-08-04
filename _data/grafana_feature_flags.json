@@ -1,8 +1,8 @@
 {
   "source_url": "https://github.com/grafana/grafana/blob/main/pkg/services/featuremgmt/registry.go",
-  "total": 368,
+  "total": 367,
   "counts_by_stage": {
-    "Experimental": 263,
+    "Experimental": 262,
     "GA": 57,
     "PublicPreview": 33,
     "PrivatePreview": 12,
@@ -923,11 +923,6 @@
       "name": "grafana.thresholdsInterpolation",
       "stage": "Experimental",
       "description": "Enables using dashboard variables in panel threshold values"
-    },
-    {
-      "name": "grafana.unifiedHomepage",
-      "stage": "Experimental",
-      "description": "Replaces the bundled home dashboard with the unified homepage React page"
     },
     {
       "name": "grafana.useDefaultScopesEndpoint",
