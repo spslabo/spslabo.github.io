@@ -1,6 +1,33 @@
 {
   "changes": [
     {
+      "date": "2026-08-05",
+      "flag": "grafana.dashboardGlobalVariables",
+      "change": "new",
+      "sha": "45e9833",
+      "commit_url": "https://github.com/grafana/grafana/commit/45e9833dd4fe5dcdb7f585219e1b273631bfba69",
+      "detected_at": "2026-08-05T09:10:18Z",
+      "stage": "Experimental"
+    },
+    {
+      "date": "2026-08-04",
+      "flag": "alerting.stateManagerRequireWarm",
+      "change": "new",
+      "sha": "3927e45",
+      "commit_url": "https://github.com/grafana/grafana/commit/3927e450919979113256fc452d39ca7c22d5e07f",
+      "detected_at": "2026-08-05T09:10:18Z",
+      "stage": "Experimental"
+    },
+    {
+      "date": "2026-08-04",
+      "flag": "alertingSaveStateCompressed",
+      "change": "removed",
+      "sha": "2b4c8cf",
+      "commit_url": "https://github.com/grafana/grafana/commit/2b4c8cf60d84d36f5aba5e9d4b1602dccd527b4f",
+      "detected_at": "2026-08-05T09:10:18Z",
+      "from_stage": "PublicPreview"
+    },
+    {
       "date": "2026-08-03",
       "flag": "grafana.unifiedHomepage",
       "change": "removed",

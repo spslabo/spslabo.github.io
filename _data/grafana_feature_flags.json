@@ -1,10 +1,10 @@
 {
   "source_url": "https://github.com/grafana/grafana/blob/main/pkg/services/featuremgmt/registry.go",
-  "total": 367,
+  "total": 368,
   "counts_by_stage": {
-    "Experimental": 262,
+    "Experimental": 264,
     "GA": 57,
-    "PublicPreview": 33,
+    "PublicPreview": 32,
     "PrivatePreview": 12,
     "Deprecated": 3
   },
@@ -48,6 +48,11 @@
       "name": "alerting.rulesAPIV2",
       "stage": "Experimental",
       "description": "Enables the new Rules API v2 UI with evaluation chains and groupless rule creation"
+    },
+    {
+      "name": "alerting.stateManagerRequireWarm",
+      "stage": "Experimental",
+      "description": "Hold back alert state writes until the state cache has been warmed. For rulers that warm asynchronously, such as the multi-tenant ruler."
     },
     {
       "name": "alerting.syncExternalAlertmanager",
@@ -243,11 +248,6 @@
       "name": "alertingRuleVersionHistoryRestore",
       "stage": "GA",
       "description": "Enables the alert rule version history restore feature"
-    },
-    {
-      "name": "alertingSaveStateCompressed",
-      "stage": "PublicPreview",
-      "description": "Enables the compressed protobuf-based alert state storage. Default is enabled."
     },
     {
       "name": "alertingSaveStatePeriodic",
@@ -803,6 +803,11 @@
       "name": "grafana.customizableMegaMenu",
       "stage": "Experimental",
       "description": "Allows users to customise the mega menu by hiding top-level navigation items they are not interested in"
+    },
+    {
+      "name": "grafana.dashboardGlobalVariables",
+      "stage": "Experimental",
+      "description": "Enables global and folder-scoped dashboard variables via dashboard.grafana.app"
     },
     {
       "name": "grafana.dashboardSettingsRedesign",
