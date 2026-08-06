@@ -2,6 +2,60 @@
   "changes": [
     {
       "date": "2026-08-05",
+      "flag": "disableScriptedDashboards",
+      "change": "new",
+      "sha": "15daf30",
+      "commit_url": "https://github.com/grafana/grafana/commit/15daf300b68857b7d9cdee12326ed67b6102dc6f",
+      "detected_at": "2026-08-06T09:10:21Z",
+      "stage": "Deprecated"
+    },
+    {
+      "date": "2026-08-05",
+      "flag": "paneledit.buttonLabels",
+      "change": "new",
+      "sha": "9031842",
+      "commit_url": "https://github.com/grafana/grafana/commit/9031842862d32ff79cf96082b5244bd6cacaeca6",
+      "detected_at": "2026-08-06T09:10:21Z",
+      "stage": "Experimental"
+    },
+    {
+      "date": "2026-08-05",
+      "flag": "datetime.useLuxon",
+      "change": "new",
+      "sha": "47fb2de",
+      "commit_url": "https://github.com/grafana/grafana/commit/47fb2de3372680d4cb9282cdf189392e156f3ed6",
+      "detected_at": "2026-08-06T09:10:21Z",
+      "stage": "Experimental"
+    },
+    {
+      "date": "2026-08-05",
+      "flag": "assistant.dashboardPlanning",
+      "change": "new",
+      "sha": "b28f443",
+      "commit_url": "https://github.com/grafana/grafana/commit/b28f4438fc5b1db01bd794466dfd956198b46588",
+      "detected_at": "2026-08-06T09:10:21Z",
+      "stage": "Experimental"
+    },
+    {
+      "date": "2026-08-05",
+      "flag": "alertingAlertsActivityBanner",
+      "change": "removed",
+      "sha": "bd4e172",
+      "commit_url": "https://github.com/grafana/grafana/commit/bd4e17296e0a95b8a9074b690b92fa063db0b2cc",
+      "detected_at": "2026-08-06T09:10:21Z",
+      "from_stage": "Experimental"
+    },
+    {
+      "date": "2026-08-05",
+      "flag": "provisioning",
+      "change": "removed",
+      "sha": "4668ec6",
+      "commit_url": "https://github.com/grafana/grafana/commit/4668ec646ffda9c9fb62ba6ee9c0323090bb5b34",
+      "detected_at": "2026-08-06T09:10:21Z",
+      "from_stage": "GA"
+    },
+    {
+      "date": "2026-08-05",
       "flag": "grafana.dashboardGlobalVariables",
       "change": "new",
       "sha": "45e9833",

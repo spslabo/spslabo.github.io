@@ -1,12 +1,12 @@
 {
   "source_url": "https://github.com/grafana/grafana/blob/main/pkg/services/featuremgmt/registry.go",
-  "total": 368,
+  "total": 370,
   "counts_by_stage": {
-    "Experimental": 264,
-    "GA": 57,
+    "Experimental": 266,
+    "GA": 56,
     "PublicPreview": 32,
     "PrivatePreview": 12,
-    "Deprecated": 3
+    "Deprecated": 4
   },
   "flags": [
     {
@@ -88,11 +88,6 @@
       "name": "alertingAlertListPanelEnhancements",
       "stage": "Experimental",
       "description": "Enables enhanced stat mode for the Alert List panel with thresholds, value mappings, and linking"
-    },
-    {
-      "name": "alertingAlertsActivityBanner",
-      "stage": "Experimental",
-      "description": "Shows a promotional banner for the Alerts Activity feature on the Rule List page"
     },
     {
       "name": "alertingBacktesting",
@@ -333,6 +328,11 @@
       "name": "appplugins.registerAPIServer",
       "stage": "Experimental",
       "description": "Registers an API server for each backend app plugin exposing a settings endpoint"
+    },
+    {
+      "name": "assistant.dashboardPlanning",
+      "stage": "Experimental",
+      "description": "Enables the assistant-powered Generate dashboard prompt and the plan card that approves the dashboard before it is built"
     },
     {
       "name": "assistant.frontend.tools.dashboardTemplates",
@@ -630,6 +630,11 @@
       "description": "Enables additional experimental color schemes for visualizations."
     },
     {
+      "name": "datetime.useLuxon",
+      "stage": "Experimental",
+      "description": "Uses the Luxon-backed compatibility implementation for Grafana date and time APIs"
+    },
+    {
       "name": "deletedFolderResourceCleanup",
       "stage": "Experimental",
       "description": "Periodically deletes resources (alert rules, library panels) whose folder no longer exists in the folder API server"
@@ -638,6 +643,11 @@
       "name": "disableNumericMetricsSortingInExpressions",
       "stage": "Experimental",
       "description": "In server-side expressions, disable the sorting of numeric-kind metrics by their metric name or labels."
+    },
+    {
+      "name": "disableScriptedDashboards",
+      "stage": "Deprecated",
+      "description": "Disables legacy scripted dashboards, which are deprecated and will be removed in Grafana 14. Set to false to temporarily restore them."
     },
     {
       "name": "disableSSEDataplane",
@@ -1325,6 +1335,11 @@
       "description": "Applies OTel formatting templates to displayed logs"
     },
     {
+      "name": "paneledit.buttonLabels",
+      "stage": "Experimental",
+      "description": "Shows text labels on the add and stacked view buttons in PanelEditNext"
+    },
+    {
       "name": "panelTimeSettings",
       "stage": "PublicPreview",
       "description": "Enables a new panel time settings drawer"
@@ -1443,11 +1458,6 @@
       "name": "prometheusTypeMigration",
       "stage": "Deprecated",
       "description": "Checks for deprecated Prometheus authentication methods (SigV4 and Azure), installs the relevant data source, and migrates the Prometheus data sources"
-    },
-    {
-      "name": "provisioning",
-      "stage": "GA",
-      "description": "Enables Git Sync and as-code provisioning for Grafana resources"
     },
     {
       "name": "provisioning.gitConventions",
