@@ -1,8 +1,8 @@
 {
   "source_url": "https://github.com/grafana/grafana/blob/main/pkg/services/featuremgmt/registry.go",
-  "total": 370,
+  "total": 369,
   "counts_by_stage": {
-    "Experimental": 266,
+    "Experimental": 265,
     "GA": 56,
     "PublicPreview": 32,
     "PrivatePreview": 12,
@@ -783,11 +783,6 @@
       "name": "frontendService.reducedBootDataAPI",
       "stage": "Experimental",
       "description": "Frontend Service doesn't rely on the /bootdata API, instead loads configuration as needed"
-    },
-    {
-      "name": "frontendService.settingsSourceFilter",
-      "stage": "Experimental",
-      "description": "Adds a label filter for source=us when fetching settings from the settings service in the frontend service"
     },
     {
       "name": "globalDashboardVariables",
