@@ -1,8 +1,8 @@
 {
   "source_url": "https://github.com/grafana/grafana/blob/main/pkg/services/featuremgmt/registry.go",
-  "total": 369,
+  "total": 370,
   "counts_by_stage": {
-    "Experimental": 265,
+    "Experimental": 266,
     "GA": 56,
     "PublicPreview": 32,
     "PrivatePreview": 12,
@@ -888,6 +888,11 @@
       "name": "grafana.newTextPanel",
       "stage": "Experimental",
       "description": "Enables the new text panel"
+    },
+    {
+      "name": "grafana.ofrepRootUrl",
+      "stage": "Experimental",
+      "description": "Controls whether the frontend OFREP client and the OpenFeature provider config use the root /ofrep/v1 route instead of the namespaced route"
     },
     {
       "name": "grafana.onDemandDiagnostics",
