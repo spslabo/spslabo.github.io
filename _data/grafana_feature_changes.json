@@ -1,6 +1,24 @@
 {
   "changes": [
     {
+      "date": "2026-08-10",
+      "flag": "grafana.rspackBuild",
+      "change": "new",
+      "sha": "713ab01",
+      "commit_url": "https://github.com/grafana/grafana/commit/713ab01c34874914cc839838216c5cfc5b4d43bb",
+      "detected_at": "2026-08-11T07:40:57Z",
+      "stage": "Experimental"
+    },
+    {
+      "date": "2026-08-10",
+      "flag": "pluginsForceTls13",
+      "change": "new",
+      "sha": "ad3f3a7",
+      "commit_url": "https://github.com/grafana/grafana/commit/ad3f3a71222f8b0b3a38ae0bf11c0be74ca7be6a",
+      "detected_at": "2026-08-11T07:40:57Z",
+      "stage": "Experimental"
+    },
+    {
       "date": "2026-08-07",
       "flag": "grafana.ofrepRootUrl",
       "change": "new",
