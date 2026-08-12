@@ -1,9 +1,9 @@
 {
   "source_url": "https://github.com/grafana/grafana/blob/main/pkg/services/featuremgmt/registry.go",
-  "total": 372,
+  "total": 370,
   "counts_by_stage": {
-    "Experimental": 268,
-    "GA": 56,
+    "Experimental": 265,
+    "GA": 57,
     "PublicPreview": 32,
     "PrivatePreview": 12,
     "Deprecated": 4
@@ -945,6 +945,11 @@
       "description": "Enables using dashboard variables in panel threshold values"
     },
     {
+      "name": "grafana.unifiedDataSourcePicker",
+      "stage": "GA",
+      "description": "Render the core Grafana data source picker behind the DataSourcePicker that @grafana/runtime exposes to plugins"
+    },
+    {
       "name": "grafana.useDefaultScopesEndpoint",
       "stage": "Experimental",
       "description": "Use the find default scope endpoint to seed the initial scope selection when none is set."
@@ -963,11 +968,6 @@
       "name": "grafana.visualDesignRefresh",
       "stage": "Experimental",
       "description": "Enables the new visual design refresh for the Grafana UI"
-    },
-    {
-      "name": "grafanaAPIServerEnsureKubectlAccess",
-      "stage": "Experimental",
-      "description": "Start an additional https handler and write kubectl options"
     },
     {
       "name": "grafanaAPIServerWithExperimentalAPIs",
@@ -1758,16 +1758,6 @@
       "name": "table.paginationPageSize",
       "stage": "Experimental",
       "description": "Enables configuring a fixed page size for paginated tables instead of deriving it from the panel height"
-    },
-    {
-      "name": "table.protoRowParser",
-      "stage": "Experimental",
-      "description": "Enables a new internal parser for table panel which doesn't rely on constructing a dynamic function and works in more browser environments."
-    },
-    {
-      "name": "table.refactorNested",
-      "stage": "Experimental",
-      "description": "Enables the refactored TableNG nested-table implementation"
     },
     {
       "name": "tableSharedCrosshair",

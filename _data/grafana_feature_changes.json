@@ -1,6 +1,42 @@
 {
   "changes": [
     {
+      "date": "2026-08-11",
+      "flag": "grafana.unifiedDataSourcePicker",
+      "change": "new",
+      "sha": "248a819",
+      "commit_url": "https://github.com/grafana/grafana/commit/248a819637653350e1102701abdf083a26291cf2",
+      "detected_at": "2026-08-12T07:55:09Z",
+      "stage": "GA"
+    },
+    {
+      "date": "2026-08-11",
+      "flag": "grafanaAPIServerEnsureKubectlAccess",
+      "change": "removed",
+      "sha": "af5e98b",
+      "commit_url": "https://github.com/grafana/grafana/commit/af5e98b628ec609ace1b7fb049ffac71f87f19ea",
+      "detected_at": "2026-08-12T07:55:09Z",
+      "from_stage": "Experimental"
+    },
+    {
+      "date": "2026-08-11",
+      "flag": "table.protoRowParser",
+      "change": "removed",
+      "sha": "ba10d96",
+      "commit_url": "https://github.com/grafana/grafana/commit/ba10d96ad216d87f421a29180873330a7557d06e",
+      "detected_at": "2026-08-12T07:55:09Z",
+      "from_stage": "Experimental"
+    },
+    {
+      "date": "2026-08-11",
+      "flag": "table.refactorNested",
+      "change": "removed",
+      "sha": "dc315ec",
+      "commit_url": "https://github.com/grafana/grafana/commit/dc315ec2666001fc078d34308895971d626fa46b",
+      "detected_at": "2026-08-12T07:55:09Z",
+      "from_stage": "Experimental"
+    },
+    {
       "date": "2026-08-10",
       "flag": "grafana.rspackBuild",
       "change": "new",
