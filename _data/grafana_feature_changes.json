@@ -1,6 +1,78 @@
 {
   "changes": [
     {
+      "date": "2026-08-13",
+      "flag": "kubernetesUsersRedirectNoFallback",
+      "change": "new",
+      "sha": "9cb8ff2",
+      "commit_url": "https://github.com/grafana/grafana/commit/9cb8ff279f562ef48bf18b0de3ae198c666fa95c",
+      "detected_at": "2026-08-13T07:56:26Z",
+      "stage": "Experimental"
+    },
+    {
+      "date": "2026-08-12",
+      "flag": "snapshots.kubernetesSnapshots",
+      "change": "new",
+      "sha": "7c4914a",
+      "commit_url": "https://github.com/grafana/grafana/commit/7c4914a9f81f538449879a97492a4930f48a7534",
+      "detected_at": "2026-08-13T07:56:26Z",
+      "stage": "Experimental"
+    },
+    {
+      "date": "2026-08-12",
+      "flag": "datasources.azureMonitorBatchAPI",
+      "change": "new",
+      "sha": "623e5b4",
+      "commit_url": "https://github.com/grafana/grafana/commit/623e5b483aacaa0222915070789aa1a1bc3016a7",
+      "detected_at": "2026-08-13T07:56:26Z",
+      "stage": "Experimental"
+    },
+    {
+      "date": "2026-08-12",
+      "flag": "text.newFeatures",
+      "change": "new",
+      "sha": "800126f",
+      "commit_url": "https://github.com/grafana/grafana/commit/800126fae5548d24e84cb3a89be647ea7580397f",
+      "detected_at": "2026-08-13T07:56:26Z",
+      "stage": "Experimental"
+    },
+    {
+      "date": "2026-08-12",
+      "flag": "table.inspectDataTableNG",
+      "change": "new",
+      "sha": "1d09a69",
+      "commit_url": "https://github.com/grafana/grafana/commit/1d09a6908e8b68e4d0c7573330d06e2abf47d1de",
+      "detected_at": "2026-08-13T07:56:26Z",
+      "stage": "Experimental"
+    },
+    {
+      "date": "2026-08-12",
+      "flag": "grafana.pluginPathNesting",
+      "change": "new",
+      "sha": "20155a5",
+      "commit_url": "https://github.com/grafana/grafana/commit/20155a5c0cee8f0b69c29315ab2c5d71347015bf",
+      "detected_at": "2026-08-13T07:56:26Z",
+      "stage": "Experimental"
+    },
+    {
+      "date": "2026-08-12",
+      "flag": "azureMonitorBatchAPI",
+      "change": "removed",
+      "sha": "623e5b4",
+      "commit_url": "https://github.com/grafana/grafana/commit/623e5b483aacaa0222915070789aa1a1bc3016a7",
+      "detected_at": "2026-08-13T07:56:26Z",
+      "from_stage": "Experimental"
+    },
+    {
+      "date": "2026-08-12",
+      "flag": "kubernetesSnapshots",
+      "change": "removed",
+      "sha": "5b52643",
+      "commit_url": "https://github.com/grafana/grafana/commit/5b526439c39fdb34fec165edc6e46fac94e174cd",
+      "detected_at": "2026-08-13T07:56:26Z",
+      "from_stage": "Experimental"
+    },
+    {
       "date": "2026-08-11",
       "flag": "grafana.unifiedDataSourcePicker",
       "change": "new",

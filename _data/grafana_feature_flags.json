@@ -1,8 +1,8 @@
 {
   "source_url": "https://github.com/grafana/grafana/blob/main/pkg/services/featuremgmt/registry.go",
-  "total": 370,
+  "total": 374,
   "counts_by_stage": {
-    "Experimental": 265,
+    "Experimental": 269,
     "GA": 57,
     "PublicPreview": 32,
     "PrivatePreview": 12,
@@ -385,11 +385,6 @@
       "description": "Support temporary security credentials in AWS plugins for Grafana Cloud customers"
     },
     {
-      "name": "azureMonitorBatchAPI",
-      "stage": "Experimental",
-      "description": "Enables the Metrics Batch API for the Azure Monitor data source, allowing up to 50 resources to be queried in a single request"
-    },
-    {
       "name": "azureMonitorDisableLogLimit",
       "stage": "GA",
       "description": "Disables the log limit restriction for Azure Monitor when true. The limit is enabled by default."
@@ -568,6 +563,11 @@
       "name": "datasources.apiserver.useNewAPIsForDatasourceResources",
       "stage": "Experimental",
       "description": "Use the new datasource API groups for datasource resource requests, frontend flag"
+    },
+    {
+      "name": "datasources.azureMonitorBatchAPI",
+      "stage": "Experimental",
+      "description": "Enables the Metrics Batch API for the Azure Monitor data source, allowing up to 50 resources to be queried in a single request"
     },
     {
       "name": "datasources.chunkedQueryStreaming",
@@ -905,6 +905,11 @@
       "description": "Enables firing an event for PanelEditNext feedback that triggers an in-house survey"
     },
     {
+      "name": "grafana.pluginPathNesting",
+      "stage": "Experimental",
+      "description": "Nest app plugin navigation items in the mega menu based on their URL path hierarchy"
+    },
+    {
       "name": "grafana.queryVarEditorRedesign",
       "stage": "GA",
       "description": "Enables a redesigned query variable editor with split-pane preview and a spreadsheet for managing static options"
@@ -1170,11 +1175,6 @@
       "description": "Enables service account token APIs in the app platform"
     },
     {
-      "name": "kubernetesSnapshots",
-      "stage": "Experimental",
-      "description": "Routes snapshot requests from /api to the /apis endpoint"
-    },
-    {
       "name": "kubernetesSsoSettingsApi",
       "stage": "Experimental",
       "description": "Enables SSO settings APIs in the app platform"
@@ -1203,6 +1203,11 @@
       "name": "kubernetesUsersRedirect",
       "stage": "Experimental",
       "description": "Redirects the requests of the user service to the app platform APIs"
+    },
+    {
+      "name": "kubernetesUsersRedirectNoFallback",
+      "stage": "Experimental",
+      "description": "Disables legacy fallback for the user service k8s redirect; failures surface as errors instead of falling back"
     },
     {
       "name": "libraryElements.folderTreeViaSearch",
@@ -1690,6 +1695,11 @@
       "description": "Enables the ASAP smoothing transformation for time series data"
     },
     {
+      "name": "snapshots.kubernetesSnapshots",
+      "stage": "Experimental",
+      "description": "Routes snapshot requests from /api to the /apis endpoint"
+    },
+    {
       "name": "splashScreen",
       "stage": "PublicPreview",
       "description": "Enables the splash screen modal for introducing new Grafana features on first session"
@@ -1755,6 +1765,11 @@
       "description": "Sizes TableNG auto-width columns to fit their content instead of distributing evenly"
     },
     {
+      "name": "table.inspectDataTableNG",
+      "stage": "Experimental",
+      "description": "Enables TableNG in the panel inspector's Data tab, replacing the legacy Table (TableRT)"
+    },
+    {
       "name": "table.paginationPageSize",
       "stage": "Experimental",
       "description": "Enables configuring a fixed page size for paginated tables instead of deriving it from the panel height"
@@ -1788,6 +1803,11 @@
       "name": "tempoAlerting",
       "stage": "Experimental",
       "description": "Enables creating alerts from Tempo data source"
+    },
+    {
+      "name": "text.newFeatures",
+      "stage": "Experimental",
+      "description": "Enables the new features in text panel"
     },
     {
       "name": "timeComparison",
