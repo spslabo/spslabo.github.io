@@ -1,10 +1,10 @@
 {
   "source_url": "https://github.com/grafana/grafana/blob/main/pkg/services/featuremgmt/registry.go",
-  "total": 374,
+  "total": 376,
   "counts_by_stage": {
-    "Experimental": 269,
+    "Experimental": 270,
     "GA": 57,
-    "PublicPreview": 32,
+    "PublicPreview": 33,
     "PrivatePreview": 12,
     "Deprecated": 4
   },
@@ -98,11 +98,6 @@
       "name": "alertingBulkActionsInUI",
       "stage": "GA",
       "description": "Enables the alerting bulk actions in the UI"
-    },
-    {
-      "name": "alertingCentralAlertHistory",
-      "stage": "Experimental",
-      "description": "Enables the new central alert history."
     },
     {
       "name": "alertingDisableDMAinUI",
@@ -637,7 +632,7 @@
     {
       "name": "deletedFolderResourceCleanup",
       "stage": "Experimental",
-      "description": "Periodically deletes resources (alert rules, library panels) whose folder no longer exists in the folder API server"
+      "description": "Periodically deletes resources (alert rules, library panels) whose folder no longer exists in the folder API server. Library panel cleanup additionally requires libraryElementFolderUIDRepair"
     },
     {
       "name": "disableNumericMetricsSortingInExpressions",
@@ -768,6 +763,11 @@
       "name": "fetchRulesUsingPost",
       "stage": "Experimental",
       "description": "Use a POST request to list rules by passing down the namespaces user has access to"
+    },
+    {
+      "name": "flameGraph.tableNg",
+      "stage": "Experimental",
+      "description": "Renders the flame graph's top table using TableNG instead of the legacy Table"
     },
     {
       "name": "flameGraphWithCallTree",
@@ -1210,6 +1210,11 @@
       "description": "Disables legacy fallback for the user service k8s redirect; failures surface as errors instead of falling back"
     },
     {
+      "name": "libraryElementFolderUIDRepair",
+      "stage": "Experimental",
+      "description": "Repairs library_element rows whose folder_uid drifted from folder_id, once per org at startup"
+    },
+    {
       "name": "libraryElements.folderTreeViaSearch",
       "stage": "Experimental",
       "description": "Build the library-elements folder tree by listing folders via the unified-storage search index (lightweight UID+parent refs) instead of a full object list, avoiding paged object-list round-trips on GET /api/library-elements."
@@ -1476,7 +1481,7 @@
     },
     {
       "name": "provisioning.gitConventions",
-      "stage": "Experimental",
+      "stage": "PublicPreview",
       "description": "Enable configurable commit message, branch name, and pull request title conventions for Git Sync"
     },
     {
@@ -1578,6 +1583,11 @@
       "name": "queryWithAssistant",
       "stage": "Experimental",
       "description": "Enables the Query with Assistant button in the query editor"
+    },
+    {
+      "name": "rawPrometheus.tableNg",
+      "stage": "Experimental",
+      "description": "Renders the raw Prometheus query results table using TableNG instead of the legacy Table"
     },
     {
       "name": "react19",

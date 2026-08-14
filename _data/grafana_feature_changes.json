@@ -2,6 +2,52 @@
   "changes": [
     {
       "date": "2026-08-13",
+      "flag": "provisioning.gitConventions",
+      "change": "stage_change",
+      "sha": "a3831aa",
+      "commit_url": "https://github.com/grafana/grafana/commit/a3831aa220c868f3490e4c6f5d17bc8bc085b689",
+      "detected_at": "2026-08-14T07:53:32Z",
+      "from_stage": "Experimental",
+      "to_stage": "PublicPreview"
+    },
+    {
+      "date": "2026-08-13",
+      "flag": "libraryElementFolderUIDRepair",
+      "change": "new",
+      "sha": "687771a",
+      "commit_url": "https://github.com/grafana/grafana/commit/687771ad91a98950f876864e3e90b8a3a69d00b8",
+      "detected_at": "2026-08-14T07:53:32Z",
+      "stage": "Experimental"
+    },
+    {
+      "date": "2026-08-13",
+      "flag": "flameGraph.tableNg",
+      "change": "new",
+      "sha": "557b577",
+      "commit_url": "https://github.com/grafana/grafana/commit/557b577a8181f1a8f16d0e67bb0143ef5e82c2af",
+      "detected_at": "2026-08-14T07:53:32Z",
+      "stage": "Experimental"
+    },
+    {
+      "date": "2026-08-13",
+      "flag": "rawPrometheus.tableNg",
+      "change": "new",
+      "sha": "10b2a7f",
+      "commit_url": "https://github.com/grafana/grafana/commit/10b2a7fddba71cf5ef803ed853a7a8db7dc1f4b9",
+      "detected_at": "2026-08-14T07:53:32Z",
+      "stage": "Experimental"
+    },
+    {
+      "date": "2026-08-13",
+      "flag": "alertingCentralAlertHistory",
+      "change": "removed",
+      "sha": "38959bb",
+      "commit_url": "https://github.com/grafana/grafana/commit/38959bb09a25cbd3017e9ed9c894ab6af52a49fb",
+      "detected_at": "2026-08-14T07:53:32Z",
+      "from_stage": "Experimental"
+    },
+    {
+      "date": "2026-08-13",
       "flag": "kubernetesUsersRedirectNoFallback",
       "change": "new",
       "sha": "9cb8ff2",
