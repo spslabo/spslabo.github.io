@@ -1,8 +1,8 @@
 {
   "source_url": "https://github.com/grafana/grafana/blob/main/pkg/services/featuremgmt/registry.go",
-  "total": 376,
+  "total": 377,
   "counts_by_stage": {
-    "Experimental": 270,
+    "Experimental": 271,
     "GA": 57,
     "PublicPreview": 33,
     "PrivatePreview": 12,
@@ -578,6 +578,11 @@
       "name": "datasources.loadOpenAPI",
       "stage": "Experimental",
       "description": "Load the openapi spec from spec.{version}.openapi.{yaml|json}"
+    },
+    {
+      "name": "datasources.queryGateway",
+      "stage": "Experimental",
+      "description": "Data source query gateway"
     },
     {
       "name": "datasources.queryTypes",

@@ -1,6 +1,15 @@
 {
   "changes": [
     {
+      "date": "2026-08-14",
+      "flag": "datasources.queryGateway",
+      "change": "new",
+      "sha": "cdb406d",
+      "commit_url": "https://github.com/grafana/grafana/commit/cdb406d2929406a0fdd4f86164e4f3420221b7b7",
+      "detected_at": "2026-08-15T07:00:35Z",
+      "stage": "Experimental"
+    },
+    {
       "date": "2026-08-13",
       "flag": "provisioning.gitConventions",
       "change": "stage_change",
