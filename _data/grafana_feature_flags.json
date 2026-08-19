@@ -1,10 +1,10 @@
 {
   "source_url": "https://github.com/grafana/grafana/blob/main/pkg/services/featuremgmt/registry.go",
-  "total": 377,
+  "total": 379,
   "counts_by_stage": {
-    "Experimental": 271,
+    "Experimental": 272,
     "GA": 57,
-    "PublicPreview": 33,
+    "PublicPreview": 34,
     "PrivatePreview": 12,
     "Deprecated": 4
   },
@@ -561,7 +561,7 @@
     },
     {
       "name": "datasources.azureMonitorBatchAPI",
-      "stage": "Experimental",
+      "stage": "PublicPreview",
       "description": "Enables the Metrics Batch API for the Azure Monitor data source, allowing up to 50 resources to be queried in a single request"
     },
     {
@@ -653,11 +653,6 @@
       "name": "disableSSEDataplane",
       "stage": "Experimental",
       "description": "Disables dataplane specific processing in server side expressions."
-    },
-    {
-      "name": "dsAbstractionApp",
-      "stage": "Experimental",
-      "description": "Registers the dsabstraction app for querying datasources via unified SQL"
     },
     {
       "name": "elasticsearchImprovedParsing",
@@ -908,6 +903,11 @@
       "name": "grafana.panelEditNextFeedbackEvent",
       "stage": "Experimental",
       "description": "Enables firing an event for PanelEditNext feedback that triggers an in-house survey"
+    },
+    {
+      "name": "grafana.panelPluginTransformations",
+      "stage": "Experimental",
+      "description": "Let panel plugins register system transformations"
     },
     {
       "name": "grafana.pluginPathNesting",
@@ -1790,6 +1790,11 @@
       "description": "Enables configuring a fixed page size for paginated tables instead of deriving it from the panel height"
     },
     {
+      "name": "table.refresh",
+      "stage": "Experimental",
+      "description": "Enables the refreshed table experience: reworked column headers and ad hoc column interactions"
+    },
+    {
       "name": "tableSharedCrosshair",
       "stage": "Experimental",
       "description": "Enables shared crosshair in table panel"
@@ -1833,6 +1838,11 @@
       "name": "timeRangeProvider",
       "stage": "Experimental",
       "description": "Enables time pickers sync"
+    },
+    {
+      "name": "tracesDrilldown.useValueTypeFiltering",
+      "stage": "Experimental",
+      "description": "Enables value type filtering in Traces Drilldown"
     },
     {
       "name": "tracesDrilldownTimeSeeker",

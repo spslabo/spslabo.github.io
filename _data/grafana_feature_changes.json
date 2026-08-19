@@ -1,6 +1,52 @@
 {
   "changes": [
     {
+      "date": "2026-08-18",
+      "flag": "datasources.azureMonitorBatchAPI",
+      "change": "stage_change",
+      "sha": "29dabba",
+      "commit_url": "https://github.com/grafana/grafana/commit/29dabba2a3549cc6b148628b7cf63a4086200db9",
+      "detected_at": "2026-08-19T07:08:48Z",
+      "from_stage": "Experimental",
+      "to_stage": "PublicPreview"
+    },
+    {
+      "date": "2026-08-18",
+      "flag": "table.refresh",
+      "change": "new",
+      "sha": "e7cab7f",
+      "commit_url": "https://github.com/grafana/grafana/commit/e7cab7fb28ee9331aee8ee200163992caf10dc72",
+      "detected_at": "2026-08-19T07:08:48Z",
+      "stage": "Experimental"
+    },
+    {
+      "date": "2026-08-18",
+      "flag": "grafana.panelPluginTransformations",
+      "change": "new",
+      "sha": "822e053",
+      "commit_url": "https://github.com/grafana/grafana/commit/822e0530c54f0d61580c5b0cc3e5ccc1722ddb1b",
+      "detected_at": "2026-08-19T07:08:48Z",
+      "stage": "Experimental"
+    },
+    {
+      "date": "2026-08-18",
+      "flag": "tracesDrilldown.useValueTypeFiltering",
+      "change": "new",
+      "sha": "822e053",
+      "commit_url": "https://github.com/grafana/grafana/commit/822e0530c54f0d61580c5b0cc3e5ccc1722ddb1b",
+      "detected_at": "2026-08-19T07:08:48Z",
+      "stage": "Experimental"
+    },
+    {
+      "date": "2026-08-18",
+      "flag": "dsAbstractionApp",
+      "change": "removed",
+      "sha": "eeeca67",
+      "commit_url": "https://github.com/grafana/grafana/commit/eeeca671f6555584b4339b6514c65a07ed06709c",
+      "detected_at": "2026-08-19T07:08:48Z",
+      "from_stage": "Experimental"
+    },
+    {
       "date": "2026-08-14",
       "flag": "datasources.queryGateway",
       "change": "new",
