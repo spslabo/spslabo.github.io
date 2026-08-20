@@ -1,6 +1,62 @@
 {
   "changes": [
     {
+      "date": "2026-08-19",
+      "flag": "reportRenderQueryDebounce",
+      "change": "new",
+      "sha": "06ffc35",
+      "commit_url": "https://github.com/grafana/grafana/commit/06ffc35689879606e693afc7d66371b9ce7d42da",
+      "detected_at": "2026-08-20T07:10:05Z",
+      "stage": "Experimental"
+    },
+    {
+      "date": "2026-08-19",
+      "flag": "alertingMigrationWizardUI",
+      "change": "stage_change",
+      "sha": "481f39b",
+      "commit_url": "https://github.com/grafana/grafana/commit/481f39b9f276f07941c741d6dc23da02f7495b34",
+      "detected_at": "2026-08-20T07:10:05Z",
+      "from_stage": "Experimental",
+      "to_stage": "PublicPreview"
+    },
+    {
+      "date": "2026-08-19",
+      "flag": "alertingImportAlertmanagerAPI",
+      "change": "stage_change",
+      "sha": "481f39b",
+      "commit_url": "https://github.com/grafana/grafana/commit/481f39b9f276f07941c741d6dc23da02f7495b34",
+      "detected_at": "2026-08-20T07:10:05Z",
+      "from_stage": "Experimental",
+      "to_stage": "PublicPreview"
+    },
+    {
+      "date": "2026-08-19",
+      "flag": "appplugins.loadAppManifest",
+      "change": "new",
+      "sha": "6a70379",
+      "commit_url": "https://github.com/grafana/grafana/commit/6a7037975c51f06c067ef88a6be5e5da02622246",
+      "detected_at": "2026-08-20T07:10:05Z",
+      "stage": "Experimental"
+    },
+    {
+      "date": "2026-08-19",
+      "flag": "grafana.dashboardsAutoHeightPanels",
+      "change": "new",
+      "sha": "aa11cfb",
+      "commit_url": "https://github.com/grafana/grafana/commit/aa11cfbf1e3b866ef159bf77bd21b1374e0b3d53",
+      "detected_at": "2026-08-20T07:10:05Z",
+      "stage": "Experimental"
+    },
+    {
+      "date": "2026-08-19",
+      "flag": "grafana.newPreferencesPage",
+      "change": "removed",
+      "sha": "9cd5826",
+      "commit_url": "https://github.com/grafana/grafana/commit/9cd5826c7e6db1ea7f13e5a30e9d2136e05c769a",
+      "detected_at": "2026-08-20T07:10:05Z",
+      "from_stage": "GA"
+    },
+    {
       "date": "2026-08-18",
       "flag": "datasources.azureMonitorBatchAPI",
       "change": "stage_change",

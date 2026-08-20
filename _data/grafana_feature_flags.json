@@ -1,10 +1,10 @@
 {
   "source_url": "https://github.com/grafana/grafana/blob/main/pkg/services/featuremgmt/registry.go",
-  "total": 379,
+  "total": 381,
   "counts_by_stage": {
-    "Experimental": 272,
-    "GA": 57,
-    "PublicPreview": 34,
+    "Experimental": 273,
+    "GA": 56,
+    "PublicPreview": 36,
     "PrivatePreview": 12,
     "Deprecated": 4
   },
@@ -126,7 +126,7 @@
     },
     {
       "name": "alertingImportAlertmanagerAPI",
-      "stage": "Experimental",
+      "stage": "PublicPreview",
       "description": "Enables the API to import Alertmanager configuration"
     },
     {
@@ -156,7 +156,7 @@
     },
     {
       "name": "alertingMigrationWizardUI",
-      "stage": "Experimental",
+      "stage": "PublicPreview",
       "description": "Enables the migration wizard UI to migrate alert rules and notification resources from external sources to Grafana Alerting"
     },
     {
@@ -318,6 +318,11 @@
       "name": "appplugins.handleProxyRequests",
       "stage": "Experimental",
       "description": "Register the proxy endpoints"
+    },
+    {
+      "name": "appplugins.loadAppManifest",
+      "stage": "Experimental",
+      "description": "Load app manifest when loading plugin definitions"
     },
     {
       "name": "appplugins.registerAPIServer",
@@ -815,6 +820,11 @@
       "description": "Enables global and folder-scoped dashboard variables via dashboard.grafana.app"
     },
     {
+      "name": "grafana.dashboardsAutoHeightPanels",
+      "stage": "Experimental",
+      "description": "Enables the auto-height feature for dashboard panels"
+    },
+    {
       "name": "grafana.dashboardSettingsRedesign",
       "stage": "GA",
       "description": "Redesigns dashboard settings page into Advanced Settings in a modal window"
@@ -878,11 +888,6 @@
       "name": "grafana.newPanelQueryErrorsUI",
       "stage": "Experimental",
       "description": "Enables a new UI for query errors and notices"
-    },
-    {
-      "name": "grafana.newPreferencesPage",
-      "stage": "GA",
-      "description": "Whether to use the new SharedPreferences functional component"
     },
     {
       "name": "grafana.newTextPanel",
@@ -1658,6 +1663,11 @@
       "name": "reportRenderBinding",
       "stage": "Experimental",
       "description": "Enables render binding support for report rendering"
+    },
+    {
+      "name": "reportRenderQueryDebounce",
+      "stage": "Experimental",
+      "description": "On the report render page, wait for panel queries to settle (including late-registering repeat panel queries) before signaling the image renderer that the dashboard is done. Uses the legacy config-based toggle rather than OpenFeature since the render page authenticates via the image-renderer's signed render key rather than a normal user session, and OpenFeature evaluation isn't verified to work reliably in that context."
     },
     {
       "name": "restrictedPluginApis",
