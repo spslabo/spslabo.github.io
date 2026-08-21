@@ -1,6 +1,120 @@
 {
   "changes": [
     {
+      "date": "2026-08-20",
+      "flag": "authz.userPermissions",
+      "change": "new",
+      "sha": "b2f1fae",
+      "commit_url": "https://github.com/grafana/grafana/commit/b2f1faeabd263366547f74114d7c24fb7d6bff7d",
+      "detected_at": "2026-08-21T07:10:45Z",
+      "stage": "Experimental"
+    },
+    {
+      "date": "2026-08-20",
+      "flag": "alertingNotificationHistory",
+      "change": "stage_change",
+      "sha": "a693ff4",
+      "commit_url": "https://github.com/grafana/grafana/commit/a693ff4dc37be00c8abde3a69b6ac407fdc88bf9",
+      "detected_at": "2026-08-21T07:10:45Z",
+      "from_stage": "Experimental",
+      "to_stage": "GA"
+    },
+    {
+      "date": "2026-08-20",
+      "flag": "kubernetesAlertingHistorian",
+      "change": "stage_change",
+      "sha": "a693ff4",
+      "commit_url": "https://github.com/grafana/grafana/commit/a693ff4dc37be00c8abde3a69b6ac407fdc88bf9",
+      "detected_at": "2026-08-21T07:10:45Z",
+      "from_stage": "Experimental",
+      "to_stage": "GA"
+    },
+    {
+      "date": "2026-08-20",
+      "flag": "kubernetesAuthInfoApi",
+      "change": "new",
+      "sha": "198cce5",
+      "commit_url": "https://github.com/grafana/grafana/commit/198cce5201b172bffb2983dfdd2bbccde8527895",
+      "detected_at": "2026-08-21T07:10:45Z",
+      "stage": "Experimental"
+    },
+    {
+      "date": "2026-08-20",
+      "flag": "kubernetesAuthInfoRedirect",
+      "change": "new",
+      "sha": "198cce5",
+      "commit_url": "https://github.com/grafana/grafana/commit/198cce5201b172bffb2983dfdd2bbccde8527895",
+      "detected_at": "2026-08-21T07:10:45Z",
+      "stage": "Experimental"
+    },
+    {
+      "date": "2026-08-20",
+      "flag": "alertingNotificationHistoryRuleViewer",
+      "change": "stage_change",
+      "sha": "a693ff4",
+      "commit_url": "https://github.com/grafana/grafana/commit/a693ff4dc37be00c8abde3a69b6ac407fdc88bf9",
+      "detected_at": "2026-08-21T07:10:45Z",
+      "from_stage": "Experimental",
+      "to_stage": "GA"
+    },
+    {
+      "date": "2026-08-20",
+      "flag": "alertingNotificationHistoryGlobal",
+      "change": "stage_change",
+      "sha": "a693ff4",
+      "commit_url": "https://github.com/grafana/grafana/commit/a693ff4dc37be00c8abde3a69b6ac407fdc88bf9",
+      "detected_at": "2026-08-21T07:10:45Z",
+      "from_stage": "Experimental",
+      "to_stage": "GA"
+    },
+    {
+      "date": "2026-08-20",
+      "flag": "alertingNotificationHistoryTriage",
+      "change": "stage_change",
+      "sha": "a693ff4",
+      "commit_url": "https://github.com/grafana/grafana/commit/a693ff4dc37be00c8abde3a69b6ac407fdc88bf9",
+      "detected_at": "2026-08-21T07:10:45Z",
+      "from_stage": "Experimental",
+      "to_stage": "GA"
+    },
+    {
+      "date": "2026-08-20",
+      "flag": "alertingNotificationHistoryDetail",
+      "change": "stage_change",
+      "sha": "a693ff4",
+      "commit_url": "https://github.com/grafana/grafana/commit/a693ff4dc37be00c8abde3a69b6ac407fdc88bf9",
+      "detected_at": "2026-08-21T07:10:45Z",
+      "from_stage": "Experimental",
+      "to_stage": "GA"
+    },
+    {
+      "date": "2026-08-20",
+      "flag": "grafana.cmdkHybridSearch",
+      "change": "new",
+      "sha": "c725346",
+      "commit_url": "https://github.com/grafana/grafana/commit/c72534661fb8b5ad257a25f5c70a87a41d24a5ec",
+      "detected_at": "2026-08-21T07:10:45Z",
+      "stage": "Experimental"
+    },
+    {
+      "date": "2026-08-20",
+      "flag": "canvasExternalPlugin",
+      "change": "removed",
+      "sha": "31e9a1d",
+      "commit_url": "https://github.com/grafana/grafana/commit/31e9a1d51c68913addb746ab509e2d3ea86e4123",
+      "detected_at": "2026-08-21T07:10:45Z",
+      "from_stage": "Experimental"
+    },
+    {
+      "date": "2026-08-20",
+      "flag": "starsFromAPIServer",
+      "change": "removed",
+      "sha": "32bbe08",
+      "commit_url": "https://github.com/grafana/grafana/commit/32bbe080d27f7607ad9de704536ea2c606c7b308",
+      "detected_at": "2026-08-21T07:10:45Z",
+      "from_stage": "Experimental"
+    },
+    {
       "date": "2026-08-19",
       "flag": "reportRenderQueryDebounce",
       "change": "new",

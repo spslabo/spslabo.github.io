@@ -1,9 +1,9 @@
 {
   "source_url": "https://github.com/grafana/grafana/blob/main/pkg/services/featuremgmt/registry.go",
-  "total": 381,
+  "total": 383,
   "counts_by_stage": {
-    "Experimental": 273,
-    "GA": 56,
+    "Experimental": 269,
+    "GA": 62,
     "PublicPreview": 36,
     "PrivatePreview": 12,
     "Deprecated": 4
@@ -166,27 +166,27 @@
     },
     {
       "name": "alertingNotificationHistory",
-      "stage": "Experimental",
+      "stage": "GA",
       "description": "Enables the notification history feature"
     },
     {
       "name": "alertingNotificationHistoryDetail",
-      "stage": "Experimental",
+      "stage": "GA",
       "description": "Enables the notification history detail page"
     },
     {
       "name": "alertingNotificationHistoryGlobal",
-      "stage": "Experimental",
+      "stage": "GA",
       "description": "Enables the notification history global menu item viewer"
     },
     {
       "name": "alertingNotificationHistoryRuleViewer",
-      "stage": "Experimental",
+      "stage": "GA",
       "description": "Enables the notification history tab in the rule viewer"
     },
     {
       "name": "alertingNotificationHistoryTriage",
-      "stage": "Experimental",
+      "stage": "GA",
       "description": "Enables the notification history timeline in the triage instance details drawer"
     },
     {
@@ -360,6 +360,11 @@
       "description": "Build the access-control folder tree by listing folders via the unified-storage search index (lightweight UID+parent refs) instead of a full object list, avoiding paged object-list round-trips."
     },
     {
+      "name": "authz.userPermissions",
+      "stage": "Experimental",
+      "description": "Route user permission snapshots through the AuthZ service."
+    },
+    {
       "name": "authZGRPCServer",
       "stage": "Experimental",
       "description": "Enables the gRPC server for authorization"
@@ -413,11 +418,6 @@
       "name": "cacheConfigUnifiedStorageMigration",
       "stage": "Experimental",
       "description": "Enables cache configs data migration to unified storage"
-    },
-    {
-      "name": "canvasExternalPlugin",
-      "stage": "Experimental",
-      "description": "Load Canvas panel from an external plugin instead of the bundled core plugin"
     },
     {
       "name": "canvasPanelNesting",
@@ -800,6 +800,11 @@
       "description": "Enables SRI checks for Grafana JavaScript assets"
     },
     {
+      "name": "grafana.cmdkHybridSearch",
+      "stage": "Experimental",
+      "description": "Uses the hybrid (lexical + semantic) search endpoint as the dashboard search backend in the command palette"
+    },
+    {
       "name": "grafana.correlationsSkipLegacy",
       "stage": "Experimental",
       "description": "Route any calls to legacy correlations endpoints to call through to app platform"
@@ -1086,8 +1091,18 @@
     },
     {
       "name": "kubernetesAlertingHistorian",
-      "stage": "Experimental",
+      "stage": "GA",
       "description": "Adds support for Kubernetes alerting historian APIs"
+    },
+    {
+      "name": "kubernetesAuthInfoApi",
+      "stage": "Experimental",
+      "description": "Enables auth info APIs in the app platform"
+    },
+    {
+      "name": "kubernetesAuthInfoRedirect",
+      "stage": "Experimental",
+      "description": "Redirects the requests of the auth info service to the app platform APIs"
     },
     {
       "name": "kubernetesAuthzDatasourceResourcePermissions",
@@ -1758,11 +1773,6 @@
       "name": "sseGroupByDatasource",
       "stage": "Experimental",
       "description": "Send query to the same datasource in a single request when using server side expressions. The `cloudWatchBatchQueries` feature toggle should be enabled if this used with CloudWatch."
-    },
-    {
-      "name": "starsFromAPIServer",
-      "stage": "Experimental",
-      "description": "populate star status from apiserver"
     },
     {
       "name": "stateTimeline.nameAboveBars",
