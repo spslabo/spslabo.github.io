@@ -1,10 +1,10 @@
 {
   "source_url": "https://github.com/grafana/grafana/blob/main/pkg/services/featuremgmt/registry.go",
-  "total": 383,
+  "total": 385,
   "counts_by_stage": {
-    "Experimental": 269,
+    "Experimental": 268,
     "GA": 62,
-    "PublicPreview": 36,
+    "PublicPreview": 39,
     "PrivatePreview": 12,
     "Deprecated": 4
   },
@@ -946,7 +946,7 @@
     },
     {
       "name": "grafana.secretsReferenceValueUI",
-      "stage": "Experimental",
+      "stage": "PublicPreview",
       "description": "Enable referencing an existing secret in an active keeper when creating a secure value"
     },
     {
@@ -1716,12 +1716,12 @@
     },
     {
       "name": "secretsKeeperUI",
-      "stage": "Experimental",
+      "stage": "PublicPreview",
       "description": "Enable the Secrets Keeper management UI for configuring external secret storage"
     },
     {
       "name": "secretsManagementAppPlatformAwsKeeper",
-      "stage": "Experimental",
+      "stage": "PublicPreview",
       "description": "Enables the creation of keepers that manage secrets stored on AWS secrets manager"
     },
     {
@@ -1823,6 +1823,16 @@
       "name": "teamHttpHeadersFromAppPlatform",
       "stage": "Experimental",
       "description": "Use the Kubernetes TeamLBACRule API for team HTTP headers on datasource query requests"
+    },
+    {
+      "name": "teamHttpHeadersFromAppPlatformMT",
+      "stage": "Experimental",
+      "description": "Use the IAM TeamLBACRule rules-for-subject API for team HTTP headers in multi-tenant datasource services"
+    },
+    {
+      "name": "teamHttpHeadersFromAppPlatformST",
+      "stage": "Experimental",
+      "description": "Use the IAM TeamLBACRule rules-for-subject API for team HTTP headers in single-tenant Grafana"
     },
     {
       "name": "teamHttpHeadersTempo",

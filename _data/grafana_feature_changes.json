@@ -1,6 +1,54 @@
 {
   "changes": [
     {
+      "date": "2026-08-24",
+      "flag": "secretsKeeperUI",
+      "change": "stage_change",
+      "sha": "da0414e",
+      "commit_url": "https://github.com/grafana/grafana/commit/da0414e4e04c3b8d635708508246ca1d8515d4ea",
+      "detected_at": "2026-08-25T07:11:30Z",
+      "from_stage": "Experimental",
+      "to_stage": "PublicPreview"
+    },
+    {
+      "date": "2026-08-24",
+      "flag": "grafana.secretsReferenceValueUI",
+      "change": "stage_change",
+      "sha": "da0414e",
+      "commit_url": "https://github.com/grafana/grafana/commit/da0414e4e04c3b8d635708508246ca1d8515d4ea",
+      "detected_at": "2026-08-25T07:11:30Z",
+      "from_stage": "Experimental",
+      "to_stage": "PublicPreview"
+    },
+    {
+      "date": "2026-08-24",
+      "flag": "teamHttpHeadersFromAppPlatformST",
+      "change": "new",
+      "sha": "dcc4743",
+      "commit_url": "https://github.com/grafana/grafana/commit/dcc4743d8fc9aa9b8fc00ded713222a90dab072b",
+      "detected_at": "2026-08-25T07:11:30Z",
+      "stage": "Experimental"
+    },
+    {
+      "date": "2026-08-24",
+      "flag": "teamHttpHeadersFromAppPlatformMT",
+      "change": "new",
+      "sha": "dcc4743",
+      "commit_url": "https://github.com/grafana/grafana/commit/dcc4743d8fc9aa9b8fc00ded713222a90dab072b",
+      "detected_at": "2026-08-25T07:11:30Z",
+      "stage": "Experimental"
+    },
+    {
+      "date": "2026-08-24",
+      "flag": "secretsManagementAppPlatformAwsKeeper",
+      "change": "stage_change",
+      "sha": "da0414e",
+      "commit_url": "https://github.com/grafana/grafana/commit/da0414e4e04c3b8d635708508246ca1d8515d4ea",
+      "detected_at": "2026-08-25T07:11:30Z",
+      "from_stage": "Experimental",
+      "to_stage": "PublicPreview"
+    },
+    {
       "date": "2026-08-20",
       "flag": "authz.userPermissions",
       "change": "new",
