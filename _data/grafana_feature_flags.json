@@ -1,9 +1,9 @@
 {
   "source_url": "https://github.com/grafana/grafana/blob/main/pkg/services/featuremgmt/registry.go",
-  "total": 385,
+  "total": 386,
   "counts_by_stage": {
     "Experimental": 268,
-    "GA": 62,
+    "GA": 63,
     "PublicPreview": 39,
     "PrivatePreview": 12,
     "Deprecated": 4
@@ -818,6 +818,11 @@
       "name": "grafana.customizableMegaMenu",
       "stage": "Experimental",
       "description": "Allows users to customise the mega menu by hiding top-level navigation items they are not interested in"
+    },
+    {
+      "name": "grafana.dashboardAutoGridDefault",
+      "stage": "GA",
+      "description": "Uses auto grid as the default layout for new dashboards"
     },
     {
       "name": "grafana.dashboardGlobalVariables",
