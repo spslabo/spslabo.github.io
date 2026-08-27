@@ -1,9 +1,9 @@
 {
   "source_url": "https://github.com/grafana/grafana/blob/main/pkg/services/featuremgmt/registry.go",
-  "total": 386,
+  "total": 385,
   "counts_by_stage": {
     "Experimental": 268,
-    "GA": 63,
+    "GA": 62,
     "PublicPreview": 39,
     "PrivatePreview": 12,
     "Deprecated": 4
@@ -498,6 +498,11 @@
       "name": "dashboard.notebooks",
       "stage": "Experimental",
       "description": "Enable notebooks, a resource in the dashboard API group for mixing text cells, code cells, and visualization panels"
+    },
+    {
+      "name": "dashboard.recentlyDeletedViaTrash",
+      "stage": "Experimental",
+      "description": "Load the Recently deleted dashboard list from the search API trash endpoint, instead of listing every deleted dashboard and filtering in the browser"
     },
     {
       "name": "dashboard.vectorSearch",
@@ -1470,11 +1475,6 @@
       "description": "Load plugins on store service startup instead of wire provider, and call RegisterFixedRoles after all plugins are loaded"
     },
     {
-      "name": "preferences.rerouteLegacyAPIs",
-      "stage": "GA",
-      "description": "Use K8s client implementation for legacy preferences API"
-    },
-    {
       "name": "preferLibraryPanelTitle",
       "stage": "PrivatePreview",
       "description": "Prefer library panel title over viz panel title."
@@ -1873,11 +1873,6 @@
       "name": "timeRangeProvider",
       "stage": "Experimental",
       "description": "Enables time pickers sync"
-    },
-    {
-      "name": "tracesDrilldown.useValueTypeFiltering",
-      "stage": "Experimental",
-      "description": "Enables value type filtering in Traces Drilldown"
     },
     {
       "name": "tracesDrilldownTimeSeeker",

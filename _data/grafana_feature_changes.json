@@ -1,6 +1,33 @@
 {
   "changes": [
     {
+      "date": "2026-08-27",
+      "flag": "preferences.rerouteLegacyAPIs",
+      "change": "removed",
+      "sha": "345e03d",
+      "commit_url": "https://github.com/grafana/grafana/commit/345e03d588cae57fe98d08219a99dab584bf35c8",
+      "detected_at": "2026-08-27T17:41:10Z",
+      "from_stage": "GA"
+    },
+    {
+      "date": "2026-08-26",
+      "flag": "dashboard.recentlyDeletedViaTrash",
+      "change": "new",
+      "sha": "c8e1474",
+      "commit_url": "https://github.com/grafana/grafana/commit/c8e14742c7f2176bb22e5e9035fdd327457f5c54",
+      "detected_at": "2026-08-27T17:41:10Z",
+      "stage": "Experimental"
+    },
+    {
+      "date": "2026-08-26",
+      "flag": "tracesDrilldown.useValueTypeFiltering",
+      "change": "removed",
+      "sha": "7d90341",
+      "commit_url": "https://github.com/grafana/grafana/commit/7d90341cd4f90b51838b74b8cd23309dd3d66e7c",
+      "detected_at": "2026-08-27T17:41:10Z",
+      "from_stage": "Experimental"
+    },
+    {
       "date": "2026-08-25",
       "flag": "grafana.dashboardAutoGridDefault",
       "change": "new",
