@@ -1,6 +1,25 @@
 {
   "changes": [
     {
+      "date": "2026-08-28",
+      "flag": "foldersAppPlatformAPI",
+      "change": "stage_change",
+      "sha": "a315f56",
+      "commit_url": "https://github.com/grafana/grafana/commit/a315f5638ebab2e38bee7e3c0e78d0ff868f9576",
+      "detected_at": "2026-08-28T18:48:45Z",
+      "from_stage": "Experimental",
+      "to_stage": "GA"
+    },
+    {
+      "date": "2026-08-27",
+      "flag": "queryeditor.coauthoringUi",
+      "change": "new",
+      "sha": "6c28a4d",
+      "commit_url": "https://github.com/grafana/grafana/commit/6c28a4dc53c4540aaca720c2e405892534fae89b",
+      "detected_at": "2026-08-28T18:48:45Z",
+      "stage": "Experimental"
+    },
+    {
       "date": "2026-08-27",
       "flag": "preferences.rerouteLegacyAPIs",
       "change": "removed",
