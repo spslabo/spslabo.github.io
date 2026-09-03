@@ -1,6 +1,42 @@
 {
   "changes": [
     {
+      "date": "2026-09-02",
+      "flag": "datasources.teamHttpHeadersFromAppPlatformST",
+      "change": "new",
+      "sha": "6c5822c",
+      "commit_url": "https://github.com/grafana/grafana/commit/6c5822ce08757c5c6312ca5e1d867b01215ff365",
+      "detected_at": "2026-09-03T11:23:29Z",
+      "stage": "Experimental"
+    },
+    {
+      "date": "2026-09-02",
+      "flag": "datasources.teamHttpHeadersFromAppPlatformMT",
+      "change": "new",
+      "sha": "6c5822c",
+      "commit_url": "https://github.com/grafana/grafana/commit/6c5822ce08757c5c6312ca5e1d867b01215ff365",
+      "detected_at": "2026-09-03T11:23:29Z",
+      "stage": "Experimental"
+    },
+    {
+      "date": "2026-09-02",
+      "flag": "teamHttpHeadersFromAppPlatformMT",
+      "change": "removed",
+      "sha": "6c5822c",
+      "commit_url": "https://github.com/grafana/grafana/commit/6c5822ce08757c5c6312ca5e1d867b01215ff365",
+      "detected_at": "2026-09-03T11:23:29Z",
+      "from_stage": "Experimental"
+    },
+    {
+      "date": "2026-09-02",
+      "flag": "teamHttpHeadersFromAppPlatformST",
+      "change": "removed",
+      "sha": "6c5822c",
+      "commit_url": "https://github.com/grafana/grafana/commit/6c5822ce08757c5c6312ca5e1d867b01215ff365",
+      "detected_at": "2026-09-03T11:23:29Z",
+      "from_stage": "Experimental"
+    },
+    {
       "date": "2026-08-28",
       "flag": "foldersAppPlatformAPI",
       "change": "stage_change",
