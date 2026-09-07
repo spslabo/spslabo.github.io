@@ -1,9 +1,9 @@
 {
   "source_url": "https://github.com/grafana/grafana/blob/main/pkg/services/featuremgmt/registry.go",
-  "total": 386,
+  "total": 385,
   "counts_by_stage": {
     "Experimental": 268,
-    "GA": 63,
+    "GA": 62,
     "PublicPreview": 39,
     "PrivatePreview": 12,
     "Deprecated": 4
@@ -1048,11 +1048,6 @@
       "name": "iam.onlyStoreDatasourceActionSets",
       "stage": "Experimental",
       "description": "When storing datasource resource permissions, only store action sets and not the full list of underlying permissions"
-    },
-    {
-      "name": "improvedExternalSessionHandling",
-      "stage": "GA",
-      "description": "Enables improved support for OAuth external sessions. After enabling this feature, users might need to re-authenticate themselves."
     },
     {
       "name": "improvedExternalSessionHandlingSAML",
