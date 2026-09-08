@@ -2,8 +2,8 @@
   "source_url": "https://github.com/grafana/grafana/blob/main/pkg/services/featuremgmt/registry.go",
   "total": 385,
   "counts_by_stage": {
-    "Experimental": 268,
-    "GA": 62,
+    "Experimental": 269,
+    "GA": 61,
     "PublicPreview": 39,
     "PrivatePreview": 12,
     "Deprecated": 4
@@ -910,6 +910,11 @@
       "description": "Builds the navigation tree client-side instead of reading it from /bootdata"
     },
     {
+      "name": "grafana.multiTenantUserPermissions",
+      "stage": "Experimental",
+      "description": "Read the current user's permissions from the IAM app platform API instead of /api/access-control/user/actions"
+    },
+    {
       "name": "grafana.newPanelQueryErrorsUI",
       "stage": "Experimental",
       "description": "Enables a new UI for query errors and notices"
@@ -1048,11 +1053,6 @@
       "name": "iam.onlyStoreDatasourceActionSets",
       "stage": "Experimental",
       "description": "When storing datasource resource permissions, only store action sets and not the full list of underlying permissions"
-    },
-    {
-      "name": "improvedExternalSessionHandlingSAML",
-      "stage": "GA",
-      "description": "Enables improved support for SAML external sessions. Ensure the NameID format is correctly configured in Grafana for SAML Single Logout to function properly."
     },
     {
       "name": "infinityRunQueriesInParallel",

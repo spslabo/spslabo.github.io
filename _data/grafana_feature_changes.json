@@ -2,6 +2,24 @@
   "changes": [
     {
       "date": "2026-09-07",
+      "flag": "grafana.multiTenantUserPermissions",
+      "change": "new",
+      "sha": "e7cd4e6",
+      "commit_url": "https://github.com/grafana/grafana/commit/e7cd4e6259fbd97b5288f40f70e36aefee6b01d9",
+      "detected_at": "2026-09-08T11:26:48Z",
+      "stage": "Experimental"
+    },
+    {
+      "date": "2026-09-07",
+      "flag": "improvedExternalSessionHandlingSAML",
+      "change": "removed",
+      "sha": "995c235",
+      "commit_url": "https://github.com/grafana/grafana/commit/995c235396d185488d94780a3a5b53a668828710",
+      "detected_at": "2026-09-08T11:26:48Z",
+      "from_stage": "GA"
+    },
+    {
+      "date": "2026-09-07",
       "flag": "improvedExternalSessionHandling",
       "change": "removed",
       "sha": "35bf13f",
