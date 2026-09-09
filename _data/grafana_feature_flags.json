@@ -1,8 +1,8 @@
 {
   "source_url": "https://github.com/grafana/grafana/blob/main/pkg/services/featuremgmt/registry.go",
-  "total": 385,
+  "total": 387,
   "counts_by_stage": {
-    "Experimental": 269,
+    "Experimental": 271,
     "GA": 61,
     "PublicPreview": 39,
     "PrivatePreview": 12,
@@ -588,6 +588,11 @@
       "name": "datasources.loadOpenAPI",
       "stage": "Experimental",
       "description": "Load the openapi spec from spec.{version}.openapi.{yaml|json}"
+    },
+    {
+      "name": "datasources.querier.newName",
+      "stage": "Experimental",
+      "description": "Data source query service, use the new name"
     },
     {
       "name": "datasources.queryGateway",
@@ -1668,6 +1673,11 @@
       "name": "reporting.pdfTablesFrontend",
       "stage": "Experimental",
       "description": "Enables frontend-rendered table appendix pages in PDF reports"
+    },
+    {
+      "name": "reporting.redirectReportSettingsToK8SApi",
+      "stage": "Experimental",
+      "description": "Redirect legacy report settings API endpoints to the Kubernetes reporting API"
     },
     {
       "name": "reporting.redirectReportsToK8SApi",
