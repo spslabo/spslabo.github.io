@@ -1,6 +1,33 @@
 {
   "changes": [
     {
+      "date": "2026-09-10",
+      "flag": "dashboard.apiSearchFieldValueResults",
+      "change": "new",
+      "sha": "04560d7",
+      "commit_url": "https://github.com/grafana/grafana/commit/04560d780c6e2607cfacbe01d22522d90dcc6bd5",
+      "detected_at": "2026-09-10T11:28:57Z",
+      "stage": "Experimental"
+    },
+    {
+      "date": "2026-09-09",
+      "flag": "dashboard.searchFieldValueResults",
+      "change": "new",
+      "sha": "21b0985",
+      "commit_url": "https://github.com/grafana/grafana/commit/21b0985abb3f1a8614e379556f28e46a59e5742e",
+      "detected_at": "2026-09-10T11:28:57Z",
+      "stage": "Experimental"
+    },
+    {
+      "date": "2026-09-09",
+      "flag": "flameGraphWithCallTree",
+      "change": "removed",
+      "sha": "3c067fa",
+      "commit_url": "https://github.com/grafana/grafana/commit/3c067fa248da73662953fdb7c0dd0b98b9ab9f8e",
+      "detected_at": "2026-09-10T11:28:57Z",
+      "from_stage": "PublicPreview"
+    },
+    {
       "date": "2026-09-09",
       "flag": "datasources.querier.newName",
       "change": "new",

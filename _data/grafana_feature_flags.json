@@ -1,10 +1,10 @@
 {
   "source_url": "https://github.com/grafana/grafana/blob/main/pkg/services/featuremgmt/registry.go",
-  "total": 387,
+  "total": 388,
   "counts_by_stage": {
-    "Experimental": 271,
+    "Experimental": 273,
     "GA": 61,
-    "PublicPreview": 39,
+    "PublicPreview": 38,
     "PrivatePreview": 12,
     "Deprecated": 4
   },
@@ -495,6 +495,11 @@
       "description": "Enables Critical User Journey (CUJ) tracking"
     },
     {
+      "name": "dashboard.apiSearchFieldValueResults",
+      "stage": "Experimental",
+      "description": "Uses field-value results for requests from the /api/search endpoint"
+    },
+    {
       "name": "dashboard.notebooks",
       "stage": "Experimental",
       "description": "Enable notebooks, a resource in the dashboard API group for mixing text cells, code cells, and visualization panels"
@@ -503,6 +508,11 @@
       "name": "dashboard.recentlyDeletedViaTrash",
       "stage": "Experimental",
       "description": "Load the Recently deleted dashboard list from the search API trash endpoint, instead of listing every deleted dashboard and filtering in the browser"
+    },
+    {
+      "name": "dashboard.searchFieldValueResults",
+      "stage": "Experimental",
+      "description": "Uses field-value results for dashboard search requests"
     },
     {
       "name": "dashboard.vectorSearch",
@@ -793,11 +803,6 @@
       "name": "flameGraph.tableNg",
       "stage": "Experimental",
       "description": "Renders the flame graph's top table using TableNG instead of the legacy Table"
-    },
-    {
-      "name": "flameGraphWithCallTree",
-      "stage": "PublicPreview",
-      "description": "Enables the new Flame Graph UI containing the Call Tree view"
     },
     {
       "name": "foldersAppPlatformAPI",
