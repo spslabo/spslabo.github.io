@@ -1,9 +1,9 @@
 {
   "source_url": "https://github.com/grafana/grafana/blob/main/pkg/services/featuremgmt/registry.go",
-  "total": 388,
+  "total": 392,
   "counts_by_stage": {
-    "Experimental": 273,
-    "GA": 61,
+    "Experimental": 274,
+    "GA": 64,
     "PublicPreview": 38,
     "PrivatePreview": 12,
     "Deprecated": 4
@@ -595,6 +595,11 @@
       "description": "Use the new datasource API groups for datasource CRUD requests, frontend flag"
     },
     {
+      "name": "datasources.gatewayGuardrails",
+      "stage": "Experimental",
+      "description": "Data source query gateway guardrails"
+    },
+    {
       "name": "datasources.loadOpenAPI",
       "stage": "Experimental",
       "description": "Load the openapi spec from spec.{version}.openapi.{yaml|json}"
@@ -886,7 +891,7 @@
     },
     {
       "name": "grafana.filterablePanels",
-      "stage": "Experimental",
+      "stage": "GA",
       "description": "Enables interactive grouped-label filtering through the tooltip in state timeline, status history and histogram panels"
     },
     {
@@ -996,7 +1001,7 @@
     },
     {
       "name": "grafana.thresholdsInterpolation",
-      "stage": "Experimental",
+      "stage": "GA",
       "description": "Enables using dashboard variables in panel threshold values"
     },
     {
@@ -1008,6 +1013,11 @@
       "name": "grafana.useDefaultScopesEndpoint",
       "stage": "Experimental",
       "description": "Use the find default scope endpoint to seed the initial scope selection when none is set."
+    },
+    {
+      "name": "grafana.useRouterMiddleware",
+      "stage": "Experimental",
+      "description": "intercept /apis/... and /openapi/v3/... requests in middleware."
     },
     {
       "name": "grafana.vectorSearchCmdk",
@@ -1291,7 +1301,7 @@
     },
     {
       "name": "logsTablePanelNG",
-      "stage": "Experimental",
+      "stage": "GA",
       "description": "Enables the logs tableNG panel to replace existing tableRT"
     },
     {
@@ -1725,6 +1735,11 @@
       "description": "Enables the new role picker drawer design"
     },
     {
+      "name": "saml.gosaml2Provider",
+      "stage": "Experimental",
+      "description": "Use the gosaml2 library instead of the crewjam SAML library for SAML authentication"
+    },
+    {
       "name": "savedQueriesRBAC",
       "stage": "GA",
       "description": "Enables Saved queries (query library) RBAC permissions"
@@ -1743,6 +1758,11 @@
       "name": "scopeSearchAllLevels",
       "stage": "Experimental",
       "description": "Enable scope search to include all levels of the scope node tree"
+    },
+    {
+      "name": "search.apiFieldValueResults",
+      "stage": "Experimental",
+      "description": "Uses field-value results for generic resource search API requests"
     },
     {
       "name": "secretsKeeperUI",

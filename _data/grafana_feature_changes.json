@@ -1,6 +1,72 @@
 {
   "changes": [
     {
+      "date": "2026-09-11",
+      "flag": "logsTablePanelNG",
+      "change": "stage_change",
+      "sha": "df322db",
+      "commit_url": "https://github.com/grafana/grafana/commit/df322dbec314d86cc24c67f929d8ff3df1cfda99",
+      "detected_at": "2026-09-11T11:31:31Z",
+      "from_stage": "Experimental",
+      "to_stage": "GA"
+    },
+    {
+      "date": "2026-09-10",
+      "flag": "grafana.useRouterMiddleware",
+      "change": "new",
+      "sha": "7c885e7",
+      "commit_url": "https://github.com/grafana/grafana/commit/7c885e7b390c3fb21816d8c35d0be936dd1bc999",
+      "detected_at": "2026-09-11T11:31:31Z",
+      "stage": "Experimental"
+    },
+    {
+      "date": "2026-09-10",
+      "flag": "grafana.filterablePanels",
+      "change": "stage_change",
+      "sha": "ddb0358",
+      "commit_url": "https://github.com/grafana/grafana/commit/ddb03584fceb6d2338a1b74aacc2357468371db7",
+      "detected_at": "2026-09-11T11:31:31Z",
+      "from_stage": "Experimental",
+      "to_stage": "GA"
+    },
+    {
+      "date": "2026-09-10",
+      "flag": "search.apiFieldValueResults",
+      "change": "new",
+      "sha": "6cab1a8",
+      "commit_url": "https://github.com/grafana/grafana/commit/6cab1a8d6bc94735316f4e6b65bf580327ec6ac6",
+      "detected_at": "2026-09-11T11:31:31Z",
+      "stage": "Experimental"
+    },
+    {
+      "date": "2026-09-10",
+      "flag": "grafana.thresholdsInterpolation",
+      "change": "stage_change",
+      "sha": "ddb0358",
+      "commit_url": "https://github.com/grafana/grafana/commit/ddb03584fceb6d2338a1b74aacc2357468371db7",
+      "detected_at": "2026-09-11T11:31:31Z",
+      "from_stage": "Experimental",
+      "to_stage": "GA"
+    },
+    {
+      "date": "2026-09-10",
+      "flag": "saml.gosaml2Provider",
+      "change": "new",
+      "sha": "e7be934",
+      "commit_url": "https://github.com/grafana/grafana/commit/e7be934910ec0222be5a6d7a9dbb5f2d74ac42b1",
+      "detected_at": "2026-09-11T11:31:31Z",
+      "stage": "Experimental"
+    },
+    {
+      "date": "2026-09-10",
+      "flag": "datasources.gatewayGuardrails",
+      "change": "new",
+      "sha": "3833564",
+      "commit_url": "https://github.com/grafana/grafana/commit/38335642736a8264098ac730d24d47a20beb27ac",
+      "detected_at": "2026-09-11T11:31:31Z",
+      "stage": "Experimental"
+    },
+    {
       "date": "2026-09-10",
       "flag": "dashboard.apiSearchFieldValueResults",
       "change": "new",
