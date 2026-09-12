@@ -1,8 +1,8 @@
 {
   "source_url": "https://github.com/grafana/grafana/blob/main/pkg/services/featuremgmt/registry.go",
-  "total": 392,
+  "total": 395,
   "counts_by_stage": {
-    "Experimental": 274,
+    "Experimental": 277,
     "GA": 64,
     "PublicPreview": 38,
     "PrivatePreview": 12,
@@ -30,6 +30,11 @@
       "description": "Enable alert enrichment preview (notification-history-based) in view and edit drawers."
     },
     {
+      "name": "alerting.folderHasRulesLabel",
+      "stage": "Experimental",
+      "description": "Maintain the alerting.grafana.app/has-rules label on folders that contain Grafana-managed alert or recording rules, so folders holding rules can be queried by label selector"
+    },
+    {
       "name": "alerting.manualAssistantInvestigation",
       "stage": "Experimental",
       "description": "Enable manually starting an Assistant investigation from the alert instance drawer."
@@ -48,6 +53,11 @@
       "name": "alerting.rulesAPIV2",
       "stage": "Experimental",
       "description": "Enables the new Rules API v2 UI with evaluation chains and groupless rule creation"
+    },
+    {
+      "name": "alerting.ruleStatusSync",
+      "stage": "Experimental",
+      "description": "Periodically syncs alert and recording rule status onto the k8s AlertRule/RecordingRule resources"
     },
     {
       "name": "alerting.stateManagerRequireWarm",
@@ -1208,6 +1218,11 @@
       "name": "kubernetesFolderCascadeDelete",
       "stage": "Experimental",
       "description": "Enable folder.grafana.app cascade deletion: opt-in non-empty delete via gracePeriodSeconds=0. Until cascade reconciliation exists, deleting a non-empty folder removes only the folder and leaves child dashboards, nested folders, and other contained resources orphaned"
+    },
+    {
+      "name": "kubernetesFolderCountsLegacyStorage",
+      "stage": "Experimental",
+      "description": "Enable folder.grafana.app /counts joining a stack's legacy database that lives outside unified storage. Requires --database.servers to be configured for the standalone folder apiserver; only enable once that connection is verified reachable, since the apiserver fails to start otherwise"
     },
     {
       "name": "kubernetesLogsDrilldown",

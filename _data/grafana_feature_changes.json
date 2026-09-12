@@ -2,6 +2,33 @@
   "changes": [
     {
       "date": "2026-09-11",
+      "flag": "alerting.ruleStatusSync",
+      "change": "new",
+      "sha": "e5b8e1b",
+      "commit_url": "https://github.com/grafana/grafana/commit/e5b8e1b309e94e887a9f7e9e9fd0ba2f3d009018",
+      "detected_at": "2026-09-12T10:55:19Z",
+      "stage": "Experimental"
+    },
+    {
+      "date": "2026-09-11",
+      "flag": "kubernetesFolderCountsLegacyStorage",
+      "change": "new",
+      "sha": "9f75e3f",
+      "commit_url": "https://github.com/grafana/grafana/commit/9f75e3ffa85f6d77fbe364c1f446493f11a62c7e",
+      "detected_at": "2026-09-12T10:55:19Z",
+      "stage": "Experimental"
+    },
+    {
+      "date": "2026-09-11",
+      "flag": "alerting.folderHasRulesLabel",
+      "change": "new",
+      "sha": "a398de0",
+      "commit_url": "https://github.com/grafana/grafana/commit/a398de059865214630cab7f47198df652c698287",
+      "detected_at": "2026-09-12T10:55:19Z",
+      "stage": "Experimental"
+    },
+    {
+      "date": "2026-09-11",
       "flag": "logsTablePanelNG",
       "change": "stage_change",
       "sha": "df322db",
