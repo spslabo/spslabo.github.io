@@ -1,9 +1,9 @@
 {
   "source_url": "https://github.com/grafana/grafana/blob/main/pkg/services/featuremgmt/registry.go",
-  "total": 394,
+  "total": 395,
   "counts_by_stage": {
-    "Experimental": 276,
-    "GA": 64,
+    "Experimental": 278,
+    "GA": 63,
     "PublicPreview": 38,
     "PrivatePreview": 12,
     "Deprecated": 4
@@ -218,11 +218,6 @@
       "name": "alertingProvenanceLockWrites",
       "stage": "Experimental",
       "description": "Enables a feature to avoid issues with concurrent writes to the alerting provenance table in MySQL"
-    },
-    {
-      "name": "alertingQueryAndExpressionsStepMode",
-      "stage": "GA",
-      "description": "Enables step mode for alerting queries and expressions"
     },
     {
       "name": "alertingQueryOptimization",
@@ -658,6 +653,11 @@
       "name": "datasourcesApiServerEnableHealthEndpointRedirect",
       "stage": "Experimental",
       "description": "Redirect datasource health requests from the legacy API routes to the new datasource api group endpoints."
+    },
+    {
+      "name": "datasourcesApiServerEnableProxyEndpoint",
+      "stage": "Experimental",
+      "description": "Handle datasource proxy requests through the datasource API group endpoint."
     },
     {
       "name": "datasourcesApiServerEnableResourceEndpoint",
@@ -1873,6 +1873,11 @@
       "name": "table.refresh",
       "stage": "Experimental",
       "description": "Enables the refreshed table experience: reworked column headers and ad hoc column interactions"
+    },
+    {
+      "name": "table.refreshNewFeatures",
+      "stage": "Experimental",
+      "description": "Catch-all toggle for new features developed as part of the Q3 table panel refresh"
     },
     {
       "name": "tableSharedCrosshair",
