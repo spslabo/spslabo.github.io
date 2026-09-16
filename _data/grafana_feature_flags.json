@@ -1,12 +1,12 @@
 {
   "source_url": "https://github.com/grafana/grafana/blob/main/pkg/services/featuremgmt/registry.go",
-  "total": 395,
+  "total": 398,
   "counts_by_stage": {
-    "Experimental": 278,
+    "Experimental": 280,
     "GA": 63,
     "PublicPreview": 38,
     "PrivatePreview": 12,
-    "Deprecated": 4
+    "Deprecated": 5
   },
   "flags": [
     {
@@ -915,6 +915,11 @@
       "description": "Enables usage of the new annotations API client"
     },
     {
+      "name": "grafana.logDetailsDisplayedFieldControls",
+      "stage": "Deprecated",
+      "description": "Deprecated: Toggle displayed fields from Log Details"
+    },
+    {
       "name": "grafana.logLevelInference",
       "stage": "Deprecated",
       "description": "Enables log level inference from log line contents when level is not defined as a field or a label"
@@ -923,6 +928,11 @@
       "name": "grafana.meticulousAIMode",
       "stage": "Experimental",
       "description": ""
+    },
+    {
+      "name": "grafana.mtFallback",
+      "stage": "Experimental",
+      "description": "Enables multi-tenant fallback behavior"
     },
     {
       "name": "grafana.multiTenantNavTree",
@@ -963,6 +973,11 @@
       "name": "grafana.panelPluginTransformations",
       "stage": "Experimental",
       "description": "Let panel plugins register system transformations"
+    },
+    {
+      "name": "grafana.pluginExtensionReactElementProps",
+      "stage": "Experimental",
+      "description": "Pass React elements in plugin extension props by reference"
     },
     {
       "name": "grafana.pluginPathNesting",
@@ -1730,11 +1745,6 @@
       "description": "Enables render binding support for report rendering"
     },
     {
-      "name": "reportRenderQueryDebounce",
-      "stage": "Experimental",
-      "description": "On the report render page, wait for panel queries to settle (including late-registering repeat panel queries) before signaling the image renderer that the dashboard is done. Uses the legacy config-based toggle rather than OpenFeature since the render page authenticates via the image-renderer's signed render key rather than a normal user session, and OpenFeature evaluation isn't verified to work reliably in that context."
-    },
-    {
       "name": "restrictedPluginApis",
       "stage": "GA",
       "description": "Enables sharing a list of APIs with a list of plugins"
@@ -1943,6 +1953,11 @@
       "name": "unifiedNavbars",
       "stage": "GA",
       "description": "Enables unified navbars"
+    },
+    {
+      "name": "unifiedStorageClient.requireCallerIdentity",
+      "stage": "Experimental",
+      "description": "Fail unified storage calls that cannot carry the calling user's identity, instead of silently downgrading them to the service identity"
     },
     {
       "name": "useKubernetesShortURLsAPI",
