@@ -1,8 +1,8 @@
 {
   "source_url": "https://github.com/grafana/grafana/blob/main/pkg/services/featuremgmt/registry.go",
-  "total": 398,
+  "total": 401,
   "counts_by_stage": {
-    "Experimental": 280,
+    "Experimental": 283,
     "GA": 63,
     "PublicPreview": 38,
     "PrivatePreview": 12,
@@ -328,6 +328,11 @@
       "name": "appplugins.loadAppManifest",
       "stage": "Experimental",
       "description": "Load app manifest when loading plugin definitions"
+    },
+    {
+      "name": "appplugins.loadAppManifestAndKeepSettings",
+      "stage": "Experimental",
+      "description": "Continue to expose settings when a manifest exists"
     },
     {
       "name": "appplugins.registerAPIServer",
@@ -800,6 +805,11 @@
       "description": "Filters bulk OFREP flag evaluations to public-metadata flags only"
     },
     {
+      "name": "features.legacyOverrideLookupBypass",
+      "stage": "Experimental",
+      "description": "Skips checking for flag overrides."
+    },
+    {
       "name": "feedbackButton",
       "stage": "PublicPreview",
       "description": "Enables the feedback button in the dashboard edit sidebar"
@@ -902,7 +912,12 @@
     {
       "name": "grafana.frontendLegacyAPIHandling",
       "stage": "Experimental",
-      "description": "Controls whether the frontend blocks calls to legacy /api/ endpoints"
+      "description": ""
+    },
+    {
+      "name": "grafana.frontendLegacyFeatureToggleHandling",
+      "stage": "Experimental",
+      "description": ""
     },
     {
       "name": "grafana.growthHomepage",

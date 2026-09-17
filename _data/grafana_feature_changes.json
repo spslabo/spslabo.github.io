@@ -1,6 +1,33 @@
 {
   "changes": [
     {
+      "date": "2026-09-17",
+      "flag": "appplugins.loadAppManifestAndKeepSettings",
+      "change": "new",
+      "sha": "d3881aa",
+      "commit_url": "https://github.com/grafana/grafana/commit/d3881aa4378d07253555ed9cd1e65f5a984669eb",
+      "detected_at": "2026-09-17T11:50:09Z",
+      "stage": "Experimental"
+    },
+    {
+      "date": "2026-09-16",
+      "flag": "grafana.frontendLegacyFeatureToggleHandling",
+      "change": "new",
+      "sha": "a89e400",
+      "commit_url": "https://github.com/grafana/grafana/commit/a89e40005f118d6288611b33f6073f7f316c5f7c",
+      "detected_at": "2026-09-17T11:50:09Z",
+      "stage": "Experimental"
+    },
+    {
+      "date": "2026-09-16",
+      "flag": "features.legacyOverrideLookupBypass",
+      "change": "new",
+      "sha": "02fa713",
+      "commit_url": "https://github.com/grafana/grafana/commit/02fa713b237b047bc7608364daca2c84561549d6",
+      "detected_at": "2026-09-17T11:50:09Z",
+      "stage": "Experimental"
+    },
+    {
       "date": "2026-09-16",
       "flag": "unifiedStorageClient.requireCallerIdentity",
       "change": "new",
