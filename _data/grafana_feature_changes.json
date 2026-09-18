@@ -1,6 +1,33 @@
 {
   "changes": [
     {
+      "date": "2026-09-18",
+      "flag": "alerting.dataSourceManagedRouteProxy",
+      "change": "new",
+      "sha": "4d2e32f",
+      "commit_url": "https://github.com/grafana/grafana/commit/4d2e32f18d80d33984aec22716135e288b5fe714",
+      "detected_at": "2026-09-18T11:25:39Z",
+      "stage": "Experimental"
+    },
+    {
+      "date": "2026-09-17",
+      "flag": "reporting.legacyServiceUsesK8SClient",
+      "change": "new",
+      "sha": "5ecfe20",
+      "commit_url": "https://github.com/grafana/grafana/commit/5ecfe20af028bc7594e3251a158e9cfd5e0833c2",
+      "detected_at": "2026-09-18T11:25:39Z",
+      "stage": "Experimental"
+    },
+    {
+      "date": "2026-09-17",
+      "flag": "queryFetchConfigFromSettingsService",
+      "change": "removed",
+      "sha": "fcd2af3",
+      "commit_url": "https://github.com/grafana/grafana/commit/fcd2af3513cc691a9133e1af09448c96cc615d2e",
+      "detected_at": "2026-09-18T11:25:39Z",
+      "from_stage": "Experimental"
+    },
+    {
       "date": "2026-09-17",
       "flag": "appplugins.loadAppManifestAndKeepSettings",
       "change": "new",
