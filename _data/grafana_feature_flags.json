@@ -1,9 +1,9 @@
 {
   "source_url": "https://github.com/grafana/grafana/blob/main/pkg/services/featuremgmt/registry.go",
-  "total": 402,
+  "total": 401,
   "counts_by_stage": {
     "Experimental": 284,
-    "GA": 63,
+    "GA": 62,
     "PublicPreview": 38,
     "PrivatePreview": 12,
     "Deprecated": 5
@@ -798,11 +798,6 @@
       "name": "favoriteDatasources",
       "stage": "Experimental",
       "description": "Enable favorite datasources"
-    },
-    {
-      "name": "featureHighlights",
-      "stage": "GA",
-      "description": "Highlight Grafana Enterprise features"
     },
     {
       "name": "features.bulkFlagEvalFiltering",
