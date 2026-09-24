@@ -1,11 +1,11 @@
 {
   "source_url": "https://github.com/grafana/grafana/blob/main/pkg/services/featuremgmt/registry.go",
-  "total": 401,
+  "total": 398,
   "counts_by_stage": {
-    "Experimental": 284,
-    "GA": 62,
+    "Experimental": 282,
+    "PrivatePreview": 13,
+    "GA": 60,
     "PublicPreview": 38,
-    "PrivatePreview": 12,
     "Deprecated": 5
   },
   "flags": [
@@ -71,8 +71,8 @@
     },
     {
       "name": "alerting.syncExternalAlertmanager",
-      "stage": "Experimental",
-      "description": "Automatically syncs external Alertmanager datasource configuration as ExtraConfiguration in Grafana"
+      "stage": "PrivatePreview",
+      "description": "Automatically keeps imported notification configuration up to date with a Mimir or Cortex Alertmanager data source"
     },
     {
       "name": "alertingAIAnalyzeCentralStateHistory",
@@ -113,11 +113,6 @@
       "name": "alertingBulkActionsInUI",
       "stage": "GA",
       "description": "Enables the alerting bulk actions in the UI"
-    },
-    {
-      "name": "alertingDisableDMAinUI",
-      "stage": "Experimental",
-      "description": "Disables the DMA feature in the UI"
     },
     {
       "name": "alertingDisableSendAlertsExternal",
@@ -1550,11 +1545,6 @@
       "description": "Enables possibility to preserve dashboard variables and time range when navigating between dashboards"
     },
     {
-      "name": "profilesExemplars",
-      "stage": "GA",
-      "description": "Enables profiles exemplars support in profiles drilldown"
-    },
-    {
       "name": "profilesHeatmap",
       "stage": "Experimental",
       "description": "Enables heatmap visualization support for Pyroscope profiles"
@@ -1683,11 +1673,6 @@
       "name": "rawPrometheus.tableNg",
       "stage": "Experimental",
       "description": "Renders the raw Prometheus query results table using TableNG instead of the legacy Table"
-    },
-    {
-      "name": "react19",
-      "stage": "GA",
-      "description": "Whether to use the new React 19 runtime"
     },
     {
       "name": "recentlyViewedDashboards",

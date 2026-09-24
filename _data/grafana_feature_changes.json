@@ -1,6 +1,43 @@
 {
   "changes": [
     {
+      "date": "2026-09-24",
+      "flag": "profilesExemplars",
+      "change": "removed",
+      "sha": "d49a7a9",
+      "commit_url": "https://github.com/grafana/grafana/commit/d49a7a96118e1f35e2c28344ab53d8942c69a5e9",
+      "detected_at": "2026-09-24T11:56:10Z",
+      "from_stage": "GA"
+    },
+    {
+      "date": "2026-09-23",
+      "flag": "alerting.syncExternalAlertmanager",
+      "change": "stage_change",
+      "sha": "79b5187",
+      "commit_url": "https://github.com/grafana/grafana/commit/79b51878149c7325f7efcd069c126daab22483ae",
+      "detected_at": "2026-09-24T11:56:10Z",
+      "from_stage": "Experimental",
+      "to_stage": "PrivatePreview"
+    },
+    {
+      "date": "2026-09-23",
+      "flag": "alertingDisableDMAinUI",
+      "change": "removed",
+      "sha": "08269d1",
+      "commit_url": "https://github.com/grafana/grafana/commit/08269d1f6bdf26c5c4ebd713e72648f432318861",
+      "detected_at": "2026-09-24T11:56:10Z",
+      "from_stage": "Experimental"
+    },
+    {
+      "date": "2026-09-23",
+      "flag": "react19",
+      "change": "removed",
+      "sha": "ad9ba91",
+      "commit_url": "https://github.com/grafana/grafana/commit/ad9ba9161eace66894a55d517ceca80114d927f5",
+      "detected_at": "2026-09-24T11:56:10Z",
+      "from_stage": "GA"
+    },
+    {
       "date": "2026-09-22",
       "flag": "featureHighlights",
       "change": "removed",
