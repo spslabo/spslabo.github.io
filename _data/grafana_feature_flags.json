@@ -2,10 +2,10 @@
   "source_url": "https://github.com/grafana/grafana/blob/main/pkg/services/featuremgmt/registry.go",
   "total": 398,
   "counts_by_stage": {
-    "Experimental": 282,
+    "Experimental": 281,
     "PrivatePreview": 13,
     "GA": 60,
-    "PublicPreview": 38,
+    "PublicPreview": 39,
     "Deprecated": 5
   },
   "flags": [
@@ -1061,7 +1061,7 @@
     },
     {
       "name": "grafana.visualDesignRefresh",
-      "stage": "Experimental",
+      "stage": "PublicPreview",
       "description": "Enables the new visual design refresh for the Grafana UI"
     },
     {

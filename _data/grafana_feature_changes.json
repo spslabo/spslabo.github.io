@@ -1,6 +1,16 @@
 {
   "changes": [
     {
+      "date": "2026-09-25",
+      "flag": "grafana.visualDesignRefresh",
+      "change": "stage_change",
+      "sha": "5c52101",
+      "commit_url": "https://github.com/grafana/grafana/commit/5c5210147d9fb3e4bd312ea16a3fb51c726a991a",
+      "detected_at": "2026-09-25T11:58:13Z",
+      "from_stage": "Experimental",
+      "to_stage": "PublicPreview"
+    },
+    {
       "date": "2026-09-24",
       "flag": "profilesExemplars",
       "change": "removed",
