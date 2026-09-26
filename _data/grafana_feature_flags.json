@@ -1,8 +1,8 @@
 {
   "source_url": "https://github.com/grafana/grafana/blob/main/pkg/services/featuremgmt/registry.go",
-  "total": 398,
+  "total": 399,
   "counts_by_stage": {
-    "Experimental": 281,
+    "Experimental": 282,
     "PrivatePreview": 13,
     "GA": 60,
     "PublicPreview": 39,
@@ -1008,6 +1008,11 @@
       "name": "grafana.savedQueriesPage",
       "stage": "Experimental",
       "description": "Enables the dedicated Saved queries page and its navigation entry"
+    },
+    {
+      "name": "grafana.savedQueriesSearch",
+      "stage": "Experimental",
+      "description": "Enables unified search for saved queries"
     },
     {
       "name": "grafana.scenesFlickeringFix",

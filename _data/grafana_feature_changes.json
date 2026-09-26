@@ -2,6 +2,15 @@
   "changes": [
     {
       "date": "2026-09-25",
+      "flag": "grafana.savedQueriesSearch",
+      "change": "new",
+      "sha": "f462228",
+      "commit_url": "https://github.com/grafana/grafana/commit/f462228a370ce1afc6a5afbbee60da13113e16a2",
+      "detected_at": "2026-09-26T11:32:45Z",
+      "stage": "Experimental"
+    },
+    {
+      "date": "2026-09-25",
       "flag": "grafana.visualDesignRefresh",
       "change": "stage_change",
       "sha": "5c52101",
