@@ -1,8 +1,8 @@
 {
   "source_url": "https://github.com/grafana/grafana/blob/main/pkg/services/featuremgmt/registry.go",
-  "total": 399,
+  "total": 400,
   "counts_by_stage": {
-    "Experimental": 282,
+    "Experimental": 283,
     "PrivatePreview": 13,
     "GA": 60,
     "PublicPreview": 39,
@@ -1958,6 +1958,11 @@
       "name": "unifiedNavbars",
       "stage": "GA",
       "description": "Enables unified navbars"
+    },
+    {
+      "name": "unifiedStorageClient.onBehalfOf",
+      "stage": "Experimental",
+      "description": "Exchange unified storage calls on behalf of the calling user when the verified access token already carries them, instead of calling as the service"
     },
     {
       "name": "unifiedStorageClient.requireCallerIdentity",

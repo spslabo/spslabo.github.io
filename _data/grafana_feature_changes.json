@@ -1,6 +1,15 @@
 {
   "changes": [
     {
+      "date": "2026-09-28",
+      "flag": "unifiedStorageClient.onBehalfOf",
+      "change": "new",
+      "sha": "1c49d2a",
+      "commit_url": "https://github.com/grafana/grafana/commit/1c49d2a4009967c0fa06d0470572d402b7be9728",
+      "detected_at": "2026-09-29T13:03:07Z",
+      "stage": "Experimental"
+    },
+    {
       "date": "2026-09-25",
       "flag": "grafana.savedQueriesSearch",
       "change": "new",
