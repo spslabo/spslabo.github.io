@@ -1,10 +1,10 @@
 {
   "source_url": "https://github.com/grafana/grafana/blob/main/pkg/services/featuremgmt/registry.go",
-  "total": 400,
+  "total": 399,
   "counts_by_stage": {
     "Experimental": 283,
     "PrivatePreview": 13,
-    "GA": 60,
+    "GA": 59,
     "PublicPreview": 39,
     "Deprecated": 5
   },
@@ -138,11 +138,6 @@
       "name": "alertingImportAlertmanagerAPI",
       "stage": "PublicPreview",
       "description": "Enables the API to import Alertmanager configuration"
-    },
-    {
-      "name": "alertingImportYAMLUI",
-      "stage": "GA",
-      "description": "Enables a UI feature for importing rules from a Prometheus file to Grafana-managed rules"
     },
     {
       "name": "alertingJiraIntegration",
