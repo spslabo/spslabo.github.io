@@ -1,6 +1,15 @@
 {
   "changes": [
     {
+      "date": "2026-10-01",
+      "flag": "datasources.queryGatewaySlimAudit",
+      "change": "new",
+      "sha": "4fe85bb",
+      "commit_url": "https://github.com/grafana/grafana/commit/4fe85bbdf52fc15b8fc11ec0516e9071d084cd59",
+      "detected_at": "2026-10-02T12:47:51Z",
+      "stage": "Experimental"
+    },
+    {
       "date": "2026-09-30",
       "flag": "dashboard.apiSearchFieldValueResults",
       "change": "removed",
