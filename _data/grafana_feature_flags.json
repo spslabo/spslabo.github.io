@@ -1,11 +1,11 @@
 {
   "source_url": "https://github.com/grafana/grafana/blob/main/pkg/services/featuremgmt/registry.go",
-  "total": 397,
+  "total": 398,
   "counts_by_stage": {
     "Experimental": 281,
     "PrivatePreview": 13,
     "GA": 59,
-    "PublicPreview": 39,
+    "PublicPreview": 40,
     "Deprecated": 5
   },
   "flags": [
@@ -673,6 +673,11 @@
       "name": "dataviz.experimentalColorSchemes",
       "stage": "Experimental",
       "description": "Enables additional experimental color schemes for visualizations."
+    },
+    {
+      "name": "dataviz.tabularNums",
+      "stage": "PublicPreview",
+      "description": "Enables tabular numerals for visualization legend values"
     },
     {
       "name": "datetime.useLuxon",

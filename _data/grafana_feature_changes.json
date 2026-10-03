@@ -1,6 +1,15 @@
 {
   "changes": [
     {
+      "date": "2026-10-02",
+      "flag": "dataviz.tabularNums",
+      "change": "new",
+      "sha": "21a5955",
+      "commit_url": "https://github.com/grafana/grafana/commit/21a5955a975f9956f127d6a7ca6524744c16bb8f",
+      "detected_at": "2026-10-03T11:48:01Z",
+      "stage": "PublicPreview"
+    },
+    {
       "date": "2026-10-01",
       "flag": "datasources.queryGatewaySlimAudit",
       "change": "new",
