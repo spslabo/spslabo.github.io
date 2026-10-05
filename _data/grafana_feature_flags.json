@@ -2,9 +2,9 @@
   "source_url": "https://github.com/grafana/grafana/blob/main/pkg/services/featuremgmt/registry.go",
   "total": 398,
   "counts_by_stage": {
-    "Experimental": 281,
+    "Experimental": 278,
     "PrivatePreview": 13,
-    "GA": 59,
+    "GA": 62,
     "PublicPreview": 40,
     "Deprecated": 5
   },
@@ -506,7 +506,7 @@
     },
     {
       "name": "dashboard.recentlyDeletedViaTrash",
-      "stage": "Experimental",
+      "stage": "GA",
       "description": "Load the Recently deleted dashboard list from the search API trash endpoint, instead of listing every deleted dashboard and filtering in the browser"
     },
     {
@@ -1726,12 +1726,12 @@
     },
     {
       "name": "reportingFooterSettings",
-      "stage": "Experimental",
+      "stage": "GA",
       "description": "Enables the configurable footer settings for PDF reports"
     },
     {
       "name": "reportingHeaderSettings",
-      "stage": "Experimental",
+      "stage": "GA",
       "description": "Enables configuration of PDF report settings"
     },
     {

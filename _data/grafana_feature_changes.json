@@ -1,6 +1,36 @@
 {
   "changes": [
     {
+      "date": "2026-10-05",
+      "flag": "reportingHeaderSettings",
+      "change": "stage_change",
+      "sha": "29b61af",
+      "commit_url": "https://github.com/grafana/grafana/commit/29b61af37992cf9f12e3e204986c1c604e3badbc",
+      "detected_at": "2026-10-05T14:54:17Z",
+      "from_stage": "Experimental",
+      "to_stage": "GA"
+    },
+    {
+      "date": "2026-10-05",
+      "flag": "reportingFooterSettings",
+      "change": "stage_change",
+      "sha": "29b61af",
+      "commit_url": "https://github.com/grafana/grafana/commit/29b61af37992cf9f12e3e204986c1c604e3badbc",
+      "detected_at": "2026-10-05T14:54:17Z",
+      "from_stage": "Experimental",
+      "to_stage": "GA"
+    },
+    {
+      "date": "2026-10-05",
+      "flag": "dashboard.recentlyDeletedViaTrash",
+      "change": "stage_change",
+      "sha": "f79a29b",
+      "commit_url": "https://github.com/grafana/grafana/commit/f79a29bb07d1779e3a4a5930d7e4abd2a7d5c73b",
+      "detected_at": "2026-10-05T14:54:17Z",
+      "from_stage": "Experimental",
+      "to_stage": "GA"
+    },
+    {
       "date": "2026-10-02",
       "flag": "dataviz.tabularNums",
       "change": "new",
