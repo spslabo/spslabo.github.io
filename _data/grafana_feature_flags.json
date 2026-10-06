@@ -1,8 +1,8 @@
 {
   "source_url": "https://github.com/grafana/grafana/blob/main/pkg/services/featuremgmt/registry.go",
-  "total": 398,
+  "total": 399,
   "counts_by_stage": {
-    "Experimental": 278,
+    "Experimental": 279,
     "PrivatePreview": 13,
     "GA": 62,
     "PublicPreview": 40,
@@ -628,6 +628,11 @@
       "name": "datasources.teamHttpHeadersFromAppPlatformST",
       "stage": "Experimental",
       "description": "Use the IAM TeamLBACRule rules-for-subject API for team HTTP headers in single-tenant Grafana"
+    },
+    {
+      "name": "datasources.teamHttpHeadersWriteGuard",
+      "stage": "Experimental",
+      "description": "Guard embedded Team LBAC rules against external datasource Kubernetes API writes"
     },
     {
       "name": "datasources.useNewStackInfoToSettingsCache",
