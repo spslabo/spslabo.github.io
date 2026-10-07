@@ -1,6 +1,24 @@
 {
   "changes": [
     {
+      "date": "2026-10-06",
+      "flag": "kubernetesUsersDeterministicUID",
+      "change": "new",
+      "sha": "b2a775a",
+      "commit_url": "https://github.com/grafana/grafana/commit/b2a775a893e2fa06fb3dba42acebd704ad99b1c9",
+      "detected_at": "2026-10-07T13:34:44Z",
+      "stage": "Experimental"
+    },
+    {
+      "date": "2026-10-06",
+      "flag": "alerting.hybridSearch",
+      "change": "new",
+      "sha": "1794c06",
+      "commit_url": "https://github.com/grafana/grafana/commit/1794c06d81eef09cd9b7777221cadbdfb7c266b4",
+      "detected_at": "2026-10-07T13:34:44Z",
+      "stage": "Experimental"
+    },
+    {
       "date": "2026-10-05",
       "flag": "datasources.teamHttpHeadersWriteGuard",
       "change": "new",

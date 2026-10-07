@@ -1,8 +1,8 @@
 {
   "source_url": "https://github.com/grafana/grafana/blob/main/pkg/services/featuremgmt/registry.go",
-  "total": 399,
+  "total": 401,
   "counts_by_stage": {
-    "Experimental": 279,
+    "Experimental": 281,
     "PrivatePreview": 13,
     "GA": 62,
     "PublicPreview": 40,
@@ -38,6 +38,11 @@
       "name": "alerting.folderHasRulesLabel",
       "stage": "Experimental",
       "description": "Maintain the alerting.grafana.app/has-rules label on folders that contain Grafana-managed alert or recording rules, so folders holding rules can be queried by label selector"
+    },
+    {
+      "name": "alerting.hybridSearch",
+      "stage": "Experimental",
+      "description": "Enables hybrid (lexical and semantic) search for alert rules in unified storage"
     },
     {
       "name": "alerting.manualAssistantInvestigation",
@@ -1298,6 +1303,11 @@
       "name": "kubernetesUsersApi",
       "stage": "Experimental",
       "description": "Enables user APIs in the app platform"
+    },
+    {
+      "name": "kubernetesUsersDeterministicUID",
+      "stage": "Experimental",
+      "description": "Derives a new k8s user UID from a hash of its namespace, email, and login instead of a random value"
     },
     {
       "name": "kubernetesUsersRedirect",
