@@ -1,11 +1,11 @@
 {
   "source_url": "https://github.com/grafana/grafana/blob/main/pkg/services/featuremgmt/registry.go",
-  "total": 401,
+  "total": 393,
   "counts_by_stage": {
-    "Experimental": 281,
+    "Experimental": 285,
     "PrivatePreview": 13,
-    "GA": 62,
-    "PublicPreview": 40,
+    "PublicPreview": 37,
+    "GA": 53,
     "Deprecated": 5
   },
   "flags": [
@@ -115,11 +115,6 @@
       "description": "Rule backtesting API for alerting"
     },
     {
-      "name": "alertingBulkActionsInUI",
-      "stage": "GA",
-      "description": "Enables the alerting bulk actions in the UI"
-    },
-    {
       "name": "alertingDisableSendAlertsExternal",
       "stage": "Experimental",
       "description": "Disables the ability to send alerts to an external Alertmanager datasource."
@@ -160,11 +155,6 @@
       "description": "Enables the alerting list view v2 preview toggle"
     },
     {
-      "name": "alertingMigrationUI",
-      "stage": "GA",
-      "description": "Enables the alerting migration UI, to migrate data source-managed rules to Grafana-managed rules"
-    },
-    {
       "name": "alertingMigrationWizardUI",
       "stage": "PublicPreview",
       "description": "Enables the migration wizard UI to migrate alert rules and notification resources from external sources to Grafana Alerting"
@@ -178,31 +168,6 @@
       "name": "alertingNotificationHistory",
       "stage": "GA",
       "description": "Enables the notification history feature"
-    },
-    {
-      "name": "alertingNotificationHistoryDetail",
-      "stage": "GA",
-      "description": "Enables the notification history detail page"
-    },
-    {
-      "name": "alertingNotificationHistoryGlobal",
-      "stage": "GA",
-      "description": "Enables the notification history global menu item viewer"
-    },
-    {
-      "name": "alertingNotificationHistoryRuleViewer",
-      "stage": "GA",
-      "description": "Enables the notification history tab in the rule viewer"
-    },
-    {
-      "name": "alertingNotificationHistoryTriage",
-      "stage": "GA",
-      "description": "Enables the notification history timeline in the triage instance details drawer"
-    },
-    {
-      "name": "alertingNotificationsStepMode",
-      "stage": "GA",
-      "description": "Enables simplified step mode in the notifications section"
     },
     {
       "name": "alertingPolicyRoutingSettings",
@@ -230,19 +195,9 @@
       "description": "Sort alert rule groups by folder full path in the Prometheus rules API"
     },
     {
-      "name": "alertingRulePermanentlyDelete",
-      "stage": "GA",
-      "description": "Enables UI functionality to permanently delete alert rules"
-    },
-    {
       "name": "alertingRuleRecoverDeleted",
       "stage": "GA",
       "description": "Enables the UI functionality to recover and view deleted alert rules"
-    },
-    {
-      "name": "alertingRuleVersionHistoryRestore",
-      "stage": "GA",
-      "description": "Enables the alert rule version history restore feature"
     },
     {
       "name": "alertingSaveStatePeriodic",
@@ -263,11 +218,6 @@
       "name": "alertingTriage",
       "stage": "Experimental",
       "description": "Enables the alerting triage feature"
-    },
-    {
-      "name": "alertingUIOptimizeReducer",
-      "stage": "GA",
-      "description": "Enables removing the reducer from the alerting UI when creating a new alert rule and using instant query"
     },
     {
       "name": "alertingUIUseBackendFilters",
@@ -578,6 +528,11 @@
       "name": "datasources.apiserver.useNewAPIsForDatasourceResources",
       "stage": "Experimental",
       "description": "Use the new datasource API groups for datasource resource requests, frontend flag"
+    },
+    {
+      "name": "datasources.apiServerConnectToHostedGrafanaDatabases",
+      "stage": "Experimental",
+      "description": "Connect to hosted grafana databases from datasource API servers"
     },
     {
       "name": "datasources.azureMonitorBatchAPI",
@@ -920,6 +875,11 @@
       "description": ""
     },
     {
+      "name": "grafana.globalHomePreference",
+      "stage": "Experimental",
+      "description": "Offers the reserved Grafana home option in the home dashboard preference"
+    },
+    {
       "name": "grafana.growthHomepage",
       "stage": "Experimental",
       "description": "Enables PLG-focused growth redesign of the unified homepage"
@@ -1023,6 +983,11 @@
       "name": "grafana.scenesFlickeringFix",
       "stage": "GA",
       "description": "Prevents flickering in dashboards"
+    },
+    {
+      "name": "grafana.scopesDashboardsMegaMenu",
+      "stage": "Experimental",
+      "description": "Renders the scopes-suggested dashboards tree inside the navigation mega menu instead of the standalone docked drawer"
     },
     {
       "name": "grafana.secretsReferenceValueUI",
@@ -1165,11 +1130,6 @@
       "description": "Enable CAP token based authentication in grafana's embedded kube-aggregator"
     },
     {
-      "name": "kubernetesAlertingHistorian",
-      "stage": "GA",
-      "description": "Adds support for Kubernetes alerting historian APIs"
-    },
-    {
       "name": "kubernetesAuthInfoApi",
       "stage": "Experimental",
       "description": "Enables auth info APIs in the app platform"
@@ -1308,6 +1268,11 @@
       "name": "kubernetesUsersDeterministicUID",
       "stage": "Experimental",
       "description": "Derives a new k8s user UID from a hash of its namespace, email, and login instead of a random value"
+    },
+    {
+      "name": "kubernetesUsersReadApi",
+      "stage": "Experimental",
+      "description": "Enables read-only user APIs in the app platform"
     },
     {
       "name": "kubernetesUsersRedirect",
@@ -1466,7 +1431,7 @@
     },
     {
       "name": "panelTimeSettings",
-      "stage": "PublicPreview",
+      "stage": "GA",
       "description": "Enables a new panel time settings drawer"
     },
     {
@@ -1578,11 +1543,6 @@
       "name": "prometheusTypeMigration",
       "stage": "Deprecated",
       "description": "Checks for deprecated Prometheus authentication methods (SigV4 and Azure), installs the relevant data source, and migrates the Prometheus data sources"
-    },
-    {
-      "name": "provisioning.gitConventions",
-      "stage": "PublicPreview",
-      "description": "Enable configurable commit message, branch name, and pull request title conventions for Git Sync"
     },
     {
       "name": "provisioning.performance",
@@ -1936,7 +1896,7 @@
     },
     {
       "name": "timeComparison",
-      "stage": "PublicPreview",
+      "stage": "GA",
       "description": "Enables time comparison option in supported panels"
     },
     {
