@@ -1,6 +1,69 @@
 {
   "changes": [
     {
+      "date": "2026-10-09",
+      "flag": "authz.useLegacyCheck",
+      "change": "new",
+      "sha": "395f92a",
+      "commit_url": "https://github.com/grafana/grafana/commit/395f92a307349f292ab2f6c9f1b90ade2224e885",
+      "detected_at": "2026-10-09T13:26:01Z",
+      "stage": "Experimental"
+    },
+    {
+      "date": "2026-10-09",
+      "flag": "alerting.ruleReviews",
+      "change": "new",
+      "sha": "b827f32",
+      "commit_url": "https://github.com/grafana/grafana/commit/b827f32dcda34ae51087102be9fc69340c479c8d",
+      "detected_at": "2026-10-09T13:26:01Z",
+      "stage": "Experimental"
+    },
+    {
+      "date": "2026-10-08",
+      "flag": "dashboards.libraryPanelRepeatFromServerResolution",
+      "change": "new",
+      "sha": "57992af",
+      "commit_url": "https://github.com/grafana/grafana/commit/57992af57d5c0c4ff14222a58b0c9f4b893140cc",
+      "detected_at": "2026-10-09T13:26:01Z",
+      "stage": "Experimental"
+    },
+    {
+      "date": "2026-10-08",
+      "flag": "dashboards.publicDashboardBadgeFromApi",
+      "change": "new",
+      "sha": "303d3eb",
+      "commit_url": "https://github.com/grafana/grafana/commit/303d3eb1e92c0ce9859bd3e6cb6c5e817683dff2",
+      "detected_at": "2026-10-09T13:26:01Z",
+      "stage": "Experimental"
+    },
+    {
+      "date": "2026-10-08",
+      "flag": "reporting.legacySettingServiceUsesK8SClient",
+      "change": "new",
+      "sha": "5fa36e4",
+      "commit_url": "https://github.com/grafana/grafana/commit/5fa36e4a825460efee8b690c5f6a2282da1c798b",
+      "detected_at": "2026-10-09T13:26:01Z",
+      "stage": "Experimental"
+    },
+    {
+      "date": "2026-10-08",
+      "flag": "experimentRecentlyViewedDashboards",
+      "change": "removed",
+      "sha": "6772d0a",
+      "commit_url": "https://github.com/grafana/grafana/commit/6772d0ac91e1da38996dc52895fe0c06060b045a",
+      "detected_at": "2026-10-09T13:26:01Z",
+      "from_stage": "Experimental"
+    },
+    {
+      "date": "2026-10-08",
+      "flag": "provisioning.readmes",
+      "change": "removed",
+      "sha": "8ebb217",
+      "commit_url": "https://github.com/grafana/grafana/commit/8ebb217dc53cceb41fd5a7fae77281d53a7d9097",
+      "detected_at": "2026-10-09T13:26:01Z",
+      "from_stage": "PublicPreview"
+    },
+    {
       "date": "2026-10-08",
       "flag": "kubernetesUsersReadApi",
       "change": "new",
