@@ -2,6 +2,36 @@
   "changes": [
     {
       "date": "2026-10-09",
+      "flag": "otelLogsFormatting",
+      "change": "stage_change",
+      "sha": "d892b17",
+      "commit_url": "https://github.com/grafana/grafana/commit/d892b178f6f9caf633d857063cf4b7b101345b23",
+      "detected_at": "2026-10-10T12:41:40Z",
+      "from_stage": "Experimental",
+      "to_stage": "GA"
+    },
+    {
+      "date": "2026-10-09",
+      "flag": "inlineLogDetailsNoScrolls",
+      "change": "stage_change",
+      "sha": "d892b17",
+      "commit_url": "https://github.com/grafana/grafana/commit/d892b178f6f9caf633d857063cf4b7b101345b23",
+      "detected_at": "2026-10-10T12:41:40Z",
+      "from_stage": "Experimental",
+      "to_stage": "GA"
+    },
+    {
+      "date": "2026-10-09",
+      "flag": "lokiAlignedQuerySplitting",
+      "change": "stage_change",
+      "sha": "d892b17",
+      "commit_url": "https://github.com/grafana/grafana/commit/d892b178f6f9caf633d857063cf4b7b101345b23",
+      "detected_at": "2026-10-10T12:41:40Z",
+      "from_stage": "Experimental",
+      "to_stage": "GA"
+    },
+    {
+      "date": "2026-10-09",
       "flag": "authz.useLegacyCheck",
       "change": "new",
       "sha": "395f92a",

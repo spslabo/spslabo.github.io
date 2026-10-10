@@ -2,10 +2,10 @@
   "source_url": "https://github.com/grafana/grafana/blob/main/pkg/services/featuremgmt/registry.go",
   "total": 396,
   "counts_by_stage": {
-    "Experimental": 289,
+    "Experimental": 286,
     "PrivatePreview": 13,
     "PublicPreview": 36,
-    "GA": 53,
+    "GA": 56,
     "Deprecated": 5
   },
   "flags": [
@@ -1116,7 +1116,7 @@
     },
     {
       "name": "inlineLogDetailsNoScrolls",
-      "stage": "Experimental",
+      "stage": "GA",
       "description": "Enables an inline version of Log Details that creates no new scrolls"
     },
     {
@@ -1336,7 +1336,7 @@
     },
     {
       "name": "lokiAlignedQuerySplitting",
-      "stage": "Experimental",
+      "stage": "GA",
       "description": "Aligns query splitting chunks with UTC midnight"
     },
     {
@@ -1436,7 +1436,7 @@
     },
     {
       "name": "otelLogsFormatting",
-      "stage": "Experimental",
+      "stage": "GA",
       "description": "Applies OTel formatting templates to displayed logs"
     },
     {
