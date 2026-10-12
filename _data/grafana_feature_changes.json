@@ -1,6 +1,43 @@
 {
   "changes": [
     {
+      "date": "2026-10-12",
+      "flag": "grafana.newPanelQueryErrorsUI",
+      "change": "stage_change",
+      "sha": "07d64de",
+      "commit_url": "https://github.com/grafana/grafana/commit/07d64de2ecf36d97a562199908edc1acbcd075b3",
+      "detected_at": "2026-10-12T15:41:12Z",
+      "from_stage": "Experimental",
+      "to_stage": "GA"
+    },
+    {
+      "date": "2026-10-12",
+      "flag": "grafana.publishLegacySQLEvents",
+      "change": "new",
+      "sha": "813925a",
+      "commit_url": "https://github.com/grafana/grafana/commit/813925a5b437d55e0671cd0de674664e5fcd0ce7",
+      "detected_at": "2026-10-12T15:41:12Z",
+      "stage": "Experimental"
+    },
+    {
+      "date": "2026-10-12",
+      "flag": "datasources.apiserver.useNewAPIsForDatasourceResources",
+      "change": "removed",
+      "sha": "4844feb",
+      "commit_url": "https://github.com/grafana/grafana/commit/4844feb3fbf5434f2ff2be4b64475c609a23313e",
+      "detected_at": "2026-10-12T15:41:12Z",
+      "from_stage": "Experimental"
+    },
+    {
+      "date": "2026-10-12",
+      "flag": "datasourcesApiServerEnableHealthEndpointFrontend",
+      "change": "removed",
+      "sha": "4844feb",
+      "commit_url": "https://github.com/grafana/grafana/commit/4844feb3fbf5434f2ff2be4b64475c609a23313e",
+      "detected_at": "2026-10-12T15:41:12Z",
+      "from_stage": "Experimental"
+    },
+    {
       "date": "2026-10-09",
       "flag": "otelLogsFormatting",
       "change": "stage_change",

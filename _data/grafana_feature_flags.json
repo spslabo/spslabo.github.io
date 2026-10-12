@@ -1,11 +1,11 @@
 {
   "source_url": "https://github.com/grafana/grafana/blob/main/pkg/services/featuremgmt/registry.go",
-  "total": 396,
+  "total": 395,
   "counts_by_stage": {
-    "Experimental": 286,
+    "Experimental": 284,
     "PrivatePreview": 13,
     "PublicPreview": 36,
-    "GA": 56,
+    "GA": 57,
     "Deprecated": 5
   },
   "flags": [
@@ -545,11 +545,6 @@
       "description": "Register legacy datasource apis that use the numeric id"
     },
     {
-      "name": "datasources.apiserver.useNewAPIsForDatasourceResources",
-      "stage": "Experimental",
-      "description": "Use the new datasource API groups for datasource resource requests, frontend flag"
-    },
-    {
       "name": "datasources.apiServerConnectToHostedGrafanaDatabases",
       "stage": "Experimental",
       "description": "Connect to hosted grafana databases from datasource API servers"
@@ -623,11 +618,6 @@
       "name": "datasourcesApiServerEnableHealthEndpoint",
       "stage": "Experimental",
       "description": "Handle datasource health requests to the legacy API routes by querying the new datasource api group endpoints behind the scenes."
-    },
-    {
-      "name": "datasourcesApiServerEnableHealthEndpointFrontend",
-      "stage": "Experimental",
-      "description": "Send Datsource health requests to /apis/ API routes instead of the legacy /api/datasources/uid/{uid}/health route."
     },
     {
       "name": "datasourcesApiServerEnableHealthEndpointRedirect",
@@ -936,7 +926,7 @@
     },
     {
       "name": "grafana.newPanelQueryErrorsUI",
-      "stage": "Experimental",
+      "stage": "GA",
       "description": "Enables a new UI for query errors and notices"
     },
     {
@@ -973,6 +963,11 @@
       "name": "grafana.pluginPathNesting",
       "stage": "Experimental",
       "description": "Nest app plugin navigation items in the mega menu based on their URL path hierarchy"
+    },
+    {
+      "name": "grafana.publishLegacySQLEvents",
+      "stage": "Experimental",
+      "description": "Publish watch events when values are saved to legacy SQL tables"
     },
     {
       "name": "grafana.queryVarEditorRedesign",
