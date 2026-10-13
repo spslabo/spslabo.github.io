@@ -1,6 +1,15 @@
 {
   "changes": [
     {
+      "date": "2026-10-13",
+      "flag": "grafana.smtpSettingsPage",
+      "change": "new",
+      "sha": "cb7af24",
+      "commit_url": "https://github.com/grafana/grafana/commit/cb7af246984a2a894ac0506eff17cace1c0350ea",
+      "detected_at": "2026-10-13T14:21:29Z",
+      "stage": "PrivatePreview"
+    },
+    {
       "date": "2026-10-12",
       "flag": "grafana.newPanelQueryErrorsUI",
       "change": "stage_change",

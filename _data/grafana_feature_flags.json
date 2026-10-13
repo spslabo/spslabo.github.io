@@ -1,9 +1,9 @@
 {
   "source_url": "https://github.com/grafana/grafana/blob/main/pkg/services/featuremgmt/registry.go",
-  "total": 395,
+  "total": 396,
   "counts_by_stage": {
     "Experimental": 284,
-    "PrivatePreview": 13,
+    "PrivatePreview": 14,
     "PublicPreview": 36,
     "GA": 57,
     "Deprecated": 5
@@ -1003,6 +1003,11 @@
       "name": "grafana.secretsReferenceValueUI",
       "stage": "PublicPreview",
       "description": "Enable referencing an existing secret in an active keeper when creating a secure value"
+    },
+    {
+      "name": "grafana.smtpSettingsPage",
+      "stage": "PrivatePreview",
+      "description": "Enables the SMTP settings admin page, which edits a stack's SMTP config through the settings service"
     },
     {
       "name": "grafana.ssoSettingsToMTSettings",
