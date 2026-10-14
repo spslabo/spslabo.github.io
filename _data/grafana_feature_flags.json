@@ -1,8 +1,8 @@
 {
   "source_url": "https://github.com/grafana/grafana/blob/main/pkg/services/featuremgmt/registry.go",
-  "total": 396,
+  "total": 394,
   "counts_by_stage": {
-    "Experimental": 284,
+    "Experimental": 282,
     "PrivatePreview": 14,
     "PublicPreview": 36,
     "GA": 57,
@@ -1635,11 +1635,6 @@
       "description": "Register /apis/query.grafana.app/ -- will eventually replace /api/ds/query"
     },
     {
-      "name": "queryServiceFromUI",
-      "stage": "Experimental",
-      "description": "Routes requests to the new query service"
-    },
-    {
       "name": "queryServiceRewrite",
       "stage": "Experimental",
       "description": "Rewrite requests targeting /ds/query to the query service"
@@ -1913,11 +1908,6 @@
       "name": "timeComparison",
       "stage": "GA",
       "description": "Enables time comparison option in supported panels"
-    },
-    {
-      "name": "timeRangeProvider",
-      "stage": "Experimental",
-      "description": "Enables time pickers sync"
     },
     {
       "name": "tracesDrilldownTimeSeeker",

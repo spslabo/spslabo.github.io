@@ -1,6 +1,24 @@
 {
   "changes": [
     {
+      "date": "2026-10-14",
+      "flag": "queryServiceFromUI",
+      "change": "removed",
+      "sha": "0bb771b",
+      "commit_url": "https://github.com/grafana/grafana/commit/0bb771b67f37dbac31c89c5c718586c1ce43cbca",
+      "detected_at": "2026-10-14T12:03:53Z",
+      "from_stage": "Experimental"
+    },
+    {
+      "date": "2026-10-13",
+      "flag": "timeRangeProvider",
+      "change": "removed",
+      "sha": "2a6e8f4",
+      "commit_url": "https://github.com/grafana/grafana/commit/2a6e8f4a5a87fd91774a5634f366ec10acf200a6",
+      "detected_at": "2026-10-14T12:03:53Z",
+      "from_stage": "Experimental"
+    },
+    {
       "date": "2026-10-13",
       "flag": "grafana.smtpSettingsPage",
       "change": "new",
