@@ -2,6 +2,25 @@
   "changes": [
     {
       "date": "2026-10-14",
+      "flag": "grafana.newTextPanel",
+      "change": "stage_change",
+      "sha": "ec97f43",
+      "commit_url": "https://github.com/grafana/grafana/commit/ec97f43117ab325cd92d6c75ec80a498812f96ae",
+      "detected_at": "2026-10-15T11:40:43Z",
+      "from_stage": "Experimental",
+      "to_stage": "PublicPreview"
+    },
+    {
+      "date": "2026-10-14",
+      "flag": "grafana.navigationInfoArchRefresh",
+      "change": "new",
+      "sha": "defa421",
+      "commit_url": "https://github.com/grafana/grafana/commit/defa421699d7abf5154bd1e7f04acb727829c3dd",
+      "detected_at": "2026-10-15T11:40:43Z",
+      "stage": "Experimental"
+    },
+    {
+      "date": "2026-10-14",
       "flag": "queryServiceFromUI",
       "change": "removed",
       "sha": "0bb771b",

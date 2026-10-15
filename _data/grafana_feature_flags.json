@@ -1,10 +1,10 @@
 {
   "source_url": "https://github.com/grafana/grafana/blob/main/pkg/services/featuremgmt/registry.go",
-  "total": 394,
+  "total": 395,
   "counts_by_stage": {
     "Experimental": 282,
     "PrivatePreview": 14,
-    "PublicPreview": 36,
+    "PublicPreview": 37,
     "GA": 57,
     "Deprecated": 5
   },
@@ -925,13 +925,18 @@
       "description": "Read the current user's permissions from the IAM app platform API instead of /api/access-control/user/actions"
     },
     {
+      "name": "grafana.navigationInfoArchRefresh",
+      "stage": "Experimental",
+      "description": "Enables the refreshed information architecture for Grafana's navigation"
+    },
+    {
       "name": "grafana.newPanelQueryErrorsUI",
       "stage": "GA",
       "description": "Enables a new UI for query errors and notices"
     },
     {
       "name": "grafana.newTextPanel",
-      "stage": "Experimental",
+      "stage": "PublicPreview",
       "description": "Enables the new text panel"
     },
     {
