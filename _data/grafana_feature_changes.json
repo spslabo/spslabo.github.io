@@ -1,6 +1,87 @@
 {
   "changes": [
     {
+      "date": "2026-10-16",
+      "flag": "folderPickerCreatePermission",
+      "change": "new",
+      "sha": "f98af49",
+      "commit_url": "https://github.com/grafana/grafana/commit/f98af499c58e629efbe1417a2d2f20cffb9bf422",
+      "detected_at": "2026-10-16T11:34:16Z",
+      "stage": "Experimental"
+    },
+    {
+      "date": "2026-10-16",
+      "flag": "features.bulkFlagEvalFiltering",
+      "change": "removed",
+      "sha": "b777ac9",
+      "commit_url": "https://github.com/grafana/grafana/commit/b777ac980952722b52d8930d646fda79469fb40c",
+      "detected_at": "2026-10-16T11:34:16Z",
+      "from_stage": "Experimental"
+    },
+    {
+      "date": "2026-10-16",
+      "flag": "unifiedStorageClient.onBehalfOf",
+      "change": "removed",
+      "sha": "0f4ac85",
+      "commit_url": "https://github.com/grafana/grafana/commit/0f4ac85d57976624fe6f43abb560d21165c932eb",
+      "detected_at": "2026-10-16T11:34:16Z",
+      "from_stage": "Experimental"
+    },
+    {
+      "date": "2026-10-16",
+      "flag": "unifiedStorageClient.requireCallerIdentity",
+      "change": "removed",
+      "sha": "0f4ac85",
+      "commit_url": "https://github.com/grafana/grafana/commit/0f4ac85d57976624fe6f43abb560d21165c932eb",
+      "detected_at": "2026-10-16T11:34:16Z",
+      "from_stage": "Experimental"
+    },
+    {
+      "date": "2026-10-15",
+      "flag": "dashboards.libraryPanelHorizontalRepeatFullWidth",
+      "change": "new",
+      "sha": "d2fc22e",
+      "commit_url": "https://github.com/grafana/grafana/commit/d2fc22ee44eb903fe7780815224c5b9a85948e7c",
+      "detected_at": "2026-10-16T11:34:16Z",
+      "stage": "Experimental"
+    },
+    {
+      "date": "2026-10-15",
+      "flag": "grafana.otelLogDetails",
+      "change": "new",
+      "sha": "398ed28",
+      "commit_url": "https://github.com/grafana/grafana/commit/398ed28cc7e836af240d2b20a468b8196c7cab92",
+      "detected_at": "2026-10-16T11:34:16Z",
+      "stage": "Experimental"
+    },
+    {
+      "date": "2026-10-15",
+      "flag": "datasources.gatewayAuditPolicy",
+      "change": "new",
+      "sha": "7da97f6",
+      "commit_url": "https://github.com/grafana/grafana/commit/7da97f6fe4548d9d3d4759e0483a5ca6ff7c74fb",
+      "detected_at": "2026-10-16T11:34:16Z",
+      "stage": "Experimental"
+    },
+    {
+      "date": "2026-10-15",
+      "flag": "enableDashboardEmptyExtensions",
+      "change": "removed",
+      "sha": "87dd8c1",
+      "commit_url": "https://github.com/grafana/grafana/commit/87dd8c145bb4ff609625817666d21e59a15bc637",
+      "detected_at": "2026-10-16T11:34:16Z",
+      "from_stage": "Experimental"
+    },
+    {
+      "date": "2026-10-15",
+      "flag": "pluginsSriChecks",
+      "change": "removed",
+      "sha": "ff79817",
+      "commit_url": "https://github.com/grafana/grafana/commit/ff79817f7b2e147562d779debf9f22e2b67f867f",
+      "detected_at": "2026-10-16T11:34:16Z",
+      "from_stage": "GA"
+    },
+    {
       "date": "2026-10-14",
       "flag": "grafana.newTextPanel",
       "change": "stage_change",
