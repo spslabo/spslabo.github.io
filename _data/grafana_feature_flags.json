@@ -1,11 +1,11 @@
 {
   "source_url": "https://github.com/grafana/grafana/blob/main/pkg/services/featuremgmt/registry.go",
-  "total": 394,
+  "total": 400,
   "counts_by_stage": {
-    "Experimental": 282,
+    "Experimental": 286,
     "PrivatePreview": 14,
     "PublicPreview": 37,
-    "GA": 56,
+    "GA": 58,
     "Deprecated": 5
   },
   "flags": [
@@ -58,6 +58,11 @@
       "name": "alerting.ruleQuality",
       "stage": "Experimental",
       "description": "Enable the alert quality tab, which surfaces the health of your alert rules and recommends actions to improve them."
+    },
+    {
+      "name": "alerting.ruleQualityFix",
+      "stage": "Experimental",
+      "description": "Enable fixing alert rule quality issues with Grafana Assistant on the alert quality page."
     },
     {
       "name": "alerting.ruleReviews",
@@ -318,6 +323,11 @@
       "name": "auth.tokenRotationGracePeriod",
       "stage": "Experimental",
       "description": "Keeps a recently rotated previous session token valid instead of forcing an urgent re-rotation, which should prevent multi-tab race-condition logouts"
+    },
+    {
+      "name": "authz.legacyUserPermissions",
+      "stage": "Experimental",
+      "description": "Load legacy Access Control permissions through embedded AuthZ."
     },
     {
       "name": "authz.listFoldersViaSearch",
@@ -666,7 +676,7 @@
     },
     {
       "name": "datetime.useLuxon",
-      "stage": "Experimental",
+      "stage": "GA",
       "description": "Uses the Luxon-backed compatibility implementation for Grafana date and time APIs"
     },
     {
@@ -810,6 +820,11 @@
       "description": "Enables global and folder-scoped dashboard variables via dashboard.grafana.app"
     },
     {
+      "name": "grafana.announcementBannerDismissible",
+      "stage": "GA",
+      "description": "Allow admins to make announcement banners dismissible by users"
+    },
+    {
       "name": "grafana.cmdkHybridSearch",
       "stage": "Experimental",
       "description": "Uses the hybrid (lexical + semantic) search endpoint as the dashboard search backend in the command palette"
@@ -840,6 +855,11 @@
       "description": "Enables global and folder-scoped dashboard variables via dashboard.grafana.app"
     },
     {
+      "name": "grafana.dashboardPreviewMode",
+      "stage": "Experimental",
+      "description": "Enables Viewing and Editing modes for dynamic dashboards"
+    },
+    {
       "name": "grafana.dashboardsAutoHeightPanels",
       "stage": "Experimental",
       "description": "Enables the auto-height feature for dashboard panels"
@@ -868,6 +888,11 @@
       "name": "grafana.exploreMetricsSidebar",
       "stage": "Experimental",
       "description": "Enables the sidebar in Explore metrics (Metrics Drilldown)"
+    },
+    {
+      "name": "grafana.extensionSidebarFloating",
+      "stage": "Experimental",
+      "description": "Lets Grafana Assistant float the extension sidebar over the page instead of docking it"
     },
     {
       "name": "grafana.filterablePanels",
@@ -988,6 +1013,11 @@
       "name": "grafana.queryVarEditorRedesign",
       "stage": "GA",
       "description": "Enables a redesigned query variable editor with split-pane preview and a spreadsheet for managing static options"
+    },
+    {
+      "name": "grafana.recordedQueriesDisableCreate",
+      "stage": "Experimental",
+      "description": "Disables creating new recorded queries while preserving access to existing queries"
     },
     {
       "name": "grafana.rspackBuild",

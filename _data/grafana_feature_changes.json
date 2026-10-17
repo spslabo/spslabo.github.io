@@ -2,6 +2,70 @@
   "changes": [
     {
       "date": "2026-10-16",
+      "flag": "grafana.recordedQueriesDisableCreate",
+      "change": "new",
+      "sha": "d196c88",
+      "commit_url": "https://github.com/grafana/grafana/commit/d196c882221c32526815bdbe8a8c4b7ad2e449b4",
+      "detected_at": "2026-10-17T10:54:36Z",
+      "stage": "Experimental"
+    },
+    {
+      "date": "2026-10-16",
+      "flag": "grafana.dashboardPreviewMode",
+      "change": "new",
+      "sha": "51db242",
+      "commit_url": "https://github.com/grafana/grafana/commit/51db2423f4dbb3d1637ac6432f2eeb0c2558415b",
+      "detected_at": "2026-10-17T10:54:36Z",
+      "stage": "Experimental"
+    },
+    {
+      "date": "2026-10-16",
+      "flag": "authz.legacyUserPermissions",
+      "change": "new",
+      "sha": "53f031c",
+      "commit_url": "https://github.com/grafana/grafana/commit/53f031c3dbf6d212349cf811fc969b275985c09a",
+      "detected_at": "2026-10-17T10:54:36Z",
+      "stage": "Experimental"
+    },
+    {
+      "date": "2026-10-16",
+      "flag": "alerting.ruleQualityFix",
+      "change": "new",
+      "sha": "fe4484a",
+      "commit_url": "https://github.com/grafana/grafana/commit/fe4484a5cb3c53dfe3691bf3643f86db37f1e08f",
+      "detected_at": "2026-10-17T10:54:36Z",
+      "stage": "Experimental"
+    },
+    {
+      "date": "2026-10-16",
+      "flag": "datetime.useLuxon",
+      "change": "stage_change",
+      "sha": "7597ca5",
+      "commit_url": "https://github.com/grafana/grafana/commit/7597ca5957a8c87e6d62b67b5c959d81fb6e18a6",
+      "detected_at": "2026-10-17T10:54:36Z",
+      "from_stage": "Experimental",
+      "to_stage": "GA"
+    },
+    {
+      "date": "2026-10-16",
+      "flag": "grafana.extensionSidebarFloating",
+      "change": "new",
+      "sha": "d950a0f",
+      "commit_url": "https://github.com/grafana/grafana/commit/d950a0fd98c2bf0fe9c5ded8c50cae86d71eabc2",
+      "detected_at": "2026-10-17T10:54:36Z",
+      "stage": "Experimental"
+    },
+    {
+      "date": "2026-10-16",
+      "flag": "grafana.announcementBannerDismissible",
+      "change": "new",
+      "sha": "b47029d",
+      "commit_url": "https://github.com/grafana/grafana/commit/b47029de406637f3f103d45ace10d2a08c9df1a9",
+      "detected_at": "2026-10-17T10:54:36Z",
+      "stage": "GA"
+    },
+    {
+      "date": "2026-10-16",
       "flag": "folderPickerCreatePermission",
       "change": "new",
       "sha": "f98af49",
