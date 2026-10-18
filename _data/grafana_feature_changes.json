@@ -1,6 +1,15 @@
 {
   "changes": [
     {
+      "date": "2026-10-17",
+      "flag": "teamlbac.usageFromAppPlatform",
+      "change": "new",
+      "sha": "2a8b7b2",
+      "commit_url": "https://github.com/grafana/grafana/commit/2a8b7b2d70bea654b930c9d2d1005eb56e8d0fc4",
+      "detected_at": "2026-10-18T11:20:19Z",
+      "stage": "Experimental"
+    },
+    {
       "date": "2026-10-16",
       "flag": "grafana.recordedQueriesDisableCreate",
       "change": "new",

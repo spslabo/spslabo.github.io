@@ -1,8 +1,8 @@
 {
   "source_url": "https://github.com/grafana/grafana/blob/main/pkg/services/featuremgmt/registry.go",
-  "total": 400,
+  "total": 401,
   "counts_by_stage": {
-    "Experimental": 286,
+    "Experimental": 287,
     "PrivatePreview": 14,
     "PublicPreview": 37,
     "GA": 58,
@@ -1923,6 +1923,11 @@
       "name": "teamHttpHeadersTempo",
       "stage": "Experimental",
       "description": "Enables LBAC for datasources for Tempo to apply LBAC filtering of traces to the client requests for users in teams"
+    },
+    {
+      "name": "teamlbac.usageFromAppPlatform",
+      "stage": "Experimental",
+      "description": "Collect Team LBAC usage through the IAM API instead of legacy datasource JSON"
     },
     {
       "name": "teamLBACApiReadFromAppPlatform",
