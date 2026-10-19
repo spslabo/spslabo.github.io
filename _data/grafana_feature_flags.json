@@ -1,8 +1,8 @@
 {
   "source_url": "https://github.com/grafana/grafana/blob/main/pkg/services/featuremgmt/registry.go",
-  "total": 401,
+  "total": 402,
   "counts_by_stage": {
-    "Experimental": 287,
+    "Experimental": 288,
     "PrivatePreview": 14,
     "PublicPreview": 37,
     "GA": 58,
@@ -1003,6 +1003,11 @@
       "name": "grafana.pluginPathNesting",
       "stage": "Experimental",
       "description": "Nest app plugin navigation items in the mega menu based on their URL path hierarchy"
+    },
+    {
+      "name": "grafana.preserveLoginTabTitle",
+      "stage": "Experimental",
+      "description": "Preserves the navigation section label in the browser tab title after session expiry"
     },
     {
       "name": "grafana.publishLegacySQLEvents",
