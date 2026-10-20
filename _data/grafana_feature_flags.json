@@ -1,12 +1,12 @@
 {
   "source_url": "https://github.com/grafana/grafana/blob/main/pkg/services/featuremgmt/registry.go",
-  "total": 402,
+  "total": 399,
   "counts_by_stage": {
-    "Experimental": 288,
+    "Experimental": 281,
     "PrivatePreview": 14,
-    "PublicPreview": 37,
+    "PublicPreview": 40,
     "GA": 58,
-    "Deprecated": 5
+    "Deprecated": 6
   },
   "flags": [
     {
@@ -95,24 +95,9 @@
       "description": "Enable AI-analyze central state history."
     },
     {
-      "name": "alertingAIFeedback",
-      "stage": "Experimental",
-      "description": "Enable AI-generated feedback from the Grafana UI."
-    },
-    {
-      "name": "alertingAIGenAlertRules",
-      "stage": "Experimental",
-      "description": "Enable AI-generated alert rules."
-    },
-    {
       "name": "alertingAIGenTemplates",
       "stage": "Experimental",
       "description": "Enable AI-generated alerting templates."
-    },
-    {
-      "name": "alertingAIImproveAlertRules",
-      "stage": "Experimental",
-      "description": "Enable AI-improve alert rules labels and annotations."
     },
     {
       "name": "alertingAlertListPanelEnhancements",
@@ -226,8 +211,8 @@
     },
     {
       "name": "alertingTriage",
-      "stage": "Experimental",
-      "description": "Enables the alerting triage feature"
+      "stage": "Deprecated",
+      "description": "Deprecated. The alert activity page is shown when alert state history is written to Prometheus. Set to false to hide it."
     },
     {
       "name": "alertingUIUseBackendFilters",
@@ -298,6 +283,11 @@
       "name": "appplugins.registerAPIServer",
       "stage": "Experimental",
       "description": "Registers an API server for each backend app plugin exposing a settings endpoint"
+    },
+    {
+      "name": "assistant.dashboardPlanBuildingScreen",
+      "stage": "Experimental",
+      "description": "Shows a loading screen on the dashboard while the assistant prepares to build an approved dashboard plan"
     },
     {
       "name": "assistant.dashboardPlanning",
@@ -705,11 +695,6 @@
       "description": "Enables less memory intensive Elasticsearch result parsing"
     },
     {
-      "name": "enableAppChromeExtensions",
-      "stage": "Experimental",
-      "description": "Set this to true to enable all app chrome extensions registered by plugins."
-    },
-    {
       "name": "enableColorblindSafePanelOptions",
       "stage": "Experimental",
       "description": "Enables new colorblind safe palette and line fill patterns for panels"
@@ -1021,7 +1006,7 @@
     },
     {
       "name": "grafana.recordedQueriesDisableCreate",
-      "stage": "Experimental",
+      "stage": "PublicPreview",
       "description": "Disables creating new recorded queries while preserving access to existing queries"
     },
     {
@@ -1246,7 +1231,7 @@
     },
     {
       "name": "kubernetesAuthzTeamLBACRuleApi",
-      "stage": "Experimental",
+      "stage": "PublicPreview",
       "description": "Registers AuthZ TeamLBACRule /apis endpoint"
     },
     {
@@ -1951,7 +1936,7 @@
     },
     {
       "name": "text.newFeatures",
-      "stage": "Experimental",
+      "stage": "PublicPreview",
       "description": "Enables the new features in text panel"
     },
     {

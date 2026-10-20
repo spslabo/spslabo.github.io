@@ -1,6 +1,91 @@
 {
   "changes": [
     {
+      "date": "2026-10-20",
+      "flag": "grafana.recordedQueriesDisableCreate",
+      "change": "stage_change",
+      "sha": "1199f35",
+      "commit_url": "https://github.com/grafana/grafana/commit/1199f3519e8cd9251865e998350a686c6d293d32",
+      "detected_at": "2026-10-20T11:48:36Z",
+      "from_stage": "Experimental",
+      "to_stage": "PublicPreview"
+    },
+    {
+      "date": "2026-10-20",
+      "flag": "alertingTriage",
+      "change": "stage_change",
+      "sha": "14b326c",
+      "commit_url": "https://github.com/grafana/grafana/commit/14b326c6cdea71c49a659359f77719fe394faa2e",
+      "detected_at": "2026-10-20T11:48:36Z",
+      "from_stage": "Experimental",
+      "to_stage": "Deprecated"
+    },
+    {
+      "date": "2026-10-20",
+      "flag": "assistant.dashboardPlanBuildingScreen",
+      "change": "new",
+      "sha": "976ae3c",
+      "commit_url": "https://github.com/grafana/grafana/commit/976ae3ce4259e6bfe525389bd17f1b2f1b7e16d7",
+      "detected_at": "2026-10-20T11:48:36Z",
+      "stage": "Experimental"
+    },
+    {
+      "date": "2026-10-20",
+      "flag": "enableAppChromeExtensions",
+      "change": "removed",
+      "sha": "396f5b2",
+      "commit_url": "https://github.com/grafana/grafana/commit/396f5b21f03db5b2331d4927133e0eeddea6d857",
+      "detected_at": "2026-10-20T11:48:36Z",
+      "from_stage": "Experimental"
+    },
+    {
+      "date": "2026-10-19",
+      "flag": "kubernetesAuthzTeamLBACRuleApi",
+      "change": "stage_change",
+      "sha": "9c006cc",
+      "commit_url": "https://github.com/grafana/grafana/commit/9c006cc991edd64856bcb58099a20b466c034bd7",
+      "detected_at": "2026-10-20T11:48:36Z",
+      "from_stage": "Experimental",
+      "to_stage": "PublicPreview"
+    },
+    {
+      "date": "2026-10-19",
+      "flag": "text.newFeatures",
+      "change": "stage_change",
+      "sha": "57069e7",
+      "commit_url": "https://github.com/grafana/grafana/commit/57069e7b7d457eda5648cfcf0f4dfe1a0cb55741",
+      "detected_at": "2026-10-20T11:48:36Z",
+      "from_stage": "Experimental",
+      "to_stage": "PublicPreview"
+    },
+    {
+      "date": "2026-10-19",
+      "flag": "alertingAIFeedback",
+      "change": "removed",
+      "sha": "9a3b19b",
+      "commit_url": "https://github.com/grafana/grafana/commit/9a3b19b960c71dca893551694ee0c678e631bc8a",
+      "detected_at": "2026-10-20T11:48:36Z",
+      "from_stage": "Experimental"
+    },
+    {
+      "date": "2026-10-19",
+      "flag": "alertingAIGenAlertRules",
+      "change": "removed",
+      "sha": "9a3b19b",
+      "commit_url": "https://github.com/grafana/grafana/commit/9a3b19b960c71dca893551694ee0c678e631bc8a",
+      "detected_at": "2026-10-20T11:48:36Z",
+      "from_stage": "Experimental"
+    },
+    {
+      "date": "2026-10-19",
+      "flag": "alertingAIImproveAlertRules",
+      "change": "removed",
+      "sha": "9a3b19b",
+      "commit_url": "https://github.com/grafana/grafana/commit/9a3b19b960c71dca893551694ee0c678e631bc8a",
+      "detected_at": "2026-10-20T11:48:36Z",
+      "from_stage": "Experimental"
+    },
+    {
       "date": "2026-10-19",
       "flag": "grafana.preserveLoginTabTitle",
       "change": "new",
