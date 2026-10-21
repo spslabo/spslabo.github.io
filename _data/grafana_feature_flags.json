@@ -4,8 +4,8 @@
   "counts_by_stage": {
     "Experimental": 281,
     "PrivatePreview": 14,
-    "PublicPreview": 40,
-    "GA": 58,
+    "PublicPreview": 41,
+    "GA": 57,
     "Deprecated": 6
   },
   "flags": [
@@ -38,6 +38,11 @@
       "name": "alerting.folderHasRulesLabel",
       "stage": "Experimental",
       "description": "Maintain the alerting.grafana.app/has-rules label on folders that contain Grafana-managed alert or recording rules, so folders holding rules can be queried by label selector"
+    },
+    {
+      "name": "alerting.gmaOnlyListView",
+      "stage": "Experimental",
+      "description": "Enables the separate Grafana-managed Alert rules and Recording rules list pages, replacing the combined rule list"
     },
     {
       "name": "alerting.hybridSearch",
@@ -466,7 +471,7 @@
     },
     {
       "name": "dashboard.notebooks",
-      "stage": "Experimental",
+      "stage": "PublicPreview",
       "description": "Enable notebooks, a resource in the dashboard API group for mixing text cells, code cells, and visualization panels"
     },
     {
@@ -523,11 +528,6 @@
       "name": "dashboardUndoRedo",
       "stage": "Experimental",
       "description": "Enables undo/redo in dynamic dashboards"
-    },
-    {
-      "name": "dashboardUnifiedDrilldownControls",
-      "stage": "GA",
-      "description": "Renders ad hoc filters and group by in a single unified control"
     },
     {
       "name": "dashboardValidatorApp",

@@ -2,6 +2,34 @@
   "changes": [
     {
       "date": "2026-10-20",
+      "flag": "dashboard.notebooks",
+      "change": "stage_change",
+      "sha": "993782c",
+      "commit_url": "https://github.com/grafana/grafana/commit/993782cdb6bf3c9c7ec8bc0e71a2da798b9d5ddd",
+      "detected_at": "2026-10-21T12:00:38Z",
+      "from_stage": "Experimental",
+      "to_stage": "PublicPreview"
+    },
+    {
+      "date": "2026-10-20",
+      "flag": "alerting.gmaOnlyListView",
+      "change": "new",
+      "sha": "37b26f6",
+      "commit_url": "https://github.com/grafana/grafana/commit/37b26f6003429a4009e0033254c9b00d917c8a13",
+      "detected_at": "2026-10-21T12:00:38Z",
+      "stage": "Experimental"
+    },
+    {
+      "date": "2026-10-20",
+      "flag": "dashboardUnifiedDrilldownControls",
+      "change": "removed",
+      "sha": "13522b2",
+      "commit_url": "https://github.com/grafana/grafana/commit/13522b2a359d9b972f1591a6d290297c073ad4c1",
+      "detected_at": "2026-10-21T12:00:38Z",
+      "from_stage": "GA"
+    },
+    {
+      "date": "2026-10-20",
       "flag": "grafana.recordedQueriesDisableCreate",
       "change": "stage_change",
       "sha": "1199f35",
