@@ -1,6 +1,51 @@
 {
   "changes": [
     {
+      "date": "2026-10-22",
+      "flag": "appplugins.loadAppManifestAndKeepSettings",
+      "change": "removed",
+      "sha": "bac934f",
+      "commit_url": "https://github.com/grafana/grafana/commit/bac934f04259fbaaaeed2fd582b0a0764a87c5ab",
+      "detected_at": "2026-10-22T12:03:20Z",
+      "from_stage": "Experimental"
+    },
+    {
+      "date": "2026-10-21",
+      "flag": "grafana.dashboardVariablesMigration",
+      "change": "new",
+      "sha": "4e92519",
+      "commit_url": "https://github.com/grafana/grafana/commit/4e9251971fd09210d999e7e03d871b431b6b279c",
+      "detected_at": "2026-10-22T12:03:20Z",
+      "stage": "Experimental"
+    },
+    {
+      "date": "2026-10-21",
+      "flag": "grafana.geomapProtomapsBasemap",
+      "change": "new",
+      "sha": "620c430",
+      "commit_url": "https://github.com/grafana/grafana/commit/620c430c6c9881073fda14ae332cd78036c08ca0",
+      "detected_at": "2026-10-22T12:03:20Z",
+      "stage": "Experimental"
+    },
+    {
+      "date": "2026-10-21",
+      "flag": "provisioning.userAttribution",
+      "change": "removed",
+      "sha": "7de573e",
+      "commit_url": "https://github.com/grafana/grafana/commit/7de573e4db635ab9d34cd2771bde39471e1c0e82",
+      "detected_at": "2026-10-22T12:03:20Z",
+      "from_stage": "PublicPreview"
+    },
+    {
+      "date": "2026-10-21",
+      "flag": "restrictedPluginApis",
+      "change": "removed",
+      "sha": "daf0c42",
+      "commit_url": "https://github.com/grafana/grafana/commit/daf0c4274c2a572130a8847086309d1dbb3bbc1f",
+      "detected_at": "2026-10-22T12:03:20Z",
+      "from_stage": "GA"
+    },
+    {
       "date": "2026-10-20",
       "flag": "dashboard.notebooks",
       "change": "stage_change",

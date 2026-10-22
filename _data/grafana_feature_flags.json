@@ -1,11 +1,11 @@
 {
   "source_url": "https://github.com/grafana/grafana/blob/main/pkg/services/featuremgmt/registry.go",
-  "total": 399,
+  "total": 398,
   "counts_by_stage": {
-    "Experimental": 281,
+    "Experimental": 282,
     "PrivatePreview": 14,
-    "PublicPreview": 41,
-    "GA": 57,
+    "PublicPreview": 40,
+    "GA": 56,
     "Deprecated": 6
   },
   "flags": [
@@ -278,11 +278,6 @@
       "name": "appplugins.loadAppManifest",
       "stage": "Experimental",
       "description": "Load app manifest when loading plugin definitions"
-    },
-    {
-      "name": "appplugins.loadAppManifestAndKeepSettings",
-      "stage": "Experimental",
-      "description": "Continue to expose settings when a manifest exists"
     },
     {
       "name": "appplugins.registerAPIServer",
@@ -855,6 +850,11 @@
       "description": "Redesigns dashboard settings page into Advanced Settings in a modal window"
     },
     {
+      "name": "grafana.dashboardVariablesMigration",
+      "stage": "Experimental",
+      "description": "Enables the tool that finds identical local variables across dashboards and promotes them to shared variables. Requires grafana.dashboardGlobalVariables"
+    },
+    {
       "name": "grafana.dedicatedGrafanaComProxyAPIToken",
       "stage": "Experimental",
       "description": "Use a dedicated auth token for Grafana.com proxy requests and plugin installs"
@@ -893,6 +893,11 @@
       "name": "grafana.frontendLegacyFeatureToggleHandling",
       "stage": "Experimental",
       "description": ""
+    },
+    {
+      "name": "grafana.geomapProtomapsBasemap",
+      "stage": "Experimental",
+      "description": "Adds an experimental Protomaps vector basemap to the geomap panel"
     },
     {
       "name": "grafana.globalHomePreference",
@@ -1595,11 +1600,6 @@
       "description": "Enables the synthetic 'test' provisioning job type for load and performance testing of the job queue and controllers"
     },
     {
-      "name": "provisioning.userAttribution",
-      "stage": "PublicPreview",
-      "description": "Author Git Sync commits as the acting Grafana user"
-    },
-    {
       "name": "provisioningExport",
       "stage": "Experimental",
       "description": "Enable export functionality for provisioned resources"
@@ -1758,11 +1758,6 @@
       "name": "reportRenderBinding",
       "stage": "Experimental",
       "description": "Enables render binding support for report rendering"
-    },
-    {
-      "name": "restrictedPluginApis",
-      "stage": "GA",
-      "description": "Enables sharing a list of APIs with a list of plugins"
     },
     {
       "name": "rolePickerDrawer",
