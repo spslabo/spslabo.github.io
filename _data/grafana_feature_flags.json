@@ -1,8 +1,8 @@
 {
   "source_url": "https://github.com/grafana/grafana/blob/main/pkg/services/featuremgmt/registry.go",
-  "total": 398,
+  "total": 399,
   "counts_by_stage": {
-    "Experimental": 282,
+    "Experimental": 283,
     "PrivatePreview": 14,
     "PublicPreview": 40,
     "GA": 56,
@@ -283,6 +283,11 @@
       "name": "appplugins.registerAPIServer",
       "stage": "Experimental",
       "description": "Registers an API server for each backend app plugin exposing a settings endpoint"
+    },
+    {
+      "name": "assistant.dashboard.artifacts",
+      "stage": "Experimental",
+      "description": "Previews the dashboard changes a plugin such as Grafana Assistant proposes, and lets plugins reload and embed dashboards with them"
     },
     {
       "name": "assistant.dashboardPlanBuildingScreen",
@@ -960,11 +965,6 @@
       "description": "Enables the new text panel"
     },
     {
-      "name": "grafana.ofrepRootUrl",
-      "stage": "Experimental",
-      "description": "Controls whether the frontend OFREP client and the OpenFeature provider config use the root /ofrep/v1 route instead of the namespaced route"
-    },
-    {
       "name": "grafana.onDemandDiagnostics",
       "stage": "Experimental",
       "description": "Adds a 'Download diagnostics' action that bundles diagnostic artifacts such as HTTP traffic (HAR), server log, dashboard and panel JSONs, and more"
@@ -1013,11 +1013,6 @@
       "name": "grafana.recordedQueriesDisableCreate",
       "stage": "PublicPreview",
       "description": "Disables creating new recorded queries while preserving access to existing queries"
-    },
-    {
-      "name": "grafana.rspackBuild",
-      "stage": "Experimental",
-      "description": "Switches the backend to load frontend assets built with rspack instead of webpack"
     },
     {
       "name": "grafana.savedQueriesPage",
@@ -1740,6 +1735,11 @@
       "description": "Redirect legacy report CRUD API endpoints to the Kubernetes reporting API"
     },
     {
+      "name": "reporting.removeLogoUrlField",
+      "stage": "Experimental",
+      "description": "Removes the URL option for report and email logo fields in reporting settings, leaving image upload as the only option"
+    },
+    {
       "name": "reportingFooterSettings",
       "stage": "GA",
       "description": "Enables the configurable footer settings for PDF reports"
@@ -1788,6 +1788,11 @@
       "name": "scopeSearchAllLevels",
       "stage": "Experimental",
       "description": "Enable scope search to include all levels of the scope node tree"
+    },
+    {
+      "name": "search.perResourceFolderTree",
+      "stage": "Experimental",
+      "description": "Allow recursive folder filters in per-resource search APIs"
     },
     {
       "name": "secretsKeeperUI",

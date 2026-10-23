@@ -1,6 +1,51 @@
 {
   "changes": [
     {
+      "date": "2026-10-23",
+      "flag": "grafana.rspackBuild",
+      "change": "removed",
+      "sha": "732e522",
+      "commit_url": "https://github.com/grafana/grafana/commit/732e52226dd345c67f32542c7091fc6fef595613",
+      "detected_at": "2026-10-23T11:48:28Z",
+      "from_stage": "Experimental"
+    },
+    {
+      "date": "2026-10-22",
+      "flag": "search.perResourceFolderTree",
+      "change": "new",
+      "sha": "c194b67",
+      "commit_url": "https://github.com/grafana/grafana/commit/c194b6704374e891fd728f7ebf2ea209906c3034",
+      "detected_at": "2026-10-23T11:48:28Z",
+      "stage": "Experimental"
+    },
+    {
+      "date": "2026-10-22",
+      "flag": "assistant.dashboard.artifacts",
+      "change": "new",
+      "sha": "9361810",
+      "commit_url": "https://github.com/grafana/grafana/commit/9361810b260273c4ac31df34228889b41ba19f77",
+      "detected_at": "2026-10-23T11:48:28Z",
+      "stage": "Experimental"
+    },
+    {
+      "date": "2026-10-22",
+      "flag": "reporting.removeLogoUrlField",
+      "change": "new",
+      "sha": "cf28481",
+      "commit_url": "https://github.com/grafana/grafana/commit/cf28481beaa4977890b84284ef7195d9a5b1c69d",
+      "detected_at": "2026-10-23T11:48:28Z",
+      "stage": "Experimental"
+    },
+    {
+      "date": "2026-10-22",
+      "flag": "grafana.ofrepRootUrl",
+      "change": "removed",
+      "sha": "7816dbb",
+      "commit_url": "https://github.com/grafana/grafana/commit/7816dbb532268e2b72dcb3c9ddd48d3535e24b7c",
+      "detected_at": "2026-10-23T11:48:28Z",
+      "from_stage": "Experimental"
+    },
+    {
       "date": "2026-10-22",
       "flag": "appplugins.loadAppManifestAndKeepSettings",
       "change": "removed",
