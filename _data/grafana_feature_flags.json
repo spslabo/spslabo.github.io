@@ -1,11 +1,11 @@
 {
   "source_url": "https://github.com/grafana/grafana/blob/main/pkg/services/featuremgmt/registry.go",
-  "total": 399,
+  "total": 398,
   "counts_by_stage": {
-    "Experimental": 283,
+    "Experimental": 281,
     "PrivatePreview": 14,
     "PublicPreview": 40,
-    "GA": 56,
+    "GA": 57,
     "Deprecated": 6
   },
   "flags": [
@@ -1015,6 +1015,11 @@
       "description": "Disables creating new recorded queries while preserving access to existing queries"
     },
     {
+      "name": "grafana.savedDashboardViews",
+      "stage": "Experimental",
+      "description": "Enables Saved Dashboard Views: per-dashboard saved variable, filter and time range state"
+    },
+    {
       "name": "grafana.savedQueriesPage",
       "stage": "Experimental",
       "description": "Enables the dedicated Saved queries page and its navigation entry"
@@ -1571,7 +1576,7 @@
     },
     {
       "name": "profilesHeatmap",
-      "stage": "Experimental",
+      "stage": "GA",
       "description": "Enables heatmap visualization support for Pyroscope profiles"
     },
     {
@@ -1918,16 +1923,6 @@
       "name": "teamlbac.usageFromAppPlatform",
       "stage": "Experimental",
       "description": "Collect Team LBAC usage through the IAM API instead of legacy datasource JSON"
-    },
-    {
-      "name": "teamLBACApiReadFromAppPlatform",
-      "stage": "Experimental",
-      "description": "Use the Kubernetes TeamLBACRule API for reading team LBAC rules in the legacy API server"
-    },
-    {
-      "name": "teamLBACApiWriteFromAppPlatform",
-      "stage": "Experimental",
-      "description": "Use the Kubernetes TeamLBACRule API for writing team LBAC rules in the legacy API server"
     },
     {
       "name": "tempoAlerting",

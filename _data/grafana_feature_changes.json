@@ -2,6 +2,43 @@
   "changes": [
     {
       "date": "2026-10-23",
+      "flag": "grafana.savedDashboardViews",
+      "change": "new",
+      "sha": "d08fef8",
+      "commit_url": "https://github.com/grafana/grafana/commit/d08fef814d466562d99b74806da7738d7018ff0c",
+      "detected_at": "2026-10-24T11:13:44Z",
+      "stage": "Experimental"
+    },
+    {
+      "date": "2026-10-23",
+      "flag": "profilesHeatmap",
+      "change": "stage_change",
+      "sha": "658808f",
+      "commit_url": "https://github.com/grafana/grafana/commit/658808fe48f2bf5dbbf264b40edb83c0f109b494",
+      "detected_at": "2026-10-24T11:13:44Z",
+      "from_stage": "Experimental",
+      "to_stage": "GA"
+    },
+    {
+      "date": "2026-10-23",
+      "flag": "teamLBACApiReadFromAppPlatform",
+      "change": "removed",
+      "sha": "45fd7de",
+      "commit_url": "https://github.com/grafana/grafana/commit/45fd7defd64f89217487ee0e314ba5c3c41ac8f7",
+      "detected_at": "2026-10-24T11:13:44Z",
+      "from_stage": "Experimental"
+    },
+    {
+      "date": "2026-10-23",
+      "flag": "teamLBACApiWriteFromAppPlatform",
+      "change": "removed",
+      "sha": "45fd7de",
+      "commit_url": "https://github.com/grafana/grafana/commit/45fd7defd64f89217487ee0e314ba5c3c41ac8f7",
+      "detected_at": "2026-10-24T11:13:44Z",
+      "from_stage": "Experimental"
+    },
+    {
+      "date": "2026-10-23",
       "flag": "grafana.rspackBuild",
       "change": "removed",
       "sha": "732e522",
