@@ -1,11 +1,11 @@
 {
   "source_url": "https://github.com/grafana/grafana/blob/main/pkg/services/featuremgmt/registry.go",
-  "total": 398,
+  "total": 397,
   "counts_by_stage": {
     "Experimental": 281,
     "PrivatePreview": 14,
     "PublicPreview": 40,
-    "GA": 57,
+    "GA": 56,
     "Deprecated": 6
   },
   "flags": [
@@ -1015,6 +1015,11 @@
       "description": "Disables creating new recorded queries while preserving access to existing queries"
     },
     {
+      "name": "grafana.restrictWatchToServiceIdentities",
+      "stage": "Experimental",
+      "description": "Restrict API watches to service accounts, service identities, and privileged loopback clients"
+    },
+    {
       "name": "grafana.savedDashboardViews",
       "stage": "Experimental",
       "description": "Enables Saved Dashboard Views: per-dashboard saved variable, filter and time range state"
@@ -1065,11 +1070,6 @@
       "description": "Enables using dashboard variables in panel threshold values"
     },
     {
-      "name": "grafana.unifiedDataSourcePicker",
-      "stage": "GA",
-      "description": "Render the core Grafana data source picker behind the DataSourcePicker that @grafana/runtime exposes to plugins"
-    },
-    {
       "name": "grafana.useDefaultScopesEndpoint",
       "stage": "Experimental",
       "description": "Use the find default scope endpoint to seed the initial scope selection when none is set."
@@ -1118,11 +1118,6 @@
       "name": "groupAttributeSync",
       "stage": "PrivatePreview",
       "description": "Enable the groupsync extension for managing Group Attribute Sync feature"
-    },
-    {
-      "name": "groupByVariable",
-      "stage": "Experimental",
-      "description": "Enable groupBy variable support in scenes dashboards"
     },
     {
       "name": "heatmapNegativeLogBuckets",
