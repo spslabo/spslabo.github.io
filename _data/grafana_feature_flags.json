@@ -1,11 +1,11 @@
 {
   "source_url": "https://github.com/grafana/grafana/blob/main/pkg/services/featuremgmt/registry.go",
-  "total": 397,
+  "total": 396,
   "counts_by_stage": {
-    "Experimental": 281,
+    "Experimental": 282,
     "PrivatePreview": 14,
     "PublicPreview": 40,
-    "GA": 56,
+    "GA": 54,
     "Deprecated": 6
   },
   "flags": [
@@ -475,11 +475,6 @@
       "description": "Enable notebooks, a resource in the dashboard API group for mixing text cells, code cells, and visualization panels"
     },
     {
-      "name": "dashboard.recentlyDeletedViaTrash",
-      "stage": "GA",
-      "description": "Load the Recently deleted dashboard list from the search API trash endpoint, instead of listing every deleted dashboard and filtering in the browser"
-    },
-    {
       "name": "dashboard.vectorSearch",
       "stage": "Experimental",
       "description": "Exposes the semantic (vector) search endpoint for dashboards under the dashboard API"
@@ -498,6 +493,11 @@
       "name": "dashboardNewLayouts",
       "stage": "GA",
       "description": "Enables new dashboard layouts"
+    },
+    {
+      "name": "dashboards.disablePublicDashboards",
+      "stage": "Experimental",
+      "description": "Disables public dashboards for the stack"
     },
     {
       "name": "dashboards.libraryPanelHorizontalRepeatFullWidth",
@@ -1648,11 +1648,6 @@
       "name": "queryHistory.recentQueriesUI",
       "stage": "Experimental",
       "description": "Replace the Query History drawer with a new Recent Queries modal UI"
-    },
-    {
-      "name": "queryLibrary",
-      "stage": "GA",
-      "description": "Enables Saved queries (query library) feature"
     },
     {
       "name": "queryService",

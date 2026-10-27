@@ -2,6 +2,33 @@
   "changes": [
     {
       "date": "2026-10-26",
+      "flag": "dashboards.disablePublicDashboards",
+      "change": "new",
+      "sha": "8871971",
+      "commit_url": "https://github.com/grafana/grafana/commit/887197159af7ec7032ed69837329a61ac2d3edc6",
+      "detected_at": "2026-10-27T12:23:47Z",
+      "stage": "Experimental"
+    },
+    {
+      "date": "2026-10-26",
+      "flag": "dashboard.recentlyDeletedViaTrash",
+      "change": "removed",
+      "sha": "66bbe6a",
+      "commit_url": "https://github.com/grafana/grafana/commit/66bbe6a4e5c0d2f53b44aca337dffce6597db262",
+      "detected_at": "2026-10-27T12:23:47Z",
+      "from_stage": "GA"
+    },
+    {
+      "date": "2026-10-26",
+      "flag": "queryLibrary",
+      "change": "removed",
+      "sha": "a8181ff",
+      "commit_url": "https://github.com/grafana/grafana/commit/a8181ff585442f704be0bb4debaf553db1c0317c",
+      "detected_at": "2026-10-27T12:23:47Z",
+      "from_stage": "GA"
+    },
+    {
+      "date": "2026-10-26",
       "flag": "grafana.restrictWatchToServiceIdentities",
       "change": "new",
       "sha": "375608d",
