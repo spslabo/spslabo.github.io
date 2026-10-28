@@ -1,10 +1,10 @@
 {
   "source_url": "https://github.com/grafana/grafana/blob/main/pkg/services/featuremgmt/registry.go",
-  "total": 396,
+  "total": 399,
   "counts_by_stage": {
-    "Experimental": 282,
+    "Experimental": 283,
     "PrivatePreview": 14,
-    "PublicPreview": 40,
+    "PublicPreview": 42,
     "GA": 54,
     "Deprecated": 6
   },
@@ -323,6 +323,11 @@
       "name": "authz.legacyUserPermissions",
       "stage": "Experimental",
       "description": "Load legacy Access Control permissions through embedded AuthZ."
+    },
+    {
+      "name": "authz.legacyUserPermissionsShadow",
+      "stage": "Experimental",
+      "description": "Compare local permissions with embedded AuthZ in the background when authz.legacyUserPermissions is enabled."
     },
     {
       "name": "authz.listFoldersViaSearch",
@@ -815,6 +820,11 @@
       "description": "Uses the hybrid (lexical + semantic) search endpoint as the dashboard search backend in the command palette"
     },
     {
+      "name": "grafana.configFromQueryDynamicName",
+      "stage": "Experimental",
+      "description": "Enables using the Config From Query Results transformation's Dynamic Field Name option"
+    },
+    {
       "name": "grafana.correlationsSkipLegacy",
       "stage": "Experimental",
       "description": "Route any calls to legacy correlations endpoints to call through to app platform"
@@ -835,8 +845,13 @@
       "description": "Uses auto grid as the default layout for new dashboards"
     },
     {
-      "name": "grafana.dashboardGlobalVariables",
+      "name": "grafana.dashboardComposer",
       "stage": "Experimental",
+      "description": "Enables Composer mode for editing dashboards with Grafana Assistant"
+    },
+    {
+      "name": "grafana.dashboardGlobalVariables",
+      "stage": "PublicPreview",
       "description": "Enables global and folder-scoped dashboard variables via dashboard.grafana.app"
     },
     {
@@ -905,11 +920,6 @@
       "description": "Adds an experimental Protomaps vector basemap to the geomap panel"
     },
     {
-      "name": "grafana.globalHomePreference",
-      "stage": "Experimental",
-      "description": "Offers the reserved Grafana home option in the home dashboard preference"
-    },
-    {
       "name": "grafana.growthHomepage",
       "stage": "Experimental",
       "description": "Enables PLG-focused growth redesign of the unified homepage"
@@ -933,6 +943,11 @@
       "name": "grafana.meticulousAIMode",
       "stage": "Experimental",
       "description": ""
+    },
+    {
+      "name": "grafana.mobileEditDeprecation",
+      "stage": "PublicPreview",
+      "description": "Disables dashboard edit mode (manual and assistant-driven) on mobile/small-screen viewports"
     },
     {
       "name": "grafana.mtFallback",

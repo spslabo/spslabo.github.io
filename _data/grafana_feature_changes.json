@@ -1,6 +1,61 @@
 {
   "changes": [
     {
+      "date": "2026-10-28",
+      "flag": "authz.legacyUserPermissionsShadow",
+      "change": "new",
+      "sha": "6d576af",
+      "commit_url": "https://github.com/grafana/grafana/commit/6d576af5464279f77979d9e07b2cea75987608ab",
+      "detected_at": "2026-10-28T13:10:10Z",
+      "stage": "Experimental"
+    },
+    {
+      "date": "2026-10-28",
+      "flag": "grafana.globalHomePreference",
+      "change": "removed",
+      "sha": "1b49a4b",
+      "commit_url": "https://github.com/grafana/grafana/commit/1b49a4bb68fb6596f2a0be3ae10d858b66f7efea",
+      "detected_at": "2026-10-28T13:10:10Z",
+      "from_stage": "Experimental"
+    },
+    {
+      "date": "2026-10-27",
+      "flag": "grafana.mobileEditDeprecation",
+      "change": "new",
+      "sha": "487e205",
+      "commit_url": "https://github.com/grafana/grafana/commit/487e20516bc5431f4d00ebd35b9b81d2c4e00702",
+      "detected_at": "2026-10-28T13:10:10Z",
+      "stage": "PublicPreview"
+    },
+    {
+      "date": "2026-10-27",
+      "flag": "grafana.dashboardComposer",
+      "change": "new",
+      "sha": "d7b3d6f",
+      "commit_url": "https://github.com/grafana/grafana/commit/d7b3d6f4ba4c93994166aa430a39ce4d8ba39e70",
+      "detected_at": "2026-10-28T13:10:10Z",
+      "stage": "Experimental"
+    },
+    {
+      "date": "2026-10-27",
+      "flag": "grafana.dashboardGlobalVariables",
+      "change": "stage_change",
+      "sha": "7b102dd",
+      "commit_url": "https://github.com/grafana/grafana/commit/7b102dddd2bfefdf89362fc587071e95305676d3",
+      "detected_at": "2026-10-28T13:10:10Z",
+      "from_stage": "Experimental",
+      "to_stage": "PublicPreview"
+    },
+    {
+      "date": "2026-10-27",
+      "flag": "grafana.configFromQueryDynamicName",
+      "change": "new",
+      "sha": "078968b",
+      "commit_url": "https://github.com/grafana/grafana/commit/078968b8bbd1abaea763a5ecdf6aff5cc47e321e",
+      "detected_at": "2026-10-28T13:10:10Z",
+      "stage": "Experimental"
+    },
+    {
       "date": "2026-10-26",
       "flag": "dashboards.disablePublicDashboards",
       "change": "new",
