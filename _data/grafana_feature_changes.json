@@ -2,6 +2,24 @@
   "changes": [
     {
       "date": "2026-10-28",
+      "flag": "folder.asyncCascadeDeleteThroughController",
+      "change": "new",
+      "sha": "319afd9",
+      "commit_url": "https://github.com/grafana/grafana/commit/319afd909190aace08454f08dc24e82245e55451",
+      "detected_at": "2026-10-29T13:16:34Z",
+      "stage": "Experimental"
+    },
+    {
+      "date": "2026-10-28",
+      "flag": "folders.parallelDashboardDeleteConcurrency",
+      "change": "new",
+      "sha": "6d51e28",
+      "commit_url": "https://github.com/grafana/grafana/commit/6d51e28684a1c6ee1e409c12042cbcccbed45f94",
+      "detected_at": "2026-10-29T13:16:34Z",
+      "stage": "Experimental"
+    },
+    {
+      "date": "2026-10-28",
       "flag": "authz.legacyUserPermissionsShadow",
       "change": "new",
       "sha": "6d576af",

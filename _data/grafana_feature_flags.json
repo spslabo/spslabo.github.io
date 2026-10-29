@@ -1,8 +1,8 @@
 {
   "source_url": "https://github.com/grafana/grafana/blob/main/pkg/services/featuremgmt/registry.go",
-  "total": 399,
+  "total": 401,
   "counts_by_stage": {
-    "Experimental": 283,
+    "Experimental": 285,
     "PrivatePreview": 14,
     "PublicPreview": 42,
     "GA": 54,
@@ -790,9 +790,19 @@
       "description": "Renders the flame graph's top table using TableNG instead of the legacy Table"
     },
     {
+      "name": "folder.asyncCascadeDeleteThroughController",
+      "stage": "Experimental",
+      "description": "Enable finalizer-driven asynchronous cascade deletion of folder.grafana.app folders: deleting a folder marks it terminating and a controller removes its descendants, reporting progress in status.cascadeDelete"
+    },
+    {
       "name": "folderPickerCreatePermission",
       "stage": "Experimental",
       "description": "Allow searching folders by dashboards:create (permission=create). When off, permission=create is treated as edit"
+    },
+    {
+      "name": "folders.parallelDashboardDeleteConcurrency",
+      "stage": "Experimental",
+      "description": "Maximum number of dashboard deletes in flight per folder deletion. 1 or less deletes the dashboards sequentially"
     },
     {
       "name": "foldersAppPlatformAPI",
