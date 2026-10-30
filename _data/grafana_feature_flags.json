@@ -1,8 +1,8 @@
 {
   "source_url": "https://github.com/grafana/grafana/blob/main/pkg/services/featuremgmt/registry.go",
-  "total": 401,
+  "total": 402,
   "counts_by_stage": {
-    "Experimental": 285,
+    "Experimental": 286,
     "PrivatePreview": 14,
     "PublicPreview": 42,
     "GA": 54,
@@ -238,16 +238,6 @@
       "name": "alertmanagerRemotePrimary",
       "stage": "Experimental",
       "description": "Enable Grafana to have a remote Alertmanager instance as the primary Alertmanager."
-    },
-    {
-      "name": "alertmanagerRemoteSecondary",
-      "stage": "Experimental",
-      "description": "Enable Grafana to sync configuration and state with a remote Alertmanager."
-    },
-    {
-      "name": "alertmanagerRemoteSecondaryWithRemoteState",
-      "stage": "Experimental",
-      "description": "Starts Grafana in remote secondary mode pulling the latest state from the remote Alertmanager to avoid duplicate notifications."
     },
     {
       "name": "alertRuleRestore",
@@ -498,6 +488,11 @@
       "name": "dashboardNewLayouts",
       "stage": "GA",
       "description": "Enables new dashboard layouts"
+    },
+    {
+      "name": "dashboards.disableLiveSaveNotices",
+      "stage": "Experimental",
+      "description": "Stops an open dashboard from subscribing to Grafana Live save notices"
     },
     {
       "name": "dashboards.disablePublicDashboards",
@@ -865,6 +860,11 @@
       "description": "Enables global and folder-scoped dashboard variables via dashboard.grafana.app"
     },
     {
+      "name": "grafana.dashboardPreferences",
+      "stage": "Experimental",
+      "description": "Enables org, folder and user preferences for new dashboards and panels (DashboardPreferences in dashboard.grafana.app)"
+    },
+    {
       "name": "grafana.dashboardPreviewMode",
       "stage": "Experimental",
       "description": "Enables Viewing and Editing modes for dynamic dashboards"
@@ -998,6 +998,11 @@
       "name": "grafana.otelLogDetails",
       "stage": "Experimental",
       "description": "Enables a new version of log details optimized for displaying OTel logs"
+    },
+    {
+      "name": "grafana.panelActionsPopover",
+      "stage": "Experimental",
+      "description": "Replaces the dashboard panel menu button and hover widget with a panel actions popover in view and edit mode"
     },
     {
       "name": "grafana.panelEditNextFeedbackEvent",

@@ -1,6 +1,51 @@
 {
   "changes": [
     {
+      "date": "2026-10-30",
+      "flag": "alertmanagerRemoteSecondaryWithRemoteState",
+      "change": "removed",
+      "sha": "d11c526",
+      "commit_url": "https://github.com/grafana/grafana/commit/d11c526d7c265376e914618f89531276389cc912",
+      "detected_at": "2026-10-30T13:08:30Z",
+      "from_stage": "Experimental"
+    },
+    {
+      "date": "2026-10-29",
+      "flag": "dashboards.disableLiveSaveNotices",
+      "change": "new",
+      "sha": "92e66e9",
+      "commit_url": "https://github.com/grafana/grafana/commit/92e66e9d631e869bb161f609b7eb956bfdbd82bc",
+      "detected_at": "2026-10-30T13:08:30Z",
+      "stage": "Experimental"
+    },
+    {
+      "date": "2026-10-29",
+      "flag": "grafana.dashboardPreferences",
+      "change": "new",
+      "sha": "d634ec1",
+      "commit_url": "https://github.com/grafana/grafana/commit/d634ec19f477c58c18315387af8af1e9eacb3327",
+      "detected_at": "2026-10-30T13:08:30Z",
+      "stage": "Experimental"
+    },
+    {
+      "date": "2026-10-29",
+      "flag": "grafana.panelActionsPopover",
+      "change": "new",
+      "sha": "8c37acd",
+      "commit_url": "https://github.com/grafana/grafana/commit/8c37acde8d254ce19402fe90af17dd59b373c027",
+      "detected_at": "2026-10-30T13:08:30Z",
+      "stage": "Experimental"
+    },
+    {
+      "date": "2026-10-29",
+      "flag": "alertmanagerRemoteSecondary",
+      "change": "removed",
+      "sha": "d20ad49",
+      "commit_url": "https://github.com/grafana/grafana/commit/d20ad49361443e416177de8d7e80ef22f038c96e",
+      "detected_at": "2026-10-30T13:08:30Z",
+      "from_stage": "Experimental"
+    },
+    {
       "date": "2026-10-28",
       "flag": "folder.asyncCascadeDeleteThroughController",
       "change": "new",
