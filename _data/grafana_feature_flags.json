@@ -1,8 +1,8 @@
 {
   "source_url": "https://github.com/grafana/grafana/blob/main/pkg/services/featuremgmt/registry.go",
-  "total": 402,
+  "total": 401,
   "counts_by_stage": {
-    "Experimental": 286,
+    "Experimental": 285,
     "PrivatePreview": 14,
     "PublicPreview": 42,
     "GA": 54,
@@ -928,11 +928,6 @@
       "name": "grafana.geomapProtomapsBasemap",
       "stage": "Experimental",
       "description": "Adds an experimental Protomaps vector basemap to the geomap panel"
-    },
-    {
-      "name": "grafana.growthHomepage",
-      "stage": "Experimental",
-      "description": "Enables PLG-focused growth redesign of the unified homepage"
     },
     {
       "name": "grafana.kubernetesAnnotationsClient",
