@@ -1,6 +1,51 @@
 {
   "changes": [
     {
+      "date": "2026-11-03",
+      "flag": "grafana.preserveDashboardLoginTabTitle",
+      "change": "new",
+      "sha": "0fe7359",
+      "commit_url": "https://github.com/grafana/grafana/commit/0fe73595553355bdb835a7d5658649de6a3d9e4b",
+      "detected_at": "2026-11-03T14:26:55Z",
+      "stage": "Experimental"
+    },
+    {
+      "date": "2026-11-03",
+      "flag": "grafana.logDetailsDisplayedFieldControls",
+      "change": "removed",
+      "sha": "c3d7112",
+      "commit_url": "https://github.com/grafana/grafana/commit/c3d7112b1141a47230ffc9accb9566c9e0075fe5",
+      "detected_at": "2026-11-03T14:26:55Z",
+      "from_stage": "Deprecated"
+    },
+    {
+      "date": "2026-11-03",
+      "flag": "panelTimeSettings",
+      "change": "removed",
+      "sha": "d278f6b",
+      "commit_url": "https://github.com/grafana/grafana/commit/d278f6b70cf3cb17be7087076ff88ad8affdbcfd",
+      "detected_at": "2026-11-03T14:26:55Z",
+      "from_stage": "GA"
+    },
+    {
+      "date": "2026-11-03",
+      "flag": "timeComparison",
+      "change": "removed",
+      "sha": "d278f6b",
+      "commit_url": "https://github.com/grafana/grafana/commit/d278f6b70cf3cb17be7087076ff88ad8affdbcfd",
+      "detected_at": "2026-11-03T14:26:55Z",
+      "from_stage": "GA"
+    },
+    {
+      "date": "2026-11-02",
+      "flag": "dashboard.notebookComments",
+      "change": "new",
+      "sha": "f190e8c",
+      "commit_url": "https://github.com/grafana/grafana/commit/f190e8c67b276853d367206c078411723f3de4ca",
+      "detected_at": "2026-11-03T14:26:55Z",
+      "stage": "Experimental"
+    },
+    {
       "date": "2026-10-30",
       "flag": "grafana.growthHomepage",
       "change": "removed",

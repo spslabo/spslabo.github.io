@@ -1,12 +1,12 @@
 {
   "source_url": "https://github.com/grafana/grafana/blob/main/pkg/services/featuremgmt/registry.go",
-  "total": 401,
+  "total": 400,
   "counts_by_stage": {
-    "Experimental": 285,
+    "Experimental": 287,
     "PrivatePreview": 14,
     "PublicPreview": 42,
-    "GA": 54,
-    "Deprecated": 6
+    "GA": 52,
+    "Deprecated": 5
   },
   "flags": [
     {
@@ -463,6 +463,11 @@
       "name": "cujTracking",
       "stage": "Experimental",
       "description": "Enables Critical User Journey (CUJ) tracking"
+    },
+    {
+      "name": "dashboard.notebookComments",
+      "stage": "Experimental",
+      "description": "Enables commenting on Notebook cells"
     },
     {
       "name": "dashboard.notebooks",
@@ -935,11 +940,6 @@
       "description": "Enables usage of the new annotations API client"
     },
     {
-      "name": "grafana.logDetailsDisplayedFieldControls",
-      "stage": "Deprecated",
-      "description": "Deprecated: Toggle displayed fields from Log Details"
-    },
-    {
       "name": "grafana.logLevelInference",
       "stage": "Deprecated",
       "description": "Enables log level inference from log line contents when level is not defined as a field or a label"
@@ -1018,6 +1018,11 @@
       "name": "grafana.pluginPathNesting",
       "stage": "Experimental",
       "description": "Nest app plugin navigation items in the mega menu based on their URL path hierarchy"
+    },
+    {
+      "name": "grafana.preserveDashboardLoginTabTitle",
+      "stage": "Experimental",
+      "description": "Preserves dashboard names in login tab titles when grafana.preserveLoginTabTitle is enabled"
     },
     {
       "name": "grafana.preserveLoginTabTitle",
@@ -1505,11 +1510,6 @@
       "description": "Shows text labels on the add and stacked view buttons in PanelEditNext"
     },
     {
-      "name": "panelTimeSettings",
-      "stage": "GA",
-      "description": "Enables a new panel time settings drawer"
-    },
-    {
       "name": "panelTitleSearch",
       "stage": "PublicPreview",
       "description": "Search for dashboards using panel title"
@@ -1948,11 +1948,6 @@
       "name": "text.newFeatures",
       "stage": "PublicPreview",
       "description": "Enables the new features in text panel"
-    },
-    {
-      "name": "timeComparison",
-      "stage": "GA",
-      "description": "Enables time comparison option in supported panels"
     },
     {
       "name": "tracesDrilldownTimeSeeker",
