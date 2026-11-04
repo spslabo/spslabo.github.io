@@ -1,6 +1,51 @@
 {
   "changes": [
     {
+      "date": "2026-11-04",
+      "flag": "idTokenCacheDisabled",
+      "change": "new",
+      "sha": "978db71",
+      "commit_url": "https://github.com/grafana/grafana/commit/978db713dcfc06df60d5e7887361b23a095d3f62",
+      "detected_at": "2026-11-04T14:41:06Z",
+      "stage": "Experimental"
+    },
+    {
+      "date": "2026-11-04",
+      "flag": "grafana.cmdkDashboardTags",
+      "change": "new",
+      "sha": "1c6fc97",
+      "commit_url": "https://github.com/grafana/grafana/commit/1c6fc97d7bdc5a0b5b7e50f710e1ba693222ffc2",
+      "detected_at": "2026-11-04T14:41:06Z",
+      "stage": "Experimental"
+    },
+    {
+      "date": "2026-11-03",
+      "flag": "authz.useLegacyCheckShadow",
+      "change": "new",
+      "sha": "d9aa0df",
+      "commit_url": "https://github.com/grafana/grafana/commit/d9aa0dfd14b873e83869b743d3c3ffdd8e4446b4",
+      "detected_at": "2026-11-04T14:41:06Z",
+      "stage": "Experimental"
+    },
+    {
+      "date": "2026-11-03",
+      "flag": "grafana.multiTenantHomepage",
+      "change": "new",
+      "sha": "4cbee46",
+      "commit_url": "https://github.com/grafana/grafana/commit/4cbee4609df11da8670c9f2aed5b4a10d7b5c2c6",
+      "detected_at": "2026-11-04T14:41:06Z",
+      "stage": "Experimental"
+    },
+    {
+      "date": "2026-11-03",
+      "flag": "grafana.starredFolders",
+      "change": "removed",
+      "sha": "aaedc43",
+      "commit_url": "https://github.com/grafana/grafana/commit/aaedc43cd46ff548f80103a6696a099e54a9cc6f",
+      "detected_at": "2026-11-04T14:41:06Z",
+      "from_stage": "Experimental"
+    },
+    {
       "date": "2026-11-03",
       "flag": "grafana.preserveDashboardLoginTabTitle",
       "change": "new",

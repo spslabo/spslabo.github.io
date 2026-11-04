@@ -1,8 +1,8 @@
 {
   "source_url": "https://github.com/grafana/grafana/blob/main/pkg/services/featuremgmt/registry.go",
-  "total": 400,
+  "total": 403,
   "counts_by_stage": {
-    "Experimental": 287,
+    "Experimental": 290,
     "PrivatePreview": 14,
     "PublicPreview": 42,
     "GA": 52,
@@ -328,6 +328,11 @@
       "name": "authz.useLegacyCheck",
       "stage": "Experimental",
       "description": "Route legacy access-control evaluations through the AuthZ LegacyCheck RPC."
+    },
+    {
+      "name": "authz.useLegacyCheckShadow",
+      "stage": "Experimental",
+      "description": "Compare local access-control evaluations with the AuthZ LegacyCheck RPC in the background."
     },
     {
       "name": "authz.userPermissions",
@@ -825,6 +830,11 @@
       "description": "Allow admins to make announcement banners dismissible by users"
     },
     {
+      "name": "grafana.cmdkDashboardTags",
+      "stage": "Experimental",
+      "description": "Shows dashboard tags in the command palette"
+    },
+    {
       "name": "grafana.cmdkHybridSearch",
       "stage": "Experimental",
       "description": "Uses the hybrid (lexical + semantic) search endpoint as the dashboard search backend in the command palette"
@@ -960,6 +970,11 @@
       "description": "Enables multi-tenant fallback behavior"
     },
     {
+      "name": "grafana.multiTenantHomepage",
+      "stage": "Experimental",
+      "description": "Hides homepage sections whose only backend is a legacy /api endpoint (firing alerts, IRM incidents and on-call, plugin offers) and skips the legacy datasource health probe, for multi-tenant stacks that do not serve /api"
+    },
+    {
       "name": "grafana.multiTenantNavTree",
       "stage": "Experimental",
       "description": "Builds the navigation tree client-side instead of reading it from /bootdata"
@@ -1090,11 +1105,6 @@
       "description": "Enables reading and writing SSO settings through the MT-Settings service"
     },
     {
-      "name": "grafana.starredFolders",
-      "stage": "Experimental",
-      "description": "Enables starring folders and a virtual Starred folders folder in the dashboards list and folder picker"
-    },
-    {
       "name": "grafana.thresholdsInterpolation",
       "stage": "GA",
       "description": "Enables using dashboard variables in panel threshold values"
@@ -1158,6 +1168,11 @@
       "name": "iam.onlyStoreDatasourceActionSets",
       "stage": "Experimental",
       "description": "When storing datasource resource permissions, only store action sets and not the full list of underlying permissions"
+    },
+    {
+      "name": "idTokenCacheDisabled",
+      "stage": "Experimental",
+      "description": "Disables the remote cache for signed ID tokens; a new token is signed on every authentication"
     },
     {
       "name": "infinityRunQueriesInParallel",
