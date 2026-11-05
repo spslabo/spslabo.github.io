@@ -95,6 +95,11 @@
       "description": "Automatically keeps imported notification configuration up to date with a Mimir or Cortex Alertmanager data source"
     },
     {
+      "name": "alerting.watchersBanner",
+      "stage": "Experimental",
+      "description": "Show the Assistant Watchers banner on the alert rule list. Watchers are only available in Grafana Cloud."
+    },
+    {
       "name": "alertingAIAnalyzeCentralStateHistory",
       "stage": "Experimental",
       "description": "Enable AI-analyze central state history."
@@ -410,11 +415,6 @@
       "description": "Prioritize loading plugins from the CDN before other sources"
     },
     {
-      "name": "cdnPluginsUrls",
-      "stage": "Experimental",
-      "description": "Enable loading plugins via declarative URLs"
-    },
-    {
       "name": "clickHouseConfigValidation",
       "stage": "Experimental",
       "description": "Enables validation on the ClickHouse data source configuration page"
@@ -603,11 +603,6 @@
       "name": "datasources.queryGateway",
       "stage": "Experimental",
       "description": "Data source query gateway"
-    },
-    {
-      "name": "datasources.queryGatewaySlimAudit",
-      "stage": "Experimental",
-      "description": "Only attach query payloads to query gateway audit events when a guardrail fires"
     },
     {
       "name": "datasources.queryTypes",
@@ -1948,6 +1943,11 @@
       "name": "teamHttpHeadersTempo",
       "stage": "Experimental",
       "description": "Enables LBAC for datasources for Tempo to apply LBAC filtering of traces to the client requests for users in teams"
+    },
+    {
+      "name": "teamlbac.apiNoFallback",
+      "stage": "Experimental",
+      "description": "Return Team LBAC API Kubernetes errors instead of falling back to legacy datasource rules"
     },
     {
       "name": "teamlbac.usageFromAppPlatform",

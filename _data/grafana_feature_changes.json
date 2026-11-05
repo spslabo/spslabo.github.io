@@ -1,6 +1,42 @@
 {
   "changes": [
     {
+      "date": "2026-11-05",
+      "flag": "alerting.watchersBanner",
+      "change": "new",
+      "sha": "7c30799",
+      "commit_url": "https://github.com/grafana/grafana/commit/7c30799795d746ef2a091ff4a06308d0dcc620aa",
+      "detected_at": "2026-11-05T14:45:58Z",
+      "stage": "Experimental"
+    },
+    {
+      "date": "2026-11-05",
+      "flag": "cdnPluginsUrls",
+      "change": "removed",
+      "sha": "f409bf4",
+      "commit_url": "https://github.com/grafana/grafana/commit/f409bf4320ba21c8833094c258df0f4a390e6561",
+      "detected_at": "2026-11-05T14:45:58Z",
+      "from_stage": "Experimental"
+    },
+    {
+      "date": "2026-11-04",
+      "flag": "teamlbac.apiNoFallback",
+      "change": "new",
+      "sha": "b002496",
+      "commit_url": "https://github.com/grafana/grafana/commit/b0024968d5e4729f840a4cf4b9c18abec11fe485",
+      "detected_at": "2026-11-05T14:45:58Z",
+      "stage": "Experimental"
+    },
+    {
+      "date": "2026-11-04",
+      "flag": "datasources.queryGatewaySlimAudit",
+      "change": "removed",
+      "sha": "7449b82",
+      "commit_url": "https://github.com/grafana/grafana/commit/7449b8251db7215b937f5ec6ca7bd0baefa23cc5",
+      "detected_at": "2026-11-05T14:45:58Z",
+      "from_stage": "Experimental"
+    },
+    {
       "date": "2026-11-04",
       "flag": "idTokenCacheDisabled",
       "change": "new",
