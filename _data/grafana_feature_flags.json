@@ -1,8 +1,8 @@
 {
   "source_url": "https://github.com/grafana/grafana/blob/main/pkg/services/featuremgmt/registry.go",
-  "total": 403,
+  "total": 404,
   "counts_by_stage": {
-    "Experimental": 290,
+    "Experimental": 291,
     "PrivatePreview": 14,
     "PublicPreview": 42,
     "GA": 52,
@@ -343,6 +343,11 @@
       "name": "authz.userPermissions",
       "stage": "Experimental",
       "description": "Route user permission snapshots through the AuthZ service."
+    },
+    {
+      "name": "authzDelegationChecks",
+      "stage": "Experimental",
+      "description": "Use AuthZ Check and LegacyCheck for single-org IAM delegation checks (resolved at startup)"
     },
     {
       "name": "authZGRPCServer",
