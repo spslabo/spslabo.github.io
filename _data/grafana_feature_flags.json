@@ -1,11 +1,11 @@
 {
   "source_url": "https://github.com/grafana/grafana/blob/main/pkg/services/featuremgmt/registry.go",
-  "total": 404,
+  "total": 403,
   "counts_by_stage": {
     "Experimental": 291,
     "PrivatePreview": 14,
     "PublicPreview": 42,
-    "GA": 52,
+    "GA": 51,
     "Deprecated": 5
   },
   "flags": [
@@ -810,11 +810,6 @@
       "description": "Maximum number of dashboard deletes in flight per folder deletion. 1 or less deletes the dashboards sequentially"
     },
     {
-      "name": "foldersAppPlatformAPI",
-      "stage": "GA",
-      "description": "Enables use of app platform API for folders"
-    },
-    {
       "name": "frontendService.reducedBootDataAPI",
       "stage": "Experimental",
       "description": "Frontend Service doesn't rely on the /bootdata API, instead loads configuration as needed"
@@ -928,6 +923,11 @@
       "name": "grafana.filterablePanels",
       "stage": "GA",
       "description": "Enables interactive grouped-label filtering through the tooltip in state timeline, status history and histogram panels"
+    },
+    {
+      "name": "grafana.folderPickerFolderEditAccess",
+      "stage": "Experimental",
+      "description": "Shows folders the user cannot edit as read only in the folder picker, instead of hiding them"
     },
     {
       "name": "grafana.frontendLegacyAPIHandling",
@@ -1303,11 +1303,6 @@
       "name": "kubernetesFolderCascadeDelete",
       "stage": "Experimental",
       "description": "Enable folder.grafana.app cascade deletion: opt-in non-empty delete via gracePeriodSeconds=0. Until cascade reconciliation exists, deleting a non-empty folder removes only the folder and leaves child dashboards, nested folders, and other contained resources orphaned"
-    },
-    {
-      "name": "kubernetesFolderCountsLegacyStorage",
-      "stage": "Experimental",
-      "description": "Enable folder.grafana.app /counts joining a stack's legacy database that lives outside unified storage. Requires --database.servers to be configured for the standalone folder apiserver; only enable once that connection is verified reachable, since the apiserver fails to start otherwise"
     },
     {
       "name": "kubernetesLogsDrilldown",

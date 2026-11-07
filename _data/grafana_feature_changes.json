@@ -1,6 +1,33 @@
 {
   "changes": [
     {
+      "date": "2026-11-06",
+      "flag": "grafana.folderPickerFolderEditAccess",
+      "change": "new",
+      "sha": "1a62573",
+      "commit_url": "https://github.com/grafana/grafana/commit/1a625733de9247bfb3f321a061f2d24aa5757e20",
+      "detected_at": "2026-11-07T13:15:21Z",
+      "stage": "Experimental"
+    },
+    {
+      "date": "2026-11-06",
+      "flag": "foldersAppPlatformAPI",
+      "change": "removed",
+      "sha": "61d136c",
+      "commit_url": "https://github.com/grafana/grafana/commit/61d136cd999758f897f00b55b13b6e56ef4d565c",
+      "detected_at": "2026-11-07T13:15:21Z",
+      "from_stage": "GA"
+    },
+    {
+      "date": "2026-11-06",
+      "flag": "kubernetesFolderCountsLegacyStorage",
+      "change": "removed",
+      "sha": "b89fb6a",
+      "commit_url": "https://github.com/grafana/grafana/commit/b89fb6a3ce09614e147b02bec0feb3bc3de5bb3b",
+      "detected_at": "2026-11-07T13:15:21Z",
+      "from_stage": "Experimental"
+    },
+    {
       "date": "2026-11-05",
       "flag": "authzDelegationChecks",
       "change": "new",
