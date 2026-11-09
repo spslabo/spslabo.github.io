@@ -1,6 +1,24 @@
 {
   "changes": [
     {
+      "date": "2026-11-09",
+      "flag": "grafana.dashboardSidebarExplicitOpen",
+      "change": "new",
+      "sha": "dbfc041",
+      "commit_url": "https://github.com/grafana/grafana/commit/dbfc0418cd44dd338e0ead59d132c29e82409b15",
+      "detected_at": "2026-11-09T16:35:18Z",
+      "stage": "Experimental"
+    },
+    {
+      "date": "2026-11-09",
+      "flag": "grafana.vectorSearchCmdk",
+      "change": "removed",
+      "sha": "65e7136",
+      "commit_url": "https://github.com/grafana/grafana/commit/65e7136c4c2c2f99e4531a858f1e9a2047e586bf",
+      "detected_at": "2026-11-09T16:35:18Z",
+      "from_stage": "Experimental"
+    },
+    {
       "date": "2026-11-06",
       "flag": "grafana.folderPickerFolderEditAccess",
       "change": "new",

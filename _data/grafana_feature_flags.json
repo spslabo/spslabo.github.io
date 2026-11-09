@@ -890,6 +890,11 @@
       "description": "Redesigns dashboard settings page into Advanced Settings in a modal window"
     },
     {
+      "name": "grafana.dashboardSidebarExplicitOpen",
+      "stage": "Experimental",
+      "description": "In dashboard edit mode, opens the sidebar only through explicit user actions and keeps it closed until explicitly reopened"
+    },
+    {
       "name": "grafana.dashboardVariablesMigration",
       "stage": "Experimental",
       "description": "Enables the tool that finds identical local variables across dashboards and promotes them to shared variables. Requires grafana.dashboardGlobalVariables"
@@ -1118,11 +1123,6 @@
       "name": "grafana.useRouterMiddleware",
       "stage": "Experimental",
       "description": "intercept /apis/... and /openapi/v3/... requests in middleware."
-    },
-    {
-      "name": "grafana.vectorSearchCmdk",
-      "stage": "Experimental",
-      "description": "Enables semantic (vector) dashboard search in the command palette"
     },
     {
       "name": "grafana.viewPanelPane",
