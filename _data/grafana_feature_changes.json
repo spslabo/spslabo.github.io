@@ -1,6 +1,15 @@
 {
   "changes": [
     {
+      "date": "2026-11-10",
+      "flag": "frontend.disableGrafanaLive",
+      "change": "new",
+      "sha": "be6d595",
+      "commit_url": "https://github.com/grafana/grafana/commit/be6d5950066bf2472146ca1d7dbd5a9b82aaba27",
+      "detected_at": "2026-11-10T15:00:36Z",
+      "stage": "Experimental"
+    },
+    {
       "date": "2026-11-09",
       "flag": "grafana.dashboardSidebarExplicitOpen",
       "change": "new",

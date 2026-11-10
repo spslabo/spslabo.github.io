@@ -1,8 +1,8 @@
 {
   "source_url": "https://github.com/grafana/grafana/blob/main/pkg/services/featuremgmt/registry.go",
-  "total": 403,
+  "total": 404,
   "counts_by_stage": {
-    "Experimental": 291,
+    "Experimental": 292,
     "PrivatePreview": 14,
     "PublicPreview": 42,
     "GA": 51,
@@ -808,6 +808,11 @@
       "name": "folders.parallelDashboardDeleteConcurrency",
       "stage": "Experimental",
       "description": "Maximum number of dashboard deletes in flight per folder deletion. 1 or less deletes the dashboards sequentially"
+    },
+    {
+      "name": "frontend.disableGrafanaLive",
+      "stage": "Experimental",
+      "description": "Disable the Grafana Live functionality"
     },
     {
       "name": "frontendService.reducedBootDataAPI",
