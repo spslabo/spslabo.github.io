@@ -1,6 +1,24 @@
 {
   "changes": [
     {
+      "date": "2026-11-11",
+      "flag": "grafana.panelOptionInterpolation",
+      "change": "new",
+      "sha": "0f1db5e",
+      "commit_url": "https://github.com/grafana/grafana/commit/0f1db5ed5541cf2e9782f6874aaf215f26c24e3f",
+      "detected_at": "2026-11-11T14:31:13Z",
+      "stage": "Experimental"
+    },
+    {
+      "date": "2026-11-10",
+      "flag": "grafana.draftDashboards",
+      "change": "new",
+      "sha": "2c16e85",
+      "commit_url": "https://github.com/grafana/grafana/commit/2c16e85e55c47e513b96de2e0b38aeb16aed5e22",
+      "detected_at": "2026-11-11T14:31:13Z",
+      "stage": "Experimental"
+    },
+    {
       "date": "2026-11-10",
       "flag": "frontend.disableGrafanaLive",
       "change": "new",

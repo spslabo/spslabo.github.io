@@ -1,8 +1,8 @@
 {
   "source_url": "https://github.com/grafana/grafana/blob/main/pkg/services/featuremgmt/registry.go",
-  "total": 404,
+  "total": 406,
   "counts_by_stage": {
-    "Experimental": 292,
+    "Experimental": 294,
     "PrivatePreview": 14,
     "PublicPreview": 42,
     "GA": 51,
@@ -910,6 +910,11 @@
       "description": "Use a dedicated auth token for Grafana.com proxy requests and plugin installs"
     },
     {
+      "name": "grafana.draftDashboards",
+      "stage": "Experimental",
+      "description": "Enables the draft dashboard lifecycle: new dashboards can be created as drafts that stay hidden from list and search until they are published"
+    },
+    {
       "name": "grafana.dynamicTraceToLogs",
       "stage": "PublicPreview",
       "description": "Check for the existence of logs when linking from the Trace View"
@@ -1028,6 +1033,11 @@
       "name": "grafana.panelEditNextFeedbackEvent",
       "stage": "Experimental",
       "description": "Enables firing an event for PanelEditNext feedback that triggers an in-house survey"
+    },
+    {
+      "name": "grafana.panelOptionInterpolation",
+      "stage": "Experimental",
+      "description": "Enables setting panel field config options from dashboard variable expressions on v2 dashboards"
     },
     {
       "name": "grafana.panelPluginTransformations",
