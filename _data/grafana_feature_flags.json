@@ -4,8 +4,8 @@
   "counts_by_stage": {
     "Experimental": 294,
     "PrivatePreview": 14,
-    "PublicPreview": 42,
-    "GA": 51,
+    "PublicPreview": 43,
+    "GA": 50,
     "Deprecated": 5
   },
   "flags": [
@@ -1650,11 +1650,6 @@
       "description": "Enable export functionality for provisioned resources"
     },
     {
-      "name": "provisioningFolderMetadata",
-      "stage": "GA",
-      "description": "Allow setting folder metadata for provisioned folders"
-    },
-    {
       "name": "publicDashboardsEmailSharing",
       "stage": "PublicPreview",
       "description": "Enables public dashboard sharing to be restricted to only allowed emails"
@@ -1808,6 +1803,11 @@
       "name": "rolePickerDrawer",
       "stage": "Experimental",
       "description": "Enables the new role picker drawer design"
+    },
+    {
+      "name": "router.registerCoreAPIs",
+      "stage": "Experimental",
+      "description": "register the wired-in core APIs with the router"
     },
     {
       "name": "saml.gosaml2Provider",
@@ -2011,7 +2011,7 @@
     },
     {
       "name": "useScopesNavigationEndpoint",
-      "stage": "Experimental",
+      "stage": "PublicPreview",
       "description": "Use the scopes navigation endpoint instead of the dashboardbindings endpoint"
     },
     {

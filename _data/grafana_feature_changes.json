@@ -1,6 +1,34 @@
 {
   "changes": [
     {
+      "date": "2026-11-12",
+      "flag": "router.registerCoreAPIs",
+      "change": "new",
+      "sha": "b9c0f22",
+      "commit_url": "https://github.com/grafana/grafana/commit/b9c0f22eeed15a922d7038192bece91e58412637",
+      "detected_at": "2026-11-12T15:24:37Z",
+      "stage": "Experimental"
+    },
+    {
+      "date": "2026-11-12",
+      "flag": "provisioningFolderMetadata",
+      "change": "removed",
+      "sha": "c9a1ff0",
+      "commit_url": "https://github.com/grafana/grafana/commit/c9a1ff0006ed0612b326cd831dce3070b8920977",
+      "detected_at": "2026-11-12T15:24:37Z",
+      "from_stage": "GA"
+    },
+    {
+      "date": "2026-11-11",
+      "flag": "useScopesNavigationEndpoint",
+      "change": "stage_change",
+      "sha": "bacf49b",
+      "commit_url": "https://github.com/grafana/grafana/commit/bacf49bf869c329592e1ad0d119ebf9a23a09824",
+      "detected_at": "2026-11-12T15:24:37Z",
+      "from_stage": "Experimental",
+      "to_stage": "PublicPreview"
+    },
+    {
       "date": "2026-11-11",
       "flag": "grafana.panelOptionInterpolation",
       "change": "new",
