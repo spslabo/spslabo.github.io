@@ -1,10 +1,10 @@
 {
   "source_url": "https://github.com/grafana/grafana/blob/main/pkg/services/featuremgmt/registry.go",
-  "total": 406,
+  "total": 407,
   "counts_by_stage": {
-    "Experimental": 294,
+    "Experimental": 296,
     "PrivatePreview": 14,
-    "PublicPreview": 43,
+    "PublicPreview": 42,
     "GA": 50,
     "Deprecated": 5
   },
@@ -288,6 +288,11 @@
       "name": "assistant.dashboardPlanBuildingScreen",
       "stage": "Experimental",
       "description": "Shows a loading screen on the dashboard while the assistant prepares to build an approved dashboard plan"
+    },
+    {
+      "name": "assistant.dashboardPlanEditing",
+      "stage": "Experimental",
+      "description": "Lets users rearrange and edit an assistant dashboard plan in its preview before it is built"
     },
     {
       "name": "assistant.dashboardPlanning",
@@ -595,6 +600,11 @@
       "description": "Data source query gateway guardrails"
     },
     {
+      "name": "datasources.gatewayRateLimits",
+      "stage": "Experimental",
+      "description": "Enable support for query gateway rate limits"
+    },
+    {
       "name": "datasources.loadOpenAPI",
       "stage": "Experimental",
       "description": "Load the openapi spec from spec.{version}.openapi.{yaml|json}"
@@ -613,6 +623,11 @@
       "name": "datasources.queryTypes",
       "stage": "Experimental",
       "description": "Load Query types from spec.{version}.query.{yaml|json}"
+    },
+    {
+      "name": "datasources.rejectProvisionedLBACRules",
+      "stage": "GA",
+      "description": "Reject embedded LBAC rules in data source provisioning files"
     },
     {
       "name": "datasources.teamHttpHeadersFromAppPlatformMT",
@@ -1068,11 +1083,6 @@
       "name": "grafana.publishLegacySQLEvents",
       "stage": "Experimental",
       "description": "Publish watch events when values are saved to legacy SQL tables"
-    },
-    {
-      "name": "grafana.queryVarEditorRedesign",
-      "stage": "GA",
-      "description": "Enables a redesigned query variable editor with split-pane preview and a spreadsheet for managing static options"
     },
     {
       "name": "grafana.recordedQueriesDisableCreate",
@@ -2008,11 +2018,6 @@
       "name": "useNewAPIsForDatasourceCRUD",
       "stage": "Experimental",
       "description": "Use the new datasource API groups for datasource CRUD requests"
-    },
-    {
-      "name": "useScopesNavigationEndpoint",
-      "stage": "PublicPreview",
-      "description": "Use the scopes navigation endpoint instead of the dashboardbindings endpoint"
     },
     {
       "name": "useSessionStorageForRedirection",

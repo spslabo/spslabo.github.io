@@ -1,6 +1,51 @@
 {
   "changes": [
     {
+      "date": "2026-11-13",
+      "flag": "grafana.queryVarEditorRedesign",
+      "change": "removed",
+      "sha": "643013e",
+      "commit_url": "https://github.com/grafana/grafana/commit/643013e387519d07f03e8c0531b107e1bf63ff28",
+      "detected_at": "2026-11-13T14:42:00Z",
+      "from_stage": "GA"
+    },
+    {
+      "date": "2026-11-12",
+      "flag": "datasources.rejectProvisionedLBACRules",
+      "change": "new",
+      "sha": "2e9cdc1",
+      "commit_url": "https://github.com/grafana/grafana/commit/2e9cdc122daae7a7c9d058ebe5e4f0809f67e992",
+      "detected_at": "2026-11-13T14:42:00Z",
+      "stage": "GA"
+    },
+    {
+      "date": "2026-11-12",
+      "flag": "assistant.dashboardPlanEditing",
+      "change": "new",
+      "sha": "86ff2c1",
+      "commit_url": "https://github.com/grafana/grafana/commit/86ff2c152e44640b50c61410f9ddf109504c7e88",
+      "detected_at": "2026-11-13T14:42:00Z",
+      "stage": "Experimental"
+    },
+    {
+      "date": "2026-11-12",
+      "flag": "datasources.gatewayRateLimits",
+      "change": "new",
+      "sha": "787cbb8",
+      "commit_url": "https://github.com/grafana/grafana/commit/787cbb8bbd60ad6c43978d7b3c6d060237337045",
+      "detected_at": "2026-11-13T14:42:00Z",
+      "stage": "Experimental"
+    },
+    {
+      "date": "2026-11-12",
+      "flag": "useScopesNavigationEndpoint",
+      "change": "removed",
+      "sha": "ffcb726",
+      "commit_url": "https://github.com/grafana/grafana/commit/ffcb7265b86f8e94f06235740d5f88fbf289a9c4",
+      "detected_at": "2026-11-13T14:42:00Z",
+      "from_stage": "PublicPreview"
+    },
+    {
       "date": "2026-11-12",
       "flag": "router.registerCoreAPIs",
       "change": "new",
