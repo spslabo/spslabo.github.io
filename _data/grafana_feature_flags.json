@@ -1,11 +1,11 @@
 {
   "source_url": "https://github.com/grafana/grafana/blob/main/pkg/services/featuremgmt/registry.go",
-  "total": 407,
+  "total": 409,
   "counts_by_stage": {
-    "Experimental": 296,
+    "Experimental": 297,
     "PrivatePreview": 14,
     "PublicPreview": 42,
-    "GA": 50,
+    "GA": 51,
     "Deprecated": 5
   },
   "flags": [
@@ -68,6 +68,11 @@
       "name": "alerting.ruleQualityFix",
       "stage": "Experimental",
       "description": "Enable fixing alert rule quality issues with Grafana Assistant on the alert quality page."
+    },
+    {
+      "name": "alerting.ruleQualityTeamPolicies",
+      "stage": "Experimental",
+      "description": "Enable team-scoped alert rule quality policies, one per team, alongside the org policy."
     },
     {
       "name": "alerting.ruleReviews",
@@ -1585,6 +1590,11 @@
       "description": "Preserve plugin proxy trailing slash."
     },
     {
+      "name": "plugins.disableMTPluginsFallback",
+      "stage": "Experimental",
+      "description": "Disables the ST fallback for multi-tenant plugin api calls"
+    },
+    {
       "name": "plugins.initDataSourcesAsync",
       "stage": "Experimental",
       "description": "Initializes data source instance settings asynchronously from the API instead of synchronously from boot data"
@@ -1596,7 +1606,7 @@
     },
     {
       "name": "plugins.useMTPlugins",
-      "stage": "Experimental",
+      "stage": "GA",
       "description": "Enables plugins decoupling from bootdata"
     },
     {
