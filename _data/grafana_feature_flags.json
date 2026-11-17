@@ -1,8 +1,8 @@
 {
   "source_url": "https://github.com/grafana/grafana/blob/main/pkg/services/featuremgmt/registry.go",
-  "total": 409,
+  "total": 411,
   "counts_by_stage": {
-    "Experimental": 297,
+    "Experimental": 299,
     "PrivatePreview": 14,
     "PublicPreview": 42,
     "GA": 51,
@@ -312,7 +312,7 @@
     {
       "name": "assistant.fullscreenWorkspace",
       "stage": "Experimental",
-      "description": "Enables the global fullscreen Workspace (Grafana Assistant workspace shell) in the top bar"
+      "description": "Shows the Grafana Assistant Chat and Workspace buttons in the top bar, and Exit Workspace on the Assistant Workspace page"
     },
     {
       "name": "auditLoggingAppPlatform",
@@ -860,6 +860,11 @@
       "description": "Uses the hybrid (lexical + semantic) search endpoint as the dashboard search backend in the command palette"
     },
     {
+      "name": "grafana.cmdkHybridSearchSkipRerank",
+      "stage": "Experimental",
+      "description": "Skips reranking in command palette hybrid dashboard search"
+    },
+    {
       "name": "grafana.configFromQueryDynamicName",
       "stage": "Experimental",
       "description": "Enables using the Config From Query Results transformation's Dynamic Field Name option"
@@ -953,6 +958,11 @@
       "name": "grafana.extensionSidebarFloating",
       "stage": "Experimental",
       "description": "Lets Grafana Assistant float the extension sidebar over the page instead of docking it"
+    },
+    {
+      "name": "grafana.extensionSidebarPlacements",
+      "stage": "Experimental",
+      "description": "Lets Grafana Assistant dock the extension sidebar on the left or at the bottom, or pop it up, from the Chat button's menu, its shortcuts and its own layout menu. Needs grafana.extensionSidebarFloating"
     },
     {
       "name": "grafana.filterablePanels",

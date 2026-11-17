@@ -1,6 +1,24 @@
 {
   "changes": [
     {
+      "date": "2026-11-17",
+      "flag": "grafana.extensionSidebarPlacements",
+      "change": "new",
+      "sha": "5d62d89",
+      "commit_url": "https://github.com/grafana/grafana/commit/5d62d8928a8c7c72ea19b3cf18116cfb1a3eb46b",
+      "detected_at": "2026-11-17T16:12:33Z",
+      "stage": "Experimental"
+    },
+    {
+      "date": "2026-11-16",
+      "flag": "grafana.cmdkHybridSearchSkipRerank",
+      "change": "new",
+      "sha": "15a7b5b",
+      "commit_url": "https://github.com/grafana/grafana/commit/15a7b5b5f1d9a01fc3dd9a451e7cc3a42d9c9e20",
+      "detected_at": "2026-11-17T16:12:33Z",
+      "stage": "Experimental"
+    },
+    {
       "date": "2026-11-16",
       "flag": "alerting.ruleQualityTeamPolicies",
       "change": "new",
