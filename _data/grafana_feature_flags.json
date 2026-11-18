@@ -1,11 +1,11 @@
 {
   "source_url": "https://github.com/grafana/grafana/blob/main/pkg/services/featuremgmt/registry.go",
-  "total": 411,
+  "total": 412,
   "counts_by_stage": {
-    "Experimental": 299,
+    "Experimental": 300,
     "PrivatePreview": 14,
-    "PublicPreview": 42,
-    "GA": 51,
+    "PublicPreview": 43,
+    "GA": 50,
     "Deprecated": 5
   },
   "flags": [
@@ -690,6 +690,11 @@
       "description": "Enables additional experimental color schemes for visualizations."
     },
     {
+      "name": "dataviz.reverseColorScheme",
+      "stage": "Experimental",
+      "description": "Enable the option to reverse by value color schemes"
+    },
+    {
       "name": "dataviz.tabularNums",
       "stage": "PublicPreview",
       "description": "Enables tabular numerals for visualization legend values"
@@ -876,7 +881,7 @@
     },
     {
       "name": "grafana.customDashboardTemplates",
-      "stage": "Experimental",
+      "stage": "PublicPreview",
       "description": "Enables custom dashboard templates for enterprise"
     },
     {
@@ -998,6 +1003,11 @@
       "name": "grafana.logLevelInference",
       "stage": "Deprecated",
       "description": "Enables log level inference from log line contents when level is not defined as a field or a label"
+    },
+    {
+      "name": "grafana.megaMenuPeekAndDock",
+      "stage": "Experimental",
+      "description": "Opens the mega menu over the page while the pointer rests on its toggle, and docks it when the toggle is clicked on wide screens. The toggle in the docked menu's header closes it, in place of the footer's dock button"
     },
     {
       "name": "grafana.meticulousAIMode",
@@ -1523,11 +1533,6 @@
       "name": "newInfluxDSConfigPageDesign",
       "stage": "PrivatePreview",
       "description": "Enables new design for the InfluxDB data source configuration page"
-    },
-    {
-      "name": "newSavedQueriesExperience",
-      "stage": "GA",
-      "description": "Enables the new Saved queries (query library) modal experience"
     },
     {
       "name": "newShareReportDrawer",

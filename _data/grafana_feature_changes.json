@@ -1,6 +1,43 @@
 {
   "changes": [
     {
+      "date": "2026-11-18",
+      "flag": "newSavedQueriesExperience",
+      "change": "removed",
+      "sha": "d12b013",
+      "commit_url": "https://github.com/grafana/grafana/commit/d12b013fed26f551bcc1f9841c6e4e29ea65e3e0",
+      "detected_at": "2026-11-18T15:47:32Z",
+      "from_stage": "GA"
+    },
+    {
+      "date": "2026-11-17",
+      "flag": "grafana.customDashboardTemplates",
+      "change": "stage_change",
+      "sha": "91ceb3e",
+      "commit_url": "https://github.com/grafana/grafana/commit/91ceb3ec60382978a0247fcad015b971f103202a",
+      "detected_at": "2026-11-18T15:47:32Z",
+      "from_stage": "Experimental",
+      "to_stage": "PublicPreview"
+    },
+    {
+      "date": "2026-11-17",
+      "flag": "dataviz.reverseColorScheme",
+      "change": "new",
+      "sha": "2228b1a",
+      "commit_url": "https://github.com/grafana/grafana/commit/2228b1a2e7678b7342f1208f9ffba66495a41432",
+      "detected_at": "2026-11-18T15:47:32Z",
+      "stage": "Experimental"
+    },
+    {
+      "date": "2026-11-17",
+      "flag": "grafana.megaMenuPeekAndDock",
+      "change": "new",
+      "sha": "6b2915c",
+      "commit_url": "https://github.com/grafana/grafana/commit/6b2915c6c7999d7bbae734d22c5e833d4310b88e",
+      "detected_at": "2026-11-18T15:47:32Z",
+      "stage": "Experimental"
+    },
+    {
       "date": "2026-11-17",
       "flag": "grafana.extensionSidebarPlacements",
       "change": "new",
