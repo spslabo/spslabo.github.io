@@ -1,6 +1,92 @@
 {
   "changes": [
     {
+      "date": "2026-11-19",
+      "flag": "flameGraph.tableNg",
+      "change": "stage_change",
+      "sha": "5d63586",
+      "commit_url": "https://github.com/grafana/grafana/commit/5d635864e5b5f2bb9d01e2ed97b731b5899347f4",
+      "detected_at": "2026-11-19T15:52:40Z",
+      "from_stage": "Experimental",
+      "to_stage": "GA"
+    },
+    {
+      "date": "2026-11-19",
+      "flag": "table.inspectDataTableNG",
+      "change": "stage_change",
+      "sha": "5d63586",
+      "commit_url": "https://github.com/grafana/grafana/commit/5d635864e5b5f2bb9d01e2ed97b731b5899347f4",
+      "detected_at": "2026-11-19T15:52:40Z",
+      "from_stage": "Experimental",
+      "to_stage": "GA"
+    },
+    {
+      "date": "2026-11-19",
+      "flag": "rawPrometheus.tableNg",
+      "change": "stage_change",
+      "sha": "5d63586",
+      "commit_url": "https://github.com/grafana/grafana/commit/5d635864e5b5f2bb9d01e2ed97b731b5899347f4",
+      "detected_at": "2026-11-19T15:52:40Z",
+      "from_stage": "Experimental",
+      "to_stage": "GA"
+    },
+    {
+      "date": "2026-11-19",
+      "flag": "grafana.dashboardsAutoHeightPanels",
+      "change": "stage_change",
+      "sha": "65948a6",
+      "commit_url": "https://github.com/grafana/grafana/commit/65948a663dc041f33ee64aeaf294d61cd6ebc10b",
+      "detected_at": "2026-11-19T15:52:40Z",
+      "from_stage": "Experimental",
+      "to_stage": "PublicPreview"
+    },
+    {
+      "date": "2026-11-19",
+      "flag": "grafana.dashboardQuestions",
+      "change": "new",
+      "sha": "9fabb32",
+      "commit_url": "https://github.com/grafana/grafana/commit/9fabb32a203e3963b41bebb2d3a067c739bd32be",
+      "detected_at": "2026-11-19T15:52:40Z",
+      "stage": "Experimental"
+    },
+    {
+      "date": "2026-11-18",
+      "flag": "folder.pendingDeletionWrites",
+      "change": "new",
+      "sha": "d7a3752",
+      "commit_url": "https://github.com/grafana/grafana/commit/d7a37521817860025122584a55b2791fab31a82a",
+      "detected_at": "2026-11-19T15:52:40Z",
+      "stage": "Experimental"
+    },
+    {
+      "date": "2026-11-18",
+      "flag": "dashboardUndoRedo",
+      "change": "stage_change",
+      "sha": "b2b009c",
+      "commit_url": "https://github.com/grafana/grafana/commit/b2b009c677260a138ddc907517611244d711df6a",
+      "detected_at": "2026-11-19T15:52:40Z",
+      "from_stage": "Experimental",
+      "to_stage": "PublicPreview"
+    },
+    {
+      "date": "2026-11-18",
+      "flag": "grafana.navigationAdminSubNav",
+      "change": "new",
+      "sha": "e04fdb5",
+      "commit_url": "https://github.com/grafana/grafana/commit/e04fdb553daa6052eaf003eeca0bfac3b6cd98c5",
+      "detected_at": "2026-11-19T15:52:40Z",
+      "stage": "Experimental"
+    },
+    {
+      "date": "2026-11-18",
+      "flag": "grafana.logsInfiniteScrollTop",
+      "change": "new",
+      "sha": "c03a5f5",
+      "commit_url": "https://github.com/grafana/grafana/commit/c03a5f5e78b7df4d4e294f8125375b1f920c3f7f",
+      "detected_at": "2026-11-19T15:52:40Z",
+      "stage": "PublicPreview"
+    },
+    {
       "date": "2026-11-18",
       "flag": "newSavedQueriesExperience",
       "change": "removed",

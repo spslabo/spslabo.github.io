@@ -1,11 +1,11 @@
 {
   "source_url": "https://github.com/grafana/grafana/blob/main/pkg/services/featuremgmt/registry.go",
-  "total": 412,
+  "total": 416,
   "counts_by_stage": {
-    "Experimental": 300,
+    "Experimental": 298,
     "PrivatePreview": 14,
-    "PublicPreview": 43,
-    "GA": 50,
+    "PublicPreview": 46,
+    "GA": 53,
     "Deprecated": 5
   },
   "flags": [
@@ -551,7 +551,7 @@
     },
     {
       "name": "dashboardUndoRedo",
-      "stage": "Experimental",
+      "stage": "PublicPreview",
       "description": "Enables undo/redo in dynamic dashboards"
     },
     {
@@ -816,13 +816,18 @@
     },
     {
       "name": "flameGraph.tableNg",
-      "stage": "Experimental",
+      "stage": "GA",
       "description": "Renders the flame graph's top table using TableNG instead of the legacy Table"
     },
     {
       "name": "folder.asyncCascadeDeleteThroughController",
       "stage": "Experimental",
       "description": "Enable finalizer-driven asynchronous cascade deletion of folder.grafana.app folders: deleting a folder marks it terminating and a controller removes its descendants, reporting progress in status.cascadeDelete"
+    },
+    {
+      "name": "folder.pendingDeletionWrites",
+      "stage": "Experimental",
+      "description": "Record durable pending folder deletions before sending folder deletes to storage"
     },
     {
       "name": "folderPickerCreatePermission",
@@ -915,8 +920,13 @@
       "description": "Enables Viewing and Editing modes for dynamic dashboards"
     },
     {
-      "name": "grafana.dashboardsAutoHeightPanels",
+      "name": "grafana.dashboardQuestions",
       "stage": "Experimental",
+      "description": "Lets editors save questions on dashboards, rows, and tabs, which plugins offer to viewers in the dashboard controls"
+    },
+    {
+      "name": "grafana.dashboardsAutoHeightPanels",
+      "stage": "PublicPreview",
       "description": "Enables the auto-height feature for dashboard panels"
     },
     {
@@ -1005,6 +1015,11 @@
       "description": "Enables log level inference from log line contents when level is not defined as a field or a label"
     },
     {
+      "name": "grafana.logsInfiniteScrollTop",
+      "stage": "PublicPreview",
+      "description": "Enable infinite scroll for logs when scrolling top"
+    },
+    {
       "name": "grafana.megaMenuPeekAndDock",
       "stage": "Experimental",
       "description": "Opens the mega menu over the page while the pointer rests on its toggle, and docks it when the toggle is clicked on wide screens. The toggle in the docked menu's header closes it, in place of the footer's dock button"
@@ -1038,6 +1053,11 @@
       "name": "grafana.multiTenantUserPermissions",
       "stage": "Experimental",
       "description": "Read the current user's permissions from the IAM app platform API instead of /api/access-control/user/actions"
+    },
+    {
+      "name": "grafana.navigationAdminSubNav",
+      "stage": "Experimental",
+      "description": "Shows Administration as a single row in the mega menu, with its destinations in the section nav"
     },
     {
       "name": "grafana.navigationInfoArchRefresh",
@@ -1751,7 +1771,7 @@
     },
     {
       "name": "rawPrometheus.tableNg",
-      "stage": "Experimental",
+      "stage": "GA",
       "description": "Renders the raw Prometheus query results table using TableNG instead of the legacy Table"
     },
     {
@@ -1961,7 +1981,7 @@
     },
     {
       "name": "table.inspectDataTableNG",
-      "stage": "Experimental",
+      "stage": "GA",
       "description": "Enables TableNG in the panel inspector's Data tab, replacing the legacy Table (TableRT)"
     },
     {
