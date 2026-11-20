@@ -4,8 +4,8 @@
   "counts_by_stage": {
     "Experimental": 298,
     "PrivatePreview": 14,
-    "PublicPreview": 46,
-    "GA": 53,
+    "PublicPreview": 45,
+    "GA": 54,
     "Deprecated": 5
   },
   "flags": [
@@ -1736,7 +1736,7 @@
     },
     {
       "name": "queryEditorNext",
-      "stage": "PublicPreview",
+      "stage": "GA",
       "description": "Enables next generation query editor experience"
     },
     {

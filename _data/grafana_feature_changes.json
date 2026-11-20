@@ -2,6 +2,16 @@
   "changes": [
     {
       "date": "2026-11-19",
+      "flag": "queryEditorNext",
+      "change": "stage_change",
+      "sha": "e8f3b6b",
+      "commit_url": "https://github.com/grafana/grafana/commit/e8f3b6b7f7e50a857cd78d9b50c57df6c9d9b33a",
+      "detected_at": "2026-11-20T15:35:26Z",
+      "from_stage": "PublicPreview",
+      "to_stage": "GA"
+    },
+    {
+      "date": "2026-11-19",
       "flag": "flameGraph.tableNg",
       "change": "stage_change",
       "sha": "5d63586",
