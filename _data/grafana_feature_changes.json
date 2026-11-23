@@ -1,6 +1,24 @@
 {
   "changes": [
     {
+      "date": "2026-11-23",
+      "flag": "live.useAPIServerWebsocket",
+      "change": "new",
+      "sha": "a29ee95",
+      "commit_url": "https://github.com/grafana/grafana/commit/a29ee950e1ebf11f09459519fde63ae01d61b7a8",
+      "detected_at": "2026-11-23T18:26:05Z",
+      "stage": "Experimental"
+    },
+    {
+      "date": "2026-11-23",
+      "flag": "datasources.gatewayQueryUsage",
+      "change": "new",
+      "sha": "2f08412",
+      "commit_url": "https://github.com/grafana/grafana/commit/2f08412392e8da9678eb0bb32270349c43b97580",
+      "detected_at": "2026-11-23T18:26:05Z",
+      "stage": "Experimental"
+    },
+    {
       "date": "2026-11-19",
       "flag": "queryEditorNext",
       "change": "stage_change",

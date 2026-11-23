@@ -1,8 +1,8 @@
 {
   "source_url": "https://github.com/grafana/grafana/blob/main/pkg/services/featuremgmt/registry.go",
-  "total": 416,
+  "total": 418,
   "counts_by_stage": {
-    "Experimental": 298,
+    "Experimental": 300,
     "PrivatePreview": 14,
     "PublicPreview": 45,
     "GA": 54,
@@ -603,6 +603,11 @@
       "name": "datasources.gatewayGuardrails",
       "stage": "Experimental",
       "description": "Data source query gateway guardrails"
+    },
+    {
+      "name": "datasources.gatewayQueryUsage",
+      "stage": "Experimental",
+      "description": "Record billed query usage (Mimir samples read, Loki bytes processed) in query gateway audit events"
     },
     {
       "name": "datasources.gatewayRateLimits",
@@ -1468,6 +1473,11 @@
       "name": "live.runAPIServer",
       "stage": "Experimental",
       "description": "Registers a live apiserver"
+    },
+    {
+      "name": "live.useAPIServerWebsocket",
+      "stage": "Experimental",
+      "description": "Connects Grafana Live to the live.grafana.app websocket instead of /api/live/ws"
     },
     {
       "name": "logQLScope",
