@@ -1,8 +1,8 @@
 {
   "source_url": "https://github.com/grafana/grafana/blob/main/pkg/services/featuremgmt/registry.go",
-  "total": 418,
+  "total": 419,
   "counts_by_stage": {
-    "Experimental": 300,
+    "Experimental": 301,
     "PrivatePreview": 14,
     "PublicPreview": 45,
     "GA": 54,
@@ -1648,6 +1648,11 @@
       "name": "plugins.marketplaceLicensing",
       "stage": "Experimental",
       "description": "Enables marketplace plugin licensing"
+    },
+    {
+      "name": "plugins.useMTPluginInstall",
+      "stage": "Experimental",
+      "description": "Installs, updates and uninstalls plugins through the plugins API only, and falls back to the legacy API if that call fails"
     },
     {
       "name": "plugins.useMTPlugins",
