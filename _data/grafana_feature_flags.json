@@ -1,11 +1,11 @@
 {
   "source_url": "https://github.com/grafana/grafana/blob/main/pkg/services/featuremgmt/registry.go",
-  "total": 419,
+  "total": 421,
   "counts_by_stage": {
-    "Experimental": 301,
+    "Experimental": 304,
     "PrivatePreview": 14,
     "PublicPreview": 45,
-    "GA": 54,
+    "GA": 53,
     "Deprecated": 5
   },
   "flags": [
@@ -68,6 +68,11 @@
       "name": "alerting.ruleQualityFix",
       "stage": "Experimental",
       "description": "Enable fixing alert rule quality issues with Grafana Assistant on the alert quality page."
+    },
+    {
+      "name": "alerting.ruleQualityFixAll",
+      "stage": "Experimental",
+      "description": "Enable bulk fixes for alert rule quality issues on the alert quality page."
     },
     {
       "name": "alerting.ruleQualityTeamPolicies",
@@ -1110,6 +1115,11 @@
       "description": "Let panel plugins register system transformations"
     },
     {
+      "name": "grafana.panelQuickEdits",
+      "stage": "Experimental",
+      "description": "Adds quick edits for a panel's most-changed options to the panel edit popover in dashboard edit mode"
+    },
+    {
       "name": "grafana.pluginExtensionReactElementProps",
       "stage": "Experimental",
       "description": "Pass React elements in plugin extension props by reference"
@@ -1138,6 +1148,11 @@
       "name": "grafana.recordedQueriesDisableCreate",
       "stage": "PublicPreview",
       "description": "Disables creating new recorded queries while preserving access to existing queries"
+    },
+    {
+      "name": "grafana.responsiveTimePickerTabs",
+      "stage": "Experimental",
+      "description": "Enable tabs and an inline calendar in the compact time range picker"
     },
     {
       "name": "grafana.restrictWatchToServiceIdentities",
@@ -1883,11 +1898,6 @@
       "name": "saml.gosaml2Provider",
       "stage": "Experimental",
       "description": "Use the gosaml2 library instead of the crewjam SAML library for SAML authentication"
-    },
-    {
-      "name": "savedQueriesRBAC",
-      "stage": "GA",
-      "description": "Enables Saved queries (query library) RBAC permissions"
     },
     {
       "name": "scopeApi",

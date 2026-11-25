@@ -1,6 +1,42 @@
 {
   "changes": [
     {
+      "date": "2026-11-25",
+      "flag": "grafana.responsiveTimePickerTabs",
+      "change": "new",
+      "sha": "aa17a64",
+      "commit_url": "https://github.com/grafana/grafana/commit/aa17a6403105b07ca9cbfa4d90aa7be6caeafad7",
+      "detected_at": "2026-11-25T17:23:02Z",
+      "stage": "Experimental"
+    },
+    {
+      "date": "2026-11-25",
+      "flag": "grafana.panelQuickEdits",
+      "change": "new",
+      "sha": "b6b531f",
+      "commit_url": "https://github.com/grafana/grafana/commit/b6b531f1bf88860c8477781dccae96c57a09b103",
+      "detected_at": "2026-11-25T17:23:02Z",
+      "stage": "Experimental"
+    },
+    {
+      "date": "2026-11-24",
+      "flag": "alerting.ruleQualityFixAll",
+      "change": "new",
+      "sha": "5524f3d",
+      "commit_url": "https://github.com/grafana/grafana/commit/5524f3dcbde0ea211081d502663932332241da0f",
+      "detected_at": "2026-11-25T17:23:02Z",
+      "stage": "Experimental"
+    },
+    {
+      "date": "2026-11-24",
+      "flag": "savedQueriesRBAC",
+      "change": "removed",
+      "sha": "25b6a86",
+      "commit_url": "https://github.com/grafana/grafana/commit/25b6a868f5deebd885010a76b2294d0a05b0cfcd",
+      "detected_at": "2026-11-25T17:23:02Z",
+      "from_stage": "GA"
+    },
+    {
       "date": "2026-11-24",
       "flag": "plugins.useMTPluginInstall",
       "change": "new",
