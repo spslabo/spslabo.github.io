@@ -1,6 +1,51 @@
 {
   "changes": [
     {
+      "date": "2026-11-26",
+      "flag": "resourcePermissionsBulkUserValidation",
+      "change": "new",
+      "sha": "3b6b5be",
+      "commit_url": "https://github.com/grafana/grafana/commit/3b6b5be67b65e8219d9d468ccc6b9d65d50ac5f6",
+      "detected_at": "2026-11-26T17:02:53Z",
+      "stage": "Experimental"
+    },
+    {
+      "date": "2026-11-26",
+      "flag": "resourcePermissionsBulkUserWrites",
+      "change": "new",
+      "sha": "3b6b5be",
+      "commit_url": "https://github.com/grafana/grafana/commit/3b6b5be67b65e8219d9d468ccc6b9d65d50ac5f6",
+      "detected_at": "2026-11-26T17:02:53Z",
+      "stage": "Experimental"
+    },
+    {
+      "date": "2026-11-26",
+      "flag": "iam.useKubernetesUsersReadApi",
+      "change": "new",
+      "sha": "b588d93",
+      "commit_url": "https://github.com/grafana/grafana/commit/b588d934086628cbebb734a3c346310f3f79bf0d",
+      "detected_at": "2026-11-26T17:02:53Z",
+      "stage": "Experimental"
+    },
+    {
+      "date": "2026-11-26",
+      "flag": "kubernetesAggregator",
+      "change": "removed",
+      "sha": "513e4ac",
+      "commit_url": "https://github.com/grafana/grafana/commit/513e4acafcf353881b7a2d18d07849a6fc33c529",
+      "detected_at": "2026-11-26T17:02:53Z",
+      "from_stage": "Experimental"
+    },
+    {
+      "date": "2026-11-26",
+      "flag": "kubernetesAggregatorCapTokenAuth",
+      "change": "removed",
+      "sha": "513e4ac",
+      "commit_url": "https://github.com/grafana/grafana/commit/513e4acafcf353881b7a2d18d07849a6fc33c529",
+      "detected_at": "2026-11-26T17:02:53Z",
+      "from_stage": "Experimental"
+    },
+    {
       "date": "2026-11-25",
       "flag": "grafana.responsiveTimePickerTabs",
       "change": "new",
