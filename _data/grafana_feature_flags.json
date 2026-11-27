@@ -1,14 +1,19 @@
 {
   "source_url": "https://github.com/grafana/grafana/blob/main/pkg/services/featuremgmt/registry.go",
-  "total": 422,
+  "total": 425,
   "counts_by_stage": {
-    "Experimental": 305,
+    "Experimental": 308,
     "PrivatePreview": 14,
     "PublicPreview": 45,
     "GA": 53,
     "Deprecated": 5
   },
   "flags": [
+    {
+      "name": "adaptivelogs.enableTimeMachine",
+      "stage": "Experimental",
+      "description": "Enables multiple points of integration for Adaptive Logs Time Machine."
+    },
     {
       "name": "alertEnrichment",
       "stage": "Experimental",
@@ -333,6 +338,11 @@
       "name": "authz.legacyUserPermissions",
       "stage": "Experimental",
       "description": "Load legacy Access Control permissions through embedded AuthZ."
+    },
+    {
+      "name": "authz.legacyUserPermissionsSearch",
+      "stage": "Experimental",
+      "description": "Route user permission searches through embedded AuthZ."
     },
     {
       "name": "authz.legacyUserPermissionsShadow",
@@ -868,6 +878,11 @@
       "name": "grafana.announcementBannerDismissible",
       "stage": "GA",
       "description": "Allow admins to make announcement banners dismissible by users"
+    },
+    {
+      "name": "grafana.bootdataAnalytics",
+      "stage": "Experimental",
+      "description": "Enable tracking of bootdata property access"
     },
     {
       "name": "grafana.cmdkDashboardTags",

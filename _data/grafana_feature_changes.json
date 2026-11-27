@@ -1,6 +1,33 @@
 {
   "changes": [
     {
+      "date": "2026-11-27",
+      "flag": "authz.legacyUserPermissionsSearch",
+      "change": "new",
+      "sha": "0da95c0",
+      "commit_url": "https://github.com/grafana/grafana/commit/0da95c038c21e33414648c86b6ce570f46583758",
+      "detected_at": "2026-11-27T16:48:19Z",
+      "stage": "Experimental"
+    },
+    {
+      "date": "2026-11-27",
+      "flag": "adaptivelogs.enableTimeMachine",
+      "change": "new",
+      "sha": "14e22ae",
+      "commit_url": "https://github.com/grafana/grafana/commit/14e22aef5e47fbab78420b9cc080d0be2dea865f",
+      "detected_at": "2026-11-27T16:48:19Z",
+      "stage": "Experimental"
+    },
+    {
+      "date": "2026-11-27",
+      "flag": "grafana.bootdataAnalytics",
+      "change": "new",
+      "sha": "c3e6ca2",
+      "commit_url": "https://github.com/grafana/grafana/commit/c3e6ca2c50708414a9aa3d6e61cece9bc2bf44d0",
+      "detected_at": "2026-11-27T16:48:19Z",
+      "stage": "Experimental"
+    },
+    {
       "date": "2026-11-26",
       "flag": "resourcePermissionsBulkUserValidation",
       "change": "new",
